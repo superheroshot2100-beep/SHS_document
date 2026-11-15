@@ -1,0 +1,698 @@
+Date: Fri, 13 Nov 2026 17:11:03 +0700 (ICT)
+Message-ID: <765335983.6393.1794564663104@confluence>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_6392_2089086221.1794564663104"
+
+------=_Part_6392_2089086221.1794564663104
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>R=C3=A0 so=C3=A1t danh m=E1=BB=A5c ch=E1=BB=A9c n=C4=83ng</title=
+>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-link-pressed, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>R=C3=A0 so=C3=A1t danh m=E1=BB=A5c ch=E1=BB=A9c n=C4=83ng</h1>
+    <div class=3D"Section1">
+        <div class=3D"table-wrap">
+ <table class=3D"wrapped relative-table confluenceTable" style=3D"width: 10=
+0.011%;">
+  <colgroup>
+   <col style=3D"width: 5.08758%;">
+   <col style=3D"width: 6.11721%;">
+   <col style=3D"width: 7.9342%;">
+   <col style=3D"width: 45.7882%;">
+   <col style=3D"width: 16.4741%;">
+   <col style=3D"width: 11.3259%;">
+   <col style=3D"width: 7.26797%;">
+  </colgroup>
+  <tbody>
+   <tr>
+    <th scope=3D"col" class=3D"confluenceTh">Menu</th>
+    <th scope=3D"col" class=3D"confluenceTh">Sub-menu</th>
+    <th scope=3D"col" class=3D"confluenceTh">Nghi=E1=BB=87p v=E1=BB=A5</th>
+    <th scope=3D"col" class=3D"confluenceTh">Issue</th>
+    <th scope=3D"col" class=3D"confluenceTh">Y=C3=AAu c=E1=BA=A7u</th>
+    <th scope=3D"col" class=3D"confluenceTh">PIC</th>
+    <th scope=3D"col" class=3D"confluenceTh">Tr=E1=BA=A1ng th=C3=A1i x=E1=
+=BB=AD l=C3=BD</th>
+   </tr>
+   <tr>
+    <td rowspan=3D"2" class=3D"confluenceTd">Chung</td>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">
+     <p>Ch=C6=B0a x=E1=BB=AD l=C3=BD loading khi user click L=C6=B0u/ Duy=
+=E1=BB=87t =E1=BB=9F c=C3=A1c m=C3=A0n h=C3=ACnh:</p>
+     <ul style=3D"list-style-type: square;">
+      <li data-uuid=3D"06a9a4c5-6f06-455d-a8db-fd75f3ac1668">Th=C3=AAm m=E1=
+=BB=9Bi l=C6=B0u k=C3=BD</li>
+     </ul></td>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd"><a class=3D"confluence-userlink user-mention=
+" data-username=3D"thang.hc" href=3D"/display/~thang.hc" data-linked-resour=
+ce-id=3D"112268458" data-linked-resource-version=3D"1" data-linked-resource=
+-type=3D"userinfo" data-base-url=3D"https://confluence.shs.com.vn">Ho=C3=A0=
+ng C=C3=B4ng Th=E1=BA=AFng (CV - TT C=C3=B4ng ngh=E1=BB=87)</a>&nbsp;</td>
+    <td class=3D"confluenceTd">
+     <div class=3D"content-wrapper">
+      <p><span class=3D"status-macro aui-lozenge aui-lozenge-subtle">INPROG=
+RESS</span></p>
+     </div></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">
+     <ul style=3D"list-style-type: square;">
+      <li data-uuid=3D"6ff9ae1a-abc4-4f99-8f66-90a2af368f66">Th=C3=B4ng tin=
+ th=E1=BB=9Di gian maker th=E1=BB=B1c hi=E1=BB=87n =C4=91ang ghi nh=E1=BA=
+=ADn v=C3=A0o DB l=C3=A0 gi=E1=BB=9D UTC</li>
+     </ul>
+     <ul style=3D"list-style-type: square;">
+      <li data-uuid=3D"59fc7876-de9c-4ebf-9457-744cbff35bfa">Th=C3=B4ng tin=
+ th=E1=BB=9Di gian checker th=E1=BB=B1c hi=E1=BB=87n =C4=91ang ghi nh=E1=BA=
+=ADn v=C3=A0o DB l=C3=A0 gi=E1=BB=9D UTC +7</li>
+      <li data-uuid=3D"c10c6fe5-9974-4969-81d3-e7c834aaeab8">Th=C3=B4ng tin=
+ api tr=E1=BA=A3 ra =C4=91=E1=BB=83 show tr=C3=AAn giao di=E1=BB=87n l=E1=
+=BA=A1i l=E1=BA=A5y th=C3=B4ng tin trong DB - 7</li>
+     </ul></td>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">
+     <div class=3D"content-wrapper">
+      <p><a class=3D"confluence-userlink user-mention" data-username=3D"tun=
+g.nh" href=3D"/display/~tung.nh" data-linked-resource-id=3D"112269162" data=
+-linked-resource-version=3D"1" data-linked-resource-type=3D"userinfo" data-=
+base-url=3D"https://confluence.shs.com.vn">Ng=C3=B4 Ho=C3=A0ng T=C3=B9ng (C=
+VCC - TT C=C3=B4ng ngh=E1=BB=87)</a>&nbsp;</p>
+     </div></td>
+    <td class=3D"confluenceTd">
+     <div class=3D"content-wrapper">
+      <p><span class=3D"status-macro aui-lozenge aui-lozenge-error">TO DO</=
+span></p>
+     </div></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">Tr=C3=A1i phi=E1=BA=BFu</td>
+    <td class=3D"confluenceTd">T=E1=BB=95 ch=E1=BB=A9c ph=C3=A1t h=C3=A0nh<=
+/td>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd"><br></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">Th=C3=B4ng tin tr=C3=A1i phi=E1=BA=BFu</td>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">Duy=E1=BB=87t m=E1=BA=A5t 12s</td>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd"><a class=3D"confluence-userlink user-mention=
+" data-username=3D"tung.nh" href=3D"/display/~tung.nh" data-linked-resource=
+-id=3D"112269162" data-linked-resource-version=3D"1" data-linked-resource-t=
+ype=3D"userinfo" data-base-url=3D"https://confluence.shs.com.vn">Ng=C3=B4 H=
+o=C3=A0ng T=C3=B9ng (CVCC - TT C=C3=B4ng ngh=E1=BB=87)</a>&nbsp;</td>
+    <td class=3D"confluenceTd"><br></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">Ch=C3=ADnh s=C3=A1ch</td>
+    <td class=3D"confluenceTd">Ch=C3=ADnh s=C3=A1ch ph=C3=AD thu=E1=BA=BF</=
+td>
+    <td class=3D"confluenceTd">T=E1=BA=A1o m=E1=BB=9Bi ch=C3=ADnh s=C3=A1ch=
+ ph=C3=AD, thu=E1=BA=BF</td>
+    <td class=3D"confluenceTd">
+     <p>Nh=E1=BA=ADp th=C3=B4ng tin Gi=C3=A1 tr=E1=BB=8B t=E1=BB=91i =C4=91=
+a =E2=86=92 X=C3=B3a th=C3=B4ng tin gi=C3=A1 tr=E1=BB=8B t=E1=BB=91i =C4=91=
+a =E2=86=92 Click L=C6=B0u</p>
+     <p>=3D&gt; FE b=C3=A1o l=E1=BB=97i "Gi=C3=A1 tr=E1=BB=8B t=E1=BB=91i =
+=C4=91a ph=E1=BA=A3i l=E1=BB=9Bn h=C6=A1n gi=C3=A1 tr=E1=BB=8B t=E1=BB=91i =
+thi=E1=BB=83u"</p></td>
+    <td class=3D"confluenceTd">
+     <p>Kh=C3=B4ng b=C3=A1o l=E1=BB=97i tr=C6=B0=E1=BB=9Dng h=E1=BB=A3p n=
+=C3=A0y</p></td>
+    <td class=3D"confluenceTd">
+     <div class=3D"content-wrapper">
+      <p><a class=3D"confluence-userlink user-mention" data-username=3D"tha=
+ng.hc" href=3D"/display/~thang.hc" data-linked-resource-id=3D"112268458" da=
+ta-linked-resource-version=3D"1" data-linked-resource-type=3D"userinfo" dat=
+a-base-url=3D"https://confluence.shs.com.vn">Ho=C3=A0ng C=C3=B4ng Th=E1=BA=
+=AFng (CV - TT C=C3=B4ng ngh=E1=BB=87)</a>&nbsp;</p>
+     </div></td>
+    <td class=3D"confluenceTd">
+     <div class=3D"content-wrapper">
+      <p><span class=3D"status-macro aui-lozenge aui-lozenge-current">DONE<=
+/span></p>
+     </div></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">
+     <p>T=E1=BA=A1o m=E1=BB=9Bi ch=C3=ADnh s=C3=A1ch c=C3=B3 m=C3=A3 ch=C3=
+=ADnh s=C3=A1ch tr=C3=B9ng v=E1=BB=9Bi m=C3=A3 =C4=91=C3=A3 t=E1=BB=93n t=
+=E1=BA=A1i trong h=E1=BB=87 th=E1=BB=91ng nh=C6=B0ng =E1=BB=9F tr=E1=BA=A1n=
+g th=C3=A1i T=E1=BB=AB ch=E1=BB=91i</p>
+     <p>=3D&gt; BE tr=E1=BA=A3 l=E1=BB=97i "M=C3=A3 ch=C3=ADnh s=C3=A1ch =
+=C4=91=C3=A3 t=E1=BB=93n t=E1=BA=A1i"</p></td>
+    <td class=3D"confluenceTd">
+     <p>Cho ph=C3=A9p t=E1=BA=A1o m=C3=A3 tr=C3=B9ng v=E1=BB=9Bi m=C3=A3 =
+=E1=BB=9F tr=E1=BA=A1ng th=C3=A1i T=E1=BB=AB ch=E1=BB=91i?</p></td>
+    <td class=3D"confluenceTd">
+     <p><a class=3D"confluence-userlink user-mention" data-username=3D"tung=
+.nh" href=3D"/display/~tung.nh" data-linked-resource-id=3D"112269162" data-=
+linked-resource-version=3D"1" data-linked-resource-type=3D"userinfo" data-b=
+ase-url=3D"https://confluence.shs.com.vn">Ng=C3=B4 Ho=C3=A0ng T=C3=B9ng (CV=
+CC - TT C=C3=B4ng ngh=E1=BB=87)</a>&nbsp;</p></td>
+    <td class=3D"confluenceTd">
+     <div class=3D"content-wrapper">
+      <p><br></p>
+     </div></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">
+     <p>Khai b=C3=A1o ch=C3=ADnh s=C3=A1ch b=E1=BA=ADc thang, khi th=C3=AAm=
+ 1 d=C3=B2ng b=E1=BA=ADc thang th=C3=AC ng=C6=B0=E1=BB=9Di d=C3=B9ng =C4=91=
+ang ph=E1=BA=A3i nh=E1=BA=ADp tay tr=C6=B0=E1=BB=9Dng "T=E1=BB=AB gi=C3=A1 =
+tr=E1=BB=8B" v=C3=A0 c=C3=B3 c=E1=BA=A3nh b=C3=A1o "<span style=3D"color:#f=
+87168;">T=E1=BB=AB gi=C3=A1 tr=E1=BB=8B b=E1=BA=B1ng '=C4=90=E1=BA=BFn d=C6=
+=B0=E1=BB=9Bi gi=C3=A1 tr=E1=BB=8B c=E1=BB=99ng th=C3=AAm 1'</span></p>
+     <p><span style=3D"color:#f87168;">=3D&gt; Nh=E1=BA=ADp s=E1=BB=91 kh=
+=C3=B4ng h=E1=BB=A3p l=E1=BB=87 th=C3=AC kh=C3=B4ng cho Submit</span></p>
+     <p><br></p></td>
+    <td class=3D"confluenceTd">
+     <ul style=3D"list-style-type: square;">
+      <li data-uuid=3D"6d206bff-2f38-43a8-ac18-727a899c1105">S=E1=BB=ADa l=
+=E1=BA=A1i text tr=C6=B0=E1=BB=9Dng "=C4=90=E1=BA=BFn d=C6=B0=E1=BB=9Bi gi=
+=C3=A1 tr=E1=BB=8B" th=C3=A0nh "=C4=90=E1=BA=BFn gi=C3=A1 tr=E1=BB=8B"</li>
+      <li data-uuid=3D"c29c7e8c-b77d-4a65-a4e8-e7ae1ee7ec23">T=E1=BB=B1 =C4=
+=91=E1=BB=99ng =C4=91i=E1=BB=81n gi=C3=A1 tr=E1=BB=8B =C3=B4 "T=E1=BB=AB gi=
+=C3=A1 tr=E1=BB=8B" c=E1=BB=A7a d=C3=B2ng b=E1=BA=ADc thang ti=E1=BA=BFp th=
+eo =3D gi=C3=A1 tr=E1=BB=8B c=E1=BB=A7a "=C4=90=E1=BA=BFn gi=C3=A1 tr=E1=BB=
+=8B" + 1</li>
+     </ul></td>
+    <td class=3D"confluenceTd"><a class=3D"confluence-userlink user-mention=
+" data-username=3D"thang.hc" href=3D"/display/~thang.hc" data-linked-resour=
+ce-id=3D"112268458" data-linked-resource-version=3D"1" data-linked-resource=
+-type=3D"userinfo" data-base-url=3D"https://confluence.shs.com.vn">Ho=C3=A0=
+ng C=C3=B4ng Th=E1=BA=AFng (CV - TT C=C3=B4ng ngh=E1=BB=87)</a>&nbsp;</td>
+    <td class=3D"confluenceTd">
+     <div class=3D"content-wrapper">
+      <p><span class=3D"status-macro aui-lozenge aui-lozenge-error">TO DO</=
+span></p>
+     </div></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">Danh m=E1=BB=A5c ph=C3=AD thu=E1=BA=BF</td>
+    <td class=3D"confluenceTd">
+     <p>Nghi=E1=BB=87p v=E1=BB=A5 phong t=E1=BB=8Fa/ Gi=E1=BA=A3i t=E1=BB=
+=8Fa ch=C6=B0a c=C3=B3 ch=E1=BB=8Dn lo=E1=BA=A1i ph=C3=AD chi ti=E1=BA=BFt =
+l=C3=A0 Thu=E1=BA=BF</p>
+     <p>Thu=E1=BA=BF =3D x%*S=E1=BB=91 ti=E1=BB=81n phong t=E1=BB=8Fa/ gi=
+=E1=BA=A3i t=E1=BB=8Fa</p></td>
+    <td class=3D"confluenceTd">
+     <p><br></p></td>
+    <td class=3D"confluenceTd">
+     <p><br></p></td>
+    <td class=3D"confluenceTd">
+     <div class=3D"content-wrapper">
+      <p><br></p>
+     </div></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">Nghi=E1=BB=87p v=E1=BB=A5 tr=C3=A1i phi=E1=
+=BA=BFu</td>
+    <td class=3D"confluenceTd">Phong t=E1=BB=8Fa tr=C3=A1i phi=E1=BA=BFu</t=
+d>
+    <td class=3D"confluenceTd">
+     <p>Th=E1=BB=B1c hi=E1=BB=87n nghi=E1=BB=87p v=E1=BB=A5 phong t=E1=BB=
+=8Fa, h=E1=BB=87 th=E1=BB=91ng b=C3=A1o l=E1=BB=97i nh=C6=B0ng v=E1=BA=ABn =
+t=E1=BA=A1o b=E1=BA=A3n ghi Ch=E1=BB=9D duy=E1=BB=87t</p>
+     <p><span style=3D"color:#352c63;">{ "timestamp": "2025-09-10T15:37:26.=
+202714778", "code": -1, "message": "Identifier of entity 'com.shs.depositor=
+y.entity.HolderTransactionFeeEntity' must be manually assigned before calli=
+ng 'persist()'", "data": "C54169D7B13B40818470FA241AA59A9B" }</span></p>
+     <p><br></p></td>
+    <td class=3D"confluenceTd">
+     <p><br></p></td>
+    <td class=3D"confluenceTd">
+     <p><a class=3D"confluence-userlink user-mention" data-username=3D"tung=
+.nh" href=3D"/display/~tung.nh" data-linked-resource-id=3D"112269162" data-=
+linked-resource-version=3D"1" data-linked-resource-type=3D"userinfo" data-b=
+ase-url=3D"https://confluence.shs.com.vn">Ng=C3=B4 Ho=C3=A0ng T=C3=B9ng (CV=
+CC - TT C=C3=B4ng ngh=E1=BB=87)</a>&nbsp;</p></td>
+    <td class=3D"confluenceTd">
+     <div class=3D"content-wrapper">
+      <p><span class=3D"status-macro aui-lozenge aui-lozenge-current">DONE<=
+/span></p>
+     </div></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">
+     <p>Th=E1=BB=B1c hi=E1=BB=87n ph=C3=AA duy=E1=BB=87t phong t=E1=BB=8Fa =
+tr=C3=A1i phi=E1=BA=BFu t=E1=BA=A1i VSD =3D&gt; Th=C3=A0nh c=C3=B4ng</p>
+     <p>Th=E1=BB=B1c hi=E1=BB=87n ph=C3=AA duy=E1=BB=87t phong t=E1=BB=8Fa =
+tr=C3=A1i phi=E1=BA=BFu t=E1=BA=A1i SHS =3D&gt; L=E1=BB=97i kh=C3=B4ng phon=
+g t=E1=BB=8Fa =C4=91=C6=B0=E1=BB=A3c</p>
+     <p>{<br>
+       &nbsp; &nbsp; "timestamp": "2025-09-10T16:11:02.335891927",<br>
+       &nbsp; &nbsp; "code": 20015,<br>
+       &nbsp; &nbsp; "message": "Kh=C3=B4ng th=E1=BB=83 duy=E1=BB=87t b=E1=
+=BA=A3n ghi n=C3=A0y",<br>
+       &nbsp; &nbsp; "data": null<br>
+       }</p></td>
+    <td class=3D"confluenceTd">
+     <p><br></p></td>
+    <td class=3D"confluenceTd">
+     <p><a class=3D"confluence-userlink user-mention" data-username=3D"tung=
+.nh" href=3D"/display/~tung.nh" data-linked-resource-id=3D"112269162" data-=
+linked-resource-version=3D"1" data-linked-resource-type=3D"userinfo" data-b=
+ase-url=3D"https://confluence.shs.com.vn">Ng=C3=B4 Ho=C3=A0ng T=C3=B9ng (CV=
+CC - TT C=C3=B4ng ngh=E1=BB=87)</a>&nbsp;</p></td>
+    <td class=3D"confluenceTd">
+     <div class=3D"content-wrapper">
+      <p><span class=3D"status-macro aui-lozenge aui-lozenge-current">DONE<=
+/span></p>
+     </div></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">
+     <p>Th=E1=BB=B1c hi=E1=BB=87n t=E1=BB=AB ch=E1=BB=91i b=E1=BA=A3n ghi p=
+hong t=E1=BB=8Fa tr=C3=A1i phi=E1=BA=BFu =3D&gt; L=E1=BB=97i</p>
+     <p>{<br>
+       &nbsp; &nbsp; "timestamp": "2025-09-10T16:11:02.335891927",<br>
+       &nbsp; &nbsp; "code": 20015,<br>
+       &nbsp; &nbsp; "message": "Kh=C3=B4ng th=E1=BB=83 duy=E1=BB=87t b=E1=
+=BA=A3n ghi n=C3=A0y",<br>
+       &nbsp; &nbsp; "data": null<br>
+       }</p></td>
+    <td class=3D"confluenceTd">
+     <p><br></p></td>
+    <td class=3D"confluenceTd">
+     <div class=3D"content-wrapper">
+      <p><a class=3D"confluence-userlink user-mention" data-username=3D"tun=
+g.nh" href=3D"/display/~tung.nh" data-linked-resource-id=3D"112269162" data=
+-linked-resource-version=3D"1" data-linked-resource-type=3D"userinfo" data-=
+base-url=3D"https://confluence.shs.com.vn">Ng=C3=B4 Ho=C3=A0ng T=C3=B9ng (C=
+VCC - TT C=C3=B4ng ngh=E1=BB=87)</a>&nbsp;</p>
+     </div></td>
+    <td class=3D"confluenceTd">
+     <div class=3D"content-wrapper">
+      <p><span class=3D"status-macro aui-lozenge aui-lozenge-current">DONE<=
+/span></p>
+     </div></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">Danh s=C3=A1ch phong t=E1=BB=8Fa tr=C3=A1i p=
+hi=E1=BA=BFu</td>
+    <td class=3D"confluenceTd">
+     <p>Ch=C6=B0a map lo=E1=BA=A1i phong t=E1=BB=8Fa t=E1=BB=AB Code sang N=
+=E1=BB=99i dung</p></td>
+    <td class=3D"confluenceTd">
+     <p>Map gi=C3=A1 tr=E1=BB=8B tr=C6=B0=E1=BB=9Dng Lo=E1=BA=A1i phong t=
+=E1=BB=8Fa: businessType</p>
+     <ul style=3D"list-style-type: square;">
+      <li data-uuid=3D"058e8514-d0e6-4b00-aa95-9654f0140311">VSD: Phong t=
+=E1=BB=8Fa t=E1=BA=A1i VSD</li>
+      <li data-uuid=3D"a18afb0a-3633-4a3e-b6b1-152dd9eeb7e4">OWN: Phong t=
+=E1=BB=8Fa t=E1=BA=A1i SHS</li>
+      <li data-uuid=3D"e3ca1bb3-fdeb-48b7-b426-2e7fe21a8e78"><span style=3D=
+"color:#333333;">OTHER</span>: Phong t=E1=BB=8Fa kh=C3=A1c</li>
+     </ul></td>
+    <td class=3D"confluenceTd">
+     <div class=3D"content-wrapper">
+      <p><a class=3D"confluence-userlink user-mention" data-username=3D"tha=
+ng.hc" href=3D"/display/~thang.hc" data-linked-resource-id=3D"112268458" da=
+ta-linked-resource-version=3D"1" data-linked-resource-type=3D"userinfo" dat=
+a-base-url=3D"https://confluence.shs.com.vn">Ho=C3=A0ng C=C3=B4ng Th=E1=BA=
+=AFng (CV - TT C=C3=B4ng ngh=E1=BB=87)</a>&nbsp;</p>
+     </div></td>
+    <td class=3D"confluenceTd">
+     <div class=3D"content-wrapper">
+      <p><span class=3D"status-macro aui-lozenge aui-lozenge-current">DONE<=
+/span></p>
+     </div></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">L=C6=B0u k=C3=BD</td>
+    <td class=3D"confluenceTd">
+     <p>Ph=C3=A1t h=C3=A0nh 100K tr=C3=A1i phi=E1=BA=BFu =E2=86=92 L=C6=B0u=
+ k=C3=BD 100K =E2=86=92 R=C3=BAt l=C6=B0u k=C3=BD 50K =E2=86=92 Th=E1=BB=B1=
+c hi=E1=BB=87n l=C6=B0u k=C3=BD th=C3=AAm 50K</p>
+     <p>=3D&gt; H=E1=BB=87 th=E1=BB=91ng b=C3=A1o v=C6=B0=E1=BB=A3t qu=C3=
+=A1 s=E1=BB=91 l=C6=B0=E1=BB=A3ng ph=C3=A1t h=C3=A0nh</p></td>
+    <td class=3D"confluenceTd">
+     <p>Check l=E1=BA=A1i logic</p></td>
+    <td class=3D"confluenceTd">
+     <div class=3D"content-wrapper">
+      <p><br></p>
+     </div></td>
+    <td class=3D"confluenceTd">
+     <div class=3D"content-wrapper">
+      <p><br></p>
+     </div></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">
+     <p>Th=E1=BB=B1c hi=E1=BB=87n l=C6=B0u k=C3=BD lo=E1=BA=A1i 7 =3D&gt; G=
+en =C4=91i=E1=BB=87n sai</p></td>
+    <td class=3D"confluenceTd">
+     <p><br></p></td>
+    <td class=3D"confluenceTd">
+     <div class=3D"content-wrapper">
+      <p><br></p>
+     </div></td>
+    <td class=3D"confluenceTd">
+     <div class=3D"content-wrapper">
+      <p><br></p>
+     </div></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">Kh=C3=A1ch h=C3=A0ng</td>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">=C4=90=E1=BA=A9y =C4=91i=E1=BB=87n m=E1=BB=
+=9F t=C3=A0i kho=E1=BA=A3n</td>
+    <td class=3D"confluenceTd">
+     <p>Ch=C6=B0a gi=E1=BA=A3 l=E1=BA=ADp th=C3=B4ng tin =C4=91i=E1=BB=87n =
+m=E1=BB=9F t=C3=A0i kho=E1=BA=A3n</p></td>
+    <td class=3D"confluenceTd">
+     <p><br></p></td>
+    <td class=3D"confluenceTd">
+     <p><br></p></td>
+    <td class=3D"confluenceTd">
+     <div class=3D"content-wrapper">
+      <p><br></p>
+     </div></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">Danh s=C3=A1ch =C4=91=C4=83ng k=C3=BD N=C4=
+=90TCN</td>
+    <td class=3D"confluenceTd">
+     <p>C=E1=BA=ADp nh=E1=BA=ADt th=C3=B4ng tin NDDTCN b=C3=A1o l=E1=BB=97i=
+ 500</p>
+     <p>{<br>
+       &nbsp; &nbsp; "timestamp": "2025-09-10T16:30:21.23488827",<br>
+       &nbsp; &nbsp; "code": 500,<br>
+       &nbsp; &nbsp; "message": "There was an error processing the request,=
+ please contact the administrator!",<br>
+       &nbsp; &nbsp; "data": null<br>
+       }</p></td>
+    <td class=3D"confluenceTd">
+     <p><br></p></td>
+    <td class=3D"confluenceTd">
+     <p><a class=3D"confluence-userlink user-mention" data-username=3D"tung=
+.nh" href=3D"/display/~tung.nh" data-linked-resource-id=3D"112269162" data-=
+linked-resource-version=3D"1" data-linked-resource-type=3D"userinfo" data-b=
+ase-url=3D"https://confluence.shs.com.vn">Ng=C3=B4 Ho=C3=A0ng T=C3=B9ng (CV=
+CC - TT C=C3=B4ng ngh=E1=BB=87)</a>&nbsp;</p></td>
+    <td class=3D"confluenceTd">
+     <div class=3D"content-wrapper">
+      <p><br></p>
+     </div></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">Qu=E1=BA=A3n l=C3=BD H=E1=BB=A3p =C4=91=E1=
+=BB=93ng</td>
+    <td class=3D"confluenceTd">H=E1=BB=A3p =C4=91=E1=BB=93ng =C4=91=E1=BA=
+=B7t mua</td>
+    <td class=3D"confluenceTd">Xem th=C3=B4ng tin chi ti=E1=BA=BFt</td>
+    <td class=3D"confluenceTd">
+     <p>Click v=C3=A0o d=C3=B2ng ti=E1=BB=81n hi=E1=BB=83n th=E1=BB=8B tr=
+=E1=BB=91ng do ch=C6=B0a gh=C3=A9p api</p></td>
+    <td class=3D"confluenceTd">
+     <p><br></p></td>
+    <td class=3D"confluenceTd">
+     <p><a class=3D"confluence-userlink user-mention" data-username=3D"than=
+g.hc" href=3D"/display/~thang.hc" data-linked-resource-id=3D"112268458" dat=
+a-linked-resource-version=3D"1" data-linked-resource-type=3D"userinfo" data=
+-base-url=3D"https://confluence.shs.com.vn">Ho=C3=A0ng C=C3=B4ng Th=E1=BA=
+=AFng (CV - TT C=C3=B4ng ngh=E1=BB=87)</a>&nbsp;</p></td>
+    <td class=3D"confluenceTd">
+     <div class=3D"content-wrapper">
+      <p><span class=3D"status-macro aui-lozenge aui-lozenge-current">DONE<=
+/span></p>
+     </div></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">
+     <p><br></p></td>
+    <td class=3D"confluenceTd">
+     <p><br></p></td>
+    <td class=3D"confluenceTd">
+     <p><br></p></td>
+    <td class=3D"confluenceTd">
+     <div class=3D"content-wrapper">
+      <p><br></p>
+     </div></td>
+   </tr>
+  </tbody>
+ </table>
+</div>
+    </div>
+</body>
+</html>
+------=_Part_6392_2089086221.1794564663104--
