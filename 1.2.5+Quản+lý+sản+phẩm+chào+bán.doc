@@ -1,0 +1,1438 @@
+Date: Fri, 13 Nov 2026 08:39:30 +0700 (ICT)
+Message-ID: <1656756105.6225.1794533970295@confluence>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_6224_361008237.1794533970295"
+
+------=_Part_6224_361008237.1794533970295
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>1.2.5 Qu=E1=BA=A3n l=C3=BD s=E1=BA=A3n ph=E1=BA=A9m ch=C3=A0o b=
+=C3=A1n</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-link-pressed, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>1.2.5 Qu=E1=BA=A3n l=C3=BD s=E1=BA=A3n ph=E1=BA=A9m ch=C3=A0o b=C3=
+=A1n</h1>
+    <div class=3D"Section1">
+        <ol>
+ <li style=3D"font-weight: bold;" data-uuid=3D"efb0bbeb-688e-44ca-bdc3-83e0=
+a28a69b9"><strong>T=E1=BB=95ng quan</strong></li>
+</ol>
+<div class=3D"table-wrap">
+ <table class=3D"relative-table wrapped confluenceTable" style=3D"width: 58=
+.0044%;">
+  <colgroup>
+   <col style=3D"width: 16.8754%;">
+   <col style=3D"width: 83.1404%;">
+  </colgroup>
+  <tbody>
+   <tr>
+    <th scope=3D"col" class=3D"confluenceTh">Tr=C6=B0=E1=BB=9Dng</th>
+    <th scope=3D"col" class=3D"confluenceTh">M=C3=B4 t=E1=BA=A3</th>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">T=C3=AAn ch=E1=BB=A9c n=C4=83ng</td>
+    <td class=3D"confluenceTd">Qu=E1=BA=A3n l=C3=BD s=E1=BA=A3n ph=E1=BA=A9=
+m ch=C3=A0o b=C3=A1n</td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">M=C3=B4 t=E1=BA=A3</td>
+    <td class=3D"confluenceTd">
+     <ul style=3D"list-style-type: square;">
+      <li data-uuid=3D"d5d7e8cb-09cc-4344-8606-5eef90b2ac67">Ch=E1=BB=A9c n=
+=C4=83ng cho ph=C3=A9p ng=C6=B0=E1=BB=9Di d=C3=B9ng (Maker, checker) t=E1=
+=BA=A1o m=E1=BB=9Bi, ch=E1=BB=89nh s=E1=BB=ADa, qu=E1=BA=A3n l=C3=BD v=C3=
+=A0 ph=C3=AA duy=E1=BB=87t c=C3=A1c s=E1=BA=A3n ph=E1=BA=A9m tr=C3=A1i phi=
+=E1=BA=BFu ch=C3=A0o b=C3=A1n</li>
+      <li data-uuid=3D"86035f9f-69ca-42b3-b798-68e859cbf6ad">Ng=C6=B0=E1=BB=
+=9Di d=C3=B9ng c=C3=B3 th=E1=BB=83 g=C3=A1n c=C3=A1c ch=C3=ADnh s=C3=A1ch =
+=C4=91=C3=A3 duy=E1=BB=87t nh=C6=B0 : sinh l=E1=BB=9Di, thanh l=C3=BD, gia =
+h=E1=BA=A1n v=C3=A0 ch=C3=ADnh s=C3=A1ch hoa h=E1=BB=93ng s=E1=BA=A3n ph=E1=
+=BA=A9m</li>
+     </ul></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">M=E1=BB=A5c ti=C3=AAu</td>
+    <td class=3D"confluenceTd">
+     <ul style=3D"list-style-type: square;">
+      <li data-uuid=3D"5b958d6c-21c3-4525-9386-33588dac28de">=C4=90=E1=BA=
+=A3m b=E1=BA=A3o vi=E1=BB=87c <strong>ch=C3=A0o b=C3=A1n s=E1=BA=A3n ph=E1=
+=BA=A9m tr=C3=A1i phi=E1=BA=BFu</strong> =C4=91=C6=B0=E1=BB=A3c qu=E1=BA=A3=
+n l=C3=BD t=E1=BA=ADp trung, th=E1=BB=91ng nh=E1=BA=A5t.</li>
+      <li data-uuid=3D"0f6e920c-f983-48b8-9743-96faf3b811c3">Ki=E1=BB=83m s=
+o=C3=A1t ch=C3=ADnh x=C3=A1c&nbsp;<strong>ch=C3=ADnh s=C3=A1ch =C3=A1p d=E1=
+=BB=A5ng</strong> cho t=E1=BB=ABng s=E1=BA=A3n ph=E1=BA=A9m, lo=E1=BA=A1i k=
+h=C3=A1ch h=C3=A0ng, v=C3=A0 k=C3=AAnh ph=C3=A2n ph=E1=BB=91i.</li>
+     </ul></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">Ng=C6=B0=E1=BB=9Di s=E1=BB=AD d=E1=BB=A5ng</=
+td>
+    <td class=3D"confluenceTd">Maker, checker, viewer</td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">Input</td>
+    <td class=3D"confluenceTd"><br></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">Output</td>
+    <td class=3D"confluenceTd"><br></td>
+   </tr>
+  </tbody>
+ </table>
+</div>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<p><strong>3. M=C3=B4 t=E1=BA=A3 chi ti=E1=BA=BFt m=C3=A0n h=C3=ACnh</stron=
+g></p>
+<p><strong>3.1 M=C3=A0n h=C3=ACnh danh s=C3=A1ch ch=C3=A0o b=C3=A1n</strong=
+></p>
+<div class=3D"table-wrap">
+ <table class=3D"relative-table wrapped confluenceTable" style=3D"width: 61=
+.6228%;">
+  <colgroup>
+   <col style=3D"width: 8.74899%;">
+   <col style=3D"width: 15.891%;">
+   <col style=3D"width: 15.5339%;">
+   <col style=3D"width: 59.71%;">
+  </colgroup>
+  <tbody>
+   <tr>
+    <th scope=3D"col" class=3D"confluenceTh"><br></th>
+    <th scope=3D"col" class=3D"confluenceTh">Tr=C6=B0=E1=BB=9Dng</th>
+    <th scope=3D"col" class=3D"confluenceTh">=C4=90=E1=BB=8Bnh d=E1=BA=A1ng=
+</th>
+    <th scope=3D"col" class=3D"confluenceTh">M=C3=B4 t=E1=BA=A3</th>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"highlight-#fffae6 confluenceTd" colspan=3D"3" data-highlig=
+ht-colour=3D"#fffae6"><strong>B=E1=BB=99 l=E1=BB=8Dc d=E1=BB=AF li=E1=BB=87=
+u t=C3=ACm ki=E1=BA=BFm</strong></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">M=C3=A3 s=E1=BA=A3n ph=E1=BA=A9m ch=C3=A0o b=
+=C3=A1n</td>
+    <td class=3D"confluenceTd">Text</td>
+    <td class=3D"confluenceTd">T=C3=ACm ki=E1=BA=BFm theo m=C3=A3 =C4=91=E1=
+=BB=8Bnh danh duy nh=E1=BA=A5t c=E1=BB=A7a s=E1=BA=A3n ph=E1=BA=A9m</td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">T=C3=AAn s=E1=BA=A3n ph=E1=BA=A9m</td>
+    <td class=3D"confluenceTd">Text</td>
+    <td class=3D"confluenceTd">T=C3=ACm theo t=C3=AAn s=E1=BA=A3n ph=E1=BA=
+=A9m</td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">M=C3=A3 tr=C3=A1i phi=E1=BA=BFu</td>
+    <td class=3D"confluenceTd">Text</td>
+    <td class=3D"confluenceTd">L=E1=BB=8Dc theo m=C3=A3 tr=C3=A1i phi=E1=BA=
+=BFu g=E1=BB=91c.</td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">Lo=E1=BA=A1i s=E1=BA=A3n ph=E1=BA=A9m</td>
+    <td class=3D"confluenceTd">Dropdown</td>
+    <td class=3D"confluenceTd">All / Fix / Flex / OR</td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">Tr=E1=BA=A1ng th=C3=A1i&nbsp;</td>
+    <td class=3D"confluenceTd">Dropdown</td>
+    <td class=3D"confluenceTd">=C4=90=C3=A3 duy=E1=BB=87t / Ch=C6=B0a duy=
+=E1=BB=87t / T=E1=BB=AB ch=E1=BB=91i</td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">Ho=E1=BA=A1t =C4=91=E1=BB=99ng</td>
+    <td class=3D"confluenceTd">Datepicker</td>
+    <td class=3D"confluenceTd">Ho=E1=BA=A1t =C4=91=E1=BB=99ng / Kh=C3=B4ng =
+ho=E1=BA=A1t =C4=91=E1=BB=99ng</td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">Ng=C3=A0y hi=E1=BB=87u l=E1=BB=B1c</td>
+    <td class=3D"confluenceTd">Datepicker</td>
+    <td class=3D"confluenceTd">
+     <p>Ch=E1=BB=8Dn kho=E1=BA=A3ng th=E1=BB=9Di gian</p>
+     <p>=C4=90=E1=BB=8Bnh d=E1=BA=A1ng dd/mm/yyyy</p></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">T=C3=ACm ki=E1=BA=BFm</td>
+    <td class=3D"confluenceTd">Button</td>
+    <td class=3D"confluenceTd">G=E1=BB=8Di API filter theo =C4=91i=E1=BB=81=
+u ki=E1=BB=87n =C4=91=C3=A3 ch=E1=BB=8Dn</td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">=C4=90=E1=BA=B7t l=E1=BA=A1i</td>
+    <td class=3D"confluenceTd">Button</td>
+    <td class=3D"confluenceTd">Reset l=E1=BA=A1i c=C3=A1c =C4=91i=E1=BB=81u=
+ ki=E1=BB=87n =C4=91=C3=A3 ch=E1=BB=8Dn</td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"highlight-#fffae6 confluenceTd" colspan=3D"3" data-highlig=
+ht-colour=3D"#fffae6"><strong>Danh s=C3=A1ch s=E1=BA=A3n ph=E1=BA=A9m ch=C3=
+=A0o b=C3=A1n</strong></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">STT</td>
+    <td class=3D"confluenceTd">Text</td>
+    <td class=3D"confluenceTd">Ch=E1=BA=A1y theo th=E1=BB=A9 t=E1=BB=B1 t=
+=E1=BB=AB 1 =E2=86=92 n</td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">M=C3=A3 s=E1=BA=A3n ph=E1=BA=A9m ch=C3=A0o b=
+=C3=A1n</td>
+    <td class=3D"confluenceTd">Text</td>
+    <td class=3D"confluenceTd">M=C3=A3 =C4=91=E1=BB=8Bnh danh duy nh=E1=BA=
+=A5t c=E1=BB=A7a s=E1=BA=A3n ph=E1=BA=A9m</td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">T=C3=AAn s=E1=BA=A3n ph=E1=BA=A9m</td>
+    <td class=3D"confluenceTd">Text</td>
+    <td class=3D"confluenceTd">T=C3=AAn s=E1=BA=A3n ph=E1=BA=A9m ch=C3=A0o =
+b=C3=A1n</td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">M=C3=A3 tr=C3=A1i phi=E1=BA=BFu</td>
+    <td class=3D"confluenceTd">Text</td>
+    <td class=3D"confluenceTd">M=C3=A3 s=E1=BA=A3n ph=E1=BA=A9m tr=C3=A1i p=
+hi=E1=BA=BFu</td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">Lo=E1=BA=A1i s=E1=BA=A3n ph=E1=BA=A9m</td>
+    <td class=3D"confluenceTd">Text</td>
+    <td class=3D"confluenceTd">FIX / FLEX / OUTRIGHT</td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">K=C3=AAnh b=C3=A1n</td>
+    <td class=3D"confluenceTd">Text</td>
+    <td class=3D"confluenceTd">ALL / ONLINE / K=C3=AAnh back</td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">=C4=90=E1=BA=A1i l=C3=BD b=C3=A1n</td>
+    <td class=3D"confluenceTd">Text</td>
+    <td class=3D"confluenceTd">=C4=90=E1=BA=A1i l=C3=BD ph=C3=A2n ph=E1=BB=
+=91i c=E1=BB=A7a s=E1=BA=A3n ph=E1=BA=A9m</td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">Ng=C3=A0y hi=E1=BB=87u l=E1=BB=B1c t=E1=BB=
+=AB</td>
+    <td class=3D"confluenceTd">Text</td>
+    <td class=3D"confluenceTd">Ng=C3=A0y b=E1=BA=AFt =C4=91=E1=BA=A7u hi=E1=
+=BB=87u l=E1=BB=B1c c=E1=BB=A7a s=E1=BA=A3n ph=E1=BA=A9m</td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">Ng=C3=A0y hi=E1=BB=87u l=E1=BB=B1c =C4=91=E1=
+=BA=BFn</td>
+    <td class=3D"confluenceTd">Text</td>
+    <td class=3D"confluenceTd">Ng=C3=A0y k=E1=BA=BFt th=C3=BAc hi=E1=BB=87u=
+ l=E1=BB=B1c c=E1=BB=A7a s=E1=BA=A3n ph=E1=BA=A9m&nbsp;</td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">Tr=E1=BA=A1ng th=C3=A1i</td>
+    <td class=3D"confluenceTd">Text</td>
+    <td class=3D"confluenceTd">=C4=90=C3=A3 duy=E1=BB=87t / ch=C6=B0a duy=
+=E1=BB=87t / T=E1=BB=AB ch=E1=BB=91i</td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">Ho=E1=BA=A1t =C4=91=E1=BB=99ng</td>
+    <td class=3D"confluenceTd">Text</td>
+    <td class=3D"confluenceTd">Ho=E1=BA=A1t =C4=91=E1=BB=99ng / kh=C3=B4ng =
+ho=E1=BA=A1t =C4=91=E1=BB=99ng</td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">Thao t=C3=A1c</td>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">Xem chi ti=E1=BA=BFt / ch=E1=BB=89nh s=E1=BB=
+=ADa / g=C3=A1n ch=C3=ADnh s=C3=A1ch / D=E1=BB=ABng ho=E1=BA=A1t =C4=91=E1=
+=BB=99ng</td>
+   </tr>
+  </tbody>
+ </table>
+</div>
+<p><br></p>
+<p><strong>3.2 M=C3=A0n h=C3=ACnh th=C3=AAm m=E1=BB=9Bi s=E1=BA=A3n ph=E1=
+=BA=A9m</strong></p>
+<p><strong>a) M=C3=A0n h=C3=ACnh th=C3=AAm m=E1=BB=9Bi ch=C3=ADnh s=C3=A1ch=
+ b=E1=BB=95 sung</strong></p>
+<div class=3D"table-wrap">
+ <table class=3D"wrapped relative-table confluenceTable" style=3D"width: 88=
+.498%;">
+  <colgroup>
+   <col style=3D"width: 8.20688%;">
+   <col style=3D"width: 27.3826%;">
+   <col style=3D"width: 12.0736%;">
+   <col style=3D"width: 10.4164%;">
+   <col style=3D"width: 35.8285%;">
+   <col style=3D"width: 6.07625%;">
+  </colgroup>
+  <tbody>
+   <tr>
+    <th scope=3D"col" class=3D"confluenceTh">STT</th>
+    <th scope=3D"col" class=3D"confluenceTh">Tr=C6=B0=E1=BB=9Dng</th>
+    <th scope=3D"col" class=3D"confluenceTh">=C4=90=E1=BB=8Bnh d=E1=BA=A1ng=
+</th>
+    <th scope=3D"col" class=3D"confluenceTh">B=E1=BA=AFt bu=E1=BB=99c</th>
+    <th scope=3D"col" class=3D"confluenceTh">M=C3=B4 t=E1=BA=A3</th>
+    <th scope=3D"col" class=3D"confluenceTh"><br></th>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"highlight-#fffae6 confluenceTd" colspan=3D"5" data-highlig=
+ht-colour=3D"#fffae6"><strong title=3D"">Th=C3=B4ng tin chung v=E1=BB=81 s=
+=E1=BA=A3n ph=E1=BA=A9m</strong></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">1</td>
+    <td class=3D"confluenceTd">M=C3=A3 SP ch=C3=A0o b=C3=A1n</td>
+    <td class=3D"confluenceTd">Texbox</td>
+    <td class=3D"confluenceTd">Y</td>
+    <td class=3D"confluenceTd">M=C3=A3 =C4=91=E1=BB=8Bnh danh duy nh=E1=BA=
+=A5t c=E1=BB=A7a s=E1=BA=A3n ph=E1=BA=A9m</td>
+    <td class=3D"confluenceTd"><br></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">2</td>
+    <td class=3D"confluenceTd">T=C3=AAn s=E1=BA=A3n ph=E1=BA=A9m</td>
+    <td class=3D"confluenceTd">Textbox</td>
+    <td class=3D"confluenceTd">Y</td>
+    <td class=3D"confluenceTd">T=C3=AAn hi=E1=BB=83n th=E1=BB=8B s=E1=BA=A3=
+n ph=E1=BA=A9m</td>
+    <td class=3D"confluenceTd"><br></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">3</td>
+    <td class=3D"confluenceTd">M=C3=A3 tr=C3=A1i phi=E1=BA=BFu</td>
+    <td class=3D"confluenceTd">Searchbox</td>
+    <td class=3D"confluenceTd">Y</td>
+    <td class=3D"confluenceTd">Ch=E1=BB=8Dn t=E1=BB=AB danh s=C3=A1ch tr=C3=
+=A1i phi=E1=BA=BFu c=C3=B3 hi=E1=BB=87u l=E1=BB=B1c t=E1=BB=AB ph=E1=BA=A7n=
+ khai b=C3=A1o</td>
+    <td class=3D"confluenceTd"><br></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">4</td>
+    <td class=3D"confluenceTd">T=C3=AAn tr=C3=A1i phi=E1=BA=BFu</td>
+    <td class=3D"confluenceTd">Textbox (Readonly)</td>
+    <td class=3D"confluenceTd">Y</td>
+    <td class=3D"confluenceTd">Hi=E1=BB=83n th=E1=BB=8B t=E1=BB=B1 =C4=91=
+=E1=BB=99ng khi ch=E1=BB=8Dn m=C3=A3 TP</td>
+    <td class=3D"confluenceTd"><br></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">5</td>
+    <td class=3D"confluenceTd">Ng=C3=A0y hi=E1=BB=87u l=E1=BB=B1c s=E1=BA=
+=A3n ph=E1=BA=A9m</td>
+    <td class=3D"confluenceTd">Datepicker</td>
+    <td class=3D"confluenceTd">Y</td>
+    <td class=3D"confluenceTd">Ng=C3=A0y b=E1=BA=AFt =C4=91=E1=BA=A7u =C3=
+=A1p d=E1=BB=A5ng thi=E1=BA=BFt l=E1=BA=ADp c=E1=BA=A5u h=C3=ACnh s=E1=BA=
+=A3n ph=E1=BA=A9m</td>
+    <td class=3D"confluenceTd"><br></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">6</td>
+    <td class=3D"confluenceTd">Ng=C3=A0y =C4=91=C3=A1o h=E1=BA=A1n</td>
+    <td class=3D"confluenceTd">Datepicker</td>
+    <td class=3D"confluenceTd">Y</td>
+    <td class=3D"confluenceTd">Ng=C3=A0y k=E1=BA=BFt th=C3=BAc s=E1=BA=A3n =
+ph=E1=BA=A9m ch=C3=A0o b=C3=A1n</td>
+    <td class=3D"confluenceTd"><br></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">7</td>
+    <td class=3D"confluenceTd">K=C3=AAnh b=C3=A1n</td>
+    <td class=3D"confluenceTd">Dropdown</td>
+    <td class=3D"confluenceTd">Y</td>
+    <td class=3D"confluenceTd">L=E1=BB=B1a ch=E1=BB=8Dn c=C3=A1c gi=C3=A1 t=
+r=E1=BB=8B: K=C3=AAnh Online / K=C3=AAnh back / ALL</td>
+    <td class=3D"confluenceTd"><br></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">8</td>
+    <td class=3D"confluenceTd">Lo=E1=BA=A1i s=E1=BA=A3n ph=E1=BA=A9m</td>
+    <td class=3D"confluenceTd">Dropdown</td>
+    <td class=3D"confluenceTd">Y</td>
+    <td class=3D"confluenceTd">
+     <p>L=E1=BB=B1a ch=E1=BB=8Dn c=C3=A1c gi=C3=A1 tr=E1=BB=8B: Fix / Flex =
+/ ALL</p>
+     <ul style=3D"list-style-type: square;">
+      <li data-uuid=3D"c2ad43be-a1fe-4d07-8e66-33b022c32331">L=E1=BB=B1a ch=
+=E1=BB=8Dn lo=E1=BA=A1i s=E1=BA=A3n ph=E1=BA=A9m FIX =E2=86=92 H=E1=BB=87 t=
+h=E1=BB=91ng t=E1=BB=B1 =C4=91=E1=BB=99ng =E1=BA=A9n tag thanh l=C3=BD&nbsp=
+;</li>
+     </ul></td>
+    <td class=3D"confluenceTd"><br></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">9</td>
+    <td class=3D"confluenceTd">Lo=E1=BA=A1i kh=C3=A1ch h=C3=A0ng</td>
+    <td class=3D"confluenceTd">Dropdown</td>
+    <td class=3D"confluenceTd">Y</td>
+    <td class=3D"confluenceTd">L=E1=BB=B1a ch=E1=BB=8Dn c=C3=A1c gi=C3=A1 t=
+r=E1=BB=8B: C=C3=A1 nh=C3=A2n / T=E1=BB=95 ch=E1=BB=A9c / ALL</td>
+    <td class=3D"confluenceTd"><br></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">10</td>
+    <td class=3D"confluenceTd">Ch=E1=BB=A7 kho mua l=E1=BA=A1i</td>
+    <td class=3D"confluenceTd">Dropdown</td>
+    <td class=3D"confluenceTd">Y</td>
+    <td class=3D"confluenceTd">L=E1=BB=B1a ch=E1=BB=8Dn t=C3=AAn ch=E1=BB=
+=A7 kho =C4=91=C3=A3 thi=E1=BA=BFt l=E1=BA=ADp =E1=BB=9F module qu=E1=BA=A3=
+n l=C3=BD kho</td>
+    <td class=3D"confluenceTd"><br></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">11</td>
+    <td class=3D"confluenceTd">Lo=E1=BA=A1i gia h=E1=BA=A1n</td>
+    <td class=3D"confluenceTd">Dropdown</td>
+    <td class=3D"confluenceTd">Y</td>
+    <td class=3D"confluenceTd">
+     <p>L=E1=BB=B1a ch=E1=BB=8Dn c=C3=A1c gi=C3=A1 tr=E1=BB=8B bao g=E1=BB=
+=93m:</p>
+     <ul style=3D"list-style-type: square;">
+      <li data-uuid=3D"a3a30947-4609-4655-87fb-4b1d0b5c738d">Thanh l=C3=BD =
+g=E1=BB=91c v=C3=A0 l=C3=A3i khi =C4=91=E1=BA=BFn h=E1=BA=A1n</li>
+      <li data-uuid=3D"8ecaa38f-03bb-4def-952a-b5fbe1e5d5b6">Gia h=E1=BA=A1=
+n theo k=E1=BB=B3 h=E1=BA=A1n ban =C4=91=E1=BA=A7u</li>
+      <li data-uuid=3D"bf36f13c-b215-4523-b1bd-0ff654b2dd02">Gia h=E1=BA=A1=
+n theo k=E1=BB=B3 h=E1=BA=A1n hi=E1=BB=87n h=E1=BB=AFu</li>
+     </ul></td>
+    <td class=3D"confluenceTd"><br></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">12</td>
+    <td class=3D"confluenceTd">=C4=90=E1=BA=A1i l=C3=BD b=C3=A1n</td>
+    <td class=3D"confluenceTd">Dropdown</td>
+    <td class=3D"confluenceTd">Y</td>
+    <td class=3D"confluenceTd">L=E1=BB=B1a ch=E1=BB=8Dn c=C3=A1c gi=C3=A1 t=
+r=E1=BB=8B: SHS / SHB / ALL</td>
+    <td class=3D"confluenceTd"><br></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">13</td>
+    <td class=3D"confluenceTd">Ghi ch=C3=BA</td>
+    <td class=3D"confluenceTd">Text</td>
+    <td class=3D"confluenceTd">N</td>
+    <td class=3D"confluenceTd">cho ph=C3=A9p nh=E1=BA=ADp m=C3=B4 t=E1=BA=
+=A3&nbsp;</td>
+    <td class=3D"confluenceTd"><br></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"highlight-#fffae6 confluenceTd" colspan=3D"5" data-highlig=
+ht-colour=3D"#fffae6"><strong title=3D"">G=C3=A1n ch=C3=ADnh s=C3=A1ch m=E1=
+=BB=A9c sinh l=E1=BB=9Di</strong></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">14</td>
+    <td class=3D"confluenceTd">M=C3=A3 ch=C3=ADnh s=C3=A1ch sinh l=E1=BB=9D=
+i</td>
+    <td class=3D"confluenceTd">Dropdown</td>
+    <td class=3D"confluenceTd">Y</td>
+    <td class=3D"confluenceTd">
+     <p>Danh s=C3=A1ch l=E1=BA=A5y t=E1=BB=AB module ch=C3=ADnh s=C3=A1ch s=
+inh l=E1=BB=9Di</p>
+     <p>Ch=E1=BB=89 hi=E1=BB=83n th=E1=BB=8B c=C3=A1c ch=C3=ADnh s=C3=A1ch =
+c=C3=B3 tr=E1=BA=A1ng th=C3=A1i "=C4=90=C3=A3 duy=E1=BB=87t" v=C3=A0 c=C3=
+=B2n hi=E1=BB=87u l=E1=BB=B1c</p></td>
+    <td class=3D"confluenceTd"><br></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">15</td>
+    <td class=3D"confluenceTd">T=C3=AAn ch=C3=ADnh s=C3=A1ch sinh l=E1=BB=
+=9Di</td>
+    <td class=3D"confluenceTd">Read - only</td>
+    <td class=3D"confluenceTd">Y</td>
+    <td class=3D"confluenceTd">
+     <p>Hi=E1=BB=83n th=E1=BB=8B t=E1=BB=B1 =C4=91=E1=BB=99ng theo m=C3=A3 =
+ch=C3=ADnh s=C3=A1ch</p></td>
+    <td class=3D"confluenceTd"><br></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">16</td>
+    <td class=3D"confluenceTd">Ng=C3=A0y hi=E1=BB=87u l=E1=BB=B1c ch=C3=ADn=
+h s=C3=A1ch</td>
+    <td class=3D"confluenceTd">Read - only</td>
+    <td class=3D"confluenceTd">Y</td>
+    <td class=3D"confluenceTd">
+     <p>Hi=E1=BB=83n th=E1=BB=8B t=E1=BB=B1 =C4=91=E1=BB=99ng theo m=C3=A3 =
+ch=C3=ADnh s=C3=A1ch</p></td>
+    <td class=3D"confluenceTd"><br></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">17</td>
+    <td class=3D"confluenceTd">H=E1=BA=A1ng KH</td>
+    <td class=3D"confluenceTd">Multi - select</td>
+    <td class=3D"confluenceTd">N</td>
+    <td class=3D"confluenceTd">
+     <ul style=3D"list-style-type: square;">
+      <li data-uuid=3D"e327c22f-cdae-4e61-9006-daf746b6389d">C=C3=B3 th=E1=
+=BB=83 tick l=E1=BB=B1a ch=E1=BB=8Dn nhi=E1=BB=81u h=E1=BA=A1ng kh=C3=A1ch =
+h=C3=A0ng</li>
+      <li data-uuid=3D"b4a09fea-a417-4a02-a5d9-e1eb3b70d54d">L=E1=BB=B1a ch=
+=E1=BB=8Dn bao g=E1=BB=93m c=C3=A1c gi=C3=A1 tr=E1=BB=8B:</li>
+      <li data-uuid=3D"d25edd73-21ae-49cf-87fe-2d96496fa24e">+ Normal</li>
+      <li data-uuid=3D"da084561-6d9b-4120-bf5e-ee3bb61acb46">+ Gold</li>
+      <li data-uuid=3D"bf073e45-2c17-451a-9096-98fec867bb06">+ Diamond</li>
+      <li data-uuid=3D"7feadcd4-c496-45dd-a1cc-cd83068bf22a">+ Platinum</li=
+>
+      <li data-uuid=3D"125b6595-6844-4aed-b2a9-23af044f0fe7">+ Nh=C3=A2n vi=
+=C3=AAn SHS</li>
+      <li data-uuid=3D"aae8511a-7426-4601-ad24-cd6cc6d70a17">Kh=C3=B4ng l=
+=E1=BB=B1a ch=E1=BB=8Dn tick, s=E1=BA=A3n ph=E1=BA=A9m s=E1=BA=BD t=E1=BB=
+=B1 =C4=91=E1=BB=99ng =C3=A1p d=E1=BB=A5ng cho t=E1=BA=A5t c=E1=BA=A3 h=E1=
+=BA=A1ng KH</li>
+      <li data-uuid=3D"b6b7c64c-b391-4d83-a762-b5caf96c489b">Ch=E1=BB=89 ac=
+tive khi l=E1=BB=B1a ch=E1=BB=8Dn gi=C3=A1 tr=E1=BB=8B lo=E1=BA=A1i KH c=C3=
+=A1 nh=C3=A2n</li>
+     </ul></td>
+    <td class=3D"confluenceTd"><br></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">18</td>
+    <td class=3D"confluenceTd">Nh=C3=B3m KH</td>
+    <td class=3D"confluenceTd">Multi - select</td>
+    <td class=3D"confluenceTd">N</td>
+    <td class=3D"confluenceTd">
+     <ul style=3D"list-style-type: square;">
+      <li data-uuid=3D"1950e7ce-a5d5-48d7-a203-3789cbb418f7">C=C3=B3 th=E1=
+=BB=83 tick l=E1=BB=B1a ch=E1=BB=8Dn nhi=E1=BB=81u nh=C3=B3m KH</li>
+      <li data-uuid=3D"09b13727-e82e-45c1-a1b0-0f032870f839">L=E1=BB=B1a ch=
+=E1=BB=8Dn bao g=E1=BB=93m c=C3=A1c gi=C3=A1 tr=E1=BB=8B:</li>
+      <li data-uuid=3D"f191cf18-bd4d-4053-9f49-2976b7f00242">+ SHB</li>
+      <li data-uuid=3D"487f01a9-14b6-40a1-a40f-743e1f6ecd2d">+ VIP01</li>
+      <li data-uuid=3D"0649e0b0-e59f-44e8-b3b8-376ecea58643">+ VIP02</li>
+      <li data-uuid=3D"364e2258-be8e-44e5-88b1-cbc41b577f4e">+ Fialda</li>
+      <li data-uuid=3D"82fd0900-2686-4110-a787-8d1ab3bad97e">Kh=C3=B4ng l=
+=E1=BB=B1a ch=E1=BB=8Dn tick, s=E1=BA=A3n ph=E1=BA=A9m s=E1=BA=BD t=E1=BB=
+=B1 =C4=91=E1=BB=99ng =C3=A1p d=E1=BB=A5ng cho t=E1=BA=A5t c=E1=BA=A3 nh=C3=
+=B3m KH</li>
+     </ul></td>
+    <td class=3D"confluenceTd"><br></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"highlight-#fffae6 confluenceTd" colspan=3D"5" data-highlig=
+ht-colour=3D"#fffae6"><strong>G=C3=A1n ch=C3=ADnh s=C3=A1ch m=E1=BB=A9c tha=
+nh l=C3=BD</strong></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">19</td>
+    <td class=3D"confluenceTd">M=C3=A3 ch=C3=ADnh s=C3=A1ch thanh l=C3=BD&n=
+bsp;</td>
+    <td class=3D"confluenceTd">Dropdown</td>
+    <td class=3D"confluenceTd">Y</td>
+    <td class=3D"confluenceTd">
+     <p>Danh s=C3=A1ch l=E1=BA=A5y t=E1=BB=AB module ch=C3=ADnh s=C3=A1ch t=
+hanh l=C3=BD</p>
+     <p>Ch=E1=BB=89 hi=E1=BB=83n th=E1=BB=8B c=C3=A1c ch=C3=ADnh s=C3=A1ch =
+c=C3=B3 tr=E1=BA=A1ng th=C3=A1i "=C4=90=C3=A3 duy=E1=BB=87t" v=C3=A0 c=C3=
+=B2n hi=E1=BB=87u l=E1=BB=B1c</p></td>
+    <td class=3D"confluenceTd"><br></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">20</td>
+    <td class=3D"confluenceTd">T=C3=AAn ch=C3=ADnh s=C3=A1ch thanh l=C3=BD<=
+/td>
+    <td class=3D"confluenceTd">Read - only</td>
+    <td class=3D"confluenceTd">Y</td>
+    <td class=3D"confluenceTd">
+     <p>Hi=E1=BB=83n th=E1=BB=8B t=E1=BB=B1 =C4=91=E1=BB=99ng theo m=C3=A3 =
+ch=C3=ADnh s=C3=A1ch</p></td>
+    <td class=3D"confluenceTd"><br></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">21</td>
+    <td class=3D"confluenceTd">Ng=C3=A0y hi=E1=BB=87u l=E1=BB=B1c ch=C3=ADn=
+h s=C3=A1ch thanh l=C3=BD</td>
+    <td class=3D"confluenceTd">Read - only</td>
+    <td class=3D"confluenceTd">Y</td>
+    <td class=3D"confluenceTd">
+     <p>Hi=E1=BB=83n th=E1=BB=8B t=E1=BB=B1 =C4=91=E1=BB=99ng theo m=C3=A3 =
+ch=C3=ADnh s=C3=A1ch</p></td>
+    <td class=3D"confluenceTd"><br></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">22</td>
+    <td class=3D"confluenceTd">H=E1=BA=A1ng KH</td>
+    <td class=3D"confluenceTd">Multi - select</td>
+    <td class=3D"confluenceTd">N</td>
+    <td class=3D"confluenceTd">
+     <ul>
+      <li data-uuid=3D"9c965e27-2c1a-49cf-87d1-2fbb76690a76">C=C3=B3 th=E1=
+=BB=83 tick l=E1=BB=B1a ch=E1=BB=8Dn nhi=E1=BB=81u h=E1=BA=A1ng kh=C3=A1ch =
+h=C3=A0ng</li>
+      <li data-uuid=3D"27fb4def-7b96-4cf3-8d2b-345f2c68ccb0">L=E1=BB=B1a ch=
+=E1=BB=8Dn bao g=E1=BB=93m c=C3=A1c gi=C3=A1 tr=E1=BB=8B:</li>
+      <li data-uuid=3D"2ce3a502-5908-487d-8bd4-b736f8ef09f6">+ Normal</li>
+      <li data-uuid=3D"71826f37-2d11-46d8-9c0d-c774d612d496">+ Gold</li>
+      <li data-uuid=3D"baa12f6b-b436-40ce-8546-3fec8ea8c3ae">+ Diamond</li>
+      <li data-uuid=3D"450ab7e9-5fda-4bbf-8b05-9ff0ab2f4826">+ Platinum</li=
+>
+      <li data-uuid=3D"70b853d8-78ea-45af-ace4-8219666fe657">+ Nh=C3=A2n vi=
+=C3=AAn SHS</li>
+      <li data-uuid=3D"f190b09b-f31b-4acb-b987-1e7cc06e1280">Kh=C3=B4ng l=
+=E1=BB=B1a ch=E1=BB=8Dn tick, s=E1=BA=A3n ph=E1=BA=A9m s=E1=BA=BD t=E1=BB=
+=B1 =C4=91=E1=BB=99ng =C3=A1p d=E1=BB=A5ng cho t=E1=BA=A5t c=E1=BA=A3 h=E1=
+=BA=A1ng KH</li>
+      <li data-uuid=3D"e350cdb5-7a4d-4d0c-a875-525d1b2fea28">Ch=E1=BB=89 ac=
+tive khi l=E1=BB=B1a ch=E1=BB=8Dn gi=C3=A1 tr=E1=BB=8B lo=E1=BA=A1i KH c=C3=
+=A1 nh=C3=A2n</li>
+     </ul></td>
+    <td class=3D"confluenceTd"><br></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">23</td>
+    <td class=3D"confluenceTd">Nh=C3=B3m KH</td>
+    <td class=3D"confluenceTd">Multi - select</td>
+    <td class=3D"confluenceTd">N</td>
+    <td class=3D"confluenceTd">
+     <ul>
+      <li data-uuid=3D"1a9a867b-5cdf-467d-9f3e-3ea59e3e4b9a">C=C3=B3 th=E1=
+=BB=83 tick l=E1=BB=B1a ch=E1=BB=8Dn nhi=E1=BB=81u nh=C3=B3m KH</li>
+      <li data-uuid=3D"8392ba82-d12f-4bea-b680-4ef82bca3b43">L=E1=BB=B1a ch=
+=E1=BB=8Dn bao g=E1=BB=93m c=C3=A1c gi=C3=A1 tr=E1=BB=8B:</li>
+      <li data-uuid=3D"dc6143ad-f783-478b-968d-56b3f4dfb88e">+ SHB</li>
+      <li data-uuid=3D"ca3118b3-6e59-4146-9cd8-aa05fb07abea">+ VIP01</li>
+      <li data-uuid=3D"7a09c0e6-2eb5-4e82-a595-6a50945c2055">+ VIP02</li>
+      <li data-uuid=3D"3f05850e-519e-4bc3-8228-7a4d0ae34da0">+ Fialda</li>
+      <li data-uuid=3D"7ec206bb-ff6a-4471-a026-06b6770be195">Kh=C3=B4ng l=
+=E1=BB=B1a ch=E1=BB=8Dn tick, s=E1=BA=A3n ph=E1=BA=A9m s=E1=BA=BD t=E1=BB=
+=B1 =C4=91=E1=BB=99ng =C3=A1p d=E1=BB=A5ng cho t=E1=BA=A5t c=E1=BA=A3 nh=C3=
+=B3m KH</li>
+     </ul></td>
+    <td class=3D"confluenceTd"><br></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"highlight-#fffae6 confluenceTd" colspan=3D"4" data-highlig=
+ht-colour=3D"#fffae6"><strong title=3D"">G=C3=A1n ch=C3=ADnh s=C3=A1ch m=E1=
+=BB=A9c hoa h=E1=BB=93ng</strong></td>
+    <td class=3D"highlight-#fffae6 confluenceTd" data-highlight-colour=3D"#=
+fffae6"><br></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">24&nbsp;</td>
+    <td class=3D"confluenceTd">M=C3=A3 ch=C3=ADnh s=C3=A1ch hoa h=E1=BB=93n=
+g</td>
+    <td class=3D"confluenceTd">Dropdown</td>
+    <td class=3D"confluenceTd">Y</td>
+    <td class=3D"confluenceTd">
+     <p>Danh s=C3=A1ch l=E1=BA=A5y t=E1=BB=AB module ch=C3=ADnh s=C3=A1ch h=
+oa h=E1=BB=93ng</p>
+     <p>Ch=E1=BB=89 hi=E1=BB=83n th=E1=BB=8B c=C3=A1c ch=C3=ADnh s=C3=A1ch =
+c=C3=B3 tr=E1=BA=A1ng th=C3=A1i "=C4=90=C3=A3 duy=E1=BB=87t" v=C3=A0 c=C3=
+=B2n hi=E1=BB=87u l=E1=BB=B1c</p></td>
+    <td class=3D"confluenceTd"><br></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">25</td>
+    <td class=3D"confluenceTd">T=C3=AAn ch=C3=ADnh s=C3=A1ch hoa h=E1=BB=93=
+ng</td>
+    <td class=3D"confluenceTd">Read - only</td>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">
+     <p>Hi=E1=BB=83n th=E1=BB=8B t=E1=BB=B1 =C4=91=E1=BB=99ng theo m=C3=A3 =
+ch=C3=ADnh s=C3=A1ch</p></td>
+    <td class=3D"confluenceTd"><br></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">26</td>
+    <td class=3D"confluenceTd">Ng=C3=A0y hi=E1=BB=87u l=E1=BB=B1c ch=C3=ADn=
+h s=C3=A1ch</td>
+    <td class=3D"confluenceTd">Read - only</td>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">
+     <p>Hi=E1=BB=83n th=E1=BB=8B t=E1=BB=B1 =C4=91=E1=BB=99ng theo m=C3=A3 =
+ch=C3=ADnh s=C3=A1ch</p></td>
+    <td class=3D"confluenceTd"><br></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">27</td>
+    <td class=3D"confluenceTd">Nh=C3=B3m sale =C3=A1p d=E1=BB=A5ng</td>
+    <td class=3D"confluenceTd">Dropdown</td>
+    <td class=3D"confluenceTd">N</td>
+    <td class=3D"confluenceTd">
+     <ul style=3D"list-style-type: square;">
+      <li data-uuid=3D"8bf02381-f461-492c-9395-9897fed029da">C=C3=B3 th=E1=
+=BB=83 tick l=E1=BB=B1a ch=E1=BB=8Dn nhi=E1=BB=81u nh=C3=B3m MG =C3=A1p d=
+=E1=BB=A5ng</li>
+      <li data-uuid=3D"8df29865-86c0-4c3e-8153-7fa6c6822931">L=E1=BB=B1a ch=
+=E1=BB=8Dn bao g=E1=BB=93m c=C3=A1c gi=C3=A1 tr=E1=BB=8B trong nh=C3=B3m da=
+nh s=C3=A1ch MG</li>
+     </ul></td>
+    <td class=3D"confluenceTd"><br></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">B=E1=BA=A3ng ch=C3=ADnh s=C3=A1ch b=E1=BB=95=
+ sung</td>
+    <td class=3D"confluenceTd">Table</td>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">
+     <p>Bao g=E1=BB=93m c=C3=A1c tr=C6=B0=E1=BB=9Dng th=C3=B4ng tin =C4=91=
+=C3=A3 ch=E1=BB=8Dn =E1=BB=9F b=C3=AAn tr=C3=AAn:</p>
+     <ul>
+      <li data-uuid=3D"2f354234-674d-46d9-a309-85443672f2a0">STT</li>
+      <li data-uuid=3D"2ca172b4-4e45-4d00-a9cd-475945e41042">K=C3=AAnh b=C3=
+=A1n</li>
+      <li data-uuid=3D"6e0754fc-c2cf-44fc-b0e5-7b5307a5b1bb">Ch=E1=BB=A7 kh=
+o (l=E1=BA=A5y t=E1=BB=AB tr=C6=B0=E1=BB=9Dng ch=E1=BB=A7 kho mua l=E1=BA=
+=A1i)</li>
+      <li data-uuid=3D"346ecc08-8cb5-42b1-8783-3af4f49202b0">Lo=E1=BA=A1i s=
+=E1=BA=A3n ph=E1=BA=A9m</li>
+      <li data-uuid=3D"881a3dcf-cca4-4233-8663-3ae257383138">=C4=90=E1=BA=
+=A1i l=C3=BD b=C3=A1n</li>
+      <li data-uuid=3D"869970bb-e5a9-406f-a129-929401e7f70a">Nh=C3=B3m MG</=
+li>
+      <li data-uuid=3D"7d37babb-66c4-46d3-8573-d668a5d7ea3b">Ch=C3=ADnh s=
+=C3=A1ch&nbsp;</li>
+      <li data-uuid=3D"a5dff33f-a07c-4843-9f23-19003adeeada">Thao t=C3=A1c:=
+ Cho ph=C3=A9p x=C3=B3a d=C3=B2ng th=C3=B4ng tin =C4=91=C3=A3 th=C3=AAm</li=
+>
+     </ul></td>
+    <td class=3D"confluenceTd"><br></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"highlight-#fffae6 confluenceTd" data-highlight-colour=3D"#=
+fffae6"><strong title=3D"">G=C3=A1n ch=C3=ADnh s=C3=A1ch ph=C3=AD / thu=E1=
+=BA=BF</strong></td>
+    <td class=3D"highlight-#fffae6 confluenceTd" data-highlight-colour=3D"#=
+fffae6"><br></td>
+    <td class=3D"highlight-#fffae6 confluenceTd" data-highlight-colour=3D"#=
+fffae6"><br></td>
+    <td class=3D"highlight-#fffae6 confluenceTd" data-highlight-colour=3D"#=
+fffae6"><br></td>
+    <td class=3D"highlight-#fffae6 confluenceTd" data-highlight-colour=3D"#=
+fffae6"><br></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">28</td>
+    <td class=3D"confluenceTd">Lo=E1=BA=A1i ph=C3=AD</td>
+    <td class=3D"confluenceTd">Dropdown</td>
+    <td class=3D"confluenceTd">Y</td>
+    <td class=3D"confluenceTd">
+     <ul style=3D"list-style-type: square;">
+      <li data-uuid=3D"75263b8d-7707-44b9-9dac-df7647d816f8">H=E1=BB=87 th=
+=E1=BB=91ng cho ph=C3=A9p l=E1=BB=B1a ch=E1=BB=8Dn gi=C3=A1 tr=E1=BB=8B: L=
+=E1=BB=87nh mua / L=E1=BB=87nh b=C3=A1n</li>
+     </ul></td>
+    <td class=3D"confluenceTd"><br></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">29</td>
+    <td class=3D"confluenceTd">M=C3=A3 ch=C3=ADnh s=C3=A1ch ph=C3=AD /thu=
+=E1=BA=BF</td>
+    <td class=3D"confluenceTd">Button</td>
+    <td class=3D"confluenceTd">Y</td>
+    <td class=3D"confluenceTd">
+     <ul style=3D"list-style-type: square;">
+      <li data-uuid=3D"c8482d88-bfbf-422f-a790-edac11d6517b">Danh s=C3=A1ch=
+ l=E1=BA=A5y t=E1=BB=AB module ch=C3=ADnh s=C3=A1ch ph=C3=AD thu=E1=BA=BF</=
+li>
+      <li data-uuid=3D"2e85d497-9052-4474-9a55-617b82a5fd5d">Ch=E1=BB=89 hi=
+=E1=BB=83n th=E1=BB=8B ch=C3=ADnh s=C3=A1ch =C4=91=C3=A3 duy=E1=BB=87t</li>
+      <li data-uuid=3D"551f0923-ffa0-4df5-992d-da0b2c3e5cc5">Ch=E1=BB=89 hi=
+=E1=BB=83n th=E1=BB=8B ch=C3=ADnh s=C3=A1ch li=C3=AAn quan =C4=91=E1=BA=BFn=
+:&nbsp;</li>
+      <li data-uuid=3D"8556ecf7-b5a6-48b2-93fa-a77d2a729692">+ Chi ti=E1=BA=
+=BFt lo=E1=BA=A1i ph=C3=AD: Ph=C3=AD giao d=E1=BB=8Bch mua / Ph=C3=AD giao =
+d=E1=BB=8Bch b=C3=A1n</li>
+     </ul></td>
+    <td class=3D"confluenceTd"><br></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">30</td>
+    <td class=3D"confluenceTd">T=C3=AAn ch=C3=ADnh s=C3=A1ch ph=C3=AD</td>
+    <td class=3D"confluenceTd">Read - only</td>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">
+     <p>Hi=E1=BB=83n th=E1=BB=8B t=E1=BB=B1 =C4=91=E1=BB=99ng theo m=C3=A3 =
+ch=C3=ADnh s=C3=A1ch</p></td>
+    <td class=3D"confluenceTd"><br></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">31</td>
+    <td class=3D"confluenceTd">Ng=C3=A0y hi=E1=BB=87u l=E1=BB=B1c ch=C3=ADn=
+h s=C3=A1ch</td>
+    <td class=3D"confluenceTd">Read - only</td>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">Hi=E1=BB=83n th=E1=BB=8B t=E1=BB=B1 =C4=91=
+=E1=BB=99ng theo m=C3=A3 ch=C3=ADnh s=C3=A1ch</td>
+    <td class=3D"confluenceTd"><br></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">32</td>
+    <td class=3D"confluenceTd">
+     <p>Th=C3=AAm</p></td>
+    <td class=3D"confluenceTd">Button</td>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">
+     <ul style=3D"list-style-type: square;">
+      <li data-uuid=3D"ccadcc1a-16a1-4380-8b0f-a14ad4d44011">Sau khi l=E1=
+=BB=B1a ch=E1=BB=8Dn t=E1=BA=A5t c=E1=BA=A3 c=C3=A1c tr=C6=B0=E1=BB=9Dng =
+=E1=BB=9F ph=C3=ADa tr=C3=AAn li=C3=AAn quan =C4=91=E1=BA=BFn s=E1=BA=A3n p=
+h=E1=BA=A9m v=C3=A0 ch=C3=ADnh s=C3=A1ch =E2=86=92 H=E1=BB=87 th=E1=BB=91ng=
+ s=E1=BA=BD c=E1=BA=ADp nh=E1=BA=ADp c=C3=A1c tr=C6=B0=E1=BB=9Dng =C4=91=C3=
+=A3 ch=E1=BB=8Dn xu=E1=BB=91ng d=C3=B2ng table =E1=BB=9F b=C3=AAn d=C6=B0=
+=E1=BB=9Bi</li>
+     </ul></td>
+    <td class=3D"confluenceTd"><br></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">33</td>
+    <td class=3D"confluenceTd">B=E1=BA=A3ng ch=C3=ADnh s=C3=A1ch b=E1=BB=95=
+ sung</td>
+    <td class=3D"confluenceTd">Table</td>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">
+     <p>Bao g=E1=BB=93m c=C3=A1c tr=C6=B0=E1=BB=9Dng th=C3=B4ng tin:</p>
+     <ul style=3D"list-style-type: square;">
+      <li data-uuid=3D"7eec1587-80f4-40ac-a1e3-70bb63b1148b">STT</li>
+      <li data-uuid=3D"fd13308d-4b52-4675-b34e-8a1a3fbeb1e1">K=C3=AAnh b=C3=
+=A1n</li>
+      <li data-uuid=3D"45d265fe-bc02-40cb-9808-fb2fa6c37b32">Ch=E1=BB=A7 kh=
+o (l=E1=BA=A5y t=E1=BB=AB tr=C6=B0=E1=BB=9Dng ch=E1=BB=A7 kho mua l=E1=BA=
+=A1i)</li>
+      <li data-uuid=3D"334a3199-db1a-4195-b326-f6299c030bc4">Lo=E1=BA=A1i s=
+=E1=BA=A3n ph=E1=BA=A9m</li>
+      <li data-uuid=3D"536997f9-8dff-40e0-a3ef-e06e04f9d89e">=C4=90=E1=BA=
+=A1i l=C3=BD b=C3=A1n</li>
+      <li data-uuid=3D"06c41e27-a0c8-49f6-9d9a-c7dedcaaf88e">H=E1=BA=A1ng K=
+H</li>
+      <li data-uuid=3D"454873a0-9588-48e5-bbb7-520550628073">Nh=C3=B3m KH</=
+li>
+      <li data-uuid=3D"33000d3c-038e-457c-92ea-0903b169106a">Ch=C3=ADnh s=
+=C3=A1ch&nbsp;</li>
+      <li data-uuid=3D"66a08a63-fc1a-4b5c-9180-46fc0eeaf1b0">Thao t=C3=A1c:=
+ Cho ph=C3=A9p x=C3=B3a d=C3=B2ng th=C3=B4ng tin =C4=91=C3=A3 th=C3=AAm</li=
+>
+     </ul></td>
+    <td class=3D"confluenceTd"><br></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">34</td>
+    <td class=3D"confluenceTd">L=C6=B0u</td>
+    <td class=3D"confluenceTd">Button</td>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">
+     <ul style=3D"list-style-type: square;">
+      <li data-uuid=3D"4315f4a7-8248-4fd6-8242-9f37849b4e8e">L=C6=B0u th=C3=
+=B4ng tin ch=C3=ADnh s=C3=A1ch v=C3=A0 s=E1=BA=A3n ph=E1=BA=A9m ch=C3=A0o b=
+=C3=A1n</li>
+      <li data-uuid=3D"95b1c1d1-0020-40ef-8ec7-20595bb83590">Sau khi ch=E1=
+=BB=8Dn "l=C6=B0u" h=E1=BB=87 th=E1=BB=91ng c=E1=BA=ADp nh=E1=BA=ADp tr=E1=
+=BA=A1ng th=C3=A1i c=E1=BB=A7a b=E1=BA=A3n ghi =E1=BB=9F m=C3=A0n h=C3=ACnh=
+ danh s=C3=A1ch th=C3=A0nh "Ch=E1=BB=9D duy=E1=BB=87t"</li>
+     </ul></td>
+    <td class=3D"confluenceTd"><br></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">35</td>
+    <td class=3D"confluenceTd">=C4=90=C3=B3ng</td>
+    <td class=3D"confluenceTd">Button</td>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">
+     <ul style=3D"list-style-type: square;">
+      <li data-uuid=3D"17c42a1f-cf42-46cc-afed-801bdb8534f1">=C4=90=C3=B3ng=
+ thao t=C3=A1c&nbsp;</li>
+     </ul></td>
+    <td class=3D"confluenceTd"><br></td>
+   </tr>
+  </tbody>
+ </table>
+</div>
+<p><br></p>
+<p><strong>b) M=C3=A0n h=C3=ACnh th=C3=AAm m=E1=BB=9Bi ch=C3=ADnh s=C3=A1ch=
+ m=E1=BA=B7c =C4=91=E1=BB=8Bnh</strong></p>
+<div class=3D"table-wrap">
+ <table class=3D"relative-table wrapped confluenceTable" style=3D"width: 71=
+.6778%;">
+  <colgroup>
+   <col style=3D"width: 6.33313%;">
+   <col style=3D"width: 22.6044%;">
+   <col style=3D"width: 9.74327%;">
+   <col style=3D"width: 9.06124%;">
+   <col style=3D"width: 52.2385%;">
+  </colgroup>
+  <tbody>
+   <tr>
+    <th scope=3D"col" class=3D"confluenceTh">STT</th>
+    <th scope=3D"col" class=3D"confluenceTh">Tr=C6=B0=E1=BB=9Dng</th>
+    <th scope=3D"col" class=3D"confluenceTh">=C4=90=E1=BB=8Bnh d=E1=BA=A1ng=
+</th>
+    <th scope=3D"col" class=3D"confluenceTh">B=E1=BA=AFt bu=E1=BB=99c</th>
+    <th scope=3D"col" class=3D"confluenceTh">M=C3=B4 t=E1=BA=A3</th>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">C=C3=A1c tr=C6=B0=E1=BB=9Dng t=E1=BB=AB 1 =
+=E2=86=92 13 hi=E1=BB=83n th=E1=BB=8B t=C6=B0=C6=A1ng t=E1=BB=B1 m=C3=A0n h=
+=C3=ACnh th=C3=AAm m=E1=BB=9Bi ch=C3=ADnh s=C3=A1ch b=E1=BB=95 sung</td>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd"><br></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">1</td>
+    <td class=3D"confluenceTd">B=E1=BA=A3ng ch=C3=ADnh s=C3=A1ch m=E1=BA=B7=
+c =C4=91=E1=BB=8Bnh</td>
+    <td class=3D"confluenceTd">Table</td>
+    <td class=3D"confluenceTd">
+     <p>Y</p></td>
+    <td class=3D"confluenceTd">
+     <p>Bao g=E1=BB=93m c=C3=A1c tr=C6=B0=E1=BB=9Dng th=C3=B4ng tin:</p>
+     <ul>
+      <li data-uuid=3D"0781eaeb-2244-43de-b419-cf92f94f2d54">STT</li>
+      <li data-uuid=3D"d125ad03-656f-430e-939d-431ac83224c8">K=C3=AAnh b=C3=
+=A1n: ALL</li>
+      <li data-uuid=3D"16ed1158-1575-4b18-8331-360b3ea8f6c1">Ch=E1=BB=A7 kh=
+o (l=E1=BA=A5y t=E1=BB=AB tr=C6=B0=E1=BB=9Dng ch=E1=BB=A7 kho mua l=E1=BA=
+=A1i): STK kho c=E1=BB=A7a SHS</li>
+      <li data-uuid=3D"11d2ca69-6be1-40a4-8d59-60f7edf75876">Lo=E1=BA=A1i s=
+=E1=BA=A3n ph=E1=BA=A9m: ALL</li>
+      <li data-uuid=3D"96ac6a26-5385-420d-bf11-0e38f3caeeab">=C4=90=E1=BA=
+=A1i l=C3=BD b=C3=A1n: SHS</li>
+      <li data-uuid=3D"5d011eaa-4d81-48c8-b653-ede3a99465b0">H=E1=BA=A1ng K=
+H: ALL</li>
+      <li data-uuid=3D"51ec2011-443e-49ea-8982-ceeca152bafb">Nh=C3=B3m KH: =
+ALL</li>
+      <li data-uuid=3D"3a596d8a-1950-4833-8906-3fdba9b5bc1a">Ch=C3=ADnh s=
+=C3=A1ch: Cho ph=C3=A9p ch=E1=BB=8Dn c=C3=A1c ch=C3=ADnh s=C3=A1ch =C4=91=
+=C3=A3 t=E1=BA=A1o =E1=BB=9F ph=E1=BA=A7n c=C3=A0i =C4=91=E1=BA=B7t ch=C3=
+=ADnh s=C3=A1ch (Sinh l=E1=BB=9Di, thanh l=C3=BD , hoa h=E1=BB=93ng, ph=C3=
+=AD &amp; thu=E1=BA=BF),ch=E1=BB=89 hi=E1=BB=83n th=E1=BB=8B c=C3=A1c ch=C3=
+=ADnh s=C3=A1ch "=C4=91=C3=A3 duy=E1=BB=87t"</li>
+      <li data-uuid=3D"553e0817-b690-40a1-9018-efae20c0406c">Thao t=C3=A1c =
+x=C3=B3a: X=C3=B3a d=C3=B2ng ch=C3=ADnh s=C3=A1ch m=E1=BA=B7c =C4=91=E1=BB=
+=8Bnh =C4=91=C3=A3 th=C3=AAm</li>
+      <li data-uuid=3D"3ff84429-af27-4895-8c8d-7d52774922e6">Thao t=C3=A1c =
+l=C6=B0u: L=C6=B0u ch=C3=ADnh s=C3=A1ch =C4=91=C3=A3 g=C3=A1n v=E1=BB=9Bi d=
+=C3=B2ng th=C3=B4ng tin m=E1=BA=B7c =C4=91=E1=BB=8Bnh trong b=E1=BA=A3ng</l=
+i>
+     </ul></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">2</td>
+    <td class=3D"confluenceTd">L=C6=B0u</td>
+    <td class=3D"confluenceTd">Button</td>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">
+     <ul>
+      <li data-uuid=3D"695ffe3f-1b38-4752-827d-c876b5ec4fa9">L=C6=B0u th=C3=
+=B4ng tin ch=C3=ADnh s=C3=A1ch v=C3=A0 s=E1=BA=A3n ph=E1=BA=A9m ch=C3=A0o b=
+=C3=A1n</li>
+      <li data-uuid=3D"357ea81d-0ee3-4e41-9ecc-082a426cb0c9">Sau khi ch=E1=
+=BB=8Dn "l=C6=B0u" h=E1=BB=87 th=E1=BB=91ng c=E1=BA=ADp nh=E1=BA=ADp tr=E1=
+=BA=A1ng th=C3=A1i c=E1=BB=A7a b=E1=BA=A3n ghi =E1=BB=9F m=C3=A0n h=C3=ACnh=
+ danh s=C3=A1ch th=C3=A0nh "Ch=E1=BB=9D duy=E1=BB=87t"</li>
+     </ul></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">3</td>
+    <td class=3D"confluenceTd">=C4=90=C3=B3ng</td>
+    <td class=3D"confluenceTd">Button</td>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">
+     <ul>
+      <li data-uuid=3D"02a30070-8d78-4a18-a3ad-e46164778920">=C4=90=C3=B3ng=
+ thao t=C3=A1c&nbsp;</li>
+     </ul></td>
+   </tr>
+  </tbody>
+ </table>
+</div>
+<p><br></p>
+<p><strong>c) RULE nghi=E1=BB=87p v=E1=BB=A5:</strong></p>
+<div class=3D"table-wrap">
+ <table class=3D"relative-table wrapped confluenceTable" style=3D"width: 61=
+.7672%;">
+  <colgroup>
+   <col style=3D"width: 43.8897%;">
+   <col style=3D"width: 56.0877%;">
+  </colgroup>
+  <tbody>
+   <tr>
+    <th scope=3D"col" class=3D"confluenceTh">Rule</th>
+    <th scope=3D"col" class=3D"confluenceTh">M=C3=B4 t=E1=BA=A3</th>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">M=E1=BB=97i lo=E1=BA=A1i ch=C3=ADnh s=C3=A1c=
+h (sinh l=E1=BB=9Di, thanh l=C3=BD, hoa h=E1=BB=93ng) ph=E1=BA=A3i c=C3=B3 =
+=C3=ADt nh=E1=BA=A5t 1 ch=C3=ADnh s=C3=A1ch m=E1=BA=B7c =C4=91=E1=BB=8Bnh</=
+td>
+    <td class=3D"confluenceTd">Kh=C3=B4ng cho l=C6=B0u n=E1=BA=BFu thi=E1=
+=BA=BFu</td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">Ch=C3=ADnh s=C3=A1ch b=E1=BB=95 sung kh=C3=
+=B4ng =C4=91=C6=B0=E1=BB=A3c tr=C3=B9ng t=E1=BB=95 h=E1=BB=A3p (K=C3=AAnh +=
+ lo=E1=BA=A1i KH + H=E1=BA=A1ng KH + Nh=C3=B3m KH)</td>
+    <td class=3D"confluenceTd">Ki=E1=BB=83m tra khi th=C3=AAm, n=E1=BA=BFu =
+tr=C3=B9ng t=E1=BB=95 h=E1=BB=A3p b=C3=A1o l=E1=BB=97i inline " ch=C3=ADnh =
+s=C3=A1ch =C4=91=C3=A3 g=C3=A1n v=E1=BB=9Bi k=C3=AAnh / lo=E1=BA=A1i / h=E1=
+=BA=A1ng / nh=C3=B3m KH, vui l=C3=B2ng nh=E1=BA=ADp l=E1=BA=A1i"</td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">N=E1=BA=BFu kh=C3=A1ch h=C3=A0ng thu=E1=BB=
+=99c ph=E1=BA=A1m vi c=E1=BB=A7a ch=C3=ADnh s=C3=A1ch b=E1=BB=95 sung =E2=
+=86=92 B=E1=BB=8F qua ch=C3=ADnh s=C3=A1ch m=E1=BA=B7c =C4=91=E1=BB=8Bnh</t=
+d>
+    <td class=3D"confluenceTd">=C3=81p d=E1=BB=A5ng khi t=C3=ADnh l=C3=A3i =
+/ ph=C3=AD</td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">Khi ch=C3=ADnh s=C3=A1ch b=E1=BB=95 sung h=
+=E1=BA=BFt hi=E1=BB=87u l=E1=BB=B1c =E2=86=92 H=E1=BB=87 th=E1=BB=91ng t=E1=
+=BB=B1 fallback v=E1=BB=81 ch=C3=ADnh s=C3=A1ch m=E1=BA=B7c =C4=91=E1=BB=8B=
+nh</td>
+    <td class=3D"confluenceTd"><br></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">
+     <p>N=E1=BA=BFu ch=C3=ADnh s=C3=A1ch m=E1=BA=B7c =C4=91=E1=BB=8Bnh h=E1=
+=BA=BFt hi=E1=BB=87u l=E1=BB=B1c =E2=86=92 c=E1=BA=A3nh b=C3=A1o v=C3=A0 y=
+=C3=AAu c=E1=BA=A7u c=E1=BA=ADp nh=E1=BA=ADt</p></td>
+    <td class=3D"confluenceTd">Hi=E1=BB=83n th=E1=BB=8B c=E1=BA=A3nh b=C3=
+=A1o =C4=91=E1=BB=8F</td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">
+     <p>H=E1=BB=87 th=E1=BB=91ng ki=E1=BB=83m tra theo th=E1=BB=A9 t=E1=BB=
+=B1 =C6=B0u ti=C3=AAn: Ch=C3=ADnh s=C3=A1ch b=E1=BB=95 sung =E2=86=92 Ch=C3=
+=ADnh s=C3=A1ch m=E1=BA=B7c =C4=91=E1=BB=8Bnh</p></td>
+    <td class=3D"confluenceTd"><br></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">
+     <p>Ch=C3=ADnh s=C3=A1ch b=E1=BB=95 sung kh=C3=B4ng b=E1=BA=AFt bu=E1=
+=BB=99c, c=C3=B3 th=E1=BB=83 tr=E1=BB=91ng</p></td>
+    <td class=3D"confluenceTd"><br></td>
+   </tr>
+  </tbody>
+ </table>
+</div>
+<p><br></p>
+<p><strong>3.2 M=C3=A0n h=C3=ACnh ch=E1=BB=89nh s=E1=BB=ADa s=E1=BA=A3n ph=
+=E1=BA=A9m ch=C3=A0o b=C3=A1n</strong></p>
+<p><br></p>
+<div class=3D"table-wrap">
+ <table class=3D"relative-table wrapped confluenceTable" style=3D"width: 72=
+.0268%;">
+  <colgroup>
+   <col style=3D"width: 6.30341%;">
+   <col style=3D"width: 23.856%;">
+   <col style=3D"width: 4.7518%;">
+   <col style=3D"width: 13.6736%;">
+   <col style=3D"width: 51.3971%;">
+  </colgroup>
+  <tbody>
+   <tr>
+    <th scope=3D"col" class=3D"confluenceTh">STT</th>
+    <th scope=3D"col" class=3D"confluenceTh">Tr=C6=B0=E1=BB=9Dng</th>
+    <th scope=3D"col" class=3D"confluenceTh">=C4=90=E1=BB=8Bnh d=E1=BA=A1ng=
+</th>
+    <th scope=3D"col" class=3D"confluenceTh">Cho ph=C3=A9p s=E1=BB=ADa</th>
+    <th scope=3D"col" class=3D"confluenceTh">M=C3=B4 t=E1=BA=A3</th>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">
+     <p>t=E1=BB=AB 1 =E2=86=92 14 hi=E1=BB=83n th=E1=BB=8B gi=E1=BB=91ng m=
+=C3=A0n h=C3=ACnh th=C3=AAm m=E1=BB=9Bi&nbsp;</p>
+     <p>Hi=E1=BB=83n th=E1=BB=8B c=C3=A1c tr=C6=B0=E1=BB=9Dng d=C6=B0=E1=BB=
+=9Bi d=E1=BA=A1ng readonly</p></td>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">Kh=C3=B4ng =C4=91=C6=B0=E1=BB=A3c ph=C3=A9p =
+ch=E1=BB=89nh s=E1=BB=ADa</td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">Ghi ch=C3=BA</td>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">Cho ph=C3=A9p nh=E1=BA=ADp m=C3=B4 t=E1=BA=
+=A3 m=E1=BB=9Bi&nbsp;</td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"highlight-#fffae6 confluenceTd" colspan=3D"4" data-highlig=
+ht-colour=3D"#fffae6"><strong title=3D"">G=C3=A1n ch=C3=ADnh s=C3=A1ch sinh=
+ l=E1=BB=9Di, thanh l=C3=BD , hoa h=E1=BB=93ng</strong></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">M=C3=A3 ch=C3=ADnh s=C3=A1ch m=E1=BA=B7c =C4=
+=91=E1=BB=8Bnh</td>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">Khi SP =C4=91ang ho=E1=BA=A1t =C4=91=E1=BB=
+=99ng</td>
+    <td class=3D"confluenceTd">
+     <ul style=3D"list-style-type: square;">
+      <li data-uuid=3D"58d4287b-66d0-4892-8a54-f307252ff07e">Cho ph=C3=A9p =
+th=C3=AAm m=E1=BB=9Bi ch=C3=ADnh s=C3=A1ch, khi s=E1=BA=A3n ph=E1=BA=A9m ch=
+o gia h=E1=BA=A1n theo ch=C3=ADnh s=C3=A1ch hi=E1=BB=87n h=E1=BB=AFu =E2=86=
+=92 KH m=E1=BB=9Bi s=E1=BA=BD =C4=91=C6=B0=E1=BB=A3c =C3=A1p d=E1=BB=A5ng t=
+heo ch=C3=ADnh s=C3=A1ch th=C3=AAm m=E1=BB=9Bi =C4=91=C3=A3 t=E1=BA=A1o m=
+=E1=BB=9Bi, KH c=C5=A9 =C3=A1p d=E1=BB=A5ng theo ch=C3=ADnh s=C3=A1ch g=E1=
+=BB=91c ban =C4=91=E1=BA=A7u</li>
+      <li data-uuid=3D"ee15e5ad-0222-415b-a1b7-7b0283ee797f">Kh=C3=B4ng cho=
+ s=E1=BB=ADa tr=E1=BB=B1c ti=E1=BA=BFp =E2=86=92 Clone b=E1=BA=A3n m=E1=BB=
+=9Bi hi=E1=BB=87u l=E1=BB=B1c T+1</li>
+      <li data-uuid=3D"105c5802-fbf1-4139-9cf4-aae853357335">Ch=E1=BB=89 =
+=C4=91=C6=B0=E1=BB=A3c ph=C3=A9p th=C3=AAm m=E1=BB=9Bi khi ngo=C3=A0i gi=E1=
+=BB=9D giao d=E1=BB=8Bch</li>
+     </ul></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">M=C3=A3 ch=C3=ADnh s=C3=A1ch b=E1=BB=95 sung=
+</td>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">Khi SP =C4=91ang ho=E1=BA=A1t =C4=91=E1=BB=
+=99ng</td>
+    <td class=3D"confluenceTd">
+     <ul style=3D"list-style-type: square;">
+      <li data-uuid=3D"593253cf-6296-47d6-917f-4d0b2ab76efd">Cho ph=C3=A9p =
+th=C3=AAm m=E1=BB=9Bi ch=C3=ADnh s=C3=A1ch, khi s=E1=BA=A3n ph=E1=BA=A9m ch=
+o gia h=E1=BA=A1n theo ch=C3=ADnh s=C3=A1ch hi=E1=BB=87n h=E1=BB=AFu =E2=86=
+=92 KH m=E1=BB=9Bi s=E1=BA=BD =C4=91=C6=B0=E1=BB=A3c =C3=A1p d=E1=BB=A5ng t=
+heo ch=C3=ADnh s=C3=A1ch th=C3=AAm m=E1=BB=9Bi =C4=91=C3=A3 t=E1=BA=A1o m=
+=E1=BB=9Bi, KH c=C5=A9 =C3=A1p d=E1=BB=A5ng theo ch=C3=ADnh s=C3=A1ch g=E1=
+=BB=91c ban =C4=91=E1=BA=A7u</li>
+      <li data-uuid=3D"7289f701-3cfd-4993-9c6b-86b315747f2b">Kh=C3=B4ng cho=
+ s=E1=BB=ADa tr=E1=BB=B1c ti=E1=BA=BFp =E2=86=92 Clone b=E1=BA=A3n m=E1=BB=
+=9Bi hi=E1=BB=87u l=E1=BB=B1c T+1</li>
+      <li data-uuid=3D"57ad11d9-5d03-4790-8f2d-32b4b5f95ef9">Ch=E1=BB=89 =
+=C4=91=C6=B0=E1=BB=A3c th=C3=AAm m=E1=BB=9Bi khi ngo=C3=A0i gi=E1=BB=9D gia=
+o d=E1=BB=8Bch</li>
+     </ul></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">C=E1=BA=ADp nh=E1=BA=ADp</td>
+    <td class=3D"confluenceTd">Button</td>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">
+     <ul style=3D"list-style-type: square;">
+      <li data-uuid=3D"30f492cf-8ba9-4c20-aa18-8dd629b963d3">Sau khi click =
+h=E1=BB=87 th=E1=BB=91ng c=E1=BA=ADp nh=E1=BA=ADp b=E1=BA=A3n ghi m=E1=BB=
+=9Bi, chuy=E1=BB=83n tr=E1=BA=A1ng th=C3=A1i t=E1=BB=AB "=C4=90=C3=A3 duy=
+=E1=BB=87t" sang "Ch=E1=BB=9D duy=E1=BB=87t"</li>
+     </ul></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">=C4=90=C3=B3ng</td>
+    <td class=3D"confluenceTd">Button</td>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">
+     <ul style=3D"list-style-type: square;">
+      <li data-uuid=3D"aeb9677f-9c13-4351-9cc1-2876486a6bfc">H=E1=BB=A7y th=
+ao t=C3=A1c ch=E1=BB=89nh s=E1=BB=ADa</li>
+     </ul></td>
+   </tr>
+  </tbody>
+ </table>
+</div>
+<p><br></p>
+<p><strong>3.3 M=C3=A0n h=C3=ACnh view chi ti=E1=BA=BFt s=E1=BA=A3n ph=E1=
+=BA=A9m ch=C3=A0o b=C3=A1n</strong></p>
+<div class=3D"table-wrap">
+ <table class=3D"relative-table wrapped confluenceTable" style=3D"width: 48=
+.4366%;">
+  <colgroup>
+   <col style=3D"width: 9.37524%;">
+   <col style=3D"width: 46.7486%;">
+   <col style=3D"width: 15.7216%;">
+   <col style=3D"width: 27.9815%;">
+  </colgroup>
+  <tbody>
+   <tr>
+    <th scope=3D"col" class=3D"confluenceTh">STT</th>
+    <th scope=3D"col" class=3D"confluenceTh">Tr=C6=B0=E1=BB=9Dng</th>
+    <th scope=3D"col" class=3D"confluenceTh">=C4=90=E1=BB=8Bnh d=E1=BA=A1ng=
+</th>
+    <th scope=3D"col" class=3D"confluenceTh">M=C3=B4 t=E1=BA=A3</th>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">T=E1=BB=AB 1 =E2=86=92 35 hi=E1=BB=83n th=E1=
+=BB=8B t=C6=B0=C6=A1ng t=E1=BB=B1 m=C3=A0n h=C3=ACnh th=C3=AAm m=E1=BB=9Bi =
+s=E1=BA=A3n ph=E1=BA=A9m ch=C3=A0o b=C3=A1n</td>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">Hi=E1=BB=83n th=E1=BB=8B d=C6=B0=E1=BB=9Bi d=
+=E1=BA=A1ng readonly</td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">
+     <p>Ph=C3=AA duy=E1=BB=87t</p></td>
+    <td class=3D"confluenceTd">Button</td>
+    <td class=3D"confluenceTd"><br></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">T=E1=BB=AB ch=E1=BB=91i&nbsp;</td>
+    <td class=3D"confluenceTd">Button</td>
+    <td class=3D"confluenceTd"><br></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">=C4=90=C3=B3ng</td>
+    <td class=3D"confluenceTd">Button</td>
+    <td class=3D"confluenceTd"><br></td>
+   </tr>
+  </tbody>
+ </table>
+</div>
+<p><br></p>
+<p><br></p>
+    </div>
+</body>
+</html>
+------=_Part_6224_361008237.1794533970295--
