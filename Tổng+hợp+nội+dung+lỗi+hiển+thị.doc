@@ -1,0 +1,392 @@
+Date: Sun, 15 Nov 2026 19:47:35 +0700 (ICT)
+Message-ID: <910753384.6523.1794746855198@confluence>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_6522_1571132019.1794746855197"
+
+------=_Part_6522_1571132019.1794746855197
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>T=E1=BB=95ng h=E1=BB=A3p n=E1=BB=99i dung l=E1=BB=97i hi=E1=BB=
+=83n th=E1=BB=8B</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-link-pressed, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>T=E1=BB=95ng h=E1=BB=A3p n=E1=BB=99i dung l=E1=BB=97i hi=E1=BB=83n =
+th=E1=BB=8B</h1>
+    <div class=3D"Section1">
+        <div class=3D"table-wrap">
+ <table class=3D"wrapped relative-table confluenceTable" style=3D"width: 52=
+.5543%;">
+  <colgroup>
+   <col style=3D"width: 6.88857%;">
+   <col style=3D"width: 34.4428%;">
+   <col style=3D"width: 38.9308%;">
+   <col style=3D"width: 19.622%;">
+  </colgroup>
+  <tbody>
+   <tr>
+    <th scope=3D"col" class=3D"confluenceTh">STT</th>
+    <th scope=3D"col" class=3D"confluenceTh">N=E1=BB=99i dung l=E1=BB=97i</=
+th>
+    <th class=3D"confluenceTh">N=E1=BB=99i dung hi=E1=BB=83n th=E1=BB=8B</t=
+h>
+    <th scope=3D"col" class=3D"confluenceTh">Ph=C3=A2n lo=E1=BA=A1i hi=E1=
+=BB=83n th=E1=BB=8B</th>
+   </tr>
+   <tr>
+    <td style=3D"text-align: left;vertical-align: top;" class=3D"confluence=
+Td">1</td>
+    <td style=3D"text-align: left;vertical-align: top;" class=3D"confluence=
+Td">Ngo=C3=A0i th=E1=BB=9Di gian giao d=E1=BB=8Bch</td>
+    <td class=3D"confluenceTd">Ngo=C3=A0i th=E1=BB=9Di gian giao d=E1=BB=8B=
+ch<br>
+      Hi=E1=BB=87n =C4=91ang ngo=C3=A0i th=E1=BB=9Di gian giao d=E1=BB=8Bch=
+ tr=C3=A1i phi=E1=BA=BFu. Th=E1=BB=9Di gian giao d=E1=BB=8Bch: {gi=E1=BB=9D=
+ b=E1=BA=AFt =C4=91=E1=BA=A7u} =E2=80=93 {gi=E1=BB=9D k=E1=BA=BFt th=C3=BAc=
+}, c=C3=A1c ng=C3=A0y l=C3=A0m vi=E1=BB=87c. Vui l=C3=B2ng th=E1=BB=AD l=E1=
+=BA=A1i sau.</td>
+    <td class=3D"confluenceTd">Popup th=C3=B4ng b=C3=A1o l=E1=BB=97i =E2=86=
+=92 CTA '=C4=90=C3=B3ng'</td>
+   </tr>
+   <tr>
+    <td style=3D"text-align: left;vertical-align: top;" class=3D"confluence=
+Td">2</td>
+    <td style=3D"text-align: left;vertical-align: top;" class=3D"confluence=
+Td">KL kh=E1=BA=A3 d=E1=BB=A5ng kho l=E1=BA=BB =3D 0</td>
+    <td class=3D"confluenceTd">Kh=C3=B4ng hi=E1=BB=83n th=E1=BB=8B Popup -d=
+isable button mua c=E1=BB=A7a m=C3=A3 tr=C3=A1i phi=E1=BA=BFu =C4=91=C3=A3 =
+h=E1=BA=BFt kh=E1=BB=91i l=C6=B0=E1=BB=A3ng mua</td>
+    <td class=3D"confluenceTd"><br></td>
+   </tr>
+   <tr>
+    <td style=3D"text-align: left;vertical-align: top;" class=3D"confluence=
+Td">3</td>
+    <td style=3D"text-align: left;vertical-align: top;" class=3D"confluence=
+Td">KH <strong>KH=C3=94NG </strong>c=C3=B3 domain GDTPRL t=E1=BA=A1i VSDC</=
+td>
+    <td class=3D"confluenceTd">
+     <p>Ch=C6=B0a =C4=91=E1=BB=A7 =C4=91i=E1=BB=81u ki=E1=BB=87n giao d=E1=
+=BB=8Bch tr=C3=A1i phi=E1=BA=BFu</p>
+     <p>Qu=C3=BD kh=C3=A1ch ch=C6=B0a =C4=91=E1=BB=A7 =C4=91i=E1=BB=81u ki=
+=E1=BB=87n giao d=E1=BB=8Bch tr=C3=A1i phi=E1=BA=BFu. Vui l=C3=B2ng li=C3=
+=AAn h=E1=BB=87 CSKH: 1900638588 =C4=91=E1=BB=83 bi=E1=BA=BFt th=C3=AAm th=
+=C3=B4ng tin chi ti=E1=BA=BFt.</p></td>
+    <td class=3D"confluenceTd">Popup th=C3=B4ng b=C3=A1o c=E1=BA=A7n =C4=91=
+=C4=83ng k=C3=BD =E2=86=92 CTA 'Li=C3=AAn h=E1=BB=87 CSKH'</td>
+   </tr>
+   <tr>
+    <td style=3D"text-align: left;vertical-align: top;" class=3D"confluence=
+Td">4</td>
+    <td style=3D"text-align: left;vertical-align: top;" class=3D"confluence=
+Td">KH <strong>KH=C3=94NG</strong> ph=E1=BA=A3i N=C4=90TCN</td>
+    <td class=3D"confluenceTd">
+     <p>Ch=C6=B0a =C4=91=E1=BB=A7 =C4=91i=E1=BB=81u ki=E1=BB=87n giao d=E1=
+=BB=8Bch tr=C3=A1i phi=E1=BA=BFu</p>
+     <p>Qu=C3=BD kh=C3=A1ch ch=C6=B0a =C4=91=E1=BB=A7 =C4=91i=E1=BB=81u ki=
+=E1=BB=87n giao d=E1=BB=8Bch tr=C3=A1i phi=E1=BA=BFu. Vui l=C3=B2ng li=C3=
+=AAn h=E1=BB=87 CSKH: 1900638588 =C4=91=E1=BB=83 bi=E1=BA=BFt th=C3=AAm th=
+=C3=B4ng tin chi ti=E1=BA=BFt.</p></td>
+    <td class=3D"confluenceTd">Popup th=C3=B4ng b=C3=A1o c=E1=BA=A7n =C4=91=
+=C4=83ng k=C3=BD =E2=86=92 CTA 'Li=C3=AAn h=E1=BB=87 CSKH'</td>
+   </tr>
+   <tr>
+    <td style=3D"text-align: left;vertical-align: top;" class=3D"confluence=
+Td">5</td>
+    <td style=3D"text-align: left;vertical-align: top;" class=3D"confluence=
+Td">V=C6=B0=E1=BB=A3t qu=C3=A1 kh=E1=BB=91i l=C6=B0=E1=BB=A3ng t=E1=BB=91i =
+=C4=91a (t=E1=BA=A1i m=C3=A0n X=C3=A1c nh=E1=BA=ADn)</td>
+    <td class=3D"confluenceTd">
+     <p>Kh=E1=BB=91i l=C6=B0=E1=BB=A3ng ch=C6=B0a h=E1=BB=A3p l=E1=BB=87</p=
+>
+     <p><span class=3D"inline-comment-marker" data-ref=3D"1eec6682-f77e-489=
+4-9e2d-ef221a6936a0">Kh=E1=BB=91i l=C6=B0=E1=BB=A3ng =C4=91=E1=BA=B7t v=C6=
+=B0=E1=BB=A3t qu=C3=A1 m=E1=BB=A9c t=E1=BB=91i =C4=91a {... tr=C3=A1i phi=
+=E1=BA=BFu}. Kh=E1=BB=91i l=C6=B0=E1=BB=A3ng t=E1=BB=91i =C4=91a m=E1=BB=97=
+i l=E1=BB=87nh l=C3=A0 {KL t=E1=BB=91i =C4=91a} tr=C3=A1i phi=E1=BA=BFu.</s=
+pan></p></td>
+    <td class=3D"confluenceTd">Popup th=C3=B4ng b=C3=A1o l=E1=BB=97i =E2=86=
+=92 CTA '=C4=90=C3=B3ng'</td>
+   </tr>
+   <tr>
+    <td style=3D"text-align: left;vertical-align: top;" class=3D"confluence=
+Td">6</td>
+    <td style=3D"text-align: left;vertical-align: top;" class=3D"confluence=
+Td">Th=E1=BA=A5p h=C6=A1n kh=E1=BB=91i l=C6=B0=E1=BB=A3ng ch=C3=ADnh s=C3=
+=A1ch t=E1=BB=91i thi=E1=BB=83u</td>
+    <td style=3D"text-align: left;vertical-align: top;" class=3D"confluence=
+Td">
+     <p>Kh=E1=BB=91i l=C6=B0=E1=BB=A3ng ch=C6=B0a h=E1=BB=A3p l=E1=BB=87</p=
+>
+     <p>Kh=E1=BB=91i l=C6=B0=E1=BB=A3ng =C4=91=E1=BA=B7t th=E1=BA=A5p h=C6=
+=A1n m=E1=BB=A9c t=E1=BB=91i thi=E1=BB=83u {... tr=C3=A1i phi=E1=BA=BFu}. K=
+h=E1=BB=91i l=C6=B0=E1=BB=A3ng t=E1=BB=91i thi=E1=BB=83u m=E1=BB=97i l=E1=
+=BB=87nh l=C3=A0 {KL t=E1=BB=91i thi=E1=BB=83u} tr=C3=A1i phi=E1=BA=BFu.</p=
+></td>
+    <td style=3D"text-align: left;vertical-align: top;" class=3D"confluence=
+Td">Popup th=C3=B4ng b=C3=A1o l=E1=BB=97i =E2=86=92 CTA '=C4=90=C3=B3ng'</t=
+d>
+   </tr>
+   <tr>
+    <td style=3D"text-align: left;vertical-align: top;" class=3D"confluence=
+Td">7</td>
+    <td style=3D"text-align: left;vertical-align: top;" class=3D"confluence=
+Td">Gi=C3=A1 mua * S=E1=BB=91 l=C6=B0=E1=BB=A3ng input * ([Ph=C3=AD su=E1=
+=BA=A5t] + 1) &gt; S=E1=BB=91 d=C6=B0 ti=E1=BB=81n kh=E1=BA=A3 d=E1=BB=A5ng=
+ c=E1=BB=A7a KH t=E1=BA=A1i sub88</td>
+    <td class=3D"confluenceTd">
+     <p>Giao d=E1=BB=8Bch kh=C3=B4ng th=C3=A0nh c=C3=B4ng</p>
+     <p>S=E1=BB=91 d=C6=B0 kh=E1=BA=A3 d=E1=BB=A5ng trong t=C3=A0i kho=E1=
+=BA=A3n c=E1=BB=A7a Qu=C3=BD kh=C3=A1ch kh=C3=B4ng =C4=91=E1=BB=A7 =C4=91=
+=E1=BB=83 th=E1=BB=B1c hi=E1=BB=87n giao d=E1=BB=8Bch. Vui l=C3=B2ng n=E1=
+=BA=A1p th=C3=AAm ti=E1=BB=81n v=C3=A0 th=E1=BB=AD l=E1=BA=A1i.</p></td>
+    <td class=3D"confluenceTd">Popup th=C3=B4ng b=C3=A1o l=E1=BB=97i =E2=86=
+=92 CTA 'N=E1=BA=A1p ti=E1=BB=81n' ho=E1=BA=B7c '=C4=90=C3=B3ng'</td>
+   </tr>
+   <tr>
+    <td style=3D"text-align: left;vertical-align: top;" class=3D"confluence=
+Td">8</td>
+    <td style=3D"text-align: left;vertical-align: top;" class=3D"confluence=
+Td">V=C6=B0=E1=BB=A3t qu=C3=A1 kh=E1=BB=91i l=C6=B0=E1=BB=A3ng t=E1=BB=91i =
+=C4=91a (t=E1=BA=A1i m=C3=A0n =C4=90=E1=BA=B7t mua TP)</td>
+    <td class=3D"confluenceTd">
+     <p>V=C6=B0=E1=BB=A3t qu=C3=A1 s=E1=BB=91 d=C6=B0 kh=E1=BA=A3 d=E1=BB=
+=A5ng&nbsp;</p></td>
+    <td class=3D"confluenceTd">Inline message</td>
+   </tr>
+   <tr>
+    <td style=3D"text-align: left;vertical-align: top;" class=3D"confluence=
+Td">9</td>
+    <td style=3D"text-align: left;vertical-align: top;" class=3D"confluence=
+Td">Th=E1=BA=A5p h=C6=A1n kh=E1=BB=91i l=C6=B0=E1=BB=A3ng ch=C3=ADnh s=C3=
+=A1ch t=E1=BB=91i thi=E1=BB=83u</td>
+    <td class=3D"confluenceTd">Ch=C6=B0a =C4=91=E1=BB=A7 KL t=E1=BB=91i thi=
+=E1=BB=83u</td>
+    <td class=3D"confluenceTd">Inline message</td>
+   </tr>
+  </tbody>
+ </table>
+</div>
+    </div>
+</body>
+</html>
+------=_Part_6522_1571132019.1794746855197--
