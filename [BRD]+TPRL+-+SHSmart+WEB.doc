@@ -1,0 +1,658 @@
+[BRD] TPRL - SHSmart WEB
+Figma	Giao diện
+
+Mục lục	•	1. Tổng quan 
+o	1.1. Cấu trúc tổng quan
+o	1.2. Truy cập sản phẩm
+•	2. Giao diện chi tiết 
+o	2.1. Danh sách chào bán
+o	2.2. Giao dịch TP repo online 
+	2.2.1. Đặt mua 
+	2.2.1.1. Lưu đồ
+	2.2.1.2. Luồng chi tiết 
+	2.2.1.2.1. KH đặt lệnh
+	2.2.1.2.2. Đơn vị nghiệp vụ thực hiện đặt lệnh trên HNX
+	2.2.2. Xác nhận lệnh 
+	2.2.2.1. Trigger events
+	2.2.2.2. KH xác nhận
+	2.2.3. Tại ngày đáo hạn
+o	2.3. Danh mục nắm giữ 
+	2.3.1. Cụm tài sản tổng quan & Điều hướng
+	2.3.2. Danh mục Trái phiếu 
+	2.3.2.1. Trái phiếu SH Bond
+	2.3.2.2. Trái phiếu linh hoạt
+	2.3.3. Danh mục Hợp đồng 
+	2.3.3.1 Chi tiết Hợp đồng - Tổng quan
+	2.3.3.2 Chi tiết Hợp đồng - Dòng tiền
+	2.3.3.3 Chi tiết Hợp đồng - Xác nhận
+o	2.4. Xác nhận
+o	2.5. Lịch sử giao dịch
+o	2.6. Edge cases 
+	2.6.1. Trường hợp hủy giao dịch sau khi xác nhận thanh toán
+	2.6.2. KH chuyển trượng Trái phiếu trong thời gian hiệu lực của HĐ
+
+Lịch sử tài liệu
+Ngày cập nhật	Nội dung điều chỉnh	Ghi chú
+13 Oct 2026 	Update BRD ver 1.0 Web	
+22 Oct 2026 	Cập nhật Giao diện hiển thị OC cho KH
+Cập nhật Giao diện hiển thị Noti lỗi 
+Cập nhật nội dung các trường hợp Noti	
+1. Tổng quan
+1.1. Cấu trúc tổng quan
+ 
+1.2. Truy cập sản phẩm
+Vị trí	Giao diện
+Homepage
+Tab "Sản phẩm đầu tư"
+Thuộc sub tab "Trái phiếu"	 
+2. Giao diện chi tiết
+2.1. Danh sách chào bán
+Giao diện	Diễn giải
+ 	Cấu phần	Diễn giải
+Button :information: Giới thiệu sản phẩm	Điều hướng giao diện giới thiệu sản phẩm
+Giao diện 
+ 
+Cụm 'Filter'	Giao diện và thông tin chi tiết xem Tại đây.
+
+Cụm tài sản tổng quan	Trạng thái NĐT CN	Nếu	Thì
+TK đang là NĐT CN	Hiển thị status
+TK KHÔNG phải NĐT CN	Hiển thị tooltip hướng dẫn KH v/v phải là NĐT CN để mua TP sBond
+Giao diện 
+ 
+
+Cụm tài sản tổng quan	Trạng thái sub88	Thì
+KH KHÔNG có sub88	Giao diện 
+ 
+	Button "Đăng ký giao dịch" điều hướng luồng đăng ký Nhà đầu tư chuyên nghiệp, sub86 và sub88 
+Sau khi bấm button 'Đăng ký giao dịch' hệ thống kiểm tra các điều kiện theo thứ tự:
+1. Có sub86
+2. Là NĐTCN
+4. Có sub88
+Giao diện 
+Chưa phải NĐTCN:
+ 
+Chưa có sub86:
+ 
+Nếu	Thì
+KH chọn "Liên hệ CSKH"	→ Hiển thị Hotline CSKH để KH gọi
+KH chọn "Đóng"	→ Điều hướng 1. Chi tiết trái phiếu sBond
+Chưa có sub88:
+ 
+Nếu	Thì
+KH chọn "Đăng ký"	→ Điều hướng Danh sách chào bán
+KH chọn "Đóng"	→ Điều hướng 1. Chi tiết trái phiếu sBond
+
+KH đã có sub88	Giao diện 
+ 
+Các thông tin bao gồm:
+Chi tiết thông tin 
+Thông tin	Mô tả	Note
+Số dư khả dụng	Số dư khả dụng còn lại trong tiểu khoản 86 hoặc 88 của KH	
+Tổng mệnh giá trái phiếu	Tổng giá trị thực của tất cả trái phiếu KH đang nắm giữ	Đề xuất tính theo Mệnh giá
+
+	Button "Nộp tiền" điều hướng luồng nộp tiền vào sub88.
+Giao diện 
+TBU
+
+
+Cụm card Trái phiếu chào bán	Các mã TP được hiển thị đầy đủ và theo thứ tự alphabet.
+Các thông tin bao gồm:
+Chi tiết thông tin 
+Thông tin	Mô tả	Ghi chú
+Mã Trái phiếu	Mã định danh duy nhất của đợt phát hành trái phiếu	 
+Tổ chức phát hành	Tên đầy đủ doanh nghiệp phát hành trái phiếu	 
+Lợi suất min - Lợi suất max	Lãi suất HĐ của mã TP	
+Yêu cầu NĐTCN	Mã trái phiếu yêu cầu KH phải là Nhà đầu tư chuyên nghiệp mới có thể giao dịch	
+Đầu tư tối thiểu	Khối lượng tối thiểu NĐT được phép đặt mua	
+Khối lượng khả dụng	Khối lượng TP khả dụng trong kho KH có thể mua	
+Kỳ hạn	Khoảng thời gian đầu tư của khoản trái phiếu	
+Trạng thái Card Trái phiếu chào bán	Thì
+Còn Khối lượng TP khả dụng trong kho	Hiển thị đầy đủ Khối lượng khả dụng
+ 
+Không còn Khối lượng TP khả dụng trong kho	Hiển thị Khối lượng = 0 và vẫn giữ Tab mã Trái phiếu trong danh sách
+ 
+
+	Button ">" điều hướng giao diện "Chi tiết trái phiếu"
+Giao diện 
+ 	Thông tin	Mô tả	Notes
+Mã Trái phiếu	Mã định danh duy nhất của đợt phát hành trái phiếu	
+Tổ chức phát hành	Tên đầy đủ doanh nghiệp phát hành trái phiếu	
+Xếp hạng tín nhiệm TP	Đánh giá khả năng tổ chức phát hành thực hiện đầy đủ và đúng hạn nghĩa vụ trả gốc và lãi của trái phiếu	Trường hợp mã TP không có Xếp hạng tín nhiệm → Ẩn trường Xếp hạng tín nhiệm
+Loại trái phiếu	Phân loại trái phiếu theo hình thức phát hành và giao dịch	2 loại trái phiếu:
+Trái phiếu riêng lẻ
+Trái phiếu niêm yết
+Ngày phát hành	Ngày đợt phát hành trái phiếu bắt đầu có hiệu lực	
+Ngày đáo hạn	Ngày đáo hạn gốc của cả đợt phát hành trái phiếu	
+Lãi suất coupon kỳ hiện tại	Mức lãi suất danh nghĩa áp dụng cho trái phiếu	Cơ chế lãi suất cố định
+
+Khối lượng phát hành	Tổng số lượng trái phiếu mà tổ chức phát hành chào bán ra thị trường	
+Yêu cầu NĐTCN	Mã trái phiếu yêu cầu KH phải là Nhà đầu tư chuyên nghiệp mới có thể giao dịch	
+Mệnh giá	Giá trị danh nghĩa của 1 đơn vị trái phiếu tại thời điểm phát hành	
+Tài sản đảm bảo	Tài sản bảo đảm cho trái phiếu.	Hiển thị chi tiết trong OC
+Bảo lãnh thanh toán 	Bảo lãnh thanh toán cho KH khi tất toán HĐ	Hiển thị chi tiết trong OC
+Hồ sơ trái phiếu	Dẫn sang các tài liệu về trái phiếu liên quan	
+
+•	Button 'Tên tổ chức xếp hạng tín nhiệm' điều hướng sang link Báo cáo chi tiết Xếp hạng tín nhiệm mã TP đó 
+•	Button 'Xem' điều hướng giao diện hiển thị Hồ sơ trái phiếu
+Giao diện 
+ 
+•	Button "Đặt mua" điều hướng Luồng đặt mua Trái phiếu.
+
+
+2.2. Giao dịch TP repo online
+2.2.1. Đặt mua
+2.2.1.1. Lưu đồ
+Chi tiết 
+ 
+2.2.1.2. Luồng chi tiết
+2.2.1.2.1. KH đặt lệnh
+Giao diện	User Action	Acceptance Criteria
+1. Chi tiết trái phiếu sBond
+ 
+
+	1.1. KH chọn "Đặt mua"	SHSmart gọi Backend validate các điều kiện:
+Phân loại hiển thị	Trường hợp lỗi	Giao diện
+Popup thông báo cần đăng ký → CTA 'Liên hệ CSKH'	KH KHÔNG phải NĐTCN	 Hiển thị pop-up thông báo lỗi với nội dung tương ứng. (Chi tiết)
+Giao diện 
+ 
+	KH KHÔNG có domain GDTPRL tại VSD	
+	KH chưa mở sub88	Nếu	Thì
+KH KHÔNG có sub88	Điều hướng luồng đăng ký mở sub88
+→ Hiển thị Pop-up Đăng ký sub88
+Giao diện 
+ 
+Nếu	Thì
+KH chọn "Đăng ký"	Chi tiết điều hướng và Giao diện:
+Chi tiết điều hướng và Giao diện 
+1.	Đăng ký thành công → Điều hướng sang màn Đặt mua trái phiếu
+ 
+2. Đăng ký không thành công → Điều hướng về Danh sách chào bán
+ 
+KH chọn "Đóng"	→ Điều hướng 1. Chi tiết trái phiếu sBond
+
+KH đã có sub88	→ Điều hướng 2. Màn Đặt mua Trái phiếu
+
+Popup thông báo lỗi → CTA 'Đóng'	Ngoài thời gian giao dịch	 Hiển thị pop-up thông báo lỗi với nội dung tương ứng. (Chi tiết)
+Giao diện 
+ 
+	KL khả dụng kho lẻ = 0	1.	Khi KH chọn mã TP từ Danh sách chào bán
+Không hiển thị Popup -disable button 'Đặt mua' của mã trái phiếu đã hết khối lượng mua
+Giao diện 
+ 
+2. Khi KH đang đặt mua TP
+Trong quá trình KH đặt mua mã TP nhưng có người đặt mua trước → Hiển thị Popup tương ứng
+Click here to expand... 
+ 
+	Vượt quá khối lượng tối đa	Trrong quá trình KH đặt mua mã TP nhưng KL khả dụng không còn đủ 
+Hiển thị pop-up thông báo lỗi với nội dung tương ứng. (Chi tiết)
+Giao diện 
+ 
+
+	1.2. KH chọn "Xem"	Điều hướng màn hình view OC của TP
+Giao diện 
+ 
+2. Màn Đặt mua Trái phiếu
+ 	2.1. KH lựa chọn "Mã Trái phiếu" trong drop-list
+(Mã TP được autofill theo trái phiếu đã lựa chọn tại màn "Danh sách chào bán") 
+Hiển thị danh sách mã TP đang có chính sách bán được khai báo Back-end.
+	2.1.1. KH chọn tab Chi tiết trái phiếu	Hiển thị "Chi tiết trái phiếu"
+Giao diện 
+ 
+	2.2. KH lựa chọn "Kỳ hạn" trong drop-list	Hiển thị danh sách kỳ hạn được khai báo trong chính sách tại HT Back-end.
+	2.2.1. KH chọn tab Bảng lợi suất	Hiển thị "Chinh sách lợi suất"
+Giao diện 
+ 
+	2.3. KH nhập "Khối lượng"	Sau khi nhập, hệ thống validate:
+Nếu	Thì
+Vượt quá khối lượng tối đa
+/Min(KL tối đa chính sách, KL max theo sức mua)/	Hiển thị inline message lỗi với nội dung tương ứng. (Chi tiết)
+Giao diện 
+ 
+Thấp hơn khối lượng chính sách tối thiểu	Hiển thị inline message lỗi với nội dung tương ứng. (Chi tiết)
+Giao diện 
+ 
+Else	→ Chuyển Bước 2.4
+
+	2.4. Sau khi nhập/lựa chọn đầy đủ các thông tin:
+•	Mã Trái phiếu
+•	Kỳ hạn
+•	Khối lượng	FE hiển thị:
+•	Lợi suất = Lợi suất khung + Lợi suất ưu đãi
+•	Tổng tiền thanh toán = Tiền gốc + Phí giao dịch + Thuế
+•	Lợi tức dự kiến
+•	Tổng tiền nhận về
+Giao diện 
+ 
+	2.4.1. KH chọn "Dòng tiền dự kiến"
+(Chỉ hiển thị khi KH nhập Khối lượng hợp lệ)	FE hiển thị bottom sheet:
+Giao diện 
+ 	Field	Ghi chú
+Lợi tức dự kiến	
+Lợi suất dự kiến	
+Tổng tiền đầu tư	
+Tổng tiền nhận về	= Tổng trái tức + Giá bán TP
+Dòng tiền	Bao gồm Ngày và Số tiền của các dòng tiền:
+•	Mua Trái phiếu (Giá vốn)
+•	Nhận trái tức
+•	Bán TP
+
+
+	2.5. Nhập "Người giới thiệu"	Default: Kênh bán = SHS
+Lựa chọn Kênh bán	Thì
+SHS	Autofill thông tin TVĐT, bao gồm:
+•	Mã TVĐT
+•	Họ tên tương ứng
+Giao diện 
+ 
+SHB	Hiển thị textbox cho KH nhập mã Người giới thiệu
+ 
+
+	2.6. Chọn "Tiếp tục"	→ Điều hướng 3. Màn Xác nhận thông tin đặt mua
+3. Màn Xác nhận thông tin đặt mua
+ 	3.1. KH bấm chọn 'Xem biểu mẫu'	Sau khi scroll đến cuối, enable tick ""Bằng việc ấn nút 'Xác nhận', quý khách xác nhận đã đọc..." + button 'Xác nhận'
+KH chọn button "Xác nhận" → Tiếp tục bước 3.2.
+Giao diện 
+ 
+Trường hợp KH chưa scroll đến cuối và bấm tick hay bấm button 'Xác nhận'
+ 
+	3.2. KH chọn "Xác nhận"	→ Điều hướng 4. Màn xác nhận OTP
+Giao diện 
+  
+4. Màn xác nhận OTP
+Giao diện OTP mặc định		KH xác nhận OTP theo phương thức OTP đang lựa chọn (Chi tiết :question:)
+Sau khi KH thực hiện xác nhận OTP thành công, FE gọi BE validate:
+Nếu	Thì
+Ngoài thời gian giao dịch	Hiển thị pop-up thông báo lỗi với nội dung tương ứng. (Chi tiết)
+Giao diện 
+ 
+Giá mua * Số lượng input * ([Phí suất] + 1) > Số dư tiền khả dụng của KH tại sub88	Hiển thị pop-up thông báo lỗi với nội dung tương ứng. (Chi tiết)
+Giao diện 
+ 
+KL TP đặt mua > KL khả dụng kho lẻ	Hiển thị pop-up thông báo lỗi với nội dung tương ứng. (Chi tiết)
+Giao diện 
+ 
+KL TP đặt mua < Khối lượng chính sách tối thiểu	Hiển thị pop-up thông báo lỗi với nội dung tương ứng. (Chi tiết)
+Giao diện 
+ 
+Không vi phạm các điều kiện trên	Back-end	•	Backend thực hiện phong tỏa tiền tại sub88 của KH.
+•	S-Bond ghi nhận lệnh ở trạng thái "Pre-matched"
+Front-end	Hiển thị màn hình đặt lệnh thành công.
+Giao diện 
+ 
+	Hợp đồng được ghi nhận tại "Danh mục hợp đồng" với trạng thái "Chờ xử lý"
+Giao diện 
+ 
+
+
+2.2.1.2.2. Đơn vị nghiệp vụ thực hiện đặt lệnh trên HNX
+Trường hợp	Chi tiết xử lý
+KHÔNG khớp lệnh	Back-end	•	Giải tỏa tiền đã phong tỏa tại sub88 của KH
+•	S-Bond ghi nhận lệnh ở trạng thái "Rejected"
+Front-end	HĐ KHÔNG còn hiển thị tại "Danh mục hợp đồng"
+
+Thông báo tới KH	•	Email Thông báo đặt lệnh không thành công
+•	Noti thông báo đặt lệnh không thành công - (Mã Noti: Bond_01 - Chi tiết)
+
+
+Xác nhận thanh toán thành công	Back-end	•	Bút toán kép: Giải tỏa tiền và Cắt tiền tương ứng trên sub88 của KH
+•	Lưu ký TP về sub88 của KH và chuyển TP về sub88
+•	S-Bond ghi nhận lệnh ở trạng thái "Matched"
+Front-end	Hợp đồng được ghi nhận tại "Danh mục hợp đồng" với trạng thái "Hiệu lực"
+Giao diện 
+ 
+Thông báo tới KH	•	Email Thông báo đặt lệnh thành công
+•	Noti thông báo đặt lệnh thành công 
+•	Noti thông báo đặt lệnh thành công - (Mã Noti: Bond_02  - Chi tiết)
+
+
+2.2.2. Xác nhận lệnh
+2.2.2.1. Trigger events
+Trường hợp	Chi tiết xử lý
+[Tại Ngày T+3] BE gửi yêu cầu Xác nhận HĐ Leg 2
+và
+[Tại Ngày E-5] BE gửi yêu cầu Xác nhận Phiếu lệnh đặt bán	Front-end	Hợp đồng được ghi nhận tại "Danh mục hợp đồng" với trạng thái "Hiệu lực", kèm tooltip "Hợp đồng có hồ sơ cần xác nhận"
+Giao diện 
+ 
+	Danh mục hợp đồng hiển thị cụm "Hợp đồng cần xác nhận"
+Giao diện 
+ 
+	Tab Xác nhận hiển thị Hợp đồng cần xác nhận
+Giao diện 
+ 
+Thông báo tới KH	Noti thông báo yêu cầu xác nhận - (Mã Noti: Bond_03 - Chi tiết)
+
+
+2.2.2.2. KH xác nhận
+Giao diện	User Action	Acceptance Criteria
+1. Tab "Xác nhận" tại HĐ ở trạng thái "Hiệu lực", kèm nội dung "Hợp đồng có hồ sơ cần xác nhận"
+ 	1.1. KH view các biểu mẫu	Button 'Xem hợp đồng' diều hướng sang màn xem các Hợp đồng, bao gồm: 
+•	Hợp đồng đặt bán TP
+•	Phiếu lệnh đặt bán TP
+Giao diện 
+ 
+Sau khi scroll đến cuối, enable tick Đã đọc và hiểu nội dung HĐ+ button 'Xác nhận'
+KH chọn button "Xác nhận" → Tiếp tục bước 1.2.
+Mapping Biểu mẫu:
+Title	File/Link
+Hợp đồng đặt bán TP	TBU
+Phiếu lệnh đặt bán TP	TBU
+•	Các trường hợp hiển thị Xác nhận Hợp đồng đặt bán TP HOẶC Phiếu lệnh đặt bán
+Click here to expand... 
+Leg 2	Lệnh đặt bán	Tab Xác nhận	HĐ leg 2
+(Trong tab xác nhận)	Phiếu lệnh bán
+(Trong tab xác nhận)	Mẫu biểu liên quan	Hiển thị tab Xác nhận
+
+Chưa cần xác nhận	Chưa cần xác nhận	:cross: 	n.a	n.a	3	 
+Cần xác nhận	Chưa cần xác nhận	:tick: 	:tick: 	:cross: 	3 :question: 	 
+Đã xác nhận	Chưa cần xác nhận	:cross: 	n.a	n.a	4	 
+Cần xác nhận	Cần xác nhận	:tick: 	:tick: 	:tick: 	3	 
+Đã xác nhận	Cần xác nhận	:tick: 	:cross: 	:tick: 	4	 
+Đã xác nhận	Đã xác nhận	:cross: 	n.a	n.a	5	 
+
+	1.2. KH tick đã đọc và hiểu rõ HĐ	Enable button "Xác nhận"
+Giao diện 
+ 
+	1.3. KH chọn "Xác nhận"	→ Điều hướng 2. Màn xác nhận OTP
+Click here to expand... 
+  
+2. Màn xác nhận OTP
+Giao diện OTP mặc định		KH xác nhận OTP theo phương thức OTP đang lựa chọn (Chi tiết :question:)
+Sau khi KH thực hiện xác nhận OTP thành công, các hệ thống xử lý:
+Back-end	Ghi nhận và cập nhật trạng thái hồ sơ tương ứng.
+Front-end	Hợp đồng được ghi nhận tại "Danh mục hợp đồng" với trạng thái "Hiệu lực", KHÔNG còn hiển thị kèm nội dung "Hợp đồng có hồ sơ cần xác nhận"
+Giao diện 
+ 
+Thông báo tới KH	Noti thông báo Xác nhận thành công (Mã Noti: Bond_04 - Chi tiết)
+
+
+2.2.3. Tại ngày đáo hạn
+Trường hợp	Chi tiết xử lý
+Tại COT ngày E:
+•	Bộ biểu mẫu HĐ KHÔNG đầy đủ; hoặc
+•	Số dư hiện tại của HĐ KHÔNG đủ thực hiện bán lại	Back-end	HT thực hiện off HĐ và chuyển số dư TP còn lại của HĐ thành Outright.
+Front-end	Hợp đồng được ghi nhận tại "Danh mục hợp đồng" với trạng thái "Hết hiệu lực"
+Giao diện 
+ 
+Thông báo tới KH	•	Noti thông báo giao dịch mua lại không thành công (Mã Noti: Bond_05 - Chi tiết)
+•	Email thông báo giao dịch mua lại không thành công
+
+Tại COT ngày E:
+•	Bộ biểu mẫu HĐ đầy đủ; và
+•	Số dư hiện tại của HĐ đủ thực hiện bán lại	Nghiệp vụ	Nghiệp vụ thực hiện thanh lý các HĐ hợp lệ, phân quyền make - check.
+Back-end	Thực hiện chuyển giao TP từ KH về SHS và ghi tăng tiền khả dụng cho KH trên sub88.
+Front-end	Hợp đồng được ghi nhận tại "Danh mục hợp đồng" với trạng thái "Hoàn thành"
+Giao diện 
+ 
+Thông báo tới KH	•	Noti thông báo hoàn thành giao dịch (Mã Noti: Bond 06 - Chi tiết)
+•	Email thông báo hoàn thành giao dịch
+
+2.3. Danh mục nắm giữ
+2.3.1. Cụm tài sản tổng quan & Điều hướng
+Giao diện	Diễn giải
+ 	Cấu phần 	Diễn giải
+Trạng thái NĐT CN	Nếu	Thì
+TK đang là NĐT CN	Hiển thị status
+TK KHÔNG phải NĐT CN	Hiển thị tooltip hướng dẫn KH v/v phải là NĐT CN để mua TP sBond
+Giao diện 
+ 
+
+Cụm tài sản tổng quan	Các thông tin bao gồm:
+Chi tiết thông tin 
+Thông tin	Mô tả	Note
+Số dư TK	Số dư khả dụng còn lại trong tiểu khoản 86 hoặc 88 của KH	
+Tổng mệnh giá trái phiếu	Tổng giá trị thực của trái phiếu 	Đề xuất tính theo Mệnh giá
+
+	Button "Nộp tiền" điều hướng sang màn Nạp, chuyển, rút của sub88
+Điều hướng Danh mục Trái phiếu / Danh mục Hợp đồng	Nếu	Thì
+Chọn "Danh mục Trái phiếu"	Điều hướng về màn "Trái phiếu sBond"
+
+Chọn "Danh mục Hợp đồng"	Điều hướng về màn "Danh mục Hợp đồng"
+
+
+Điều hướng sBond / Trái phiếu linh hoạt	Nếu	Thì
+Chọn "sBond"	Điều hướng về màn "Trái phiếu sBond"
+
+Chọn "Trái phiếu linh hoạt"	Điều hướng về màn "Trái phiếu linh hoạt"
+
+
+
+2.3.2. Danh mục Trái phiếu
+2.3.2.1. Trái phiếu SH Bond
+Giao diện	Diễn giải
+ 	Cấu phần 	Diễn giải
+Cụm "Filter"	Giao diện và thông tin chi tiết xem Tại đây.
+
+Các dòng Trái phiếu sBond	Các thông tin bao gồm:
+Chi tiết thông tin 
+Tên hiển thị	Mô tả	Ghi chú
+Mã trái phiếu	Số lượng hợp đồng đang được gộp chung trong card	Cộng dồn từ tất cả hợp đồng của mã TP đó trong danh mục 
+Số lượng HĐ	Số lượng HĐ khách hàng nắm giữ của Trái phiếu	
+Tổ chức phát hành	Tên đầy đủ doanh nghiệp phát hành trái phiếu 	
+Tổng mệnh giá	Tổng giá trị mệnh giá của số lượng trái phiếu đang nắm giữ = Số lượng TP × Mệnh giá của mã trái phiếu đó (mệnh giá niêm yết ban đầu, không biến động theo thị giá hay giá giao dịch).	
+Tổng tiền đầu tư                     	Tổng "Tổng tiền đầu tư" của tất cả card mã TP đang hiển thị trong tab.	
+Tổng tiền thực nhận	Tổng "Tổng tiền nhận về" (gốc đầu tư + lãi dự kiến theo kỳ hạn) chưa tính thuế của tất cả hợp đồng cùng Mã TP trong card này.	
+Số lượng TP	Tổng khối lượng trái phiếu của mã TP KH đang nắm giữ	
+
+	Button ">" điều hướng sang tab Danh mục hợp đồng (tự động filter các HĐ đang thuộc mã TP đó) 
+Giao diện 
+ 
+	Button 'Chi tiết' điều hướng sang màn 'Chi tiết trái phiếu'
+Giao diện + Chi tiết thông tin 
+Giao diện 
+ 	Tển hiển thị	Mô tả	Ghi chú
+Mã trái phiếu	Lặp lại mã TP đã chọn từ Danh sách chào bán	Cùng field với "Mã TP" ở Danh sách chào bán.
+Tổ chức phát hành	Tên đầy đủ doanh nghiệp phát hành trái phiếu (VD: "CTCP Năng lượng Bắc Hà").	Cùng field với "Tổ chức phát hành" trong Bộ lọc ở Danh sách chào bán.
+Xếp hạng tín nhiệm TP 	Đánh giá khả năng tổ chức phát hành thực hiện đầy đủ và đúng hạn nghĩa vụ trả gốc và lãi của trái phiếu	Trường hợp mã TP không có Xếp hạng tín nhiệm → Ẩn trường Xếp hạng tín nhiệm
+Loại trái phiếu	Phân loại trái phiếu theo hình thức phát hành và giao dịch	Bao gồm 2 loại:
+	TP niêm yết
+	TP riêng lẻ
+Ngày phát hành	Ngày đợt phát hành trái phiếu bắt đầu có hiệu lực. Kiểu dữ liệu: ngày, định dạng dd/mm/yyyy.	
+Ngày đáo hạn	Ngày đáo hạn gốc của cả đợt phát hành trái phiếu	
+Lãi suất coupon kỳ hiện tại	Hiển thị lãi suất coupon của kỳ đang hiệu lực 	Cơ chế lãi suất cố định
+Khối lượng phát hành	Tổng số lượng trái phiếu mà tổ chức phát hành quyết định chào bán ra thị trường trong một đợt phát hành	
+Mệnh giá	Giá trị danh nghĩa của 1 đơn vị trái phiếu tại thời điểm phát hành.	
+Tài sản đảm bảo	Tài sản bảo đảm cho trái phiếu.	Chi tiết trong tài liệu OC
+Bảo lãnh thanh toán	Bảo lãnh thanh toán mã TP khi tất toán HĐ	Chi tiết trong tài liệu OC
+Hồ sơ trái phiếu	Dẫn sang các tài liệu về trái phiếu liên quan	Button 'Xem' điều hướng sang màn hiển thị Hồ sơ trái phiếu liên quan
+
+•	Button 'Xem' điều hướng giao diện hiển thị Hồ sơ trái phiếu
+Giao diện 
+ 
+Button 'Xem danh mục hợp đồng' điều hướng sang tab Danh mục hợp đồng (tự động filter các HĐ đang thuộc mã TP đó) 
+
+2.3.2.2. Trái phiếu linh hoạt
+Lưu ý: Hiển thị TẤT CẢ TRÁI PHIẾU được lưu ký trong TKCK của KH ở tất cả các sub (trừ sub86).
+Giao diện	Diễn giải
+ 	Cấu phần 	Diễn giải
+Cụm "Filter"	Giao diện và thông tin chi tiết xem Tại đây.
+
+Các dòng Trái phiếu linh hoạt	Các thông tin bao gồm:
+Chi tiết thông tin 
+Tên hiển thị	Mô tả	Ghi chú
+Mã trái phiếu	Số lượng hợp đồng đang được gộp chung trong card	Cộng dồn từ tất cả hợp đồng của mã TP đó trong danh mục 
+Tổ chức phát hành	Tên đầy đủ doanh nghiệp phát hành trái phiếu 	
+Số lượng TP	Tổng khối lượng trái phiếu của mã TP KH đang nắm giữ	
+Tổng mệnh giá	Tổng giá trị mệnh giá của số lượng trái phiếu đang nắm giữ = Số lượng TP × Mệnh giá/đơn vị của mã trái phiếu đó (mệnh giá niêm yết ban đầu, không biến động theo thị giá hay giá giao dịch).	
+
+	Button "Chi tiết" điều hướng sang bottom sheet Chi tiết trái phiếu
+Giao diện 
+ 	Tển hiển thị	Mô tả	Ghi chú
+Mã trái phiếu	Lặp lại mã TP đã chọn từ Danh sách chào bán	Cùng field với "Mã TP" ở Danh sách chào bán.
+Tổ chức phát hành	Tên đầy đủ doanh nghiệp phát hành trái phiếu 	
+Xếp hạng tín nhiệm TP	Đánh giá khả năng tổ chức phát hành thực hiện đầy đủ và đúng hạn nghĩa vụ trả gốc và lãi của trái phiếu	Trường hợp mã TP không có Xếp hạng tín nhiệm → Ẩn trường Xếp hạng tín nhiệm
+Ngày phát hành	Ngày đợt phát hành trái phiếu bắt đầu có hiệu lực. Kiểu dữ liệu: ngày, định dạng dd/mm/yyyy.	
+Ngày đáo hạn	Ngày đáo hạn gốc của cả đợt phát hành trái phiếu	
+Lãi suất coupon kỳ hiện tại	Hiển thị lãi suất coupon của kỳ đang hiệu lực 	Cơ chế lãi suất cố định
+Khối lượng phát hành	Tổng số lượng trái phiếu mà tổ chức phát hành quyết định chào bán ra thị trường trong một đợt phát hành	
+Yêu cầu NĐTCN	Mã TP yêu cầu nhà đầu tư chuyên nghiệp mới có thể giao dịch	
+Mệnh giá	Giá trị danh nghĩa của 1 đơn vị trái phiếu tại thời điểm phát hành.	
+Tài sản đảm bảo	Tài sản bảo đảm cho trái phiếu.	Chi tiết trong tài liệu OC
+Bảo lãnh thanh toán	Bảo lãnh thanh toán mã TP khi tất toán HĐ	Chi tiết trong tài liệu OC
+Hồ sơ trái phiếu	Dẫn sang các tài liệu về trái phiếu liên quan	
+
+Button 'Xem' điều hướng sang các tài liệu về TP liên quan
+TBU
+Tab 'Dòng tiền dự kiến' điều hướng sang tab hiển thị Dòng tiền của các mã TP Linh hoạt
+Click here to expand... 
+ 
+
+
+2.3.3. Danh mục Hợp đồng
+Giao diện	Diễn giải
+ 	Cấu phần	Diễn giải
+Box 'Hợp đồng cần xác nhận'	Box 'Hợp đồng cần xác nhận' chỉ hiển thị khi có ít nhất 1 HĐ cần xác nhận.
+Button "Kiểm tra" điều hướng tab "Xác nhận"
+
+Cụm các thông tin được filtered	TBU
+Nếu KH truy cập từ màn Danh mục Trái phiếu để đến được Danh mục HĐ, hiển thị thêm filter riêng cho mã TP và chỉ hiển thị HĐ thuộc mã TP đó 
+ 
+Cụm card Danh mục Hợp đồng	Danh mục Hợp đồng sắp xếp theo thứ tự Ngày tạo HĐ mới nhất → cũ nhất.
+Các thông tin bao gồm:
+Chi tiết thông tin 
+Tên hiển thị	Mô tả	Ghi chú
+Mã hợp đồng	Mã định danh duy nhất của từng hợp đồng	
+Thời gian đầu tư	Số tháng kỳ hạn của riêng hợp đồng này (NĐT đã chọn khi đặt mua).	
+Nhãn trạng thái hợp đồng (status-chip)	Hiển thị trạng thái hiện tại của HĐ	Các trạng thái hiển thị:
+•	Chờ xử lý
+•	Hiệu lực
+•	Chờ xác nhận
+•	Hết hiệu lực
+•	Hoàn thiện
+Lợi suất	Lãi suất HĐ của mã TP	
+Tổ chức phát hành	Tên đầy đủ doanh nghiệp phát hành trái phiếu 	
+Ngày đáo hạn	Ngày đáo hạn tính theo kỳ hạn NĐT đã chọn khi đặt mua,	
+Tổng tiền đầu tư	Số tiền gốc đã đầu tư vào hợp đồng này.	
+Lợi tức dự kiến	Số tiền lãi (tiền coupon/lợi tức) mà KH ước tính sẽ nhận được nếu giữ trái phiếu đến kỳ trả lãi hoặc đến ngày đáo hạn	
+
+	Khi bấm vào card Hợp đồng sẽ dẫn đến màn Chi tiết hợp đồng - Tổng quan (default)
+Tab	Điều hướng
+Tổng quan	Tab "Chi tiết hợp đồng - Tổng quan"
+
+Dòng tiền dự kiến	Tab "Chi tiết hợp đồng - Dòng tiền dự kiến"
+
+Xác nhận	Tab "Chi tiết hợp đồng - Xác nhận"
+
+
+
+2.3.3.1 Chi tiết Hợp đồng - Tổng quan
+Giao diện	Diễn giải
+ 	Các thông tin bao gồm:
+Chi tiết thông tin 
+Tên hiển thị	Mô tả	Ghi chú
+Số hợp đồng	Lặp lại Mã hợp đồng của hợp đồng đang xem	
+Mẫu biểu liên quan	Các loại tài liệu HĐ, PL liên quan của mã TP đó	
+Ngày mua	Ngày xác lập hợp đồng.	
+Ngày đáo hạn	Ngày đáo hạn của riêng hợp đồng này	
+Tổng tiền đầu tư	Số tiền gốc đã đầu tư vào hợp đồng này.	
+Lợi suất	Lãi suất HĐ của mã TP	
+Số lượng trái phiếu	Khối lượng trái phiếu trong hợp đồng.	
+Số lượng khả dụng	Khối lượng trái phiếu còn khả dụng để thực hiện giao dịch	
+Phí giao dịch	Khoản phí KH phải trả khi mua hoặc bán trái phiếu	
+Lãi đầu tư dự kiến	Số tiền lãi (tiền coupon/lợi tức) mà KH ước tính sẽ nhận được nếu giữ trái phiếu đến kỳ trả lãi hoặc đến ngày đáo hạn	
+Tổng tiền nhận về	Tổng "Tổng tiền nhận về" (gốc đầu tư + lãi dự kiến theo kỳ hạn) chưa tính thuế của hợp đồng Mã TP trong card này	
+Button 'Xem' điều hướng KH sang xem các tài liệu, mẫu biểu liên quan
+Click here to expand... 
+Trường hợp KH đăng ký mua luồng Online:
+ 
+Trường hợp KH đăng ký mua luồng Offline:
+ 
+
+2.3.3.2 Chi tiết Hợp đồng - Dòng tiền
+Giao diện	Diễn giải
+ 	Các thông tin bao gồm:
+Chi tiết thông tin 
+Tên hiển thị	Mô tả	Ghi chú
+Tổng tiền đầu tư	Tổng số tiền KH đã thanh toán để mua một khối lượng trái phiếu tại mức giá xác định	
+Lợi suất	Lãi suất HĐ của mã TP	
+Lãi đầu tư dự kiến	Số tiền lãi (tiền coupon/lợi tức) mà KH ước tính sẽ nhận được nếu giữ trái phiếu đến kỳ trả lãi hoặc đến ngày đáo hạn	
+Tổng tiền nhận về	Tổng "Tổng tiền nhận về" (gốc đầu tư + lãi dự kiến theo kỳ hạn) chưa tính thuế của hợp đồng Mã TP trong card này	
+Ngày nhận	Ngày thực hiện giao dịch	
+Lệnh	Loại lệnh giao dịch về biến động số dư	
+Dự kiến	Số tiền dự kiến nhận được từ các giao dịch trái trức	
+
+2.3.3.3 Chi tiết Hợp đồng - Xác nhận
+Giao diện	Diễn giải
+ 	Cấu phần	Diễn giải
+Cụm thông tin	Các thông tin bao gồm:
+Chi tiết thông tin 
+Tên hiển thị	Mô tả	Ghi chú
+Mã trái phiếu	Mã trái phiếu KH đã đặt mua	
+Số hợp đồng	Mã HĐ do hệ thống sinh tự động ngay khi KH Đặt mua trái phiếu thành công	
+Hợp đồng đặt bán Trái phiếu	Hợp đồng xác nhận giao dịch bán trái phiếu, phát sinh khi KH đặt lệnh bán (Repo đến hạn Tât toán Leg2 hoặc bán Outright) 	
+Phiếu lệnh đặt bán Trái phiếu	Phiếu ghi nhận chi tiết lệnh bán trái phiếu (mã TP, khối lượng, giá/giá trị bán,...)	Đi kèm HĐ đặt bán TP, dùng làm căn cứ đối chiếu khi xác nhận giao dịch bán
+Button 'Xác nhận' điều hướng KH xác nhận HĐ và phiếu lệnh đặt sau đó hiển thị Xác nhận thành công
+Giao diện 
+ 
+Cụm Biểu mẫu cần xác nhận và Button "Xác nhận"	Nếu	Cụm Biểu mẫu cần xác nhận	Button Xác nhận
+KH chưa xác nhận HĐ Leg 2	Hiển thị tab "Hợp đồng đặt bán TP"
+Giao diện view Hợp đồng 
+TBU 	Enable
+KH chưa xác nhận Phiếu lệnh đặt bán TP	Hiển thị tab "Phiếu lệnh đặt bán TP"
+Giao diện view Hợp đồng 
+TBU 	Enable
+HĐ không ở trạng thái "Chờ xác nhận"	Không hiển thị tab "Xác nhận"
+Giao diện 
+ 
+
+	Button "Xác nhận" → Xử lý theo luồng "Xác nhận lệnh" 
+
+
+2.4. Xác nhận
+Giao diện	Diễn giải
+ cvc	Cấu phần	Diễn giải
+Bộ đếm	Hiển thị số lượng HĐ cần xác nhận
+Cụm card Hợp đồng cần xác nhận	Các thông tin bao gồm:
+Chi tiết thông tin 
+Tên hiển thị	Mô tả	Ghi chú
+Mã trái phiếu	Mã trái phiếu KH đã đặt mua	
+Số hợp đồng	Mã HĐ do hệ thống sinh tự động ngay khi KH Đặt mua trái phiếu thành công	
+Thời gian đầu tư	Kỳ hạn đầu tư tính theo tháng	
+Nhãn loại xác nhận	Phân loại hành động KH cần xác nhận cho khoản trái phiếu này	
+Ngày đáo hạn	Ngày kỳ hạn đầu tư kết thúc, khoản gốc + lãi đến hạn tất toán 	
+Lợi suất	Lãi suất HĐ của mã TP	
+Tổng tiền đầu tư	Số tiền gốc KH đã bỏ ra để thực hiện mua trái phiếu	
+
+	Chọn button 'Xác nhận' của dòng mã HĐ cần xác nhận điều hướng sang màn "Chi tiết hợp đồng - Xác nhận" của HĐ tương ứng
+
+2.5. Lịch sử giao dịch
+Giao diện	Diễn giải
+ 	Cấu phần	Diễn giải
+Cụm các card Lịch sử giao dịch	Các card Giao dịch chỉ hiển thị, không có action tương tác
+Các thông tin bao gồm:
+Chi tiết thông tin 
+Tên hiển thị	Mô tả	Ghi chú
+Thời gian giao dịch	Thời gian và Ngày giao dịch được ghi nhận/khớp trên hệ thống	
+Nội dung Biến động số dư	Nội dung giao dịch từ Bút toán của sub86 và sub88	
+Biến động	Số tiền biến động khi phát sinh giao dịch	
+
+
+2.6. Edge cases
+2.6.1. Trường hợp hủy giao dịch sau khi xác nhận thanh toán
+Điều kiện	Chi tiết xử lý
+Trường hợp Đơn vị nghiệp vụ đẩy điện Hủy giao dịch TPRL cho VSD (trong ngày) sau khi đã đẩy điện Xác nhận thanh toán.	Back-end	•	HT ghi tăng tiền tại sub88 cho KH (revert tiền)
+•	S-Bond cập nhật trạng thái HĐ
+Front-end	HĐ KHÔNG còn hiển thị tại "Danh mục hợp đồng"
+
+Thông báo tới KH	•	Noti thông báo giao dịch đã bị hủy (Mã Noti: Bond_07  - Chi tiết)
+•	Email thông báo giao dịch giao dịch đã bị hủy
+
+2.6.2. KH chuyển trượng Trái phiếu trong thời gian hiệu lực của HĐ
+Điều kiện	Chi tiết xử lý
+KH thực hiện chuyển nhượng TP tại quầy	"Khối lượng khả dụng" tại màn Chi tiết Hợp đồng - Tổng quan tăng / giảm tương ứng.
+Quy tắc ghi nhận:
+•	Ghi nhận TĂNG ưu tiên theo HĐ đáo hạn gần nhất - xa nhất. Nếu cùng ngày đáo hạn, ưu tiên HĐ có thể hoàn thiện có KL thiếu cao nhất.
+•	Ghi nhận GIẢM ưu tiên theo HĐ đáo hạn xa nhất - gần nhất. Nếu cùng ngày đáo hạn, ưu tiên HĐ có KL thấp nhất.
+2.6.3 Remind KH hoàn thiện số lượng TP để đến hạn tất toán HĐ
+Điều kiện	Chi tiết xử lý 
+KH chưa bổ sung đầy đủ số lượng TP khi đến hạn Tất toán HĐ	Back-end	
+Thông báo tới KH	•	Noti vào ngày T-5 (T là ngày Tất toán) thông báo KH đã đến hạn Tất toán và cần bổ sung đủ số lượng TP (Mã Noti: Bond_08  - Chi tiết)
+
+
+2.6.4. KH thao tác 'Đăng ký giao dịch' và kiểm tra các điều kiện đi kèm
+Điều kiện	Chi tiết xử lý 
+KH chưa mở sub86, chưa là NĐTCN, sub88	- Gọi hotline để mở sub86 và đăng kí NĐTCN 
+- CSKH đề xuất mở luôn sub88 cho KH
+KH đã mở sub 86, chưa là NĐTCN. chưa mở sub88 	- Gọi hotline để đăng kí NĐTCN 
+- CSKH đề xuất mở luôn sub88 cho KH
+KH đã là NĐTCN, đã có sub86, chưa có sub88 	- Thực hiện luồng đăng ký trên App
+
