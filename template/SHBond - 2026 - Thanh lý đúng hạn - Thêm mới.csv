@@ -1,0 +1,119 @@
+Name,Status,Precondition ,Test Script (Step-by-Step) - Step,Test Script (Step-by-Step) - Expected Result,Result,Link,Note,Jira,Evidence
+[Trạng thái hồ sơ] Kiểm tra điều kiện hiển thị trạng thái đủ hồ sơ khi tạo hợp đồng,,,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng
+3. Tạo hợp đồng
+4. Quan sát trạng thái default của hồ sơ",Hiển thị trạng thái thiếu hồ sơ,Pass,https://prnt.sc/GBV-K3QVC_R7,,,
+[JOB sinh phiếu lệnh] Kiểm tra tại 7 giờ ngày làm việc (E-5 ngày) với HĐ CÓ coupon thay đổi theo quy định của TP trong thời gian nắm giữ,Approved,,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng
+3. Truy cập Hợp đồng đặt mua
+4. Kiểm tra HĐ có Ngày đáo hạn E = T + 5 (T: ngày hiện tại):
+- Trạng thái hồ sơ
+- Biểu mẫu PLB/PLM
+- Thao tác","- Trạng thái hồ sơ = Thiếu hồ sơ
+- Thực hiện tính lại giá bán theo dòng coupon thay đổi và Gen lại phiếu lệnh bán mới cho hợp đồng (thêm 1  tab nữa ở list phiếu lệnh)
+- Thao tác: 
++ Icon: cập nhật Trạng thái hồ sơ
++ Icon: Thêm mới Thanh lý trước hạn ",N/A,,,,
+[JOB sinh phiếu lệnh] Kiểm tra tại 7 giờ ngày làm việc (E-5 ngày) với HĐ coupon KHÔNG thay đổi theo quy định của TP trong thời gian nắm giữ,Approved,,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng
+3. Truy cập Hợp đồng đặt mua
+4. Click button Xem chi tiết hợp đồng","Không gen lại PLB cho hợp đồng
+",N/A,,,,
+[JOB sinh yêu cầu TLĐH] Kiểm tra 8h ngày làm việc với các HĐ có Ngày đáo hạn (ngày E) = Ngày hiện tại với các HĐ Thiếu hồ sơ,Approved,"Hợp đồng có ngày đáo hạn = Ngày hiện tại
+Hợp đồng còn Hiệu lực
+Trạng thái hồ sơ = Chưa đủ hồ sơ
+HĐ đang không có yêu cầu thanh lý/ chuyển nhượng chờ xử lý","1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng
+3. Truy cập Yêu cầu thanh lý","- Màn hình đặt mua có: Trạng thái hợp đồng là = Hiệu lực
+- Trạng thái hồ sơ = Thiếu hồ sơ
+- Màn yêu cầu thanh lý: Không sinh lệnh TLĐH",Pass,https://prnt.sc/QZo9FJDrN7By,,,
+[JOB sinh yêu cầu TLĐH] Kiểm tra 8h ngày làm việc với các HĐ có Ngày đáo hạn (ngày E) = Ngày hiện tại với các HĐ Đủ hồ sơ,Approved,"Hợp đồng có ngày đáo hạn = Ngày hiện tại
+Hợp đồng còn Hiệu lực
+Trạng thái hồ sơ = Đủ hồ sơ
+HĐ đang không có yêu cầu thanh lý/ chuyển nhượng chờ xử lý","1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng:
+- Kiểm tra cột Trạng thái HĐ
+3. Truy cập Yêu cầu thanh lý
+- Kiểm tra bản ghi với Số HĐ được tạo lệnh TLĐH
+4. Click button Xem chi tiết hợp đồng
+- Kiểm thông tin form TLĐH","- Màn hình Quản lý HĐ có Trạng thái hợp đồng là: Chờ duyệt thanh lý        
+- Màn hình Yêu cầu thanh lý: Sinh Lệnh thanh lý với:
++ Trạng thái = Chờ duyệt
++ Trạng thái hồ sơ = Đủ hồ sơ
+- Màn hình chi tiết lệnh TLĐH: hiển thị đúng thông tin lệnh TLĐH",Pass,https://prnt.sc/xhfkgaWcXd8I,,,
+"[JOB xử lý quá hạn HĐ] Kiểm tra tại 11h ngày làm việc với các HĐ có:
+- Ngày đáo hạn (ngày E) = Ngày hiện tại 
+- Tích Đủ hồ sơ sau 8h",Approved,"Hợp đồng có ngày đáo hạn = Ngày hiện tại
+Hợp đồng còn Hiệu lực
+Trạng thái hồ sơ = Đủ hồ sơ
+HĐ đang không có yêu cầu thanh lý/ chuyển nhượng chờ xử lý","1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng
+- Tích đủ hồ sơ sau 8h
+- Chưa tạo lệnh TLĐH manual
+3. Truy cập Yêu cầu thanh lý
+",- Hợp đồng chuyển qua thanh lý quá hạn và chỉ được tạo thanh lý vào hôm làm việc kế tiếp,Fail,hôm kế tiếp đang k work,,,
+"[JOB xử lý quá hạn HĐ] Kiểm tra tại 11h ngày làm việc với các HĐ có:
+- Ngày đáo hạn (ngày E) = Ngày hiện tại 
+- Trạng thái HS = Thiếu hồ sơ",Approved,"Hợp đồng có ngày đáo hạn = Ngày hiện tại
+Hợp đồng còn Hiệu lực
+Trạng thái hồ sơ = Thiếu hồ sơ
+HĐ đang không có yêu cầu thanh lý/ chuyển nhượng chờ xử lý","1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng
+- Trạng thái HĐ = Thiếu hồ sơ
+3. Truy cập Yêu cầu thanh lý","- Chuyển TT outright
+- Chờ BA cf lại vs PTSP về rule chuyển outright
+- Không tạo yêu cầu TLĐH",N/A,,,,
+[UI] Kiểm tra hiển thị UI màn hình Thanh lý đúng hạn - Thêm mới,Approved,,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng
+3. Truy cập Hợp đồng đặt mua
+4. Click button Thanh lý đúng hạn
+5. Quan sát hiển thị","- Hiển thị màn hình Tạo yêu cầu thanh lý (đúng hạn)
+- Sử dụng chung màn Tạo yêu cầu thanh lý với cái lable khác nhau cho mỗi nghiệp vụ thanh lý đúng hạn, đúng hạn và quá hạn.",Pass,https://prnt.sc/jHXbt9DurE26,Design,,
+[Default] Kiểm tra hiển thị default màn hình Thanh lý đúng hạn - Thêm mới,Approved,,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng
+3. Truy cập Hợp đồng đặt mua
+4. Click button Thanh lý đúng hạn
+5. Quan sát hiển thị","- Hiển thị màn hình Tạo yêu cầu thanh lý (đúng hạn)
+- Sử dụng chung màn Tạo yêu cầu thanh lý với cái lable khác nhau cho mỗi nghiệp vụ thanh lý đúng hạn, đúng hạn và quá hạn.",Pass,https://prnt.sc/jHXbt9DurE26,Default,,
+[Ghi chú] Validate trường Ghi chú,Approved,,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng
+3. Truy cập Hợp đồng đặt mua
+4. Click button Thanh lý đúng hạn
+5. Check validate trường Ghi chú","- Có thể bỏ trống
+- Tối đa 500 ký tự",Pass,https://prnt.sc/ZpK6JBO0RZVA,,,
+[Luồng cập nhật Đủ hồ sơ] Kiểm tra tick đủ hồ sơ,,,,Cho phép cập nhật qua lại Đủ/Thiếu hs,Pass,https://prnt.sc/Lnqm64wJS04k,,,
+[Luồng cập nhật Đủ hồ sơ] Kiểm tra tick Thiếu hồ sơ,,,,Cho phép cập nhật qua lại Đủ/Thiếu hs,Pass,https://prnt.sc/Lnqm64wJS04k,,,
+[Luồng tạo yêu cầu TLĐH manual] Check khi tạo hợp đồng thanh lý đúng hạn thành công,Approved,"Hợp đồng có ngày đáo hạn <= Ngày hiện tại
+Hợp đồng: Hiệu lực 
+Trạng thái hồ sơ = Đủ hồ sơ
+HĐ đang không có yêu cầu thanh lý/ chuyển nhượng chờ xử lý","1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng
+3. Truy cập Hợp đồng đặt mua
+4. Click button Thanh lý đúng hạn
+5. Click button Lưu","- Cập nhật Trạng thái HĐ: Chờ duyệt thanh lý
+- Thêm mới thành công 1 bản ghi tương ứng tại màn hình Yêu cầu thanh lý: 
+
+- Màn Yêu cầu thanh lý: 
++ Khối lượng còn lại = KL còn lại - KL thanh lý
++ Giá trị còn lại = KL còn lại * Giá mua TP ban đầu
+
++ Màn Kho lẻ: 
+KL mua lại chờ duyệt: Đúng hạn: Hiển thị số TP của hợp đồng thanh lý
+Sau khi Aprove thì chuyển sang KL mua lại đã duyệt",Pass,https://prnt.sc/GBV-K3QVC_R7,,https://jira.shs.com.vn/browse/BON-2585,
+[ Luồng tạo yêu cầu manual] Check khi tạo hợp đồng thanh lý sau job 8h thành công,Approved,"Hợp đồng có ngày đáo hạn <= Ngày hiện tại
+Hợp đồng: Quá hạn
+Trạng thái hồ sơ = Đủ hồ sơ
+HĐ đang không có yêu cầu thanh lý/ chuyển nhượng chờ xử lý","1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng
+3. Truy cập Hợp đồng đặt mua
+4. Click button Thanh lý đúng hạn
+5. Click button Lưu","- Cập nhật Trạng thái HĐ: Chờ duyệt thanh lý
+- Thêm mới thành công 1 bản ghi tương ứng tại màn hình Yêu cầu thanh lý: 
+
+- Màn Yêu cầu thanh lý: 
++ Khối lượng còn lại = KL còn lại - KL thanh lý
++ Giá trị còn lại = KL còn lại * Giá mua TP ban đầu
+
++ Màn Kho lẻ: 
+KL mua lại chờ duyệt: Đúng hạn: Hiển thị số TP của hợp đồng thanh lý
+Sau khi Aprove thì chuyển sang KL mua lại đã duyệt",Pass,https://prnt.sc/xhfkgaWcXd8I,,,

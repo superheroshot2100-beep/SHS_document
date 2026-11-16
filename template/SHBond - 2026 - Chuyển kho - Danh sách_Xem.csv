@@ -1,0 +1,112 @@
+Name,Status,Priority,Test Script (Step-by-Step) - Step,Test Script (Step-by-Step) - Expected Result,,
+[UI] Kiểm tra UI màn hình Xem chi tiết chuyển kho,,,,"- Hiển thị đầy đủ các trường thông tin
+- Dữ liệu hiển thị đúng với thông tin được khai báo",,
+[UI] Kiểm tra giao diện màn hình Danh sách chuyển kho,Approved,High,1. Truy cập menu Chuyển kho,"- Hiển thị đúng giao diện màn hình Danh sách chuyển kho
+ - Hiển thị đúng Tiêu đề: Quản lý chuyển kho
+ - Hiển thị đầy đủ thanh lọc:
++ Mã trái phiếu
++ Mã chủ kho
++ Loại giao dịch
++ Mã kho lẻ chuyển
++ Mã kho lẻ nhận
++ Trạng thái
++ Thời gian
+ - Hiển thị bảng dữ liệu với các cột:
+ + STT
+ + Mã trái phiếu
+ + Loại giao dịch
+ + Mã kho lẻ chuyển
+ + Mã kho lẻ nhận
+ + Ngày chuyển kho
+ + Mã chủ kho
+ + Tên chủ kho
+ + Số lượng
+ + Trạng thái
+ + Ghi chú
+ + Trạng thái hạch toán Core
+ + Thao tác: Xem, Sửa, Từ chối, Duyệt
+ - Hiển thị phân trang mặc định 10 bản ghi/trang",Pass,
+[Dữ liệu] Kiểm tra hiển thị danh sách mặc định,Approved,High,1. Truy cập menu Chuyển kho,"- Mặc định page = 0, size = 10
+- Hiển thị 10 bản ghi đầu tiên",Pass,
+[Tìm kiếm] Kiểm tra tìm kiếm theo Mã trái phiếu,Approved,High,"1. Nhập Mã trái phiếu vào thanh tìm kiếm và chọn Enter
+ 2. Quan sát kết quả","- Tìm kiếm gần đúng, không phân biệt hoa/thường
+ - Trim khoảng trắng đầu và cuối
+ - Khi nhập Mã trái phiếu đã tồn tại: Hiển thị danh sách chuyển kho liên quan
+ - Khi không có dữ liệu: Hiển thị danh sách trống",Pass,
+[Tìm kiếm] Kiểm tra tìm kiếm theo Mã chủ kho,Approved,High,"1. Nhập Mã chủ kho vào thanh tìm kiếm và chọn Enter
+ 2. Quan sát kết quả","- Tìm kiếm gần đúng, không phân biệt hoa/thường
+ - Trim khoảng trắng đầu và cuối
+ - Khi nhập Mã chủ kho đã tồn tại: Hiển thị danh sách chuyển kho tương ứng
+ - Khi không có dữ liệu: Hiển thị danh sách trống",Pass,
+[Tìm kiếm] Kiểm tra tìm kiếm theo Kho lẻ chuyển,Approved,High,"1. Nhập Mã kho lẻ chuyển vào thanh tìm kiếm và chọn Enter
+ 2. Quan sát kết quả","- Tìm kiếm gần đúng, không phân biệt hoa/thường
+ - Trim khoảng trắng đầu và cuối
+ - Chỉ hiển thị khi source = kho lẻ
+ - Khi không có dữ liệu: Hiển thị danh sách trống",Pass,
+[Tìm kiếm] Kiểm tra tìm kiếm theo Kho lẻ nhận,Approved,High,"1. Nhập Mã kho lẻ nhận vào thanh tìm kiếm và chọn Enter
+ 2. Quan sát kết quả","- Tìm kiếm gần đúng, không phân biệt hoa/thường
+ - Trim khoảng trắng đầu và cuối
+ - Chỉ hiển thị khi target = kho lẻ
+ - Khi không có dữ liệu: Hiển thị danh sách trống",Pass,
+[Loại giao dịch] Kiểm tra lọc theo Loại giao dịch,Approved,High,"1. Chọn Loại giao dịch, chọn lần lượt các giá trị:
+ + Nguồn - Lẻ
+ + Lẻ - Nguồn
+ + Lẻ - Lẻ
+ + Tất cả
+ 2. Quan sát kết quả","- Hiển thị đúng danh sách Loại giao dịch: Nguồn - Lẻ, Lẻ - Nguồn, Lẻ - Lẻ, Tất cả
+ - Giá trị mặc định là Tất cả
+ - Khi chọn nguồn - lẻ: Chỉ hiển thị chuyển khoán từ nguồn sang lẻ
+ - Khi chọn lẻ - nguồn: Chỉ hiển thị chuyển khoán từ lẻ về nguồn
+ - Khi chọn tất cả: Hiển thị toàn bộ dữ liệu",Pass,
+[Trạng thái] Kiểm tra lọc theo Trạng thái,Approved,High,"1. Chọn Trạng thái, chọn lần lượt các giá trị:
+ + Chờ duyệt
+ + Đã duyệt
+ + Từ chối
+ + Tất cả
+ 2. Quan sát kết quả","- Hiển thị đúng danh sách Trạng thái: Chờ duyệt, Đã duyệt, Từ chối, Tất cả
+ - Giá trị mặc định là Tất cả
+ - Khi chọn Chờ duyệt: Chỉ hiển thị bản ghi chưa phê duyệt
+ - Khi chọn Đã duyệt: Hiển thị bản ghi đã được phê duyệt
+ - Khi chọn Từ chối: Hiển thị bản ghi đã bị từ chối",Pass,
+[Ngày] Kiểm tra lọc theo Từ ngày - Đến ngày,Approved,High,"1. Chọn Từ ngày nhỏ hơn hoặc bằng Đến ngày
+ 2. Chọn button Tìm kiếm","- Định dạng dd/mm/yyyy
+ - Phải nhỏ hơn hoặc bằng Đến ngày
+ - Nếu chỉ nhập Từ ngày: Hệ thống tự set khoảng mở đến hiện tại
+ - Nếu chỉ nhập Đến ngày: Hệ thống tự set khoảng mở từ đầu
+ - Khi hợp lệ: Hiển thị danh sách trong khoảng thời gian đã chọn",Pass,
+[Tìm kiếm] Kiểm tra button Đặt lại,Approved,High,"1. Nhập các điều kiện tìm kiếm bất kỳ
+ 2. Chọn button Đặt lại","- Làm mới toàn bộ giá trị lọc
+ - Trả các trường filter về mặc định ban đầu
+ - Hiển thị lại danh sách mặc định 10 bản ghi đầu tiên",Pass,
+[Phân trang] Kiểm tra phân trang mặc định,Approved,High,1. Truy cập màn hình Danh sách chuyển kho,"- Mặc định hiển thị 10 bản ghi/trang
+ - Cho phép chọn số lượng bản ghi: 10, 20, 30 bản ghi/trang
+ - Hiển thị nút Previous/Next khi có nhiều trang
+ - Trang hiện tại được highlight
+ - Số lượng tổng bản ghi hiển thị ở góc dưới",Pass,
+[Phím chức năng] Kiểm tra button Thêm mới,Approved,High,1. Chọn button Thêm mới,- Chuyển tới màn hình Thêm mới chuyển kho,Pass,
+[Phím chức năng] Kiểm tra icon Xem chi tiết,Approved,High,1. Chọn icon Xem chi tiết tại một dòng bất kỳ,- Chuyển tới màn hình Chi tiết chuyển kho,Pass,
+[Phím chức năng] Kiểm tra icon Chỉnh sửa,Approved,High,1. Chọn icon Chỉnh sửa tại một dòng bản ghi Chưa duyệt,- Chuyển tới màn hình Chỉnh sửa chuyển kho,Pass,
+[Phím chức năng] Kiểm tra button Cập nhật trạng thái,Approved,High,1. Chọn button Cập nhật trạng thái tại dòng có Trạng thái hạch toán Core = Chờ xử lý,"- Chỉ hiển thị với trường hợp trạng thái hạch toán Core = Chờ xử lý
+- Popup 2 button: Thành công / Thất bại
++ Khi chọn Thành công: Xử lý giống case Phê duyệt thành công
+--> Cập nhật Trạng thái hạch toán core = Thành công
+--> Cập nhật lại đúng 
++ Khi chọn Thất bại: Xử lý giống case Phê duyệt thất bại
+--> Cập nhật Trạng thái hạch toán core = Thất bại
+- Không hiển thị nếu trạng thái Core = Đã duyệt/Từ chối
+- Cập nhật đúng Trạng thái sau khi thực hiện",N/A,2347
+[Dữ liệu] Kiểm tra hiển thị các cột thông tin,Approved,High,1. Quan sát bảng dữ liệu,"- Hiển thị đúng các cột:
+ + STT
+ + Mã trái phiếu
+ + Kho chuyển
+ + Kho nhận
+ + Mã kho lẻ chuyển (chỉ hiển thị khi source = kho lẻ)
+ + Mã kho lẻ nhận (chỉ hiển thị khi target = kho lẻ)
+ + Ngày chuyển kho
+ + Mã chủ kho
+ + Tên chủ kho
+ + Số lượng
+ + Trạng thái
+ + Ghi chú
+ + Trạng thái hạch toán Core (Thành công/Thất bại/Chờ xử lý)
+ + Thao tác: Xem, Sửa, Từ chối, Phê duyệt, Cập nhật trạng thái",Pass,

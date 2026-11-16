@@ -1,0 +1,114 @@
+Name,Status,Precondition,Priority,Test Script (Step-by-Step) - Step,Test Script (Step-by-Step) - Expected Result,
+"[Pricing] Kiểm tra Giá tại ngày đầu tư với 
+- Kỳ thanh toán trùng với Kỳ tính lãi 
+- Ngày mua <= Ngày chốt DS
+
+Ngày chốt DS: Tính theo Số ngày chốt lãi trước được khai báo tại màn hình Thông tin trái phiếu)",Approved,,,"- Kỳ coupon: 03/09/2026 - 03/12/2026
+- Ngày chốt DS = 27/11/2026
+- Ngày đầu kỳ coupon tại Ngày mua = 03/09/2026
+
+- Ngày mua = 06/10/2026 < Ngày chốt DS = 27/11/2026","- Số ngày tính LCD = Ngày mua - Ngày đầu kỳ coupon
+- Lãi cộng dồn = [06/10/2026 - 03/09/2026] * [Coupon] * Mệnh giá TP /Cơ sở tính lãi
+- Giá tại ngày đầu tư = (Mệnh giá TP + LCD) * (1 + Mức chênh cố định) 
+
+*** Lưu ý: 
+- Giá sau khi tính làm tròn đến hàng đơn vị
+- Mức chênh cố định lấy theo Mã cấu hình FIXED_SPREAD = 0,02 tại màn hình SHBond/ Quản trị hệ thống/ Danh sách tham số
+- Cơ sở tính lãi lấy theo Mã cấu hình DOY = 365",Pass
+"[Pricing] Kiểm tra Giá tại ngày đầu tư với:
+- Kỳ thanh toán trùng với Kỳ tính lãi 
+- Ngày mua > Ngày chốt DS",Approved,,,,"- Lãi cộng dồn = 0
+- Giá tại ngày đầu tư = (Mệnh giá TP + LCD) * (1 + Mức chênh cố định %) ",Pass
+"[Bảng tính lợi nhuân] Kiểm tra tính dữ liệu Bảng tính lợi nhuận:
+- Ngày bán <= Ngày chốt danh sách
+- Ngày bán là ngày làm việc",Approved,,,"- Kỳ coupon cuối: 03/03/2027 - 03/06/2027
+- Ngày chốt DS = 28/05/2027
+
+- Ngày mua = 03/04/2027
+- Kỳ hạn = 1Tháng (Kỳ hạn ngắn nhất)
+
+--> Ngày bán dự tính = [03/04/2027 + 1 Tháng] = 03/05/2027 <= Ngày chốt DS = 28/05/2027 ","- Giá tại ngày đầu tư tính theo công thức trên
+- Bảng tính lợi nhuận tính theo Ngày bán:
++ Tiền mua TP = Giá trị đầu tư thực tế + Phí mua
++ Trái tức =  Round[(Mệnh giá *SLTP * Coupon từng kỳ * (Ngày cuối kỳ tính lãi - Ngày đầu kỳ tính lãi) /365, (nguyên tắc số làm tròn của TP tương ứng)]
++ Trái tức sau thuế = Round(Tổng tiền coupon trước thuế các kỳ trong thời gian nắm giữ * (1- Thuế coupon),0)
++ Tiền bán Trái phiếu =  Đơn giá mua lại trước thuế * Số lượng bán
+
+*** Trong đó: 
+- Đơn giá mua lại trước thuế = Round(Tổng tiền nhận sau thuế/[(1-thuế chuyển nhượng)*số lượng],0)",Pass
+"[Bảng tính lợi nhuận] Kiểm tra tính dữ liệu Bảng tính lợi nhuận:
+- Ngày bán <= Ngày chốt danh sách
+- Ngày bán là ngày NGHỈ",Approved,,,,"- Giá tại ngày đầu tư tính theo công thức trên
+- Ngày bán thực tế tính theo rule trượt ngày bán sang ngày làm việc tiếp theo
+- Bảng tính lợi nhuận tính theo Ngày bán thực thế",Pass
+"[Bảng tính lợi nhuận] Kiểm tra tính dữ liệu Bảng tính lợi nhuận:
+- Ngày chốt danh sách < Ngày bán < Ngày cuối kỳ thanh toán (trùng với Kỳ tính lãi)
+- Ngày bán là ngày làm việc",Approved,,,"- Kỳ coupon cuối: 03/03/2027 - 03/06/2027
+- Ngày chốt DS = 28/05/2027
+
+- Ngày mua = 03/05/2027
+- Kỳ hạn = 1Tháng (Kỳ hạn ngắn nhất)
+
+--> Ngày bán dự tính = [03/05/2027 + 1 Tháng] = 03/06/2027 > Ngày chốt DS = 28/05/2027 ","- Giá tại ngày đầu tư tính theo công thức trên
+- Ngày bán thực tế trượt về Ngày chốt DS
+- Bảng tính lợi nhuận tính theo Ngày bán thực tế
++ Trái tức của Kỳ tại ngày bán = 0 (Do bán trước ngày thanh toán)",Pass
+"[Pricing] Kiểm tra Giá tại ngày đầu tư với:
+- Kỳ thanh toán là bội số của Kỳ tính lãi
+- Kỳ thanh toán # Kỳ tính lãi
+- Ngày mua thuộc Kỳ tính lãi đầu tiên
+
+*** Trái phiếu:
+- Kỳ tính lãi = 1 tháng
+- Kỳ thanh toán = 3 tháng",Approved,,,,"- Số ngày tính LCD = Ngày mua - Ngày đầu kỳ coupon 
+- Lãi cộng dồn = [Số ngày tính LCD ] * [Coupon] * Mệnh giá TP /Cơ sở tính lãi
+- Giá tại ngày đầu tư = (Mệnh giá TP + LCD) * (1 + Mức chênh cố định) 
+
+*** Lưu ý: 
+- Giá sau khi tính làm tròn đến hàng đơn vị
+- Mức chênh cố định lấy theo Mã cấu hình FIXED_SPREAD = 0,02 tại màn hình SHBond/ Quản trị hệ thống/ Danh sách tham số
+- Cơ sở tính lãi lấy theo Mã cấu hình DOY = 365",Pass
+"[Pricing] Kiểm tra Giá tại ngày đầu tư với:
+- Kỳ thanh toán là bội số của Kỳ tính lãi
+- Kỳ thanh toán # Kỳ tính lãi
+- Ngày mua thuộc Kỳ tính lãi thứ 2
+
+*** Trái phiếu:
+- Kỳ tính lãi = 1 tháng
+- Kỳ thanh toán = 3 tháng",Approved,,,,"- Số ngày tính LCD = Ngày mua - Ngày đầu kỳ coupon số 1
+- Lãi cộng dồn = [Số ngày tính LCD ] * [Coupon] * Mệnh giá TP /Cơ sở tính lãi
+- Giá tại ngày đầu tư = (Mệnh giá TP + LCD) * (1 + Mức chênh cố định) 
+
+*** Lưu ý: 
+- Giá sau khi tính làm tròn đến hàng đơn vị
+- Mức chênh cố định lấy theo Mã cấu hình FIXED_SPREAD = 0,02 tại màn hình SHBond/ Quản trị hệ thống/ Danh sách tham số
+- Cơ sở tính lãi lấy theo Mã cấu hình DOY = 365",Pass
+"[Pricing] Kiểm tra Giá tại ngày đầu tư với:
+- Kỳ thanh toán là bội số của Kỳ tính lãi
+- Kỳ thanh toán # Kỳ tính lãi
+- Ngày mua thuộc Kỳ tính lãi thứ 3
+
+*** Trái phiếu:
+- Kỳ tính lãi = 1 tháng
+- Kỳ thanh toán = 3 tháng",Approved,,,,"- Số ngày tính LCD = Ngày mua - Ngày đầu kỳ coupon số 1
+- Lãi cộng dồn = [Số ngày tính LCD ] * [Coupon] * Mệnh giá TP /Cơ sở tính lãi
+- Giá tại ngày đầu tư = (Mệnh giá TP + LCD) * (1 + Mức chênh cố định) 
+
+*** Lưu ý: 
+- Giá sau khi tính làm tròn đến hàng đơn vị
+- Mức chênh cố định lấy theo Mã cấu hình FIXED_SPREAD = 0,02 tại màn hình SHBond/ Quản trị hệ thống/ Danh sách tham số
+- Cơ sở tính lãi lấy theo Mã cấu hình DOY = 365",
+"[Pricing] Kiểm tra Giá tại ngày đầu tư với:
+- Kỳ thanh toán là bội số của Kỳ tính lãi
+- Ngày chốt DS < Ngày mua < Ngày cuối kỳ tính lãi",Approved,,,,"- Lãi cộng dồn = 0
+- Giá tại ngày đầu tư = (Mệnh giá TP + LCD) * (1 + Mức chênh cố định %) ",
+"[Pricing] Kiểm tra Giá tại ngày đầu tư với:
+- Kỳ thanh toán là bội số của Kỳ tính lãi
+- Ngày bán thuộc Kỳ cuối cùng của Trái phiêú
+- Ngày chốt DS < Ngày bán < Ngày cuối kỳ tính lãi",Approved,,,SIN12407,"- Giá tại ngày đầu tư tính theo công thức trên
+- Ngày bán thực tế trượt về Ngày chốt DS
+- Bảng tính lợi nhuận tính theo Ngày bán thực thế",
+[Biểu mẫu - Mô phòng dòng tiền] Kiểm tra tính Phí giao dịch bán Trái phiếu,Approved,,,"- Tại thời điểm KH mua, phí bán sẽ do bên bán chịu","- Phí giao dịch bán Trái phiếu = Tiền bán trước thuế * Tỷ lệ phí bán = Tiền bán sau thuế(A)*Tỷ lệ phí bán/ (1- Thuế chuyển nhượng)
+
+*** Trong đó: 
+- Tỷ lệ phí bán được khai báo tại Sản phẩm chào báo/ Phí bán",

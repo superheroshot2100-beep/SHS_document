@@ -1,0 +1,49 @@
+Name,Status,,Test Script (Step-by-Step) - Step,Test Script (Step-by-Step) - Expected Result,,Evidence
+[URL] Kiểm tra call với URL không chính xác,Approved,,"1. Nhập url không chính xác
+2. Call api v1/bond/app/order/preview","- Trả response lỗi: ""URI_NOT_FOUND""",Pass,
+[Method] Kiểm tra call sai method,Approved,,"1. Nhập method không chính xác
+2. Call api v1/bond/app/order/preview","- Trả response lỗi: ""URI_NOT_FOUND""",Pass,
+[Token] Kiểm tra truyền token không chính xác,Approved,,"1. Truyền token:
+- Không chính xách
+- Token hết hạn
+- Không truyền","- Trả response lỗi: """"UNAUTHORIZED""""",Pass,
+[productId] Kiểm tra truyền productId không hợp lệ,Approved,,"1. Truyền productId:
+- Trống
+- Không tồn tại
+- Không nắm trong DS chào bán tương ứng với TK đang dùng
+- Truyền toàn space","- Trả response lỗi: ""Không tìm thấy thông tin kho lẻ""",Pass,
+[estimationType] Kiểm tra truyền estimationType không hợp lệ,Approved,,"1. Truyền estimationType:
+- Trống
+- Không chính xác: khác 1, 2
+- Truyền toàn space","- Trả response lỗi: ""Invalid parameter 'estimationType' """,Pass,
+[estimationAmount] Kiểm tra truyền estimationAmount không hợp lệ,Approved,,"1. Truyền estimationAmount:
+- Trống
+- Không chính xác: 0, số âm
+- Truyền toàn space
+- estimationType = 1:
++ estimationAmount > HM khả dụng của SPCB
+- estimationType = 2:
++ estimationAmount > Min (Khả dụng kho lẻ, KL tối đa theo HM khả dụng của SPCB)","- Trả response lỗi: 
++ ""Invalid parameter 'estimationAmount' ""
++ ""Giá trị đầu tư nhỏ hơn giá trị đầu tư tối thiểu trên 1 hợp đồng""
++ ""Giá trị đầu tư lớn hơn giá trị đầu tư tối đa trên 1 hợp đồng""
++ ""Số dư kho không đủ để thực hiện giao dịch""",Pass,
+[termType] Kiểm tra truyền termType không hợp lệ,Approved,,"1. Truyền termType:
+- Trống
+- Không chính xác: khác M
+- Truyền toàn space","- Trả response lỗi: 
++ ""Thông tin kỳ hạn truyền vào không hợp lệ""",Pass,
+[term] Kiểm tra truyền term không hợp lệ,Approved,,"1. Truyền term:
+- Trống
+- Không chính xác: 0, số âm
+- Vượt kỳ hạn max có thể đầu tư
+- Truyền toàn space","- Trả response lỗi: 
++ ""Thông tin kỳ hạn truyền vào không hợp lệ""",Pass,
+[saleCode] Kiểm tra truyền saleCode không hợp lệ,Approved,,"1. Truyền saleCode:
+- Trống
+- Không chính xác: 0, số âm
+- Vượt kỳ hạn max có thể đầu tư
+- Truyền toàn space",- Trả response lỗi: ,Fail,Thiếu check lại mã NGT
+[success] Kiểm tra truyền các thông tin hợp lệ,Approved,,"1. Nhập các trường thôn tin trong body hợp lệ
+2. Call api","- Call API thành công
+- Các thông tin tính toán đúng như luồng Đặt mua từ SHBond",,
