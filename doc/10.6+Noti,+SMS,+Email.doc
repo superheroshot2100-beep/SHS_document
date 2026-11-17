@@ -1,0 +1,491 @@
+Date: Fri, 13 Nov 2026 08:42:15 +0700 (ICT)
+Message-ID: <2042387935.6247.1794534135755@confluence>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_6246_665530345.1794534135755"
+
+------=_Part_6246_665530345.1794534135755
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>10.6 Noti, SMS, Email</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-link-pressed, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>10.6 Noti, SMS, Email</h1>
+    <div class=3D"Section1">
+        <div class=3D"table-wrap">
+ <table class=3D"wrapped confluenceTable">
+  <tbody>
+   <tr>
+    <td class=3D"confluenceTd"><strong>STT</strong></td>
+    <td class=3D"confluenceTd"><strong>Tr=C6=B0=E1=BB=9Dng h=E1=BB=A3p ph=
+=C3=A1t sinh</strong></td>
+    <td class=3D"confluenceTd"><strong>Ti=C3=AAu =C4=91=E1=BB=81 Noti (VN)<=
+/strong></td>
+    <td class=3D"confluenceTd"><strong>Ti=C3=AAu =C4=91=E1=BB=81 Noti (EN)<=
+/strong></td>
+    <td class=3D"confluenceTd"><strong>Ti=C3=AAu =C4=91=E1=BB=81 email</str=
+ong></td>
+    <td class=3D"confluenceTd"><strong>N=E1=BB=99i dung SMS (VN)</strong></=
+td>
+    <td class=3D"confluenceTd"><strong>N=E1=BB=99i dung Noti (VN)</strong><=
+/td>
+    <td class=3D"confluenceTd"><strong>N=E1=BB=99i dung Noti (ENG)&nbsp;</s=
+trong></td>
+    <td class=3D"confluenceTd"><strong>Th=E1=BB=9Di =C4=91i=E1=BB=83m g=E1=
+=BB=ADi th=C3=B4ng b=C3=A1o&nbsp;</strong></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">1</td>
+    <td class=3D"confluenceTd">=C4=90=E1=BA=B7t xong l=E1=BB=87nh =C4=91=C4=
+=83ng k=C3=BD mua</td>
+    <td class=3D"confluenceTd">=C4=90=E1=BA=B7t l=E1=BB=87nh mua tr=C3=A1i =
+phi=E1=BA=BFu th=C3=A0nh c=C3=B4ng</td>
+    <td class=3D"confluenceTd">Bond subscription order placed</td>
+    <td class=3D"confluenceTd">SHS th=C3=B4ng b=C3=A1o (Tr=C3=A1i phi=E1=BA=
+=BFu SHS ra c=C3=B4ng ch=C3=BAng - [M=C3=A3 TP]): =C4=90=E1=BA=B7t l=E1=BB=
+=87nh mua tr=C3=A1i phi=E1=BA=BFu th=C3=A0nh c=C3=B4ng</td>
+    <td class=3D"confluenceTd">KH dat mua [SL] TP [MaTP]. KH can nop [SoTie=
+n] truoc [gio] [ngay]. STK 1221990777 BIDV Ha Thanh - SHS</td>
+    <td class=3D"confluenceTd">=E2=80=A6/=E2=80=A6/=E2=80=A6, qu=C3=BD kh=
+=C3=A1ch [T=C3=AAn KH] =C4=91=E1=BA=B7t mua [s=E1=BB=91 l=C6=B0=E1=BB=A3ng]=
+ TP [m=C3=A3 tr=C3=A1i phi=E1=BA=BFu]. SHS s=E1=BA=BD g=E1=BB=8Di =C4=91i=
+=E1=BB=87n =C4=91=E1=BB=83 x=C3=A1c nh=E1=BA=ADn l=E1=BB=87nh (=C3=A1p d=E1=
+=BB=A5ng v=E1=BB=9Bi KH mua online v=C3=A0 kh=C3=B4ng =E1=BB=A6y quy=E1=BB=
+=81n l=C6=B0u k=C3=BD).<br>
+      S=E1=BB=91 ti=E1=BB=81n c=E1=BA=A7n n=E1=BB=99p [=E2=80=A6] =C4=91=E1=
+=BB=93ng tr=C6=B0=E1=BB=9Bc =E2=80=A6h ng=C3=A0y =E2=80=A6/=E2=80=A6/=E2=80=
+=A6<br>
+      STK: 1221990777&nbsp; BIDV H=C3=A0 Th=C3=A0nh<br>
+      CTK: CTCP Ch=E1=BB=A9ng kho=C3=A1n S=C3=A0i G=C3=B2n =E2=80=93 H=C3=
+=A0 N=E1=BB=99i</td>
+    <td class=3D"confluenceTd">Your order to buy [Qty] bonds [BondCode] is =
+recorded. Please pay [Amount] before [Time] [Date]. Account: 1221990777 BID=
+V Ha Thanh - SHS</td>
+    <td class=3D"confluenceTd">
+     <p>Ngay sau khi l=E1=BB=87nh =C4=91=E1=BA=B7t c=E1=BB=A7a kh=C3=A1ch h=
+=C3=A0ng =C4=91=C6=B0=E1=BB=A3c nvu duy=E1=BB=87t (tr=E1=BA=A1ng th=C3=A1i =
+l=E1=BB=87nh "=C4=91=C3=A3 duy=E1=BB=87t")</p>
+     <p><br></p></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">2</td>
+    <td class=3D"confluenceTd">H=E1=BB=A7y l=E1=BB=87nh =C4=91=C4=83ng k=C3=
+=BD mua</td>
+    <td class=3D"confluenceTd">H=E1=BB=A7y l=E1=BB=87nh mua tr=C3=A1i phi=
+=E1=BA=BFu th=C3=A0nh c=C3=B4ng</td>
+    <td class=3D"confluenceTd">Bond subscription order cancelled</td>
+    <td class=3D"confluenceTd">SHS th=C3=B4ng b=C3=A1o (Tr=C3=A1i phi=E1=BA=
+=BFu SHS ra c=C3=B4ng ch=C3=BAng - [M=C3=A3 TP]): H=E1=BB=A7y l=E1=BB=87nh =
+mua tr=C3=A1i phi=E1=BA=BFu th=C3=A0nh c=C3=B4ng</td>
+    <td class=3D"confluenceTd">Ng=C3=A0y =E2=80=A6/=E2=80=A6/=E2=80=A6, qu=
+=C3=BD kh=C3=A1ch [T=C3=AAn KH]&nbsp; =C4=91=C3=A3 h=E1=BB=A7y th=C3=A0nh c=
+=C3=B4ng l=E1=BB=87nh =C4=91=E1=BA=B7t mua [s=E1=BB=91 l=C6=B0=E1=BB=A3ng] =
+tr=C3=A1i phi=E1=BA=BFu [m=C3=A3 tr=C3=A1i phi=E1=BA=BFu].</td>
+    <td class=3D"confluenceTd">Ng=C3=A0y =E2=80=A6/=E2=80=A6/=E2=80=A6, qu=
+=C3=BD kh=C3=A1ch [T=C3=AAn KH]&nbsp; =C4=91=C3=A3 h=E1=BB=A7y th=C3=A0nh c=
+=C3=B4ng l=E1=BB=87nh =C4=91=E1=BA=B7t mua [s=E1=BB=91 l=C6=B0=E1=BB=A3ng] =
+tr=C3=A1i phi=E1=BA=BFu [m=C3=A3 tr=C3=A1i phi=E1=BA=BFu].</td>
+    <td class=3D"confluenceTd">On =E2=80=A6/=E2=80=A6/=E2=80=A6, you [Custo=
+mer Name] have successfully cancelled your order to purchase [quantity] bon=
+ds [bond code].</td>
+    <td class=3D"confluenceTd">
+     <p><span class=3D"inline-comment-marker" data-ref=3D"1cb5530e-f2b7-480=
+b-8740-abb578a0d725">TH1: L=E1=BB=87nh ch=E1=BB=9D duy=E1=BB=87t nghi=E1=BB=
+=87p v=E1=BB=A5 ho=E1=BA=B7c KH b=E1=BA=A5m h=E1=BB=A7y =E2=86=92 tr=E1=BA=
+=A1ng th=C3=A1i =C4=90=C3=A3 H=E1=BB=A7y (Ch=E1=BB=89 g=E1=BB=ADi noti)</sp=
+an></p>
+     <p><span class=3D"inline-comment-marker" data-ref=3D"1cb5530e-f2b7-480=
+b-8740-abb578a0d725">TH2: L=E1=BB=87nh t=E1=BB=AB ch=E1=BB=9D duy=E1=BB=87t=
+ h=E1=BB=A7y =C4=91=C6=B0=E1=BB=A3c nghi=E1=BB=87p v=E1=BB=A5 duy=E1=BB=87t=
+ =E2=86=92 tr=E1=BA=A1ng th=C3=A1i =C4=90=C3=A3 h=E1=BB=A7y (G=E1=BB=ADi SM=
+S,noti,email)</span></p></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">3</td>
+    <td class=3D"confluenceTd">S=E1=BB=ADa l=E1=BB=87nh =C4=91=C4=83ng k=C3=
+=BD mua</td>
+    <td class=3D"confluenceTd">S=E1=BB=ADa l=E1=BB=87nh mua tr=C3=A1i phi=
+=E1=BA=BFu th=C3=A0nh c=C3=B4ng</td>
+    <td class=3D"confluenceTd">Bond subscription order updated</td>
+    <td class=3D"confluenceTd">SHS th=C3=B4ng b=C3=A1o (Tr=C3=A1i phi=E1=BA=
+=BFu SHS ra c=C3=B4ng ch=C3=BAng - [M=C3=A3 TP]): S=E1=BB=ADa l=E1=BB=87nh =
+mua tr=C3=A1i phi=E1=BA=BFu th=C3=A0nh c=C3=B4ng</td>
+    <td class=3D"confluenceTd"><br>
+      (Tr=C6=B0=E1=BB=9Dng h=E1=BB=A3p s=E1=BB=ADa t=C4=83ng)<br>
+      Lenh [MaTP] da duoc tang len [SL]. KH can nop them [SoTien] truoc [gi=
+o] [ngay].<br>
+      (Tr=C6=B0=E1=BB=9Dng h=E1=BB=A3p s=E1=BB=ADa gi=E1=BA=A3m)<br>
+      Lenh [MaTP] da giam con [SL]. So tien du se duoc xu ly theo quy dinh.=
+</td>
+    <td class=3D"confluenceTd">Ng=C3=A0y =E2=80=A6/=E2=80=A6/=E2=80=A6, qu=
+=C3=BD kh=C3=A1ch [T=C3=AAn KH]&nbsp; =C4=91=C3=A3 c=E1=BA=ADp nh=E1=BA=ADt=
+ th=C3=A0nh c=C3=B4ng l=E1=BB=87nh =C4=91=E1=BA=B7t mua [s=E1=BB=91 l=C6=B0=
+=E1=BB=A3ng] tr=C3=A1i phi=E1=BA=BFu [m=C3=A3 tr=C3=A1i phi=E1=BA=BFu]. <br=
+>
+      (Tr=C6=B0=E1=BB=9Dng h=E1=BB=A3p s=E1=BB=ADa t=C4=83ng)<br>
+      S=E1=BB=91 ti=E1=BB=81n c=E1=BA=A7n ph=E1=BA=A3i n=E1=BB=99p th=C3=AA=
+m l=C3=A0 [=E2=80=A6.] =C4=91=E1=BB=93ng tr=C6=B0=E1=BB=9Bc =E2=80=A6h=E2=
+=80=A6 ng=C3=A0y =E2=80=A6/=E2=80=A6/=E2=80=A6..<br>
+      (Tr=C6=B0=E1=BB=9Dng h=E1=BB=A3p s=E1=BB=ADa gi=E1=BA=A3m)<br>
+      S=E1=BB=91 ti=E1=BB=81n =C4=91=E1=BA=B7t mua [=E2=80=A6]=C4=91=E1=BB=
+=93ng c=E1=BB=A7a qu=C3=BD kh=C3=A1ch s=E1=BA=BD =C4=91=C6=B0=E1=BB=A3c ho=
+=C3=A0n l=E1=BA=A1i theo quy =C4=91=E1=BB=8Bnh</td>
+    <td class=3D"confluenceTd">On =E2=80=A6/=E2=80=A6/=E2=80=A6, you [Custo=
+mer Name] have successfully updated your order to purchase [quantity] bonds=
+ [bond code].</td>
+    <td class=3D"confluenceTd">
+     <p><span style=3D"background-color: rgb(245,205,71);">TH1: L=E1=BB=87n=
+h ch=E1=BB=9D duy=E1=BB=87t nghi=E1=BB=87p v=E1=BB=A5 ho=E1=BA=B7c KH b=E1=
+=BA=A5m s=E1=BB=ADa =E2=86=92 tr=E1=BA=A1ng th=C3=A1i ch=E1=BB=9D x=C3=A1c =
+nh=E1=BA=ADn (Kh=C3=B4ng c=E1=BA=A7n g=E1=BB=ADi th=C3=B4ng b=C3=A1o)</span=
+></p>
+     <p><span style=3D"background-color: rgb(245,205,71);">TH2: L=E1=BB=87n=
+h t=E1=BB=AB ch=E1=BB=9D duy=E1=BB=87t s=E1=BB=ADa / ch=E1=BB=9D x=C3=A1c n=
+h=E1=BA=ADn =C4=91=C6=B0=E1=BB=A3c nghi=E1=BB=87p v=E1=BB=A5 duy=E1=BB=87t =
+=E2=86=92 tr=E1=BA=A1ng th=C3=A1i =C4=91=C3=A3 x=C3=A1c nh=E1=BA=ADn (G=E1=
+=BB=ADi SMS,Noti,Email)</span></p></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">4</td>
+    <td class=3D"confluenceTd">Nh=E1=BA=ADp ti=E1=BB=81n KH =C4=91=C3=A3 n=
+=E1=BB=99p v=C3=A0o h=E1=BB=87 th=E1=BB=91ng</td>
+    <td class=3D"confluenceTd">=C4=90=C3=A3 ghi nh=E1=BA=ADn thanh to=C3=A1=
+n mua tr=C3=A1i phi=E1=BA=BFu</td>
+    <td class=3D"confluenceTd">Payment recorded for bond subscription</td>
+    <td class=3D"confluenceTd">SHS th=C3=B4ng b=C3=A1o (Tr=C3=A1i phi=E1=BA=
+=BFu SHS ra c=C3=B4ng ch=C3=BAng - [M=C3=A3 TP]): =C4=90=C3=A3 ghi nh=E1=BA=
+=ADn thanh to=C3=A1n mua tr=C3=A1i phi=E1=BA=BFu</td>
+    <td class=3D"confluenceTd">(Tr=C6=B0=E1=BB=9Dng h=E1=BB=A3p n=E1=BB=99p=
+ =C4=91=E1=BB=A7)<br>
+      Da nhan du tien mua TP [MaTP]. Lenh dang duoc xu ly.<br>
+      (Tr=C6=B0=E1=BB=9Dng h=E1=BB=A3p n=E1=BB=99p thi=E1=BA=BFu)<br>
+      Da nhan [SoTien]. Tien dat mua con thieu, KH vui long nop truoc [gio]=
+ [ngay] de hoan tat lenh [MaTP].</td>
+    <td class=3D"confluenceTd">(Tr=C6=B0=E1=BB=9Dng h=E1=BB=A3p n=E1=BB=99p=
+ =C4=91=E1=BB=A7)<br>
+      Ng=C3=A0y =E2=80=A6/=E2=80=A6/=E2=80=A6, qu=C3=BD kh=C3=A1ch [T=C3=AA=
+n KH]&nbsp; =C4=91=C3=A3 n=E1=BB=99p =E2=80=A6 =C4=91=E1=BB=93ng =C4=91=E1=
+=BA=B7t mua (s=E1=BB=91 l=C6=B0=E1=BB=A3ng) tr=C3=A1i phi=E1=BA=BFu (m=C3=
+=A3 tr=C3=A1i phi=E1=BA=BFu). <br>
+      (Tr=C6=B0=E1=BB=9Dng h=E1=BB=A3p n=E1=BB=99p thi=E1=BA=BFu)<br>
+      Ng=C3=A0y =E2=80=A6/=E2=80=A6/=E2=80=A6, qu=C3=BD kh=C3=A1ch =C4=91=
+=C3=A3 n=E1=BB=99p =E2=80=A6 =C4=91=E1=BB=93ng. Qu=C3=BD kh=C3=A1ch c=E1=BA=
+=A7n n=E1=BB=99p th=C3=AAm =E2=80=A6 =C4=91=E1=BB=93ng tr=C6=B0=E1=BB=9Bc =
+=E2=80=A6h=E2=80=A6 ng=C3=A0y =E2=80=A6/=E2=80=A6/=E2=80=A6.. =C4=91=E1=BB=
+=83 ho=C3=A0n th=C3=A0nh =C4=91=E1=BA=B7t mua (s=E1=BB=91 l=C6=B0=E1=BB=A3n=
+g) tr=C3=A1i phi=E1=BA=BFu (m=C3=A3 tr=C3=A1i phi=E1=BA=BFu)<br><br></td>
+    <td class=3D"confluenceTd">Full payment: On =E2=80=A6/=E2=80=A6/=E2=80=
+=A6, you have paid [=E2=80=A6] VND for [quantity] bonds [bond code]<br><br>
+      Partial payment: You have paid [=E2=80=A6] VND. Please pay an additio=
+nal [=E2=80=A6] VND before =E2=80=A6h on =E2=80=A6/=E2=80=A6/=E2=80=A6</td>
+    <td class=3D"confluenceTd">
+     <p><span class=3D"inline-comment-marker" data-ref=3D"6dbe5835-c356-407=
+2-817e-62e8f4b20e1b">Ngay sau khi nghi=E1=BB=87p v=E1=BB=A5 import n=E1=BB=
+=99p ti=E1=BB=81n ho=E1=BA=B7c s=E1=BB=AD d=E1=BB=A5ng ch=E1=BB=A9c n=C4=83=
+ng n=E1=BB=99p ti=E1=BB=81n tay cho t=E1=BB=ABng kh=C3=A1ch h=C3=A0ng ( Tr=
+=E1=BA=A1ng th=C3=A1i n=E1=BB=99p ti=E1=BB=81n thay =C4=91=E1=BB=95i: Ch=C6=
+=B0a thanh to=C3=A1n =E2=86=92 thanh to=C3=A1n 1 ph=E1=BA=A7n/to=C3=A0n b=
+=E1=BB=99)</span></p>
+     <p><span class=3D"inline-comment-marker" data-ref=3D"6dbe5835-c356-407=
+2-817e-62e8f4b20e1b">Kh=C3=B4ng g=E1=BB=ADi khi import s=E1=BB=91 ti=E1=BB=
+=81n =3D 0</span></p>
+     <p><br></p></td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">5</td>
+    <td class=3D"confluenceTd">K=E1=BA=BFt qu=E1=BA=A3 =C4=91=E1=BA=B7t mua=
+ cu=E1=BB=91i c=C3=B9ng / c=C3=B4ng b=E1=BB=91</td>
+    <td class=3D"confluenceTd">K=E1=BA=BFt qu=E1=BA=A3 mua tr=C3=A1i phi=E1=
+=BA=BFu</td>
+    <td class=3D"confluenceTd">Final bond subscription result</td>
+    <td class=3D"confluenceTd">SHS th=C3=B4ng b=C3=A1o (Tr=C3=A1i phi=E1=BA=
+=BFu SHS ra c=C3=B4ng ch=C3=BAng - [M=C3=A3 TP]): K=E1=BA=BFt qu=E1=BA=A3 m=
+ua tr=C3=A1i phi=E1=BA=BFu</td>
+    <td class=3D"confluenceTd">(Tr=C6=B0=E1=BB=9Dng h=E1=BB=A3p n=E1=BB=99p=
+ =C4=91=C3=BAng)<br>
+      Mua TP [MaTP] thanh cong, KL [SL]. Cam on Quy khach. <br>
+      (Tr=C6=B0=E1=BB=9Dng h=E1=BB=A3p n=E1=BB=99p th=E1=BB=ABa)<br>
+      Mua TP [MaTP] thanh cong, KL [SL]. Tien thua se duoc hoan theo quy di=
+nh.</td>
+    <td class=3D"confluenceTd">(Tr=C6=B0=E1=BB=9Dng h=E1=BB=A3p n=E1=BB=99p=
+ =C4=91=C3=BAng)<br>
+      Ng=C3=A0y =E2=80=A6/=E2=80=A6/=E2=80=A6, qu=C3=BD kh=C3=A1ch [T=C3=AA=
+n KH]&nbsp; =C4=91=C3=A3 mua th=C3=A0nh c=C3=B4ng (s=E1=BB=91 l=C6=B0=E1=BB=
+=A3ng) tr=C3=A1i phi=E1=BA=BFu (m=C3=A3 tr=C3=A1i phi=E1=BA=BFu), t=C6=B0=
+=C6=A1ng =E1=BB=A9ng s=E1=BB=91 ti=E1=BB=81n=E2=80=A6=E2=80=A6=E2=80=A6.=C4=
+=91=E1=BB=93ng. <br>
+      (Tr=C6=B0=E1=BB=9Dng h=E1=BB=A3p n=E1=BB=99p th=E1=BB=ABa)<br>
+      S=E1=BB=91 ti=E1=BB=81n =C4=91=E1=BA=B7t mua qu=C3=BD kh=C3=A1ch =C4=
+=91=C6=B0=E1=BB=A3c ho=C3=A0n l=E1=BA=A1i l=C3=A0 =E2=80=A6 =C4=91=E1=BB=93=
+ng s=E1=BA=BD =C4=91=C6=B0=E1=BB=A3c ho=C3=A0n l=E1=BA=A1i theo quy =C4=91=
+=E1=BB=8Bnh</td>
+    <td class=3D"confluenceTd">On =E2=80=A6/=E2=80=A6/=E2=80=A6, you have s=
+uccessfully purchased [quantity] bonds [bond code], with a total value of [=
+=E2=80=A6] VND.<br>
+      (Any excess amount will be refunded in accordance with regulations)</=
+td>
+    <td class=3D"confluenceTd"><span class=3D"inline-comment-marker" data-r=
+ef=3D"9eacd065-bc9e-437f-8265-3764b59b4c65">Ngay sau khi nghi=E1=BB=87p v=
+=E1=BB=A5 (checker) b=E1=BA=A5m n=C3=BAt ch=E1=BB=91t danh s=C3=A1ch k=E1=
+=BA=BFt qu=E1=BA=A3 ph=C3=A1t h=C3=A0nh</span>&nbsp;</td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd">6</td>
+    <td class=3D"confluenceTd">Nh=E1=BA=AFc KH ch=C6=B0a n=E1=BB=99p/n=E1=
+=BB=99p thi=E1=BA=BFu ti=E1=BB=81n</td>
+    <td class=3D"confluenceTd">N=E1=BB=99p b=E1=BB=95 sung ti=E1=BB=81n mua=
+ tr=C3=A1i phi=E1=BA=BFu</td>
+    <td class=3D"confluenceTd">Payment reminder for bond subscription</td>
+    <td class=3D"confluenceTd">SHS th=C3=B4ng b=C3=A1o (Tr=C3=A1i phi=E1=BA=
+=BFu SHS ra c=C3=B4ng ch=C3=BAng - [M=C3=A3 TP]): N=E1=BB=99p b=E1=BB=95 su=
+ng ti=E1=BB=81n mua tr=C3=A1i phi=E1=BA=BFu</td>
+    <td class=3D"confluenceTd">Nhac nop tien mua TP [MaTP]: KH can nop [SoT=
+ien] truoc [gio] [ngay]. Qua han lenh se bi huy..</td>
+    <td class=3D"confluenceTd">Qu=C3=BD kh=C3=A1ch [T=C3=AAn KH]&nbsp; =C4=
+=91=C3=A3 n=E1=BB=99p =E2=80=A6 =C4=91=E1=BB=93ng. Qu=C3=BD kh=C3=A1ch c=E1=
+=BA=A7n n=E1=BB=99p th=C3=AAm =E2=80=A6 =C4=91=E1=BB=93ng tr=C6=B0=E1=BB=9B=
+c =E2=80=A6h=E2=80=A6 ng=C3=A0y =E2=80=A6/=E2=80=A6/=E2=80=A6..=C4=91=E1=BB=
+=83 ho=C3=A0n th=C3=A0nh =C4=91=E1=BA=B7t mua (s=E1=BB=91 l=C6=B0=E1=BB=A3n=
+g) tr=C3=A1i phi=E1=BA=BFu (m=C3=A3 tr=C3=A1i phi=E1=BA=BFu).&nbsp;</td>
+    <td class=3D"confluenceTd">You have paid [=E2=80=A6] VND. Please pay an=
+ additional [=E2=80=A6] VND before =E2=80=A6h on =E2=80=A6/=E2=80=A6/=E2=80=
+=A6 to complete your subscription.</td>
+    <td class=3D"confluenceTd">
+     <div class=3D"content-wrapper">
+      <p><span class=3D"text">T=E1=BB=AB ng=C3=A0y duy=E1=BB=87t y=C3=AAu c=
+=E1=BA=A7u mua c=E1=BB=A7a KH -&gt; ng=C3=A0y k=E1=BA=BFt th=C3=BAc n=E1=BB=
+=99p ti=E1=BB=81n: g=E1=BB=ADi th=C3=B4ng b=C3=A1o nh=E1=BA=AFc kh=C3=A1ch =
+n=E1=BB=99p ti=E1=BB=81n 9h s=C3=A1ng t3 h=C3=A0ng tu=E1=BA=A7n&nbsp;</span=
+></p>
+      <p><span class=3D"text">V=C3=A0 9h s=C3=A1ng 3 ng=C3=A0y l=C3=A0m vi=
+=E1=BB=87c cu=E1=BB=91i c=C3=B9ng tr=C6=B0=E1=BB=9Bc ng=C3=A0y k=E1=BA=BFt =
+th=C3=BAc n=E1=BB=99p ti=E1=BB=81n</span></p>
+     </div></td>
+   </tr>
+  </tbody>
+ </table>
+</div>
+    </div>
+</body>
+</html>
+------=_Part_6246_665530345.1794534135755--

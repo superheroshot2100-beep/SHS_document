@@ -1,0 +1,788 @@
+﻿Name,Status,Priority,Test Script (Step-by-Step) - Step,Test Script (Step-by-Step) - Expected Result,Test Result,Bug ID
+"[UI] Hiển thị màn Nắm giữ – vào lần đầu → đủ header, tab, subtab theo Figma (REQ-01, REQ-02, REQ-03, REQ-04, REQ-05, REQ-06)",Review,Low,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: TK: 069C000101
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới","B3: Header gồm: badge ""NĐT Chuyên nghiệp""; nhãn ""Số dư khả dụng"" + giá trị; nhãn ""Tổng mệnh giá trái phiếu"" + giá trị; nút ""Nộp tiền""; icon lọc; icon ""i""
+B3: Có 2 tab ""Danh mục Trái phiếu"", ""Danh mục hợp đồng""; 2 subtab ""SH Bond"", ""Trái phiếu linh hoạt""
+B3: Số tiền định dạng #.### VND (dấu chấm phân cách hàng nghìn)",Not Run,
+[UI] Hiển thị card SH Bond – mã có 2 HĐ → đủ 7 trường theo thứ tự Figma (REQ-08),Review,Low,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: Mã: BHB291193
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới","B3: Card BHB291193 gồm: Mã TP + badge ""2 HĐ""; TCPH; ""Tổng mệnh giá""; ""Tổng tiền đầu tư"" (màu cam); ""Số lượng Trái phiếu""; ""Tổng tiền thực nhận"" (màu xanh); nút "">""",Not Run,
+"[UI] Hiển thị card TP linh hoạt – mã niêm yết → đủ trường, không có trường tiền đầu tư (REQ-23)",Review,Low,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: Mã: CII12301
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn subtab ""Trái phiếu linh hoạt""","B4: Card CII12301 gồm: Mã TP + badge ""Niêm yết""; TCPH ""CTCP Hạ tầng Beta""; ""Số lượng Trái phiếu""; ""Tổng mệnh giá""; nút "">""
+B4: Card không có ""Tổng tiền đầu tư"", ""Tổng tiền thực nhận"", badge ""n HĐ""",Not Run,
+[UI] Hiển thị bottom sheet Chi tiết TP SH Bond – mã đủ thông tin → đủ trường và định dạng (REQ-17),Draft,Low,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: Mã: BHB291193 (TD_TP_01)
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn "">"" trên card BHB291193","B4: Tiêu đề ""Chi tiết trái phiếu"", nút ""<""
+B4: Các dòng theo thứ tự: Mã trái phiếu; Tổ chức phát hành; Xếp hạng tín nhiệm TP; Loại trái phiếu; Ngày phát hành; Ngày đáo hạn; Lãi suất coupon kỳ hiện tại; Khối lượng phát hành; Mệnh giá; Phương thức đảm bảo; Hồ sơ trái phiếu (link ""Xem"")
+B4: Nút ""Xem danh mục hợp đồng"" ở cuối",Not Run,
+[UI] Hiển thị skeleton – mạng chậm khi mở SH Bond → skeleton đến khi có dữ liệu (REQ-28),Review,Low,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+Charles throttle 3G, độ trễ 2.000 ms
+   Dữ liệu: TK: 069C000101
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới","B3: Vùng danh sách hiển thị skeleton trong lúc tải
+B3: Khi tải xong: skeleton biến mất, hiển thị 2 card BHB291193, BHB291194",Not Run,
+"[UI] Hiển thị tên TCPH dài trên card → 1 dòng, cắt ""…"" (REQ-08)",Review,Low,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: TCPH BHB291194: ""Công ty TNHH Đầu tư và Phát triển Năng lượng Tái tạo Miền Trung Việt Nam""
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới","B3: Tên TCPH trên card BHB291194 nằm 1 dòng, kết thúc bằng ""…"", không đè nút "">""",Not Run,
+"[UI] Hiển thị trạng thái NĐTCN – KH chưa là NĐTCN → không có badge, có tooltip hướng dẫn (REQ-01)",Draft,Low,"0. Tiền điều kiện: TK TD_KH_02 (069C000102) chưa là NĐTCN
+   Dữ liệu: TK: 069C000102
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn icon ""i"" ở header","B3: Header không có badge ""NĐT Chuyên nghiệp""
+B4: Hiển thị tooltip hướng dẫn KH phải là NĐTCN để mua TP SH Bond",Not Run,
+[Dữ liệu] Hiển thị Số dư khả dụng – KH có cả sub86 và sub88 → lấy số dư sub88 (REQ-02),Draft,High,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: sub88 khả dụng: 500.000.000
+sub86 khả dụng: 50.000.000
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới","B3: ""Số dư khả dụng"" = ""500.000.000 VND""",Not Run,
+[Dữ liệu] Hiển thị Số dư khả dụng – KH chỉ có sub86 → lấy số dư sub86 (REQ-02),Review,High,"0. Tiền điều kiện: TK TD_KH_03 (069C000103) chỉ có sub86
+   Dữ liệu: sub86 khả dụng: 50.000.000
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới","B3: ""Số dư khả dụng"" = ""50.000.000 VND""",Not Run,
+"[Dữ liệu] Hiển thị Số dư khả dụng – số dư bằng 0 → hiển thị ""0 VND"" (REQ-02)",Review,Low,"0. Tiền điều kiện: TK TD_KH_02 (069C000102), sub86 khả dụng = 0
+   Dữ liệu: sub86 khả dụng: 0
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới","B3: ""Số dư khả dụng"" = ""0 VND"", không để trống, không hiển thị ""-""",Not Run,
+[Dữ liệu] Tính Tổng mệnh giá trái phiếu ở header – có SH Bond và TP linh hoạt → bằng tổng mệnh giá cả 2 (REQ-03),Draft,High,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: SH Bond: BHB291193 5×100.000.000 + BHB291194 1×100.000.000 = 600.000.000
+TP linh hoạt: CII12301 50×100.000 + MSN12302 10×100.000.000 = 1.005.000.000
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới","B3: ""Tổng mệnh giá trái phiếu"" = ""1.605.000.000 VND""",Not Run,
+"[Dữ liệu] Tính Tổng mệnh giá trái phiếu – KH không nắm giữ TP → ""0 VND"" (REQ-03)",Review,Medium,"0. Tiền điều kiện: TK TD_KH_02 (069C000102) không nắm giữ TP
+   Dữ liệu: TK: 069C000102
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới","B3: ""Tổng mệnh giá trái phiếu"" = ""0 VND""",Not Run,
+"[Dữ liệu] Hiển thị số tiền ≥ 1 tỷ trên card → đúng định dạng, không tràn card (REQ-08)",Review,Low,"0. Tiền điều kiện: TK TD_KH_04 (069C000104) đang hoạt động, dữ liệu như sheet Test Data
+   Dữ liệu: VPB12401: Tổng mệnh giá 3.100.000.000
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới","B3: Card VPB12401: ""Tổng mệnh giá"" = ""3.100.000.000 VND"", không bị cắt, không đè trường bên cạnh trên màn 375pt",Not Run,
+[Dữ liệu] Hiển thị Chi tiết TP SH Bond – mã BHB291193 → giá trị khớp thông tin TP trên Portal (REQ-17),Draft,High,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: TD_TP_01 – BHB291193
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn "">"" trên card BHB291193","B4: Tổ chức phát hành = ""CTCP Bảo hiểm nhân thọ Alpha""; Loại trái phiếu = ""Trái phiếu riêng lẻ""
+B4: Ngày phát hành = ""20/08/2025""; Ngày đáo hạn = ""20/08/2030""
+B4: Lãi suất coupon kỳ hiện tại = ""9,50%/năm""; Khối lượng phát hành = ""100.000""; Mệnh giá = ""100.000.000 VND""",Not Run,
+[Dữ liệu] Hiển thị lãi suất coupon số nguyên → đủ 2 chữ số thập phân (REQ-17),Review,Low,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: BHB291194: coupon 10%/năm
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn "">"" trên card BHB291194","B4: ""Lãi suất coupon kỳ hiện tại"" = ""10,00%/năm""",Not Run,
+"[Nghiệp vụ] Gộp HĐ theo mã TP – mã có 2 HĐ Hiệu lực → 1 card, badge ""2 HĐ"" (REQ-07)",Review,High,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: BHB291193: HD-B01 (2 TP), HD-B02 (3 TP), cùng Hiệu lực
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới","B3: Chỉ có 1 card BHB291193, badge ""2 HĐ""",Not Run,
+[Nghiệp vụ] Tính Số lượng trái phiếu – mã có 2 HĐ → bằng tổng SL các HĐ (REQ-07),Review,High,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: HD-B01: 2 TP; HD-B02: 3 TP
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới","B3: Card BHB291193: ""Số lượng Trái phiếu"" = ""5""",Not Run,
+[Nghiệp vụ] Tính Tổng mệnh giá card SH Bond (BIZ-19) → SL × Mệnh giá (REQ-09),Review,High,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: SL 5; Mệnh giá BHB291193: 100.000.000
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới","B3: Card BHB291193: ""Tổng mệnh giá"" = ""500.000.000 VND""",Not Run,
+[Nghiệp vụ] Tính Tổng tiền đầu tư (BIZ-20) – 2 HĐ giá mua khác nhau → Σ SL × Giá mua (REQ-10),Review,High,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: HD-B01: 2 × 105.000.000 = 210.000.000
+HD-B02: 3 × 102.000.000 = 306.000.000
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới","B3: Card BHB291193: ""Tổng tiền đầu tư"" = ""516.000.000 VND""",Not Run,
+[Nghiệp vụ] Tính Tổng tiền thực nhận (BIZ-20) – 2 HĐ → Σ Tổng tiền nhận về trước thuế (REQ-10),Draft,High,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: HD-B01 nhận về: 222.600.000
+HD-B02 nhận về: 321.300.000
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới","B3: Card BHB291193: ""Tổng tiền thực nhận"" = ""543.900.000 VND""",Not Run,
+[Nghiệp vụ] Đếm HĐ theo BIZ-18 – mã có HĐ ở 7 trạng thái → badge chỉ đếm 5 trạng thái hợp lệ (REQ-07),Draft,High,"0. Tiền điều kiện: TK TD_KH_04 (069C000104) đang hoạt động, dữ liệu như sheet Test Data
+   Dữ liệu: VPB12401: S1 Hiệu lực, S2 Chờ duyệt thanh lý, S3 Đang xử lý, S4 Chờ duyệt chuyển nhượng, S5 Chờ xác nhận, S6 Hết hiệu lực, S7 Hoàn thành
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới","B3: Card VPB12401: badge ""5 HĐ""",Not Run,
+[Nghiệp vụ] Cộng SL theo BIZ-18 – mã có HĐ ở 7 trạng thái → chỉ cộng SL 5 trạng thái hợp lệ (REQ-07),Review,High,"0. Tiền điều kiện: TK TD_KH_04 (069C000104) đang hoạt động, dữ liệu như sheet Test Data
+   Dữ liệu: SL: S1=1, S2=2, S3=4, S4=8, S5=16, S6=32, S7=64
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới","B3: Card VPB12401: ""Số lượng Trái phiếu"" = ""31""; ""Tổng mệnh giá"" = ""3.100.000.000 VND""",Not Run,
+[Nghiệp vụ] Ẩn card – mã chỉ có HĐ Hết hiệu lực → không có card (REQ-07),Review,High,"0. Tiền điều kiện: TK TD_KH_04 (069C000104) đang hoạt động, dữ liệu như sheet Test Data
+   Dữ liệu: HDB12402: 1 HĐ Hết hiệu lực, 2 TP
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới",B3: Danh sách SH Bond không có card HDB12402,Not Run,
+"[Nghiệp vụ] Hiển thị card – mã chỉ có 1 HĐ → badge ""1 HĐ"", số liệu bằng HĐ đó (REQ-07)",Review,Low,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: BHB291194: HD-B03 1 TP, giá mua 104.000.000
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới","B3: Card BHB291194: badge ""1 HĐ""; ""Số lượng Trái phiếu"" = ""1""; ""Tổng mệnh giá"" = ""100.000.000 VND""; ""Tổng tiền đầu tư"" = ""104.000.000 VND""",Not Run,
+[Nghiệp vụ] Cập nhật card – HĐ mới cùng mã chuyển Hiệu lực → số liệu cộng thêm HĐ mới (REQ-07),Review,Medium,"0. Tiền điều kiện: TK TD_KH_07 (069C000107): TCB12501 có HD-G01 (1 TP, giá mua 101.000.000, Hiệu lực)
+HĐ HD-G02 mã TCB12501, 1 TP, giá mua 103.000.000 đang Chờ xác nhận
+   Dữ liệu: HD-G02: 1 TP, 103.000.000
+1. Checker duyệt HD-G02 sang Hiệu lực trên Portal SHBond
+2. Đăng nhập SHSmart App
+3. Nhấn menu ""Trái phiếu SHS""
+4. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới","B4: Card TCB12501: badge ""2 HĐ""; ""Số lượng Trái phiếu"" = ""2""; ""Tổng mệnh giá"" = ""200.000.000 VND""; ""Tổng tiền đầu tư"" = ""204.000.000 VND""",Not Run,
+[Nghiệp vụ] Hiển thị SH Bond – KH chưa có HĐ → empty state (REQ-28),Review,Medium,"0. Tiền điều kiện: TK TD_KH_03 (069C000103) không có HĐ SH Bond
+   Dữ liệu: TK: 069C000103
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới","B3: Danh sách hiển thị icon hộp rỗng và ""Hiện tại không có danh mục nào""",Not Run,
+"[Nghiệp vụ] Gộp TP linh hoạt – cùng mã ở sub 00 và sub 01 → 1 card, SL = tổng (REQ-22)",Review,High,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: CII12301: 30 TP sub 00 + 20 TP sub 01
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn subtab ""Trái phiếu linh hoạt""","B4: Chỉ 1 card CII12301; ""Số lượng Trái phiếu"" = ""50""",Not Run,
+[Nghiệp vụ] Phạm vi TP linh hoạt – TP lưu ký ở sub86 → có card (REQ-22),Review,High,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: MSN12302: 10 TP sub86
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn subtab ""Trái phiếu linh hoạt""","B4: Có card MSN12302; ""Số lượng Trái phiếu"" = ""10""",Not Run,
+[Nghiệp vụ] Phạm vi TP linh hoạt – TP thuộc HĐ trên sub88 → không có card (REQ-22),Draft,High,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: BHB291193, BHB291194 chỉ ở sub88 (thuộc HĐ)
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn subtab ""Trái phiếu linh hoạt""","B4: Không có card BHB291193, BHB291194; danh sách chỉ có CII12301, MSN12302",Not Run,
+[Nghiệp vụ] Tính Tổng mệnh giá card TP linh hoạt (BIZ-19) → SL × Mệnh giá (REQ-09),Review,High,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: CII12301: 50 × 100.000
+MSN12302: 10 × 100.000.000
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn subtab ""Trái phiếu linh hoạt""","B4: Card CII12301: ""Tổng mệnh giá"" = ""5.000.000 VND""
+B4: Card MSN12302: ""Tổng mệnh giá"" = ""1.000.000.000 VND""",Not Run,
+[Nghiệp vụ] Phạm vi TP linh hoạt – rút lưu ký hết 1 mã → không còn card (REQ-22),Review,Medium,"0. Tiền điều kiện: TK TD_KH_03 (069C000103)
+Đã rút lưu ký toàn bộ 5 TP MSN12302 trên Flex
+   Dữ liệu: MSN12302: 0 TP
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn subtab ""Trái phiếu linh hoạt""","B4: Không có card MSN12302; hiển thị ""Hiện tại không có danh mục nào""",Not Run,
+[Nghiệp vụ] Hiển thị TP linh hoạt – KH không có TP → empty state (REQ-28),Review,Medium,"0. Tiền điều kiện: TK TD_KH_02 (069C000102) không nắm giữ TP
+   Dữ liệu: TK: 069C000102
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn subtab ""Trái phiếu linh hoạt""","B4: Hiển thị icon hộp rỗng và ""Hiện tại không có danh mục nào""",Not Run,
+"[Nghiệp vụ] Hiển thị danh mục – KH chỉ có sub86 → SH Bond trống, TP linh hoạt có TP sub86 (REQ-06, REQ-22)",Review,Medium,"0. Tiền điều kiện: TK TD_KH_03 (069C000103): MSN12302 5 TP sub86, không có HĐ
+   Dữ liệu: TK: 069C000103
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn subtab ""Trái phiếu linh hoạt""","B3: Subtab SH Bond hiển thị ""Hiện tại không có danh mục nào""
+B4: Có card MSN12302; ""Số lượng Trái phiếu"" = ""5""; ""Tổng mệnh giá"" = ""500.000.000 VND""",Not Run,
+[Nghiệp vụ] Nhấn noti Bond_05 – HĐ không hoàn thiện → mở TP linh hoạt có mã của HĐ (REQ-27),Draft,High,"0. Tiền điều kiện: TK TD_KH_06 (069C000106): HĐ HD-B05 (BHB291195, 3 TP) chưa xác nhận hồ sơ đến COT ngày E
+Job off HĐ đã chạy, noti Bond_05 đã gửi
+   Dữ liệu: HĐ: HD-B05; Mã: BHB291195; SL: 3
+1. Đăng nhập SHSmart App
+2. Mở danh sách thông báo
+3. Nhấn noti ""[SH-Bond] Chuyển đổi Trái phiếu Linh hoạt thành công""","B2: Nội dung noti: ""Hợp đồng HD-B05 không hoàn thiện, 3 trái phiếu BHB291195 được ghi nhận là Trái phiếu Linh hoạt để tiếp tục tối ưu lợi nhuận cho Quý khách.""
+B3: Mở màn Nắm giữ, subtab ""Trái phiếu linh hoạt""; có card BHB291195, ""Số lượng Trái phiếu"" = ""3""",Not Run,
+"[Nghiệp vụ] Hiển thị Phương thức đảm bảo – TSĐB Không, BLTT Có → ""Được bảo lãnh thanh toán bởi tổ chức tín dụng"" (REQ-18)",Draft,High,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: BHB291193: TSĐB = Không, BLTT = Có
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn "">"" trên card BHB291193","B4: Hiển thị 1 dòng ""Được bảo lãnh thanh toán bởi tổ chức tín dụng""; không có 2 dòng riêng TSĐB, BLTT",Not Run,
+"[Nghiệp vụ] Hiển thị Phương thức đảm bảo – TSĐB Không, BLTT Không → không hiển thị dòng (REQ-18)",Draft,High,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: BHB291194: TSĐB = Không, BLTT = Không
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn "">"" trên card BHB291194","B4: Không có dòng phương thức đảm bảo, không có ""Tài sản đảm bảo: Không""",Not Run,
+"[Nghiệp vụ] Hiển thị Phương thức đảm bảo – TSĐB Có, BLTT Không → ""Có Tài sản đảm bảo"" (REQ-18)",Draft,High,"0. Tiền điều kiện: TK TD_KH_04 (069C000104) đang hoạt động, dữ liệu như sheet Test Data
+   Dữ liệu: BHB291196: TSĐB = Có, BLTT = Không
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn "">"" trên card BHB291196","B4: Hiển thị 1 dòng ""Có Tài sản đảm bảo""",Not Run,
+"[Nghiệp vụ] Hiển thị Phương thức đảm bảo – TSĐB Có, BLTT Có → ""Được bảo lãnh thanh toán bởi tổ chức tín dụng"" (REQ-18)",Draft,High,"0. Tiền điều kiện: TK TD_KH_04 (069C000104) đang hoạt động, dữ liệu như sheet Test Data
+   Dữ liệu: BHB291197: TSĐB = Có, BLTT = Có
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn "">"" trên card BHB291197","B4: Hiển thị 1 dòng ""Được bảo lãnh thanh toán bởi tổ chức tín dụng""; không hiển thị thêm ""Có Tài sản đảm bảo""",Not Run,
+"[Nghiệp vụ] Hiển thị Phương thức đảm bảo ở chi tiết TP linh hoạt – TSĐB Có, BLTT Không → ""Có Tài sản đảm bảo"" (REQ-18)",Draft,Medium,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: CII12301: TSĐB = Có, BLTT = Không
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn subtab ""Trái phiếu linh hoạt""
+5. Nhấn "">"" trên card CII12301","B5: Hiển thị 1 dòng ""Có Tài sản đảm bảo""",Not Run,
+[Nghiệp vụ] Hiển thị Xếp hạng tín nhiệm – mã có XHTN → hạng + đơn vị dạng link (REQ-17),Review,Low,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: BHB291193: vnAA+ (Saigon Ratings)
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn "">"" trên card BHB291193","B4: Dòng ""Xếp hạng tín nhiệm TP"" = ""vnAA+ (Saigon Ratings)"", ""Saigon Ratings"" là link",Not Run,
+[Nghiệp vụ] Ẩn Xếp hạng tín nhiệm – mã không có XHTN → không có dòng (REQ-17),Review,Low,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: BHB291194: không có XHTN
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn "">"" trên card BHB291194","B4: Không có dòng ""Xếp hạng tín nhiệm TP"", không để khoảng trống",Not Run,
+"[Nghiệp vụ] Hiển thị Yêu cầu NĐTCN – mã yêu cầu NĐTCN → ""Có"" (REQ-25)",Review,Low,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: MSN12302: Yêu cầu NĐTCN = Có
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn subtab ""Trái phiếu linh hoạt""
+5. Nhấn "">"" trên card MSN12302","B5: Tab ""Tổng quan"" được chọn; dòng ""Yêu cầu NĐTCN"" = ""Có""",Not Run,
+"[Nghiệp vụ] Hiển thị Yêu cầu NĐTCN – mã không yêu cầu NĐTCN → ""Không"" (REQ-25)",Review,Low,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: CII12301: Yêu cầu NĐTCN = Không
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn subtab ""Trái phiếu linh hoạt""
+5. Nhấn "">"" trên card CII12301","B5: Dòng ""Yêu cầu NĐTCN"" = ""Không""; ""Loại trái phiếu"" = ""Trái phiếu niêm yết""",Not Run,
+"[Nghiệp vụ] Hiển thị Dòng tiền dự kiến – mã có lịch trả lãi → đúng ngày, loại, số tiền (REQ-26)",Draft,High,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: CII12301: 28/02/2027 – Nhận trái tức – +250.000 VND
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn subtab ""Trái phiếu linh hoạt""
+5. Nhấn "">"" trên card CII12301
+6. Nhấn tab ""Dòng tiền dự kiến""","B6: Bảng có 1 dòng: ""28/02/2027"" – ""Nhận trái tức"" – ""+250.000 VND"" màu xanh",Not Run,
+"[Nghiệp vụ] Hiển thị Dòng tiền dự kiến – mã chưa có lịch → ""Chưa có dòng tiền dự kiến"" (REQ-26)",Review,Medium,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: MSN12302: chưa khai báo lịch dòng tiền
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn subtab ""Trái phiếu linh hoạt""
+5. Nhấn "">"" trên card MSN12302
+6. Nhấn tab ""Dòng tiền dự kiến""","B6: Hiển thị ""Chưa có dòng tiền dự kiến"", không có popup lỗi",Not Run,
+"[Lọc] Mở Bộ lọc lần đầu → các trường ở giá trị mặc định (REQ-11, REQ-13, REQ-14)",Review,Low,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn icon lọc ở góc phải header","B4: Mã Trái phiếu: trống, placeholder ""Nhập mã trái phiếu""; Tổ chức phát hành: ""Tất cả tổ chức""; Loại trái phiếu: chip ""Tất cả"" được chọn; có nút ""Đặt lại"", ""Lưu""",Not Run,
+[Tìm kiếm] Tìm theo Mã trái phiếu – chọn 1 mã từ gợi ý → chỉ còn card mã đó (REQ-11),Review,Medium,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: Từ khóa: ""BHB291193""
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn icon lọc ở góc phải header
+5. Nhấn ô ""Mã Trái phiếu""
+6. Nhập ""BHB291193""
+7. Nhấn gợi ý ""BHB291193""
+8. Nhấn ""Lưu""",B8: Bộ lọc đóng; danh sách chỉ có card BHB291193; icon lọc đổi sang màu cam,Not Run,
+[Tìm kiếm] Tìm theo Mã trái phiếu – nhập chữ thường → gợi ý không phân biệt hoa/thường (REQ-11),Review,Medium,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: Từ khóa: ""bhb2911""
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn icon lọc ở góc phải header
+5. Nhấn ô ""Mã Trái phiếu""
+6. Nhập ""bhb2911""","B6: Gợi ý có BHB291193, BHB291194; mỗi dòng gồm mã + tên TCPH",Not Run,
+[Tìm kiếm] Tìm theo Mã trái phiếu – nhập cụm giữa mã → gợi ý mã chứa cụm (REQ-11),Review,Medium,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: Từ khóa: ""1194""
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn icon lọc ở góc phải header
+5. Nhấn ô ""Mã Trái phiếu""
+6. Nhập ""1194""",B6: Gợi ý chỉ có BHB291194,Not Run,
+[Tìm kiếm] Tìm theo Mã trái phiếu – có khoảng trắng đầu/cuối → tự trim (REQ-12),Review,Medium,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: Từ khóa: ""   BHB291193   ""
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn icon lọc ở góc phải header
+5. Nhấn ô ""Mã Trái phiếu""
+6. Nhập ""   BHB291193   """,B6: Gợi ý có BHB291193,Not Run,
+[Tìm kiếm] Tìm theo Mã trái phiếu – mã không tồn tại → không có gợi ý (REQ-11),Draft,Medium,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: Từ khóa: ""XYZ999""
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn icon lọc ở góc phải header
+5. Nhấn ô ""Mã Trái phiếu""
+6. Nhập ""XYZ999""","B6: Không có dòng gợi ý, không popup lỗi",Not Run,
+[Tìm kiếm] Tìm theo Mã trái phiếu – nhập tên TCPH tiếng Việt có dấu → không gợi ý theo tên TCPH (REQ-11),Draft,Low,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: Từ khóa: ""Bảo hiểm""
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn icon lọc ở góc phải header
+5. Nhấn ô ""Mã Trái phiếu""
+6. Nhập ""Bảo hiểm""",B6: Không có gợi ý; ô hiển thị đúng chữ tiếng Việt,Not Run,
+[Tìm kiếm] Tìm theo Mã trái phiếu – xóa mã đã chọn rồi Lưu → bỏ lọc theo mã (REQ-11),Review,Medium,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+Đang lọc Mã TP = BHB291193
+   Dữ liệu: Mã TP: (trống)
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn icon lọc ở góc phải header
+5. Xóa nội dung ô ""Mã Trái phiếu""
+6. Nhấn ""Lưu""","B6: Danh sách có đủ 2 card BHB291193, BHB291194; icon lọc về màu mặc định",Not Run,
+[Tìm kiếm] Lưu Bộ lọc với Mã trái phiếu trống → không lọc theo mã (REQ-11),Review,Medium,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: Mã TP: (trống)
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn icon lọc ở góc phải header
+5. Nhấn ""Lưu""",B5: Danh sách có đủ 2 card; icon lọc giữ màu mặc định,Not Run,
+[Validate] Nhập Mã trái phiếu 100 ký tự → nhận đủ (REQ-12),Draft,Medium,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: Chuỗi ""B"" × 100
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn icon lọc ở góc phải header
+5. Nhấn ô ""Mã Trái phiếu""
+6. Dán chuỗi 100 ký tự","B6: Ô hiển thị đủ 100 ký tự, không lỗi",Not Run,
+[Validate] Nhập Mã trái phiếu 101 ký tự → chặn ký tự thứ 101 (REQ-12),Draft,Medium,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: Chuỗi ""B"" × 101
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn icon lọc ở góc phải header
+5. Nhấn ô ""Mã Trái phiếu""
+6. Dán chuỗi 101 ký tự",B6: Ô chỉ giữ 100 ký tự đầu,Not Run,
+"[Validate] Nhập script vào Mã trái phiếu → không thực thi, không lỗi (REQ-11, REQ-30)",Review,Medium,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: ""<script>alert(1)</script>""
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn icon lọc ở góc phải header
+5. Nhấn ô ""Mã Trái phiếu""
+6. Nhập ""<script>alert(1)</script>""","B6: Không hiện hộp thoại alert, không crash; không có gợi ý",Not Run,
+"[Validate] Nhập ký tự SQL vào Mã trái phiếu → không lỗi, không lộ dữ liệu (REQ-11, REQ-30)",Review,Medium,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: ""' OR 1=1--"", ""%"", ""_""
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn icon lọc ở góc phải header
+5. Nhấn ô ""Mã Trái phiếu""
+6. Nhập ""' OR 1=1--""
+7. Xóa nội dung ô
+8. Nhập ""%""
+9. Xóa nội dung ô
+10. Nhập ""_""","B6: Không có gợi ý, không popup ""Có lỗi xảy ra. Vui lòng thử lại sau""
+B8: Không có gợi ý (không trả về toàn bộ mã TP)
+B10: Không có gợi ý (không trả về toàn bộ mã TP)",Not Run,
+[Validate] Nhập emoji vào Mã trái phiếu → không crash (REQ-11),Review,Low,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: ""😀BHB""
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn icon lọc ở góc phải header
+5. Nhấn ô ""Mã Trái phiếu""
+6. Nhập ""😀BHB""","B6: App không crash, không có gợi ý",Not Run,
+[Lọc] Lọc theo TCPH – chọn 1 tổ chức → chỉ còn card của TCPH đó (REQ-13),Review,Medium,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: TCPH: ""CTCP Bảo hiểm nhân thọ Alpha""
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn icon lọc ở góc phải header
+5. Nhấn ô ""Tổ chức phát hành""
+6. Tick ""CTCP Bảo hiểm nhân thọ Alpha""
+7. Nhấn ""Lưu"" ở màn Tổ chức phát hành
+8. Nhấn ""Lưu"" ở Bộ lọc","B7: Ô hiển thị ""Đã chọn 1 tổ chức""
+B8: Danh sách chỉ có card BHB291193",Not Run,
+[Lọc] Lọc theo TCPH – chọn 2 tổ chức → hiển thị card của cả 2 TCPH (REQ-13),Review,Medium,"0. Tiền điều kiện: TK TD_KH_04 (069C000104) đang hoạt động, dữ liệu như sheet Test Data
+   Dữ liệu: TCPH: ""CTCP Ngân hàng Delta"", ""CTCP Hạ tầng Beta""
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn icon lọc ở góc phải header
+5. Nhấn ô ""Tổ chức phát hành""
+6. Tick ""CTCP Ngân hàng Delta""
+7. Tick ""CTCP Hạ tầng Beta""
+8. Nhấn ""Lưu"" ở màn Tổ chức phát hành
+9. Nhấn ""Lưu"" ở Bộ lọc","B8: Ô hiển thị ""Đã chọn 2 tổ chức""
+B9: Danh sách chỉ có card VPB12401, CII12301",Not Run,
+"[Lọc] Lọc theo TCPH – bỏ chọn hết → về ""Tất cả tổ chức"", không lọc (REQ-13)",Review,Medium,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+Đang lọc TCPH = ""CTCP Bảo hiểm nhân thọ Alpha""
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn icon lọc ở góc phải header
+5. Nhấn ô ""Tổ chức phát hành""
+6. Nhấn ""Bỏ chọn""
+7. Nhấn ""Lưu"" ở màn Tổ chức phát hành
+8. Nhấn ""Lưu"" ở Bộ lọc","B7: Ô hiển thị ""Tất cả tổ chức""
+B8: Danh sách có đủ 2 card",Not Run,
+[Lọc] Mở danh sách TCPH → chỉ gồm TCPH của mã KH đang nắm giữ (REQ-13),Draft,Medium,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: TCPH của KH: Alpha; Năng lượng Tái tạo Miền Trung Việt Nam
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn icon lọc ở góc phải header
+5. Nhấn ô ""Tổ chức phát hành""","B5: Có ô tìm ""Nhập tên tổ chức"", dòng ""Tất cả"" và đúng 2 TCPH của KH",Not Run,
+"[Lọc] Lọc Loại TP – chọn ""Riêng lẻ"" → bỏ chip ""Tất cả"", chỉ còn TP riêng lẻ (REQ-14)",Review,Medium,"0. Tiền điều kiện: TK TD_KH_04 (069C000104) đang hoạt động, dữ liệu như sheet Test Data
+   Dữ liệu: Chip: ""Riêng lẻ""
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn icon lọc ở góc phải header
+5. Nhấn chip ""Riêng lẻ""
+6. Nhấn ""Lưu""","B5: Chip ""Riêng lẻ"" được chọn, chip ""Tất cả"" bị bỏ chọn
+B6: Danh sách có VPB12401, BHB291196, BHB291197; không có CII12301",Not Run,
+"[Lọc] Lọc Loại TP – chọn ""Niêm yết"" và ""Riêng lẻ"" → hiển thị cả 2 loại (REQ-14)",Review,Medium,"0. Tiền điều kiện: TK TD_KH_04 (069C000104) đang hoạt động, dữ liệu như sheet Test Data
+   Dữ liệu: Chip: ""Niêm yết"" + ""Riêng lẻ""
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn icon lọc ở góc phải header
+5. Nhấn chip ""Niêm yết""
+6. Nhấn chip ""Riêng lẻ""
+7. Nhấn ""Lưu""","B6: Hai chip cùng được chọn, chip ""Tất cả"" không chọn
+B7: Danh sách có 4 card: VPB12401, BHB291196, BHB291197, CII12301",Not Run,
+"[Lọc] Lọc Loại TP – nhấn ""Tất cả"" khi đang chọn ""Niêm yết"" → bỏ chọn chip khác (REQ-14)",Review,Medium,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: Chip: ""Niêm yết"" → ""Tất cả""
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn icon lọc ở góc phải header
+5. Nhấn chip ""Niêm yết""
+6. Nhấn chip ""Tất cả""","B6: Chỉ chip ""Tất cả"" được chọn",Not Run,
+"[Lọc] Lọc Loại TP – bỏ chọn chip cuối cùng → tự chọn lại ""Tất cả"" (REQ-14)",Review,Medium,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: Chip: ""Riêng lẻ"" (chọn rồi bỏ)
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn icon lọc ở góc phải header
+5. Nhấn chip ""Riêng lẻ""
+6. Nhấn lại chip ""Riêng lẻ""","B6: Chip ""Tất cả"" tự được chọn, không có trạng thái không chip nào được chọn",Not Run,
+"[Lọc] Kết hợp Mã TP và TCPH không khớp → empty state (REQ-11, REQ-13, REQ-28)",Review,Medium,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: Mã TP: ""BHB291193""
+TCPH: ""Công ty TNHH Đầu tư và Phát triển Năng lượng Tái tạo Miền Trung Việt Nam""
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn icon lọc ở góc phải header
+5. Nhấn ô ""Mã Trái phiếu""
+6. Nhập ""BHB291193""
+7. Nhấn gợi ý ""BHB291193""
+8. Nhấn ô ""Tổ chức phát hành""
+9. Tick TCPH theo Test Data
+10. Nhấn ""Lưu"" ở màn Tổ chức phát hành
+11. Nhấn ""Lưu"" ở Bộ lọc","B11: Hiển thị ""Hiện tại không có danh mục nào""; icon lọc màu cam",Not Run,
+"[Lọc] Nhấn ""Đặt lại"" khi đang lọc → bộ lọc về mặc định, hiển thị đủ danh sách (REQ-15)",Review,Medium,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+Đang lọc Mã TP = BHB291193
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn icon lọc ở góc phải header
+5. Nhấn ""Đặt lại""","B5: Mã TP trống; ""Tất cả tổ chức""; chip ""Tất cả""
+B5: Danh sách có đủ 2 card; icon lọc về màu mặc định",Not Run,
+"[Lọc] Đóng Bộ lọc bằng ""<"" không nhấn Lưu → không áp dụng lựa chọn mới (REQ-15)",Draft,Low,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: Chip: ""Niêm yết"" (chưa Lưu)
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn icon lọc ở góc phải header
+5. Nhấn chip ""Niêm yết""
+6. Nhấn ""<"" để đóng Bộ lọc
+7. Nhấn icon lọc","B6: Danh sách giữ nguyên 2 card
+B7: Chip ""Tất cả"" đang được chọn",Not Run,
+"[Lọc] Lọc TP linh hoạt theo Loại TP ""Riêng lẻ"" → chỉ còn MSN12302 (REQ-24, REQ-14)",Review,Medium,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: Chip: ""Riêng lẻ""
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn subtab ""Trái phiếu linh hoạt""
+5. Nhấn icon lọc
+6. Nhấn chip ""Riêng lẻ""
+7. Nhấn ""Lưu""",B7: Danh sách chỉ có card MSN12302,Not Run,
+"[Tìm kiếm] Tìm TP linh hoạt theo Mã trái phiếu chữ thường → chỉ còn mã đã chọn (REQ-24, REQ-11)",Review,Medium,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: Từ khóa: ""cii""
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn subtab ""Trái phiếu linh hoạt""
+5. Nhấn icon lọc
+6. Nhấn ô ""Mã Trái phiếu""
+7. Nhập ""cii""
+8. Nhấn gợi ý ""CII12301""
+9. Nhấn ""Lưu""",B9: Danh sách chỉ có card CII12301,Not Run,
+"[Lọc] Lọc TP linh hoạt theo TCPH → chỉ còn mã của TCPH đó (REQ-24, REQ-13)",Review,Medium,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: TCPH: ""CTCP Tập đoàn Gamma""
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn subtab ""Trái phiếu linh hoạt""
+5. Nhấn icon lọc
+6. Nhấn ô ""Tổ chức phát hành""
+7. Tick ""CTCP Tập đoàn Gamma""
+8. Nhấn ""Lưu"" ở màn Tổ chức phát hành
+9. Nhấn ""Lưu"" ở Bộ lọc","B8: Ô hiển thị ""Đã chọn 1 tổ chức""
+B9: Danh sách chỉ có card MSN12302",Not Run,
+"[Lọc] Nhấn ""Đặt lại"" ở TP linh hoạt khi đang lọc → hiển thị đủ danh sách (REQ-24, REQ-15)",Review,Low,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+Đang lọc chip ""Riêng lẻ"" ở subtab TP linh hoạt
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn subtab ""Trái phiếu linh hoạt""
+5. Nhấn icon lọc
+6. Nhấn ""Đặt lại""","B6: Danh sách có đủ CII12301, MSN12302; icon lọc về màu mặc định",Not Run,
+"[Phân trang] Cuộn danh sách 25 mã SH Bond → tải thêm, không trùng, không thiếu card (REQ-31)",Draft,Medium,"0. Tiền điều kiện: TK TD_KH_05 (069C000105) có 25 mã TP SH Bond
+   Dữ liệu: 25 mã TP
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Cuộn xuống cuối danh sách
+5. Cuộn tiếp đến khi không tải thêm","B4: Hiển thị thêm card khi cuộn tới cuối
+B5: Tổng 25 card, không card nào lặp lại",Not Run,
+"[Chức năng] Vào màn Nắm giữ → mặc định tab ""Danh mục Trái phiếu"", subtab ""SH Bond"" (REQ-05, REQ-06)",Review,High,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: TK: 069C000101
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới","B3: Tab ""Danh mục Trái phiếu"" và subtab ""SH Bond"" được chọn; hiển thị 2 card BHB291193, BHB291194",Not Run,
+"[Chức năng] Nhấn subtab ""Trái phiếu linh hoạt"" → chỉ hiển thị TP linh hoạt (REQ-06)",Review,High,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: TK: 069C000101
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn subtab ""Trái phiếu linh hoạt""","B4: Hiển thị 2 card CII12301, MSN12302; không có BHB291193, BHB291194",Not Run,
+"[Chức năng] Nhấn tab ""Danh mục hợp đồng"" → mở Danh mục HĐ không lọc mã TP (REQ-05)",Review,Medium,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: HĐ: HD-B01, HD-B02, HD-B03
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn tab ""Danh mục hợp đồng""","B4: Hiển thị đủ 3 HĐ HD-B01, HD-B02, HD-B03; không có chip lọc ""Mã trái phiếu …""",Not Run,
+"[Chức năng] Nhấn ""Nộp tiền"" → mở màn Nạp/Chuyển/Rút, chọn sẵn sub88 (REQ-04)",Review,Medium,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: TK: 069C000101
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn nút ""Nộp tiền""",B4: Chuyển sang màn Nạp/Chuyển/Rút tiền; tiểu khoản chọn sẵn là 069C000101 – sub88,Not Run,
+"[Chức năng] Nhấn "">"" trên card SH Bond → mở bottom sheet Chi tiết TP đúng mã (REQ-16)",Draft,High,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: Mã: BHB291193
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn "">"" trên card BHB291193","B4: Mở bottom sheet ""Chi tiết trái phiếu""; Mã trái phiếu = ""BHB291193""",Not Run,
+"[Chức năng] Nhấn ""Xem"" Hồ sơ trái phiếu – mã có hồ sơ → mở PDF (REQ-19)",Review,Medium,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: BHB291193 có 1 file hồ sơ PDF
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn "">"" trên card BHB291193
+5. Nhấn ""Xem"" ở dòng ""Hồ sơ trái phiếu""","B5: Chuyển sang màn ""Hồ sơ trái phiếu""; PDF hiển thị trang 1, cuộn được các trang tiếp theo",Not Run,
+[Chức năng] Mở Chi tiết TP – mã không có hồ sơ → ẩn dòng Hồ sơ trái phiếu (REQ-19),Review,Medium,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: BHB291194 không có hồ sơ
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn "">"" trên card BHB291194","B4: Không có dòng ""Hồ sơ trái phiếu"" và link ""Xem""",Not Run,
+"[Chức năng] Nhấn ""Xem danh mục hợp đồng"" → mở Danh mục HĐ lọc sẵn mã TP (REQ-20)",Review,High,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: BHB291193: HD-B01, HD-B02
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn "">"" trên card BHB291193
+5. Nhấn ""Xem danh mục hợp đồng""","B5: Chuyển sang tab ""Danh mục hợp đồng""; có chip ""Mã trái phiếu BHB291193"" kèm ✕; chỉ hiển thị HD-B01, HD-B02",Not Run,
+"[Chức năng] Nhấn ""<"" đóng Chi tiết TP khi đang lọc → về danh sách, giữ bộ lọc (REQ-21)",Review,Medium,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+Đang lọc TCPH = ""CTCP Bảo hiểm nhân thọ Alpha""
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn "">"" trên card BHB291193
+5. Nhấn ""<"" trên bottom sheet",B5: Về danh sách SH Bond; chỉ có card BHB291193; icon lọc màu cam,Not Run,
+"[Chức năng] Nhấn "">"" trên card TP linh hoạt → mở chi tiết, mặc định tab ""Tổng quan"" (REQ-25)",Review,High,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: Mã: MSN12302
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn subtab ""Trái phiếu linh hoạt""
+5. Nhấn "">"" trên card MSN12302","B5: Bottom sheet có 2 tab ""Tổng quan"", ""Dòng tiền dự kiến""; tab ""Tổng quan"" được chọn; Mã trái phiếu = ""MSN12302""",Not Run,
+"[Chức năng] Nhấn ""Xem"" Hồ sơ ở chi tiết TP linh hoạt → mở PDF (REQ-19)",Review,Medium,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: CII12301 có hồ sơ
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn subtab ""Trái phiếu linh hoạt""
+5. Nhấn "">"" trên card CII12301
+6. Nhấn ""Xem"" ở dòng ""Hồ sơ trái phiếu""","B6: Chuyển sang màn ""Hồ sơ trái phiếu"", hiển thị file hồ sơ CII12301",Not Run,
+[Chức năng] Mở chi tiết TP linh hoạt – mã không có hồ sơ → ẩn dòng Hồ sơ (REQ-19),Review,Low,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: MSN12302 không có hồ sơ
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn subtab ""Trái phiếu linh hoạt""
+5. Nhấn "">"" trên card MSN12302","B5: Tab ""Tổng quan"" không có dòng ""Hồ sơ trái phiếu""",Not Run,
+"[Chức năng] Nhấn ""<"" đóng chi tiết TP linh hoạt → về danh sách TP linh hoạt (REQ-21)",Review,Low,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: Mã: MSN12302
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn subtab ""Trái phiếu linh hoạt""
+5. Nhấn "">"" trên card MSN12302
+6. Nhấn ""<"" trên bottom sheet","B6: Về subtab ""Trái phiếu linh hoạt"", vẫn có 2 card CII12301, MSN12302",Not Run,
+[API] Chuyển qua lại 2 tab chi tiết TP linh hoạt → chỉ gọi API dòng tiền 1 lần (REQ-26),Review,Low,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+Charles đang bắt request
+   Dữ liệu: Mã: CII12301
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn subtab ""Trái phiếu linh hoạt""
+5. Nhấn "">"" trên card CII12301
+6. Nhấn tab ""Dòng tiền dự kiến""
+7. Nhấn tab ""Tổng quan""
+8. Nhấn lại tab ""Dòng tiền dự kiến""","B6: Charles ghi nhận 1 request dòng tiền (S8)
+B8: Không có request dòng tiền mới; bảng giống B6",Not Run,
+[API] Gửi từ khóa có khoảng trắng đầu/cuối → request gợi ý đã trim (REQ-12),Review,Low,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+Charles đang bắt request
+   Dữ liệu: Từ khóa: ""   BHB291193   ""
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn icon lọc ở góc phải header
+5. Nhấn ô ""Mã Trái phiếu""
+6. Nhập ""   BHB291193   ""","B6: Request gợi ý gửi keyword = ""BHB291193""",Not Run,
+"[Phân quyền] Gọi S2 bằng token KH khác – mã KH không nắm giữ → BND-404, không trả dữ liệu (REQ-30)",Review,High,"0. Tiền điều kiện: Token hợp lệ của TK TD_KH_07 (069C000107) – chỉ nắm giữ TCB12501
+   Dữ liệu: GET /api/v1/bond/app/symbol-detail, bondCode = ""BHB291193""
+1. Lấy access token của TD_KH_07
+2. Gọi S2 bằng Postman với bondCode = ""BHB291193""","B2: Response errorCode BND-404, không có dữ liệu chi tiết BHB291193",Not Run,
+[Phân quyền] Gọi S6 bằng token KH này kèm tham số TK KH khác → chỉ trả dữ liệu KH theo token (REQ-30),Review,High,"0. Tiền điều kiện: Token hợp lệ của TK TD_KH_07 (069C000107)
+   Dữ liệu: GET /api/v1/bond/app/bond-holdings, tham số tài khoản = ""069C000101"" (tên theo Swagger)
+1. Lấy access token của TD_KH_07
+2. Gọi S6 kèm tham số tài khoản của TD_KH_01","B2: Response chỉ có TCB12501 hoặc trả lỗi; không có BHB291193, BHB291194",Not Run,
+"[Phân quyền] Gọi S6 không có token → HTTP 401 / AUTH_001 (REQ-29, REQ-30)",Review,High,"0. Tiền điều kiện: Không đăng nhập
+   Dữ liệu: GET /api/v1/bond/app/bond-holdings, không header Authorization
+1. Gọi S6 bằng Postman không gửi token","B1: Response HTTP 401, errorCode AUTH_001, không có dữ liệu danh mục",Not Run,
+[Phân quyền] Đăng xuất rồi đăng nhập TK khác → không còn dữ liệu TK cũ (REQ-30),Review,High,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+TK TD_KH_07 đang hoạt động
+   Dữ liệu: TK1: 069C000101; TK2: 069C000107
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Đăng xuất
+5. Đăng nhập bằng TD_KH_07
+6. Nhấn menu ""Trái phiếu SHS""
+7. Nhấn tab ""Nắm giữ""",B7: Danh sách SH Bond chỉ có TCB12501; header không hiện số liệu của 069C000101 kể cả lúc đang tải,Not Run,
+"[Phân quyền] Vào Nắm giữ bằng KH chưa là NĐTCN → vẫn xem được TP đang nắm giữ (REQ-01, REQ-30)",Draft,Medium,"0. Tiền điều kiện: TK TD_KH_03 (069C000103) chưa là NĐTCN, có MSN12302 5 TP sub86
+   Dữ liệu: TK: 069C000103
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn subtab ""Trái phiếu linh hoạt""","B4: Hiển thị card MSN12302; không có popup ""Chưa đủ điều kiện giao dịch trái phiếu""",Not Run,
+"[Ngoại lệ] Mở SH Bond khi API trả BND-901 → popup ""Hệ thống đang bận"" (REQ-29)",Review,Medium,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+Charles map response S6 → errorCode BND-901
+   Dữ liệu: errorCode: BND-901
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn ""Đóng"" trên popup","B3: Popup lỗi chuẩn SHSmart ""Hệ thống đang bận"", nút ""Đóng""
+B4: Popup tắt, app không crash",Not Run,
+"[Ngoại lệ] Mở SH Bond khi API trả BND-999 → popup ""Có lỗi xảy ra. Vui lòng thử lại sau"" (REQ-29)",Review,Medium,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+Charles map response S6 → errorCode BND-999
+   Dữ liệu: errorCode: BND-999
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới","B3: Popup ""Có lỗi xảy ra. Vui lòng thử lại sau"", nút ""Đóng""",Not Run,
+[Ngoại lệ] Mở TP linh hoạt khi phiên hết hạn (AUTH_001) → popup và về màn đăng nhập (REQ-29),Review,High,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+Charles map response S7 → HTTP 401, errorCode AUTH_001
+   Dữ liệu: errorCode: AUTH_001
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn subtab ""Trái phiếu linh hoạt""
+5. Nhấn ""Đăng nhập"" trên popup","B4: Popup ""Phiên đăng nhập không hợp lệ hoặc đã hết hạn"", nút ""Đăng nhập""
+B5: Chuyển màn đăng nhập, không hiển thị dữ liệu danh mục",Not Run,
+"[Ngoại lệ] Mở Nắm giữ khi mất mạng → thông báo lỗi kết nối, không hiển thị số liệu sai (REQ-29)",Draft,Medium,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: Chế độ máy bay: Bật
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Bật chế độ máy bay
+4. Nhấn tab ""Nắm giữ""","B4: Hiển thị thông báo lỗi kết nối chuẩn SHSmart; không crash; không hiển thị ""0 VND"" thay cho số liệu thật",Not Run,
+"[Ngoại lệ] Nhấn ""Lưu"" Bộ lọc khi mất mạng → giữ nguyên danh sách cũ (REQ-15, REQ-29)",Draft,Medium,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: Chip: ""Riêng lẻ""
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn icon lọc ở góc phải header
+5. Nhấn chip ""Riêng lẻ""
+6. Bật chế độ máy bay
+7. Nhấn ""Lưu""","B7: Hiển thị thông báo lỗi kết nối; danh sách giữ 2 card, không hiển thị empty state",Not Run,
+"[Ngoại lệ] Mở Chi tiết TP khi S2 trả BND-999 → popup lỗi, không mở sheet rỗng (REQ-16, REQ-29)",Review,Medium,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+Charles map response S2 → BND-999
+   Dữ liệu: Mã: BHB291193
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn "">"" trên card BHB291193","B4: Popup ""Có lỗi xảy ra. Vui lòng thử lại sau""; không mở bottom sheet với các trường trống",Not Run,
+"[Ngoại lệ] Mở tab Dòng tiền khi API trả BND-999 → popup lỗi, không báo ""chưa có dòng tiền"" (REQ-26, REQ-29)",Review,Low,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+Charles map response dòng tiền (S8) → BND-999
+   Dữ liệu: Mã: CII12301
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn subtab ""Trái phiếu linh hoạt""
+5. Nhấn "">"" trên card CII12301
+6. Nhấn tab ""Dòng tiền dự kiến""","B6: Popup ""Có lỗi xảy ra. Vui lòng thử lại sau""; không hiển thị ""Chưa có dòng tiền dự kiến""",Not Run,
+"[Ngoại lệ] Nhấn ""Lưu"" Bộ lọc 2 lần liên tiếp → chỉ lọc 1 lần (REQ-15)",Review,Medium,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: Chip: ""Riêng lẻ""; 2 lần nhấn cách nhau < 300 ms
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn icon lọc ở góc phải header
+5. Nhấn chip ""Riêng lẻ""
+6. Nhấn nhanh ""Lưu"" 2 lần",B6: Bộ lọc đóng 1 lần; danh sách không bị nhân đôi card,Not Run,
+"[Ngoại lệ] Nhấn "">"" 2 lần liên tiếp → chỉ mở 1 bottom sheet (REQ-16)",Review,Low,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: 2 lần nhấn cách nhau < 300 ms
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn nhanh "">"" trên card BHB291193 2 lần
+5. Nhấn ""<"" 1 lần","B4: Chỉ 1 bottom sheet được mở
+B5: Về thẳng danh sách SH Bond",Not Run,
+"[Ngoại lệ] Đưa app xuống nền 60 giây rồi mở lại → giữ màn và số liệu (REQ-07, REQ-28)",Review,Low,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+   Dữ liệu: Thời gian ở nền: 60 giây
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn Home đưa app xuống nền 60 giây
+5. Mở lại app","B5: Vẫn ở màn Nắm giữ, subtab SH Bond; card BHB291193 vẫn 5 TP, 500.000.000 VND",Not Run,
+[Ngoại lệ] Chuyển nhanh 2 subtab khi mạng chậm → không lẫn dữ liệu (REQ-06),Review,Medium,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+Charles throttle 3G
+   Dữ liệu: 2 lần nhấn cách nhau < 500 ms
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn ""Trái phiếu linh hoạt""
+5. Nhấn ngay ""SH Bond""","B5: Subtab SH Bond chỉ có BHB291193, BHB291194; không xuất hiện CII12301, MSN12302",Not Run,
+"[Chức năng] Thao tác danh sách, lọc, chi tiết SH Bond → ghi đủ 3 event tracking (REQ-32)",Review,Low,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+Có quyền xem log analytics UAT
+   Dữ liệu: Event: SBOND.HOLDING.SHBOND.LIST, .FILTER, .DETAIL
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn icon lọc
+5. Nhấn ""Lưu""
+6. Nhấn "">"" trên card BHB291193",B6: Log có lần lượt SBOND.HOLDING.SHBOND.LIST → SBOND.HOLDING.SHBOND.FILTER → SBOND.HOLDING.SHBOND.DETAIL của TK 069C000101,Not Run,
+"[Chức năng] Thao tác danh sách, chi tiết, dòng tiền TP linh hoạt → ghi đủ 3 event tracking (REQ-32)",Review,Low,"0. Tiền điều kiện: TK TD_KH_01 (069C000101) đang hoạt động, dữ liệu nắm giữ như sheet Test Data
+Có quyền xem log analytics UAT
+   Dữ liệu: Event: SBOND.HOLDING.FLEX.LIST, .DETAIL, .CASHFLOW
+1. Đăng nhập SHSmart App
+2. Nhấn menu ""Trái phiếu SHS""
+3. Nhấn tab ""Nắm giữ"" ở thanh điều hướng dưới
+4. Nhấn subtab ""Trái phiếu linh hoạt""
+5. Nhấn "">"" trên card CII12301
+6. Nhấn tab ""Dòng tiền dự kiến""","B6: Log có SBOND.HOLDING.FLEX.LIST, SBOND.HOLDING.FLEX.DETAIL, SBOND.HOLDING.FLEX.CASHFLOW",Not Run,

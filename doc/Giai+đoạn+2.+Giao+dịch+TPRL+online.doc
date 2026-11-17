@@ -1,0 +1,691 @@
+Date: Sun, 15 Nov 2026 19:19:18 +0700 (ICT)
+Message-ID: <180108524.6473.1794745158886@confluence>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_6472_1928525510.1794745158886"
+
+------=_Part_6472_1928525510.1794745158886
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Giai =C4=91o=E1=BA=A1n 2. Giao d=E1=BB=8Bch TPRL online</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-link-pressed, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Giai =C4=91o=E1=BA=A1n 2. Giao d=E1=BB=8Bch TPRL online</h1>
+    <div class=3D"Section1">
+        <div class=3D"table-wrap">
+ <table class=3D"wrapped confluenceTable">
+  <colgroup>
+   <col>
+   <col>
+   <col>
+  </colgroup>
+  <tbody>
+   <tr>
+    <th scope=3D"col" class=3D"confluenceTh">Nh=C3=B3m</th>
+    <th scope=3D"col" class=3D"confluenceTh">T=C3=A0i li=E1=BB=87u</th>
+    <th scope=3D"col" class=3D"confluenceTh">M=E1=BB=A5c =C4=91=C3=ADch</th=
+>
+   </tr>
+   <tr>
+    <td rowspan=3D"3" class=3D"confluenceTd"><a href=3D"/spaces/TLDD/pages/=
+177721302/1.+T%C3%A0i+li%E1%BB%87u+ph%C3%A1t+tri%E1%BB%83n">1. T=C3=A0i li=
+=E1=BB=87u ph=C3=A1t tri=E1=BB=83n</a></td>
+    <td class=3D"confluenceTd"><a href=3D"/spaces/TLDD/pages/177713239/BRD+=
+Giao+d%E1%BB%8Bch+TPRL+online">[BRD] Giao d=E1=BB=8Bch TPRL online</a></td>
+    <td class=3D"confluenceTd">T=E1=BB=95ng quan lu=E1=BB=93ng giao d=E1=BB=
+=8Bch TPRL Repo online</td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd"><a href=3D"/spaces/TLDD/pages/177719593/BRD+=
+TPRL+-+SHSmart+APP">[BRD] TPRL - SHSmart APP</a></td>
+    <td class=3D"confluenceTd">Chi ti=E1=BA=BFt ph=C3=A1t tri=E1=BB=83n s=
+=E1=BA=A3n ph=E1=BA=A9m TPRL Repo tr=C3=AAn SHSmart APP</td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd"><a href=3D"/spaces/TLDD/pages/177721246/T%E1=
+%BB%95ng+h%E1%BB%A3p+n%E1%BB%99i+dung+l%E1%BB%97i+hi%E1%BB%83n+th%E1%BB%8B"=
+>T=E1=BB=95ng h=E1=BB=A3p n=E1=BB=99i dung l=E1=BB=97i hi=E1=BB=83n th=E1=
+=BB=8B</a></td>
+    <td class=3D"confluenceTd">T=E1=BB=95ng h=E1=BB=A3p n=E1=BB=99i dung l=
+=E1=BB=97i, th=C3=B4ng b=C3=A1o hi=E1=BB=83n th=E1=BB=8B</td>
+   </tr>
+   <tr>
+    <td class=3D"confluenceTd"><a href=3D"/spaces/TLDD/pages/177721300/0.+A=
+rchive">0. Archive</a></td>
+    <td class=3D"confluenceTd"><br></td>
+    <td class=3D"confluenceTd">T=E1=BB=95ng h=E1=BB=A3p c=C3=A1c t=C3=A0i l=
+i=E1=BB=87u =C4=91=C6=B0=E1=BB=A3c l=C6=B0u tr=E1=BB=AF nh=E1=BA=B1m thu th=
+=E1=BA=ADp th=C3=B4ng tin, mock-up v=C3=A0 c=C3=A1c t=C3=A0i li=E1=BB=87u k=
+h=C3=A1c ph=E1=BB=A5c v=E1=BB=A5 x=C3=A2y d=E1=BB=B1ng T=C3=A0i li=E1=BB=87=
+u ph=C3=A1t tri=E1=BB=83n</td>
+   </tr>
+  </tbody>
+ </table>
+</div>
+<p><br></p>
+<p><strong>C=C3=A1c h=E1=BA=A1ng m=E1=BB=A5c ph=C3=A1t tri=E1=BB=83n ch=C3=
+=ADnh</strong></p>
+<div id=3D"expander-1459029023" class=3D"expand-container">
+ <div role=3D"heading" aria-level=3D"6" id=3D"expander-control-1459029023" =
+class=3D"expand-control">
+  <button type=3D"button" id=3D"expand-button-1459029023" class=3D"aui-butt=
+on aui-button-link aui-button-link-icon-text" aria-expanded=3D"true" aria-c=
+ontrols=3D"expander-content-1459029023"><span class=3D"expand-icon aui-icon=
+ aui-icon-small aui-iconfont-chevron-down" aria-hidden=3D"true"></span><spa=
+n class=3D"expand-control-text conf-macro-render">Click here to expand...</=
+span></button>
+ </div>
+ <div role=3D"region" id=3D"expander-content-1459029023" class=3D"expand-co=
+ntent" aria-labelledby=3D"expand-button-1459029023">
+  <div class=3D"table-wrap">
+   <table class=3D"wrapped confluenceTable">
+    <colgroup class=3D"">
+     <col class=3D"">
+     <col class=3D"">
+     <col class=3D"">
+     <col class=3D"">
+    </colgroup>
+    <tbody class=3D"">
+     <tr class=3D"">
+      <th class=3D"confluenceTh">H=E1=BA=A1ng m=E1=BB=A5c</th>
+      <th class=3D"confluenceTh">Ph=E1=BA=A1m vi ph=C3=A1t tri=E1=BB=83n</t=
+h>
+      <th class=3D"confluenceTh">=C6=AFu ti=C3=AAn</th>
+      <th class=3D"confluenceTh">M=E1=BB=A9c =C4=91=E1=BB=99 ph=E1=BB=A5 th=
+u=E1=BB=99c</th>
+     </tr>
+     <tr class=3D"">
+      <td rowspan=3D"2" class=3D"confluenceTd"><strong>T=E1=BB=95ng quan</s=
+trong></td>
+      <td class=3D"confluenceTd">
+       <p>S=E1=BA=A3n ph=E1=BA=A9m "Tr=C3=A1i phi=E1=BA=BFu" tr=C3=AAn SH S=
+mart App/Web</p></td>
+      <td style=3D"text-align: center;" class=3D"confluenceTd">n.a</td>
+      <td style=3D"text-align: center;" class=3D"confluenceTd">
+       <div class=3D"content-wrapper">
+        <p><span class=3D"status-macro aui-lozenge aui-lozenge-error aui-lo=
+zenge-subtle">HIGH</span></p>
+       </div></td>
+     </tr>
+     <tr class=3D"">
+      <td class=3D"confluenceTd">
+       <p>Banner s=E1=BA=A3n ph=E1=BA=A9m tr=C3=AAn SH Smart App/Web&nbsp;<=
+/p></td>
+      <td style=3D"text-align: center;" class=3D"confluenceTd">
+       <p>12</p></td>
+      <td style=3D"text-align: center;" class=3D"confluenceTd">
+       <div class=3D"content-wrapper">
+        <p><span class=3D"status-macro aui-lozenge aui-lozenge-success aui-=
+lozenge-subtle">LOW</span></p>
+       </div></td>
+     </tr>
+     <tr class=3D"">
+      <td rowspan=3D"3" class=3D"confluenceTd">
+       <p><strong>N=E1=BB=99p r=C3=BAt ti=E1=BB=81n TK 86 | 88</strong></p>
+       <p><br></p>
+       <p><br></p></td>
+      <td class=3D"confluenceTd">
+       <p>N=E1=BB=99p ti=E1=BB=81n v=C3=A0o TK 86 | 88 theo 3 ph=C6=B0=C6=
+=A1ng th=E1=BB=A9c hi=E1=BB=87n t=E1=BA=A1i:</p>
+       <ul>
+        <li data-uuid=3D"4d0a3ba9-2793-4f78-b8ac-78050db40358">QR Napas - =
+=C6=AFu ti=C3=AAn</li>
+        <li data-uuid=3D"cee78e96-8b42-4073-adfa-d979d316eda7">Chuy=E1=BB=
+=83n kho=E1=BA=A3n ng=C3=A2n h=C3=A0ng - =C6=AFu ti=C3=AAn</li>
+        <li data-uuid=3D"61a14be5-d22f-4296-b326-f1100e2e1c9d">T=E1=BB=AB a=
+pp SAHA</li>
+       </ul></td>
+      <td style=3D"text-align: center;" class=3D"confluenceTd">
+       <p>2</p></td>
+      <td style=3D"text-align: center;" class=3D"confluenceTd">
+       <div class=3D"content-wrapper">
+        <p title=3D""><span class=3D"status-macro aui-lozenge aui-lozenge-s=
+uccess aui-lozenge-subtle">LOW</span></p>
+       </div></td>
+     </tr>
+     <tr class=3D"">
+      <td class=3D"confluenceTd">
+       <p>Chuy=E1=BB=83n ti=E1=BB=81n t=E1=BB=AB c=C3=A1c ti=E1=BB=83u kho=
+=E1=BA=A3n kh=C3=A1c v=E1=BB=81 TK 86</p></td>
+      <td rowspan=3D"2" style=3D"text-align: center;" class=3D"confluenceTd=
+">
+       <p>11</p></td>
+      <td style=3D"text-align: center;" class=3D"confluenceTd">
+       <div class=3D"content-wrapper">
+        <p><span class=3D"status-macro aui-lozenge aui-lozenge-success aui-=
+lozenge-subtle">LOW</span></p>
+       </div></td>
+     </tr>
+     <tr class=3D"">
+      <td class=3D"confluenceTd">
+       <p>T=C3=ADch h=E1=BB=A3p function n=E1=BB=99p ti=E1=BB=81n v=C3=A0 c=
+huy=E1=BB=83n ti=E1=BB=81n n=E1=BB=99i b=E1=BB=99 v=C3=A0o trong s=E1=BA=A3=
+n ph=E1=BA=A9m "Tr=C3=A1i phi=E1=BA=BFu"</p></td>
+      <td style=3D"text-align: center;" class=3D"confluenceTd">
+       <div class=3D"content-wrapper">
+        <p><span class=3D"status-macro aui-lozenge aui-lozenge-moved aui-lo=
+zenge-subtle">MEDIUM</span></p>
+       </div></td>
+     </tr>
+     <tr class=3D"">
+      <td class=3D"confluenceTd">
+       <p><strong>Qu=E1=BA=A3n tr=E1=BB=8B danh m=E1=BB=A5c Tr=C3=A1i phi=
+=E1=BA=BFu s=E1=BB=9F h=E1=BB=AFu</strong></p></td>
+      <td class=3D"confluenceTd">
+       <p>Th=C3=B4ng tin chi ti=E1=BA=BFt c=E1=BB=A7a c=C3=A1c Tr=C3=A1i ph=
+i=E1=BA=BFu =C4=91ang s=E1=BB=9F h=E1=BB=AFu theo ph=C3=A2n c=E1=BA=A5p</p>
+       <div class=3D"table-wrap">
+        <table class=3D"wrapped confluenceTable" data-mce-resize=3D"false">
+         <colgroup class=3D"">
+          <col class=3D"">
+          <col class=3D"">
+          <col class=3D"">
+         </colgroup>
+         <tbody class=3D"">
+          <tr class=3D"">
+           <th class=3D"confluenceTh">Layer 1</th>
+           <th class=3D"confluenceTh">Layer 2</th>
+           <th class=3D"confluenceTh">Layer 3</th>
+          </tr>
+          <tr class=3D"">
+           <td rowspan=3D"2" class=3D"confluenceTd">M=C3=A3 Tr=C3=A1i phi=
+=E1=BA=BFu</td>
+           <td class=3D"confluenceTd">Outright</td>
+           <td class=3D"confluenceTd">Chi ti=E1=BA=BFt th=C3=B4ng tin Tr=C3=
+=A1i phi=E1=BA=BFu</td>
+          </tr>
+          <tr class=3D"">
+           <td class=3D"confluenceTd">Repo</td>
+           <td class=3D"confluenceTd">
+            <ul>
+             <li data-uuid=3D"ee0b4d8f-c3f1-4c58-8396-f1817b437f2c">Chi ti=
+=E1=BA=BFt th=C3=B4ng tin Tr=C3=A1i phi=E1=BA=BFu</li>
+             <li data-uuid=3D"8adfaf89-ac36-4812-883e-dde442008281">C=C3=A1=
+c h=E1=BB=A3p =C4=91=E1=BB=93ng Repo <em>ho=E1=BA=B7c</em> <strong>Routing =
+Danh m=E1=BB=A5c H=C4=90 Repo</strong></li>
+            </ul></td>
+          </tr>
+         </tbody>
+        </table>
+       </div></td>
+      <td style=3D"text-align: center;" class=3D"confluenceTd">
+       <p>1</p></td>
+      <td style=3D"text-align: center;" class=3D"confluenceTd">
+       <div class=3D"content-wrapper">
+        <p><span class=3D"status-macro aui-lozenge aui-lozenge-moved aui-lo=
+zenge-subtle">MEDIUM</span></p>
+       </div></td>
+     </tr>
+     <tr class=3D"">
+      <td rowspan=3D"3" class=3D"confluenceTd"><strong>Qu=E1=BA=A3n tr=E1=
+=BB=8B danh m=E1=BB=A5c H=C4=90 repo</strong><br>
+       <p><br></p></td>
+      <td class=3D"confluenceTd">
+       <p>Danh s=C3=A1ch h=E1=BB=A3p =C4=91=E1=BB=93ng</p></td>
+      <td rowspan=3D"3" style=3D"text-align: center;" class=3D"confluenceTd=
+">
+       <p>9</p></td>
+      <td style=3D"text-align: center;" class=3D"confluenceTd">
+       <div class=3D"content-wrapper">
+        <p><span class=3D"status-macro aui-lozenge aui-lozenge-error aui-lo=
+zenge-subtle">HIGH</span></p>
+       </div></td>
+     </tr>
+     <tr class=3D"">
+      <td class=3D"confluenceTd">Ch=E1=BB=A9c n=C4=83ng Filter</td>
+      <td style=3D"text-align: center;" class=3D"confluenceTd">
+       <div class=3D"content-wrapper">
+        <p><span class=3D"status-macro aui-lozenge aui-lozenge-moved aui-lo=
+zenge-subtle">MEDIUM</span></p>
+       </div></td>
+     </tr>
+     <tr class=3D"">
+      <td class=3D"confluenceTd">
+       <p>Chi ti=E1=BA=BFt h=E1=BB=A3p =C4=91=E1=BB=93ng:</p>
+       <ul>
+        <li data-uuid=3D"35aa16c7-36ee-4122-8b0b-c4ff48a88d63">Th=C3=B4ng t=
+in H=C4=90</li>
+        <li data-uuid=3D"c0a50624-60ad-49ce-8882-53f4a3445e19">:question: V=
+iew l=E1=BA=A1i H=C4=90 =C4=91=C3=A3 x=C3=A1c nh=E1=BA=ADn</li>
+        <li data-uuid=3D"cb2be950-95b5-44ed-9318-efa6fad5e74b">D=C3=B2ng ti=
+=E1=BB=81n k=E1=BB=B3 v=E1=BB=8Dng</li>
+        <li data-uuid=3D"9337418a-7a7e-40fb-88ff-16657dd6e692"><strong>Rout=
+ing X=C3=A1c nh=E1=BA=ADn c=C3=A1c H=C4=90 c=E1=BA=A7n x=C3=A1c nh=E1=BA=AD=
+n</strong></li>
+       </ul></td>
+      <td style=3D"text-align: center;" class=3D"confluenceTd">
+       <div class=3D"content-wrapper">
+        <p><span class=3D"status-macro aui-lozenge aui-lozenge-error aui-lo=
+zenge-subtle">HIGH</span></p>
+       </div></td>
+     </tr>
+     <tr class=3D"">
+      <td rowspan=3D"2" class=3D"confluenceTd"><strong>Danh s=C3=A1ch ch=C3=
+=A0o b=C3=A1n</strong><strong><br></strong></td>
+      <td class=3D"confluenceTd">
+       <p>Danh s=C3=A1ch c=C3=A1c m=C3=A3 TPRL =C4=91=C3=A3 =C4=91=C6=B0=E1=
+=BB=A3c khai b=C3=A1o ch=C3=ADnh s=C3=A1ch</p>
+       <ul>
+        <li data-uuid=3D"e19bc119-3941-4c89-8257-3e16bd8b5b6f"><strong>Rout=
+ing =C4=90=E1=BA=B7t mua</strong></li>
+       </ul></td>
+      <td rowspan=3D"2" style=3D"text-align: center;" class=3D"confluenceTd=
+">
+       <p>3</p></td>
+      <td style=3D"text-align: center;" class=3D"confluenceTd">
+       <div class=3D"content-wrapper">
+        <p><span class=3D"status-macro aui-lozenge aui-lozenge-error aui-lo=
+zenge-subtle">HIGH</span></p>
+       </div></td>
+     </tr>
+     <tr class=3D"">
+      <td class=3D"confluenceTd">
+       <p>Chi ti=E1=BA=BFt th=C3=B4ng tin Tr=C3=A1i phi=E1=BA=BFu</p>
+       <ul>
+        <li data-uuid=3D"5d9a1cc4-2084-4b79-9c40-24f8fa1bde89"><strong>Rout=
+ing =C4=90=E1=BA=B7t mua</strong></li>
+       </ul></td>
+      <td style=3D"text-align: center;" class=3D"confluenceTd">
+       <div class=3D"content-wrapper">
+        <p><span class=3D"status-macro aui-lozenge aui-lozenge-error aui-lo=
+zenge-subtle">HIGH</span></p>
+       </div></td>
+     </tr>
+     <tr class=3D"">
+      <td rowspan=3D"6" class=3D"confluenceTd"><strong>=C4=90=E1=BA=B7t mua=
+</strong></td>
+      <td class=3D"confluenceTd">
+       <p>T=C3=ADnh to=C3=A1n th=C3=B4ng tin =C4=91=E1=BA=B7t l=E1=BB=87nh<=
+/p></td>
+      <td rowspan=3D"5" style=3D"text-align: center;" class=3D"confluenceTd=
+">
+       <p>4</p></td>
+      <td style=3D"text-align: center;" class=3D"confluenceTd">
+       <div class=3D"content-wrapper">
+        <p><span class=3D"status-macro aui-lozenge aui-lozenge-error aui-lo=
+zenge-subtle">HIGH</span></p>
+       </div></td>
+     </tr>
+     <tr class=3D"">
+      <td class=3D"confluenceTd">
+       <p>Validate c=C3=A1c =C4=91i=E1=BB=81u ki=E1=BB=87n =C4=91=E1=BA=B7t=
+ mua</p></td>
+      <td style=3D"text-align: center;" class=3D"confluenceTd">
+       <div class=3D"content-wrapper">
+        <p><span class=3D"status-macro aui-lozenge aui-lozenge-error aui-lo=
+zenge-subtle">HIGH</span></p>
+       </div></td>
+     </tr>
+     <tr class=3D"">
+      <td class=3D"confluenceTd">
+       <p>H=E1=BB=A3p =C4=91=E1=BB=93ng, bi=E1=BB=83u m=E1=BA=ABu:</p>
+       <ul>
+        <li data-uuid=3D"ca6e3289-6f44-42f1-8029-798906d06a24">Fill th=C3=
+=B4ng tin giao d=E1=BB=8Bch</li>
+        <li data-uuid=3D"44b1bcf1-680d-43e3-8a9f-88707a777ab5">Fill th=C3=
+=B4ng tin KH</li>
+        <li data-uuid=3D"06cc90dc-aea0-4419-a219-5b4d73e9662b">Hi=E1=BB=83n=
+ th=E1=BB=8B v=C3=A0 =C4=91i=E1=BB=81u h=C6=B0=E1=BB=9Bng</li>
+       </ul></td>
+      <td style=3D"text-align: center;" class=3D"confluenceTd">
+       <div class=3D"content-wrapper">
+        <p><span class=3D"status-macro aui-lozenge aui-lozenge-moved aui-lo=
+zenge-subtle">MEDIUM</span></p>
+       </div></td>
+     </tr>
+     <tr class=3D"">
+      <td class=3D"confluenceTd">
+       <p>OTP (theo ph=C6=B0=C6=A1ng th=E1=BB=A9c m=E1=BA=B7c =C4=91=E1=BB=
+=8Bnh c=E1=BB=A7a KH)</p></td>
+      <td style=3D"text-align: center;" class=3D"confluenceTd">
+       <div class=3D"content-wrapper">
+        <p><span class=3D"status-macro aui-lozenge aui-lozenge-success aui-=
+lozenge-subtle">LOW</span></p>
+       </div></td>
+     </tr>
+     <tr class=3D"">
+      <td class=3D"confluenceTd">
+       <p>Notification =C4=91=E1=BA=B7t l=E1=BB=87nh th=C3=A0nh c=C3=B4ng</=
+p></td>
+      <td style=3D"text-align: center;" class=3D"confluenceTd">
+       <div class=3D"content-wrapper">
+        <p><span class=3D"status-macro aui-lozenge aui-lozenge-success aui-=
+lozenge-subtle">LOW</span></p>
+       </div></td>
+     </tr>
+     <tr class=3D"">
+      <td class=3D"confluenceTd">
+       <p>BE x=E1=BB=AD l=C3=BD ghi nh=E1=BA=ADn th=C3=B4ng tin</p></td>
+      <td style=3D"text-align: center;" class=3D"confluenceTd">
+       <p>7</p></td>
+      <td style=3D"text-align: center;" class=3D"confluenceTd">
+       <div class=3D"content-wrapper">
+        <p><span class=3D"status-macro aui-lozenge aui-lozenge-error aui-lo=
+zenge-subtle">HIGH</span></p>
+       </div></td>
+     </tr>
+     <tr class=3D"">
+      <td rowspan=3D"4" class=3D"confluenceTd"><strong>X=C3=A1c nh=E1=BA=AD=
+n c=C3=A1c H=C4=90 c=E1=BA=A7n x=C3=A1c nh=E1=BA=ADn</strong></td>
+      <td class=3D"confluenceTd">
+       <p>Notification y=C3=AAu c=E1=BA=A7u x=C3=A1c nh=E1=BA=ADn</p>
+       <ul>
+        <li data-uuid=3D"3a13bf9d-911c-4499-b629-1df0c7e10a0e"><strong>Rout=
+ing X=C3=A1c nh=E1=BA=ADn c=C3=A1c H=C4=90 c=E1=BA=A7n x=C3=A1c nh=E1=BA=AD=
+n</strong></li>
+       </ul></td>
+      <td rowspan=3D"3" style=3D"text-align: center;" class=3D"confluenceTd=
+">5</td>
+      <td style=3D"text-align: center;" class=3D"confluenceTd">
+       <div class=3D"content-wrapper">
+        <p><span class=3D"status-macro aui-lozenge aui-lozenge-error aui-lo=
+zenge-subtle">HIGH</span></p>
+       </div></td>
+     </tr>
+     <tr class=3D"">
+      <td class=3D"confluenceTd">
+       <p>OTP (theo ph=C6=B0=C6=A1ng th=E1=BB=A9c m=E1=BA=B7c =C4=91=E1=BB=
+=8Bnh c=E1=BB=A7a KH)</p></td>
+      <td style=3D"text-align: center;" class=3D"confluenceTd">
+       <div class=3D"content-wrapper">
+        <p><span class=3D"status-macro aui-lozenge aui-lozenge-success aui-=
+lozenge-subtle">LOW</span></p>
+       </div></td>
+     </tr>
+     <tr class=3D"">
+      <td class=3D"confluenceTd">
+       <p>Notification x=C3=A1c nh=E1=BA=ADn l=E1=BB=87nh th=C3=A0nh c=C3=
+=B4ng</p></td>
+      <td style=3D"text-align: center;" class=3D"confluenceTd">
+       <div class=3D"content-wrapper">
+        <p><span class=3D"status-macro aui-lozenge aui-lozenge-success aui-=
+lozenge-subtle">LOW</span></p>
+       </div></td>
+     </tr>
+     <tr class=3D"">
+      <td class=3D"confluenceTd">
+       <p>BE x=E1=BB=AD l=C3=BD ghi nh=E1=BA=ADn th=C3=B4ng tin</p></td>
+      <td style=3D"text-align: center;" class=3D"confluenceTd">
+       <p>8</p></td>
+      <td style=3D"text-align: center;" class=3D"confluenceTd">
+       <div class=3D"content-wrapper">
+        <p><span class=3D"status-macro aui-lozenge aui-lozenge-error aui-lo=
+zenge-subtle">HIGH</span></p>
+       </div></td>
+     </tr>
+     <tr class=3D"">
+      <td class=3D"confluenceTd"><strong>Danh s=C3=A1ch ch=E1=BB=9D x=C3=A1=
+c nh=E1=BA=ADn</strong></td>
+      <td class=3D"confluenceTd">
+       <p>Danh s=C3=A1ch c=C3=A1c H=C4=90 c=E1=BA=A7n x=C3=A1c nh=E1=BA=ADn=
+ t=E1=BB=AB ALL H=C4=90 repo =C4=91ang hi=E1=BB=87u l=E1=BB=B1c</p></td>
+      <td style=3D"text-align: center;" class=3D"confluenceTd">
+       <p>6</p></td>
+      <td style=3D"text-align: center;" class=3D"confluenceTd">
+       <div class=3D"content-wrapper">
+        <p><span class=3D"status-macro aui-lozenge aui-lozenge-error aui-lo=
+zenge-subtle">HIGH</span></p>
+       </div></td>
+     </tr>
+     <tr class=3D"">
+      <td rowspan=3D"2" class=3D"confluenceTd"><strong>L=E1=BB=8Bch s=E1=BB=
+=AD giao d=E1=BB=8Bch</strong></td>
+      <td class=3D"confluenceTd">
+       <p>Danh s=C3=A1ch l=E1=BB=8Bch s=E1=BB=AD giao d=E1=BB=8Bch:</p>
+       <ul>
+        <li data-uuid=3D"2aa1c81f-1a23-4425-ba0a-6fd28207f944">=C4=90=E1=BA=
+=B7t mua</li>
+        <li data-uuid=3D"b4a80179-be36-4278-a296-6583a1b00012">X=C3=A1c nh=
+=E1=BA=ADn H=C4=90 leg 2</li>
+        <li data-uuid=3D"69f5f482-0bca-430e-9db6-3591c89cec73">X=C3=A1c nh=
+=E1=BA=ADn Phi=E1=BA=BFu =C4=91=E1=BA=B7t b=C3=A1n</li>
+        <li data-uuid=3D"332a5496-5898-4603-b889-e8a7a13a0c61">:question: N=
+h=E1=BA=ADn coupon</li>
+       </ul></td>
+      <td rowspan=3D"2" style=3D"text-align: center;" class=3D"confluenceTd=
+">
+       <p>10</p></td>
+      <td style=3D"text-align: center;" class=3D"confluenceTd">
+       <div class=3D"content-wrapper">
+        <p><span class=3D"status-macro aui-lozenge aui-lozenge-error aui-lo=
+zenge-subtle">HIGH</span></p>
+       </div></td>
+     </tr>
+     <tr class=3D"">
+      <td class=3D"confluenceTd">
+       <p>Ch=E1=BB=A9c n=C4=83ng Filter</p></td>
+      <td style=3D"text-align: center;" class=3D"confluenceTd">
+       <div class=3D"content-wrapper">
+        <p><span class=3D"status-macro aui-lozenge aui-lozenge-moved aui-lo=
+zenge-subtle">MEDIUM</span></p>
+       </div></td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+ </div>
+</div>
+    </div>
+</body>
+</html>
+------=_Part_6472_1928525510.1794745158886--

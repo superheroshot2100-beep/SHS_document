@@ -1,0 +1,3964 @@
+Date: Mon, 16 Nov 2026 16:20:04 +0700 (ICT)
+Message-ID: <1857629941.6570.1794820804641@confluence>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_6569_763327318.1794820804640"
+
+------=_Part_6569_763327318.1794820804640
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>11. Qu=E1=BA=A3n l=C3=BD bi=E1=BB=83u m=E1=BA=ABu</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-link-pressed, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>11. Qu=E1=BA=A3n l=C3=BD bi=E1=BB=83u m=E1=BA=ABu</h1>
+    <div class=3D"Section1">
+        <div class=3D"contentLayout2">
+ <div class=3D"columnLayout single" data-layout=3D"single">
+  <div class=3D"cell normal" data-type=3D"normal">
+   <div class=3D"innerCell">
+    <p>&nbsp; <span class=3D"jira-issue resolved" data-jira-key=3D"BON-1836=
+"> <a href=3D"https://jira.shs.com.vn/browse/BON-1836" class=3D"jira-issue-=
+key"><img class=3D"icon" src=3D"https://jira.shs.com.vn/images/icons/issuet=
+ypes/story.svg">BON-1836</a> - <span class=3D"summary">Gen file m=E1=BA=ABu=
+ bi=E1=BB=83u khi nh=E1=BA=ADp giao d=E1=BB=8Bch mua k=E1=BB=B3 h=E1=BA=A1n=
+</span> <span class=3D"aui-lozenge aui-lozenge-subtle             aui-lozen=
+ge-success
+     jira-macro-single-issue-export-pdf">Closed</span> </span> Version:</p>
+    <div class=3D"table-wrap">
+     <table class=3D"wrapped confluenceTable">
+      <colgroup>
+       <col>
+       <col>
+       <col>
+       <col>
+       <col>
+       <col>
+      </colgroup>
+      <tbody>
+       <tr>
+        <th scope=3D"col" class=3D"confluenceTh">ver</th>
+        <th scope=3D"col" class=3D"confluenceTh">date</th>
+        <th scope=3D"col" class=3D"confluenceTh">user</th>
+        <th scope=3D"col" class=3D"confluenceTh">desc</th>
+        <th scope=3D"col" class=3D"confluenceTh">brd</th>
+        <th scope=3D"col" class=3D"confluenceTh">jira</th>
+       </tr>
+       <tr>
+        <td class=3D"confluenceTd">1.0</td>
+        <td class=3D"confluenceTd">
+         <div class=3D"content-wrapper">
+          <p><time datetime=3D"2026-08-24" class=3D"date-past">24 Aug 2026<=
+/time>&nbsp;</p>
+         </div></td>
+        <td class=3D"confluenceTd">le.pth</td>
+        <td class=3D"confluenceTd">T=E1=BA=A1o m=E1=BB=9Bi</td>
+        <td class=3D"confluenceTd"><a href=3D"/spaces/PTSPDT/pages/17770490=
+5/BRD+ph%C3%A2n+h%E1%BB%87+qu%E1%BA%A3n+l%C3%BD+m%E1%BA%ABu+bi%E1%BB%83u">B=
+RD ph=C3=A2n h=E1=BB=87 qu=E1=BA=A3n l=C3=BD m=E1=BA=ABu bi=E1=BB=83u</a></=
+td>
+        <td class=3D"confluenceTd">
+         <div class=3D"content-wrapper">
+          <p><span class=3D"jira-issue resolved" data-jira-key=3D"BON-1837"=
+> <a href=3D"https://jira.shs.com.vn/browse/BON-1837" class=3D"jira-issue-k=
+ey"><img class=3D"icon" src=3D"https://jira.shs.com.vn/secure/viewavatar?si=
+ze=3Dxsmall&amp;avatarId=3D10316&amp;avatarType=3Dissuetype">BON-1837</a> -=
+ <span class=3D"summary">[BA] T=C3=A0i li=E1=BB=87u ph=C3=A2n t=C3=ADch</sp=
+an> <span class=3D"aui-lozenge aui-lozenge-subtle             aui-lozenge-s=
+uccess
+     jira-macro-single-issue-export-pdf">Done</span> </span></p>
+         </div></td>
+       </tr>
+       <tr>
+        <td class=3D"confluenceTd">1.1</td>
+        <td class=3D"confluenceTd">
+         <div class=3D"content-wrapper">
+          <p><time datetime=3D"2026-11-11" class=3D"date-past">11 Nov 2026<=
+/time>&nbsp;</p>
+         </div></td>
+        <td class=3D"confluenceTd">le.pth</td>
+        <td class=3D"confluenceTd">C=E1=BA=ADp nh=E1=BA=ADt mapping b=E1=BB=
+=95 sung</td>
+        <td class=3D"confluenceTd"><a href=3D"https://confluence.shs.com.vn=
+/spaces/PTSPDT/pages/177722354/BRD+Mapping+d%E1%BB%AF+li%E1%BB%87u+t%E1%BB%=
+B1+%C4%91%E1%BB%99ng+v%C3%A0o+PL05+v%C3%A0+H%E1%BB%A3p+%C4%91%E1%BB%93ng+mu=
+a+b%C3%A1n+TPRL+k%E1%BB%B3+h%E1%BA%A1n+c%E1%BB%91+%C4%91%E1%BB%8Bnh+c%E1%BB=
+%A7a+N%C4%90T#BRDMappingd%E1%BB%AFli%E1%BB%87ut%E1%BB%B1%C4%91%E1%BB%99ngv%=
+C3%A0oPL05v%C3%A0H%E1%BB%A3p%C4%91%E1%BB%93ngmua%2Fb%C3%A1nTPRLk%E1%BB%B3h%=
+E1%BA%A1nc%E1%BB%91%C4%91%E1%BB%8Bnhc%E1%BB%A7aN%C4%90T-8.1M%E1%BA%ABubi%E1=
+%BB%83uPL05" rel=3D"nofollow">BRD mapping</a></td>
+        <td class=3D"confluenceTd">
+         <div class=3D"content-wrapper">
+          <p><br></p>
+         </div></td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+    <p>
+     <style type=3D"text/css">/*<![CDATA[*/
+div.rbtoc1794820804585 {padding: 0px;}
+div.rbtoc1794820804585 ul {margin-left: 0px;}
+div.rbtoc1794820804585 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style></p>
+    <div class=3D"toc-macro rbtoc1794820804585">
+     <ul class=3D"toc-indentation">
+      <li><a href=3D"#id-11.Qu=E1=BA=A3nl=C3=BDbi=E1=BB=83um=E1=BA=ABu-1.M=
+=E1=BA=ABuPh=E1=BB=A5l=E1=BB=A5c05">1. M=E1=BA=ABu Ph=E1=BB=A5 l=E1=BB=A5c =
+05</a></li>
+      <li><a href=3D"#id-11.Qu=E1=BA=A3nl=C3=BDbi=E1=BB=83um=E1=BA=ABu-1.M=
+=E1=BA=ABuPh=E1=BB=A5l=E1=BB=A5c05mapping">1. M=E1=BA=ABu Ph=E1=BB=A5 l=E1=
+=BB=A5c 05 mapping</a></li>
+      <li><a href=3D"#id-11.Qu=E1=BA=A3nl=C3=BDbi=E1=BB=83um=E1=BA=ABu-3.Ph=
+i=E1=BA=BFul=E1=BB=87nhmua:">3. Phi=E1=BA=BFu l=E1=BB=87nh mua:</a></li>
+      <li><a href=3D"#id-11.Qu=E1=BA=A3nl=C3=BDbi=E1=BB=83um=E1=BA=ABu-4.B=
+=E1=BA=A3ngm=C3=B4ph=E1=BB=8Fngd=C3=B2ngti=E1=BB=81n">4. B=E1=BA=A3ng m=C3=
+=B4 ph=E1=BB=8Fng d=C3=B2ng ti=E1=BB=81n</a></li>
+      <li><a href=3D"#id-11.Qu=E1=BA=A3nl=C3=BDbi=E1=BB=83um=E1=BA=ABu-5.H=
+=E1=BB=A3p=C4=91=E1=BB=93ngmua-KHb=C3=A1nl=E1=BA=A1i">5. H=E1=BB=A3p =C4=91=
+=E1=BB=93ng mua - KH b=C3=A1n l=E1=BA=A1i</a></li>
+      <li><a href=3D"#id-11.Qu=E1=BA=A3nl=C3=BDbi=E1=BB=83um=E1=BA=ABu-6.Ph=
+i=E1=BA=BFul=E1=BB=87nhb=C3=A1n-KHb=C3=A1nl=E1=BA=A1i">6. Phi=E1=BA=BFu l=
+=E1=BB=87nh b=C3=A1n - KH b=C3=A1n l=E1=BA=A1i</a></li>
+     </ul>
+    </div>
+    <p></p>
+   </div>
+  </div>
+ </div>
+ <div class=3D"columnLayout two-equal" data-layout=3D"two-equal">
+  <div class=3D"cell normal" data-type=3D"normal">
+   <div class=3D"innerCell">
+    <h1 id=3D"id-11.Qu=E1=BA=A3nl=C3=BDbi=E1=BB=83um=E1=BA=ABu-1.M=E1=BA=AB=
+uPh=E1=BB=A5l=E1=BB=A5c05"><span style=3D"color:#172b4d;">1. M=E1=BA=ABu Ph=
+=E1=BB=A5 l=E1=BB=A5c 05<br></span></h1>
+    <p><strong>C=E1=BB=98NG H=C3=92A X=C3=83 H=E1=BB=98I CH=E1=BB=A6 NGH=C4=
+=A8A VI=E1=BB=86T NAM</strong></p>
+    <p><strong>=C4=90=E1=BB=99c l=E1=BA=ADp - T=E1=BB=B1 do - H=E1=BA=A1nh =
+ph=C3=BAc</strong></p>
+    <p>_______________________</p>
+    <p>K=C3=ADnh g=E1=BB=ADi: <em>C=C3=B4ng ty C=E1=BB=95 ph=E1=BA=A7n Ch=
+=E1=BB=A9ng kho=C3=A1n S=C3=A0i G=C3=B2n =E2=80=93 H=C3=A0 N=E1=BB=99i</em>=
+</p>
+    <p>T=C3=AAn t=C3=B4i l=C3=A0: [<strong>T=C3=AAn kh=C3=A1ch h=C3=A0ng</s=
+trong>]<span style=3D"color:#f87168;"><sup>1</sup></span></p>
+    <p>Ng=C3=A0y th=C3=A1ng n=C4=83m sinh: [Th=C3=B4ng tin t=E1=BB=AB<stron=
+g> T=C3=AAn kh=C3=A1ch h=C3=A0ng</strong>]<span style=3D"color:#f87168;"><s=
+up>2</sup></span>&nbsp; Gi=E1=BB=9Bi&nbsp; t=C3=ADnh: [Th=C3=B4ng tin t=E1=
+=BB=AB <strong>T=C3=AAn kh=C3=A1ch h=C3=A0ng</strong>]<span style=3D"color:=
+#f87168;"><sup>3</sup></span></p>
+    <p>S=E1=BB=91 CCCD/H=E1=BB=99 chi=E1=BA=BFu: [<strong>S=E1=BB=91 gi=E1=
+=BA=A5y t=E1=BB=9D</strong>]<span style=3D"color:#f87168;"><sup>4</sup></sp=
+an> Ng=C3=A0y c=E1=BA=A5p: [<strong>Ng=C3=A0y c=E1=BA=A5p</strong>]<span st=
+yle=3D"color:#f87168;"><sup>5</sup></span>&nbsp; N=C6=A1i c=E1=BA=A5p: [<st=
+rong>N=C6=A1i c=E1=BA=A5p</strong>]<span style=3D"color:#f87168;"><sup>6</s=
+up></span></p>
+    <p>N=C6=A1i =E1=BB=9F hi=E1=BB=87n t=E1=BA=A1i: [<strong>=C4=90=E1=BB=
+=8Ba ch=E1=BB=89 li=C3=AAn h=E1=BB=87</strong>]<span style=3D"color:#f87168=
+;"><sup>7</sup></span>&nbsp;</p>
+    <p>=C4=90i=E1=BB=87n tho=E1=BA=A1i li=C3=AAn h=E1=BB=87: [<strong>S=E1=
+=BB=91 =C4=91i=E1=BB=87n tho=E1=BA=A1i</strong>]<span style=3D"color:#f8716=
+8;"><sup>8</sup></span>&nbsp;</p>
+    <p>Tr=C3=AAn c=C6=A1 s=E1=BB=9F n=E1=BB=99i dung th=E1=BB=8Fa thu=E1=BA=
+=ADn v=E1=BB=81 vi=E1=BB=87c mua/b=C3=A1n tr=C3=A1i phi=E1=BA=BFu (m=C3=A3 =
+tr=C3=A1i phi=E1=BA=BFu) c=E1=BB=A7a (t=C3=AAn doanh nghi=E1=BB=87p ph=C3=
+=A1t h=C3=A0nh) ph=C3=A1t h=C3=A0nh ng=C3=A0y, t=C3=B4i x=C3=A1c nh=E1=BA=
+=ADn c=C3=A1c n=E1=BB=99i dung sau =C4=91=C3=A2y:</p>
+    <ol>
+     <li data-uuid=3D"b408fb81-5cb3-4d9c-8cc2-61c2e0170988">T=C3=B4i l=C3=
+=A0 nh=C3=A0 =C4=91=E1=BA=A7u t=C6=B0 =C4=91=C6=B0=E1=BB=A3c mua, giao d=E1=
+=BB=8Bch tr=C3=A1i phi=E1=BA=BFu doanh nghi=E1=BB=87p ch=C3=A0o b=C3=A1n ri=
+=C3=AAng l=E1=BA=BB thu=E1=BB=99c m=E1=BB=99t ho=E1=BA=B7c m=E1=BB=99t s=E1=
+=BB=91 tr=C6=B0=E1=BB=9Dng h=E1=BB=A3p sau:</li>
+    </ol>
+    <p>=E2=96=A1 C=C3=A1 nh=C3=A2n l=C3=A0 nh=C3=A0 =C4=91=E1=BA=A7u t=C6=
+=B0 chi=E1=BA=BFn l=C6=B0=E1=BB=A3c =C4=91=C3=A1p =E1=BB=A9ng ti=C3=AAu ch=
+=C3=AD v=C3=A0 n=E1=BA=B1m trong danh s=C3=A1ch nh=C3=A0 =C4=91=E1=BA=A7u t=
+=C6=B0 chi=E1=BA=BFn l=C6=B0=E1=BB=A3c =C4=91=C6=B0=E1=BB=A3c =C4=90=E1=BA=
+=A1i h=E1=BB=99i =C4=91=E1=BB=93ng c=E1=BB=95 =C4=91=C3=B4ng doanh nghi=E1=
+=BB=87p ph=C3=A1t h=C3=A0nh th=C3=B4ng qua <em>(k=C3=A8m theo Ngh=E1=BB=8B =
+quy=E1=BA=BFt c=E1=BB=A7a =C4=90=E1=BA=A1i h=E1=BB=99i =C4=91=E1=BB=93ng c=
+=E1=BB=95 =C4=91=C3=B4ng s=E1=BB=91 =E2=80=A6 ng=C3=A0y =E2=80=A6 c=E1=BB=
+=A7a [<strong>T=E1=BB=95 ch=E1=BB=A9c ph=C3=A1t h=C3=A0nh</strong>]<span st=
+yle=3D"color:#f87168;"><sup>9</sup></span>);</em></p>
+    <p>=E2=98=91 C=C3=A1 nh=C3=A2n c=C3=B3 ch=E1=BB=A9ng ch=E1=BB=89 h=C3=
+=A0nh ngh=E1=BB=81 ch=E1=BB=A9ng kho=C3=A1n theo quy =C4=91=E1=BB=8Bnh t=E1=
+=BA=A1i =C4=91i=E1=BB=83m c kho=E1=BA=A3n 1 =C4=90i=E1=BB=81u 11 Lu=E1=BA=
+=ADt Ch=E1=BB=A9ng kho=C3=A1n s=E1=BB=91 54/2019/QH14</p>
+    <ul>
+     <li data-uuid=3D"072b193c-1719-4ec1-9040-8be6329136d6">Lo=E1=BA=A1i ch=
+=E1=BB=A9ng ch=E1=BB=89: [Lo=E1=BA=A1i ch=E1=BB=A9ng ch=E1=BB=89]<span styl=
+e=3D"color:#f87168;"><sup>10</sup></span></li>
+     <li data-uuid=3D"d5c71e7c-d2ae-4919-a3b8-149c76211090">S=E1=BB=91: [S=
+=E1=BB=91 ch=E1=BB=A9ng ch=E1=BB=89]<span style=3D"color:#f87168;"><sup>11<=
+/sup></span></li>
+     <li data-uuid=3D"df4cc9bd-2d28-48ba-b7f5-631ea6a8f4dc">Ng=C3=A0y c=E1=
+=BA=A5p: [Ng=C3=A0y c=E1=BA=A5p]<span style=3D"color:#f87168;"><sup>12</sup=
+></span></li>
+     <li data-uuid=3D"a7cfaf19-6c6f-4331-8566-57af14bf9ba8">Ng=C3=A0y hi=E1=
+=BB=87u l=E1=BB=B1c: [Ng=C3=A0y hi=E1=BB=87u l=E1=BB=B1c]<span style=3D"col=
+or:#f87168;"><sup>13</sup></span></li>
+    </ul>
+    <p>=E2=96=A1 C=C3=A1 nh=C3=A2n n=E1=BA=AFm gi=E1=BB=AF danh m=E1=BB=A5c=
+ ch=E1=BB=A9ng kho=C3=A1n ni=C3=AAm y=E1=BA=BFt, =C4=91=C4=83ng k=C3=BD gia=
+o d=E1=BB=8Bch c=C3=B3 gi=C3=A1 tr=E1=BB=8B l=C3=A0 [Gi=C3=A1 tr=E1=BB=8B d=
+anh m=E1=BB=A5c CKNY]<span style=3D"color:#f87168;"><sup>14</sup></span> =
+=C4=91=E1=BB=93ng, =C4=91=C3=A1p =E1=BB=A9ng gi=C3=A1 tr=E1=BB=8B t=E1=BB=
+=91i thi=E1=BB=83u l=C3=A0 02 t=E1=BB=B7 =C4=91=E1=BB=93ng theo quy =C4=91=
+=E1=BB=8Bnh t=E1=BA=A1i =C4=91i=E1=BB=83m d kho=E1=BA=A3n 1 =C4=90i=E1=BB=
+=81u 11 Lu=E1=BA=ADt Ch=E1=BB=A9ng kho=C3=A1n s=E1=BB=91 54/2019/QH14 <em>(=
+k=C3=A8m theo v=C4=83n b=E1=BA=A3n x=C3=A1c nh=E1=BA=ADn =C4=91=C3=A1p =E1=
+=BB=A9ng quy =C4=91=E1=BB=8Bnh t=E1=BA=A1i =C4=91i=E1=BB=83m b kho=E1=BA=A3=
+n 2 =C4=90i=E1=BB=81u 9 Ngh=E1=BB=8B =C4=91=E1=BB=8Bnh s=E1=BB=91 200/2026/=
+N=C4=90-CP);</em></p>
+    <p>=E2=96=A1 C=C3=A1 nh=C3=A2n c=C3=B3 thu nh=E1=BA=ADp ch=E1=BB=8Bu th=
+u=E1=BA=BF n=C4=83m [n=C4=83m li=E1=BB=81n tr=C6=B0=E1=BB=9Bc n=C4=83m mua =
+tr=C3=A1i phi=E1=BA=BFu]<span style=3D"color:#f87168;"><sup>15</sup></span>=
+ l=C3=A0<em> </em>[Gi=C3=A1 tr=E1=BB=8B thu nh=E1=BA=ADp ch=E1=BB=8Bu thu=
+=E1=BA=BF]<span style=3D"color:#f87168;"><sup>16</sup></span><em> </em>t=E1=
+=BB=B7 =C4=91=E1=BB=93ng theo h=E1=BB=93 s=C6=A1 khai thu=E1=BA=BF =C4=91=
+=C3=A3 n=E1=BB=99p cho c=C6=A1 quan thu=E1=BA=BF ho=E1=BA=B7c ch=E1=BB=A9ng=
+ t=E1=BB=AB kh=E1=BA=A5u tr=E1=BB=AB thu=E1=BA=BF c=E1=BB=A7a t=E1=BB=95 ch=
+=E1=BB=A9c, c=C3=A1 nh=C3=A2n chi tr=E1=BA=A3, =C4=91=C3=A1p =E1=BB=A9ng m=
+=E1=BB=A9c thu nh=E1=BA=ADp ch=E1=BB=8Bu thu=E1=BA=BF t=E1=BB=91i thi=E1=BB=
+=83u l=C3=A0 01 t=E1=BB=B7 =C4=91=E1=BB=93ng theo quy =C4=91=E1=BB=8Bnh t=
+=E1=BA=A1i =C4=91i=E1=BB=83m =C4=91 kho=E1=BA=A3n 1 =C4=90i=E1=BB=81u 11 Lu=
+=E1=BA=ADt Ch=E1=BB=A9ng kho=C3=A1n s=E1=BB=91 54/2019/QH14 <em>(k=C3=A8m t=
+heo t=C3=A0i li=E1=BB=87u x=C3=A1c nh=E1=BA=ADn theo quy =C4=91=E1=BB=8Bnh =
+t=E1=BA=A1i kho=E1=BA=A3n 5 =C4=90i=E1=BB=81u 5 Ngh=E1=BB=8B =C4=91=E1=BB=
+=8Bnh s=E1=BB=91 155/2020/N=C4=90-CP =C4=91=C6=B0=E1=BB=A3c s=E1=BB=ADa =C4=
+=91=E1=BB=95i, b=E1=BB=95 sung b=E1=BB=9Fi kho=E1=BA=A3n 2 =C4=90i=E1=BB=81=
+u 1 Ngh=E1=BB=8B =C4=91=E1=BB=8Bnh s=E1=BB=91 245/2025/N=C4=90-CP).</em></p=
+>
+    <ol>
+     <li data-uuid=3D"d9425a08-a9f6-453b-a746-9ed0b2b7296b">T=C3=B4i =C4=91=
+=C3=A3 ti=E1=BA=BFp c=E1=BA=ADn v=C3=A0 =C4=91=E1=BB=8Dc =C4=91=E1=BA=A7y =
+=C4=91=E1=BB=A7 n=E1=BB=99i dung c=C3=B4ng b=E1=BB=91 th=C3=B4ng tin v=E1=
+=BB=81:</li>
+    </ol>
+    <p>Tr=C3=A1i phi=E1=BA=BFu [<strong>M=C3=A3 tr=C3=A1i phi=E1=BA=BFu</st=
+rong>]<span style=3D"color:#f87168;"><sup>17</sup></span> do c=C3=B4ng ty c=
+h=E1=BB=A9ng kho=C3=A1n n=C6=A1i nh=C3=A0 =C4=91=E1=BA=A7u t=C6=B0 th=E1=BB=
+=B1c hi=E1=BB=87n giao d=E1=BB=8Bch cung c=E1=BA=A5p:</p>
+    <ul>
+     <li data-uuid=3D"bd733c7a-0969-4c48-be51-ae0c57eb925d">T=C3=AAn t=E1=
+=BB=95 ch=E1=BB=A9c: C=C3=B4ng ty C=E1=BB=95 ph=E1=BA=A7n Ch=E1=BB=A9ng kho=
+=C3=A1n S=C3=A0i G=C3=B2n =E2=80=93 H=C3=A0 N=E1=BB=99i</li>
+     <li data-uuid=3D"eb3b7b3f-392e-4673-8589-7cd9f329f12f">=C4=90=E1=BB=8B=
+a ch=E1=BB=89: [=C4=90=E1=BB=8Ba ch=E1=BB=89 li=C3=AAn h=E1=BB=87]<span sty=
+le=3D"color:#f87168;"><sup>18</sup></span></li>
+     <li data-uuid=3D"f1dd01ea-0fe4-48d0-82e9-6df021fef7ac">Ng=C6=B0=E1=BB=
+=9Di =C4=91=E1=BA=A1i di=E1=BB=87n: [H=E1=BB=8D t=C3=AAn ng=C6=B0=E1=BB=9Di=
+ =C4=91=C6=B0=E1=BB=A3c =E1=BB=A7y quy=E1=BB=81n]<span style=3D"color:#f871=
+68;"><sup>19</sup></span></li>
+     <li data-uuid=3D"56bd7bf5-98e1-4e7a-b05f-ed4db15cad4e">Ch=E1=BB=A9c v=
+=E1=BB=A5: [Ch=E1=BB=A9c v=E1=BB=A5]<span style=3D"color:#f87168;"><sup>20<=
+/sup></span></li>
+     <li data-uuid=3D"fe391397-2bfc-401c-a10a-a78e5600ec87">=E1=BB=A6y quy=
+=E1=BB=81n: [S=E1=BB=91 v=C4=83n b=E1=BA=A3n =E1=BB=A7y quy=E1=BB=81n]<span=
+ style=3D"color:#f87168;"><sup>21</sup></span> ng=C3=A0y [Ng=C3=A0y hi=E1=
+=BB=87u l=E1=BB=B1c]<span style=3D"color:#f87168;"><sup>22</sup></span></li=
+>
+    </ul>
+    <p>C=C3=A1c h=E1=BB=93 s=C6=A1 ti=E1=BA=BFp c=E1=BA=ADn bao g=E1=BB=93m=
+:</p>
+    <ol>
+     <li data-uuid=3D"47d92ffd-a854-43c6-b23e-b352640b512e">a) B=E1=BA=A3n =
+c=C3=B4ng b=E1=BB=91 th=C3=B4ng tin tr=C6=B0=E1=BB=9Bc =C4=91=E1=BB=A3t ch=
+=C3=A0o b=C3=A1n tr=C3=A1i phi=E1=BA=BFu theo quy =C4=91=E1=BB=8Bnh t=E1=BA=
+=A1i [kho=E1=BA=A3n 1 =C4=90i=E1=BB=81u 29 Ngh=E1=BB=8B =C4=91=E1=BB=8Bnh s=
+=E1=BB=91 200/2026/N=C4=90-CP]<span style=3D"color:#f87168;"><sup>62</sup><=
+/span> v=C3=A0 c=C3=A1c v=C4=83n b=E1=BA=A3n h=C6=B0=E1=BB=9Bng d=E1=BA=ABn=
+, g=E1=BB=93m:</li>
+    </ol>
+    <p>[Danh m=E1=BB=A5c B=E1=BA=A3n c=C3=B4ng b=E1=BB=91 th=C3=B4ng tin tr=
+=C6=B0=E1=BB=9Bc =C4=91=E1=BB=A3t ch=C3=A0o b=C3=A1n tr=C3=A1i phi=E1=BA=BF=
+u]<span style=3D"color:#f87168;"><sup>23</sup></span></p>
+    <ol>
+     <li data-uuid=3D"d9079064-318c-4527-8cf5-de7843a972ce">b) Ph=C6=B0=C6=
+=A1ng =C3=A1n ph=C3=A1t h=C3=A0nh tr=C3=A1i phi=E1=BA=BFu theo quy =C4=91=
+=E1=BB=8Bnh t=E1=BA=A1i [=C4=90i=E1=BB=81u 10 Ngh=E1=BB=8B =C4=91=E1=BB=8Bn=
+h s=E1=BB=91 200/2026/N=C4=90-CP<span style=3D"color:#f87168;"><sup>24</sup=
+></span><code>]</code>, g=E1=BB=93m: [Ph=C6=B0=C6=A1ng =C3=A1n ph=C3=A1t h=
+=C3=A0nh tr=C3=A1i phi=E1=BA=BFu]<sup><span style=3D"color:#f87168;">25</sp=
+an></sup></li>
+     <li data-uuid=3D"1ab35d61-58bd-403d-9f59-4c20d6b14347">c) C=C3=A1c h=
+=E1=BB=93 s=C6=A1 ch=C3=A0o b=C3=A1n tr=C3=A1i phi=E1=BA=BFu theo quy =C4=
+=91=E1=BB=8Bnh t=E1=BA=A1i [Ngh=E1=BB=8B =C4=91=E1=BB=8Bnh 200/2026/N=C4=90=
+-CP<span style=3D"color:#f87168;"><sup>26</sup><span style=3D"color:#172b4d=
+;">]</span></span>, g=E1=BB=93m:</li>
+    </ol>
+    <p>[H=E1=BB=93 s=C6=A1 ch=C3=A0o b=C3=A1n tr=C3=A1i phi=E1=BA=BFu]<span=
+ style=3D"color:#f87168;"><sup>27</sup></span></p>
+    <ol>
+     <li data-uuid=3D"dc54bf20-e986-4489-bc30-e983ec52cb20">d) C=C3=A1c n=
+=E1=BB=99i dung c=C3=B4ng b=E1=BB=91 th=C3=B4ng tin =C4=91=E1=BB=8Bnh k=E1=
+=BB=B3 c=E1=BB=A7a doanh nghi=E1=BB=87p ph=C3=A1t h=C3=A0nh theo quy =C4=91=
+=E1=BB=8Bnh t=E1=BA=A1i [Ngh=E1=BB=8B =C4=91=E1=BB=8Bnh s=E1=BB=91 200/2026=
+/N=C4=90-CP<span style=3D"color:#f87168;"><sup>28</sup><span style=3D"color=
+:#172b4d;">]</span></span>, g=E1=BB=93m:</li>
+    </ol>
+    <p>[Danh m=E1=BB=A5c C=C3=B4ng b=E1=BB=91 th=C3=B4ng tin =C4=91=E1=BB=
+=8Bnh k=E1=BB=B3]<span style=3D"color:#f87168;"><sup>29</sup></span></p>
+    <ol>
+     <li data-uuid=3D"09419eaf-c78a-4e62-9237-4907f09f360e">Sau khi ti=E1=
+=BA=BFp c=E1=BA=ADn th=C3=B4ng tin v=C3=A0 c=C3=A1c t=C3=A0i li=E1=BB=87u, =
+h=E1=BB=93 s=C6=A1 v=E1=BB=81 tr=C3=A1i phi=E1=BA=BFu [<strong>M=C3=A3 tr=
+=C3=A1i phi=E1=BA=BFu</strong>]<span style=3D"color:#f87168;"><sup>17</sup>=
+</span><em>,</em> t=C3=B4i x=C3=A1c nh=E1=BA=ADn:</li>
+    </ol>
+    <p>3.1. T=C3=B4i =C4=91=C3=A3 hi=E1=BB=83u th=C3=B4ng tin v=E1=BB=81 tr=
+=C3=A1i phi=E1=BA=BFu d=E1=BB=B1 ki=E1=BA=BFn mua theo c=C3=A1c th=C3=B4ng =
+tin, h=E1=BB=93 s=C6=A1 ti=E1=BA=BFp c=E1=BA=ADn, bao g=E1=BB=93m:</p>
+    <ol>
+     <li data-uuid=3D"5ecc9e16-6461-4b3d-9806-d5278484e1c7">a) Doanh nghi=
+=E1=BB=87p ph=C3=A1t h=C3=A0nh l=C3=A0 [T=E1=BB=95 ch=E1=BB=A9c ph=C3=A1t h=
+=C3=A0nh]<span style=3D"color:#f87168;"><sup>9</sup></span><em> (m=C3=A3 s=
+=E1=BB=91 =C4=91=C4=83ng k=C3=BD doanh nghi=E1=BB=87p:</em> [S=E1=BB=91 =C4=
+=91=C4=83ng k=C3=BD s=E1=BB=9F h=E1=BB=AFu]<span style=3D"color:#f87168;"><=
+sup>30</sup></span>), =C4=91ang ho=E1=BA=A1t =C4=91=E1=BB=99ng trong l=C4=
+=A9nh v=E1=BB=B1c [Lo=E1=BA=A1i ng=C3=A0nh ngh=E1=BB=81]<span style=3D"colo=
+r:#f87168;"><sup>31</sup></span></li>
+     <li data-uuid=3D"a9d1b7f2-295f-4df1-8865-efee39398b57">b) V=E1=BB=81 t=
+=C3=ACnh h=C3=ACnh t=C3=A0i ch=C3=ADnh c=E1=BB=A7a doanh nghi=E1=BB=87p:</l=
+i>
+    </ol>
+    <div class=3D"table-wrap">
+     <table class=3D"wrapped confluenceTable">
+      <tbody>
+       <tr>
+        <td class=3D"confluenceTd">
+         <p><strong>Ch=E1=BB=89 ti=C3=AAu</strong></p></td>
+        <td class=3D"confluenceTd">
+         <p><strong>=C4=90=C6=A1n v=E1=BB=8B t=C3=ADnh</strong></p></td>
+        <td class=3D"confluenceTd">
+         <p><strong>[Th=E1=BB=9Di =C4=91i=E1=BB=83m c=E1=BA=ADp nh=E1=BA=AD=
+t 1]<span style=3D"color:#f87168;"><sup>32</sup></span></strong></p></td>
+        <td class=3D"confluenceTd">
+         <p><strong>[Th=E1=BB=9Di =C4=91i=E1=BB=83m c=E1=BA=ADp nh=E1=BA=AD=
+t 2]<span style=3D"color:#f87168;"><sup>32</sup></span></strong></p></td>
+        <td class=3D"confluenceTd">
+         <p><strong>[Th=E1=BB=9Di =C4=91i=E1=BB=83m c=E1=BA=ADp nh=E1=BA=AD=
+t 3]<span style=3D"color:#f87168;"><sup>32</sup></span></strong></p></td>
+       </tr>
+       <tr>
+        <td class=3D"confluenceTd">
+         <p>T=E1=BB=95ng t=C3=A0i s=E1=BA=A3n</p></td>
+        <td class=3D"confluenceTd">
+         <p>VND</p></td>
+        <td class=3D"confluenceTd">
+         <p>[T=E1=BB=95ng t=C3=A0i s=E1=BA=A3n 1]<span style=3D"color:#f871=
+68;"><sup>33</sup></span></p></td>
+        <td class=3D"confluenceTd">
+         <p>[T=E1=BB=95ng t=C3=A0i s=E1=BA=A3n 2]<span style=3D"color:#f871=
+68;"><sup>33</sup></span></p></td>
+        <td class=3D"confluenceTd">
+         <p>[T=E1=BB=95ng t=C3=A0i s=E1=BA=A3n 3]<span style=3D"color:#f871=
+68;"><sup>33</sup></span></p></td>
+       </tr>
+       <tr>
+        <td class=3D"confluenceTd">
+         <p>N=E1=BB=A3 ph=E1=BA=A3i tr=E1=BA=A3</p></td>
+        <td class=3D"confluenceTd">
+         <p>VND</p></td>
+        <td class=3D"confluenceTd">
+         <p>[N=E1=BB=A3 ph=E1=BA=A3i tr=E1=BA=A3 1]<span style=3D"color:#f8=
+7168;"><sup>34</sup></span></p></td>
+        <td class=3D"confluenceTd">
+         <p>[N=E1=BB=A3 ph=E1=BA=A3i tr=E1=BA=A3 2]<span style=3D"color:#f8=
+7168;"><sup>34</sup></span></p></td>
+        <td class=3D"confluenceTd">
+         <p>[N=E1=BB=A3 ph=E1=BA=A3i tr=E1=BA=A3 3]<span style=3D"color:#f8=
+7168;"><sup>34</sup></span></p></td>
+       </tr>
+       <tr>
+        <td class=3D"confluenceTd">
+         <p>V=E1=BB=91n ch=E1=BB=A7 s=E1=BB=9F h=E1=BB=AFu</p></td>
+        <td class=3D"confluenceTd">
+         <p>VND</p></td>
+        <td class=3D"confluenceTd">
+         <p>[V=E1=BB=91n ch=E1=BB=A7 s=E1=BB=9F h=E1=BB=AFu 1]<span style=
+=3D"color:#f87168;"><sup>35</sup></span></p></td>
+        <td class=3D"confluenceTd">
+         <p>[V=E1=BB=91n ch=E1=BB=A7 s=E1=BB=9F h=E1=BB=AFu 2]<span style=
+=3D"color:#f87168;"><sup>35</sup></span></p></td>
+        <td class=3D"confluenceTd">
+         <p>[V=E1=BB=91n ch=E1=BB=A7 s=E1=BB=9F h=E1=BB=AFu 3]<span style=
+=3D"color:#f87168;"><sup>35</sup></span></p></td>
+       </tr>
+       <tr>
+        <td class=3D"confluenceTd">
+         <p>V=E1=BB=91n l=C6=B0u =C4=91=E1=BB=99ng th=C6=B0=E1=BB=9Dng xuy=
+=C3=AAn</p></td>
+        <td class=3D"confluenceTd">
+         <p>VND</p></td>
+        <td class=3D"confluenceTd">
+         <p>[V=E1=BB=91n l=C6=B0u =C4=91=E1=BB=99ng th=C6=B0=E1=BB=9Dng xuy=
+=C3=AAn 1]<span style=3D"color:#f87168;"><sup>36</sup></span></p></td>
+        <td class=3D"confluenceTd">
+         <p>[V=E1=BB=91n l=C6=B0u =C4=91=E1=BB=99ng th=C6=B0=E1=BB=9Dng xuy=
+=C3=AAn 2]<span style=3D"color:#f87168;"><sup>36</sup></span></p></td>
+        <td class=3D"confluenceTd">
+         <p>[V=E1=BB=91n l=C6=B0u =C4=91=E1=BB=99ng th=C6=B0=E1=BB=9Dng xuy=
+=C3=AAn 3]<span style=3D"color:#f87168;"><sup>36</sup></span></p></td>
+       </tr>
+       <tr>
+        <td class=3D"confluenceTd">
+         <p>H=E1=BB=87 s=E1=BB=91 d=C6=B0 n=E1=BB=A3 vay/T=E1=BB=95ng t=C3=
+=A0i s=E1=BA=A3n</p></td>
+        <td class=3D"confluenceTd">
+         <p>L=E1=BA=A7n</p></td>
+        <td class=3D"confluenceTd">
+         <p>[H=E1=BB=87 s=E1=BB=91 d=C6=B0 n=E1=BB=A3 vay/T=E1=BB=95ng t=C3=
+=A0i s=E1=BA=A3n 1]<span style=3D"color:#f87168;"><sup>37</sup></span></p><=
+/td>
+        <td class=3D"confluenceTd">
+         <p>[H=E1=BB=87 s=E1=BB=91 d=C6=B0 n=E1=BB=A3 vay/T=E1=BB=95ng t=C3=
+=A0i s=E1=BA=A3n 2]<span style=3D"color:#f87168;"><sup>37</sup></span></p><=
+/td>
+        <td class=3D"confluenceTd">
+         <p>[H=E1=BB=87 s=E1=BB=91 d=C6=B0 n=E1=BB=A3 vay/T=E1=BB=95ng t=C3=
+=A0i s=E1=BA=A3n 3]<span style=3D"color:#f87168;"><sup>37</sup></span></p><=
+/td>
+       </tr>
+       <tr>
+        <td class=3D"confluenceTd">
+         <p>H=E1=BB=87 s=E1=BB=91 n=E1=BB=A3 ph=E1=BA=A3i tr=E1=BA=A3/V=E1=
+=BB=91n ch=E1=BB=A7 s=E1=BB=9F h=E1=BB=AFu</p></td>
+        <td class=3D"confluenceTd">
+         <p>L=E1=BA=A7n</p></td>
+        <td class=3D"confluenceTd">
+         <p>[H=E1=BB=87 s=E1=BB=91 n=E1=BB=A3 ph=E1=BA=A3i tr=E1=BA=A3/V=E1=
+=BB=91n ch=E1=BB=A7 s=E1=BB=9F h=E1=BB=AFu 1]<span style=3D"color:#f87168;"=
+><sup>38</sup></span></p></td>
+        <td class=3D"confluenceTd">
+         <p>[H=E1=BB=87 s=E1=BB=91 n=E1=BB=A3 ph=E1=BA=A3i tr=E1=BA=A3/V=E1=
+=BB=91n ch=E1=BB=A7 s=E1=BB=9F h=E1=BB=AFu 2]<span style=3D"color:#f87168;"=
+><sup>38</sup></span></p></td>
+        <td class=3D"confluenceTd">
+         <p>[H=E1=BB=87 s=E1=BB=91 n=E1=BB=A3 ph=E1=BA=A3i tr=E1=BA=A3/V=E1=
+=BB=91n ch=E1=BB=A7 s=E1=BB=9F h=E1=BB=AFu 3]<span style=3D"color:#f87168;"=
+><sup>38</sup></span></p></td>
+       </tr>
+       <tr>
+        <td class=3D"confluenceTd">
+         <p>Kh=E1=BA=A3 n=C4=83ng thanh to=C3=A1n hi=E1=BB=87n h=C3=A0nh</p=
+></td>
+        <td class=3D"confluenceTd">
+         <p>L=E1=BA=A7n</p></td>
+        <td class=3D"confluenceTd">
+         <p>[Kh=E1=BA=A3 n=C4=83ng thanh to=C3=A1n hi=E1=BB=87n h=C3=A0nh 1=
+]<span style=3D"color:#f87168;"><sup>39</sup></span></p></td>
+        <td class=3D"confluenceTd">
+         <p>[Kh=E1=BA=A3 n=C4=83ng thanh to=C3=A1n hi=E1=BB=87n h=C3=A0nh 2=
+]<span style=3D"color:#f87168;"><sup>39</sup></span></p></td>
+        <td class=3D"confluenceTd">
+         <p>[Kh=E1=BA=A3 n=C4=83ng thanh to=C3=A1n hi=E1=BB=87n h=C3=A0nh 3=
+]<span style=3D"color:#f87168;"><sup>39</sup></span></p></td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+    <p><br></p>
+    <ol>
+     <li data-uuid=3D"43cbe583-c21e-4837-9e99-0fbcb0fcc80e">c) M=E1=BB=A5c =
+=C4=91=C3=ADch ph=C3=A1t h=C3=A0nh tr=C3=A1i phi=E1=BA=BFu c=E1=BB=A7a doan=
+h nghi=E1=BB=87p:</li>
+    </ol>
+    <p>[M=E1=BB=A5c =C4=91=C3=ADch ph=C3=A1t h=C3=A0nh tr=C3=A1i phi=E1=BA=
+=BFu]<span style=3D"color:#f87168;"><sup>40</sup></span></p>
+    <ol>
+     <li data-uuid=3D"77bebabd-e631-4f64-a051-cfbfb65bfda8">d) K=E1=BA=BF h=
+o=E1=BA=A1ch s=E1=BB=AD d=E1=BB=A5ng v=E1=BB=91n thu =C4=91=C6=B0=E1=BB=A3c=
+ t=E1=BB=AB =C4=91=E1=BB=A3t ch=C3=A0o b=C3=A1n tr=C3=A1i phi=E1=BA=BFu c=
+=E1=BB=A7a doanh nghi=E1=BB=87p l=C3=A0 nghi=E1=BB=87p:</li>
+    </ol>
+    <p>[K=E1=BA=BF ho=E1=BA=A1ch s=E1=BB=AD d=E1=BB=A5ng v=E1=BB=91n thu t=
+=E1=BB=AB ch=C3=A0o b=C3=A1n tr=C3=A1i phi=E1=BA=BFu]<span style=3D"color:#=
+f87168;"><sup>41</sup></span>;</p>
+    <p>K=E1=BA=BF ho=E1=BA=A1ch s=E1=BB=AD d=E1=BB=A5ng ngu=E1=BB=93n v=E1=
+=BB=91n thu =C4=91=C6=B0=E1=BB=A3c t=E1=BB=AB =C4=91=E1=BB=A3t ch=C3=A0o b=
+=C3=A1n tr=C3=A1i phi=E1=BA=BFu t=E1=BA=A1m th=E1=BB=9Di nh=C3=A0n r=E1=BB=
+=97i (trong tr=C6=B0=E1=BB=9Dng h=E1=BB=A3p gi=E1=BA=A3i ng=C3=A2n theo ti=
+=E1=BA=BFn =C4=91=E1=BB=99):</p>
+    <p>[K=E1=BA=BF ho=E1=BA=A1ch s=E1=BB=AD d=E1=BB=A5ng ngu=E1=BB=93n v=E1=
+=BB=91n thu t=E1=BB=AB ch=C3=A0o b=C3=A1n tr=C3=A1i phi=E1=BA=BFu t=E1=BA=
+=A1m th=E1=BB=9Di nh=C3=A0n r=E1=BB=97i]<span style=3D"color:#f87168;"><sup=
+>42</sup></span>;</p>
+    <p>=C4=91) Ph=C6=B0=C6=A1ng =C3=A1n b=E1=BB=91 tr=C3=AD ngu=E1=BB=93n v=
+=C3=A0 ph=C6=B0=C6=A1ng th=E1=BB=A9c thanh to=C3=A1n l=C3=A3i, g=E1=BB=91c =
+tr=C3=A1i phi=E1=BA=BFu c=E1=BB=A7a doanh nghi=E1=BB=87p:<em> </em>[Ph=C6=
+=B0=C6=A1ng =C3=A1n b=E1=BB=91 tr=C3=AD ngu=E1=BB=93n v=C3=A0 ph=C6=B0=C6=
+=A1ng th=E1=BB=A9c thanh to=C3=A1n l=C3=A3i, g=E1=BB=91c tr=C3=A1i phi=E1=
+=BA=BFu]<span style=3D"color:#f87168;"><sup>43</sup></span></p>
+    <ol>
+     <li data-uuid=3D"5e32a7ed-6de2-4c45-b1dd-87c23b6417b2">e) Tr=C3=A1i ph=
+i=E1=BA=BFu [ph=E1=BB=A5 thu=E1=BB=99c gi=C3=A1 tr=E1=BB=8B tr=C6=B0=E1=BB=
+=9Dng T=C3=A0i s=E1=BA=A3n b=E1=BA=A3o =C4=91=E1=BA=A3m]<span style=3D"colo=
+r:#f87168;"><sup>44</sup></span> c=C3=B3 t=C3=A0i s=E1=BA=A3n =C4=91=E1=BA=
+=A3m b=E1=BA=A3o. T=C3=A0i s=E1=BA=A3n =C4=91=E1=BA=A3m b=E1=BA=A3o c=C3=B3=
+ gi=C3=A1 tr=E1=BB=8B:</li>
+    </ol>
+    <p>[Gi=C3=A1 tr=E1=BB=8B TSB=C4=90]<span style=3D"color:#f87168;"><sup>=
+45</sup></span><em>.</em></p>
+    <p>T=C3=A0i s=E1=BA=A3n b=E1=BA=A3o =C4=91=E1=BA=A3m =C4=91=C3=A3 =C4=
+=91=C6=B0=E1=BB=A3c =C4=91=C4=83ng k=C3=BD giao d=E1=BB=8Bch b=E1=BA=A3o =
+=C4=91=E1=BA=A3m t=E1=BA=A1i s=E1=BB=91 k=C3=BD hi=E1=BB=87u:</p>
+    <p>[S=E1=BB=91 k=C3=BD hi=E1=BB=87u TSB=C4=90]<span style=3D"color:#f87=
+168;"><sup>46</sup></span>;</p>
+    <p>Tr=C3=A1i phi=E1=BA=BFu [ph=E1=BB=A5 thu=E1=BB=99c gi=C3=A1 tr=E1=BB=
+=8B tr=C6=B0=E1=BB=9Dng B=E1=BA=A3o l=C3=A3nh thanh to=C3=A1n]<span style=
+=3D"color:#f87168;"><sup>47</sup></span> c=C3=B3 b=E1=BA=A3o l=C3=A3nh than=
+h to=C3=A1n c=E1=BB=A7a T=E1=BB=95 ch=E1=BB=A9c t=C3=ADn d=E1=BB=A5ng. T=E1=
+=BB=95 ch=E1=BB=A9c t=C3=ADn d=E1=BB=A5ng b=E1=BA=A3o l=C3=A3nh l=C3=A0 [T=
+=E1=BB=95 ch=E1=BB=A9c t=C3=ADn d=E1=BB=A5ng b=E1=BA=A3o l=C3=A3nh]<span st=
+yle=3D"color:#f87168;"><sup>48</sup></span>.</p>
+    <ol>
+     <li data-uuid=3D"91d2dfb7-4b3e-4edb-9641-66a9ce54a77b">g) V=E1=BB=81 =
+=C4=91i=E1=BB=81u ki=E1=BB=87n, =C4=91i=E1=BB=81u kho=E1=BA=A3n kh=C3=A1c c=
+=E1=BB=A7a tr=C3=A1i phi=E1=BA=BFu:</li>
+    </ol>
+    <ul>
+     <li data-uuid=3D"6070bece-2e8b-4842-9caa-3068ef044f17">L=C3=A3i su=E1=
+=BA=A5t tr=C3=A1i phi=E1=BA=BFu: [M=C3=B4 t=E1=BA=A3 l=C3=A3i su=E1=BA=A5t]=
+<span style=3D"color:#f87168;"><sup>49</sup></span></li>
+     <li data-uuid=3D"17cc2b90-a197-440c-9e00-42b5d682db0b">K=E1=BB=B3 h=E1=
+=BA=A1n tr=C3=A1i phi=E1=BA=BFu: [K=E1=BB=B3 h=E1=BA=A1n tr=C3=A1i phi=E1=
+=BA=BFu]<span style=3D"color:#f87168;"><sup>50</sup></span></li>
+    </ul>
+    <ol>
+     <li data-uuid=3D"69e45b9e-b3ad-4e24-bdfa-1d4a7779ad5a">h) C=C3=A1c cam=
+ k=E1=BA=BFt c=E1=BB=A7a doanh nghi=E1=BB=87p ph=C3=A1t h=C3=A0nh:</li>
+    </ol>
+    <p>[Cam k=E1=BA=BFt c=E1=BB=A7a TCPH]<span style=3D"color:#f87168;"><su=
+p>51</sup></span>;</p>
+    <ol>
+     <li data-uuid=3D"5941550e-f5ec-439b-badd-e8c75f08d97d">i) =C4=90=E1=BB=
+=91i t=C6=B0=E1=BB=A3ng ch=C3=A0o b=C3=A1n tr=C3=A1i phi=E1=BA=BFu [<strong=
+>M=C3=A3 tr=C3=A1i phi=E1=BA=BFu</strong>]<span style=3D"color:#f87168;"><s=
+up>17</sup></span> theo ph=C6=B0=C6=A1ng =C3=A1n ph=C3=A1t h=C3=A0nh tr=C3=
+=A1i phi=E1=BA=BFu c=E1=BB=A7a doanh nghi=E1=BB=87p quy =C4=91=E1=BB=8Bnh t=
+=E1=BA=A1i<em> [(=C4=91i=E1=BB=81u kho=E1=BA=A3n)</em> Ngh=E1=BB=8B =C4=91=
+=E1=BB=8Bnh s=E1=BB=91 200/2026/N=C4=90-CP<span style=3D"color:#f87168;"><s=
+up>52</sup><span style=3D"color:#172b4d;">]</span></span>. =C3=94ng/B=C3=A0=
+ [<strong>T=C3=AAn kh=C3=A1ch h=C3=A0ng</strong>]<span style=3D"color:#f871=
+68;"><sup>1</sup></span> l=C3=A0 =C4=91=E1=BB=91i t=C6=B0=E1=BB=A3ng nh=C3=
+=A0 =C4=91=E1=BA=A7u t=C6=B0 thu=E1=BB=99c tr=C6=B0=E1=BB=9Dng h=E1=BB=A3p =
+chi ti=E1=BA=BFt t=E1=BA=A1i =C4=91i=E1=BB=83m 1 tr=C3=AAn =C4=91=C3=A2y n=
+=C3=AAn =C4=91=C6=B0=E1=BB=A3c mua v=C3=A0 giao d=E1=BB=8Bch tr=C3=A1i phi=
+=E1=BA=BFu [<strong>M=C3=A3 Tr=C3=A1i phi=E1=BA=BFu</strong>]<span style=3D=
+"color:#f87168;"><sup>17</sup></span> theo quy =C4=91=E1=BB=8Bnh;</li>
+     <li data-uuid=3D"a5515b34-ab89-480e-8750-db9c27df37f4">k) =C4=90=E1=BA=
+=A1i di=E1=BB=87n ng=C6=B0=E1=BB=9Di s=E1=BB=9F h=E1=BB=AFu tr=C3=A1i phi=
+=E1=BA=BFu l=C3=A0 [=C4=90=E1=BA=A1i di=E1=BB=87n s=E1=BB=9F h=E1=BB=AFu]<s=
+pan style=3D"color:#f87168;"><sup>53</sup></span> <em>(n=E1=BA=BFu c=C3=B3<=
+/em>);</li>
+     <li data-uuid=3D"82b91d21-9fdc-44c8-b21a-ba380921d7b3">l) C=C3=A1c th=
+=C3=B4ng tin kh=C3=A1c v=E1=BB=81 tr=C3=A1i phi=E1=BA=BFu =C4=91=C6=B0=E1=
+=BB=A3c n=C3=AAu chi ti=E1=BA=BFt t=E1=BA=A1i B=E1=BA=A3n C=C3=B4ng B=E1=BB=
+=91 Th=C3=B4ng Tin;</li>
+    </ol>
+    <p>Tr=C3=AAn c=C6=A1 s=E1=BB=9F t=C3=ACm hi=E1=BB=83u k=E1=BB=B9 c=C3=
+=A1c th=C3=B4ng tin v=E1=BB=81 tr=C3=A1i phi=E1=BA=BFu d=E1=BB=B1 ki=E1=BA=
+=BFn mua theo c=C3=A1c th=C3=B4ng tin, h=E1=BB=93 s=C6=A1 ti=E1=BA=BFp c=E1=
+=BA=ADn n=C3=AAu tr=C3=AAn, t=C3=B4i =C4=91=C3=A1nh gi=C3=A1 T=E1=BB=95 Ch=
+=E1=BB=A9c Ph=C3=A1t H=C3=A0nh c=C3=B3 ho=E1=BA=A1t =C4=91=E1=BB=99ng kinh =
+doanh v=C3=A0 t=C3=ACnh h=C3=ACnh t=C3=A0i ch=C3=ADnh l=C3=A0nh m=E1=BA=A1n=
+h, c=C3=B3 kh=E1=BA=A3 n=C4=83ng tr=E1=BA=A3 =C4=91=C6=B0=E1=BB=A3c =C4=91=
+=E1=BA=A7y =C4=91=E1=BB=A7, =C4=91=C3=BAng h=E1=BA=A1n l=C3=A3i, g=E1=BB=91=
+c tr=C3=A1i phi=E1=BA=BFu c=E1=BB=A7a doanh nghi=E1=BB=87p, tr=E1=BB=AB tr=
+=C6=B0=E1=BB=9Dng h=E1=BB=A3p c=C3=B3 nh=E1=BB=AFng bi=E1=BA=BFn =C4=91=E1=
+=BB=99ng b=E1=BA=A5t th=C6=B0=E1=BB=9Dng v=C3=A0 n=E1=BA=B1m ngo=C3=A0i t=
+=E1=BA=A7m ki=C3=AAm so=C3=A1t c=E1=BB=A7a T=E1=BB=95 Ch=E1=BB=A9c Ph=C3=A1=
+t H=C3=A0nh.</p>
+    <p>3.2. T=C3=B4i hi=E1=BB=83u r=C3=B5 vi=E1=BB=87c =C4=91=E1=BA=A7u t=
+=C6=B0 v=C3=A0o tr=C3=A1i phi=E1=BA=BFu [<strong>M=C3=A3 tr=C3=A1i phi=E1=
+=BA=BFu</strong>]<span style=3D"color:#f87168;"><sup>17</sup></span> <em>c=
+=C3=B3</em> th=E1=BB=83 ph=C3=A1t sinh c=C3=A1c r=E1=BB=A7i ro sau: [R=E1=
+=BB=A7i ro]<span style=3D"color:#f87168;"><sup>54</sup></span>.</p>
+    <p>3.3. T=C3=B4i =C4=91=C3=A3 hi=E1=BB=83u r=C3=B5 r=E1=BA=B1ng:</p>
+    <ol>
+     <li data-uuid=3D"3c48ccff-adf7-42b3-b867-d3eb3dd98f57">a) Tr=C3=A1i ph=
+i=E1=BA=BFu [<strong>M=C3=A3 tr=C3=A1i phi=E1=BA=BFu</strong>]<span style=
+=3D"color:#f87168;"><sup>17</sup></span> l=C3=A0 tr=C3=A1i phi=E1=BA=BFu do=
+anh nghi=E1=BB=87p ch=C3=A0o b=C3=A1n theo ph=C6=B0=C6=A1ng th=E1=BB=A9c ri=
+=C3=AAng l=E1=BA=BB.</li>
+     <li data-uuid=3D"a781a01e-67e0-4d2a-be91-80adc76bc08c">b) Tr=C3=A1i ph=
+i=E1=BA=BFu [<strong>M=C3=A3 tr=C3=A1i phi=E1=BA=BFu</strong>]<span style=
+=3D"color:#f87168;"><sup>17</sup></span> do doanh nghi=E1=BB=87p ph=C3=A1t =
+h=C3=A0nh theo nguy=C3=AAn t=E1=BA=AFc t=E1=BB=B1 vay, t=E1=BB=B1 tr=E1=BA=
+=A3 v=C3=A0 t=E1=BB=B1 ch=E1=BB=8Bu tr=C3=A1ch nhi=E1=BB=87m v=E1=BB=81 hi=
+=E1=BB=87u qu=E1=BA=A3 s=E1=BB=AD d=E1=BB=A5ng v=E1=BB=91n v=C3=A0 =C4=91=
+=E1=BA=A3m b=E1=BA=A3o kh=E1=BA=A3 n=C4=83ng tr=E1=BA=A3 n=E1=BB=A3. Nh=C3=
+=A0 n=C6=B0=E1=BB=9Bc <strong>KH=C3=94NG </strong>=C4=91=E1=BA=A3m b=E1=BA=
+=A3o vi=E1=BB=87c doanh nghi=E1=BB=87p ph=C3=A1t h=C3=A0nh tr=C3=A1i phi=E1=
+=BA=BFu thanh to=C3=A1n =C4=91=E1=BA=A7y =C4=91=E1=BB=A7, =C4=91=C3=BAng h=
+=E1=BA=A1n l=C3=A3i, g=E1=BB=91c tr=C3=A1i phi=E1=BA=BFu khi =C4=91=E1=BA=
+=BFn h=E1=BA=A1n v=C3=A0 c=C3=A1c quy=E1=BB=81n kh=C3=A1c cho nh=C3=A0 =C4=
+=91=E1=BA=A7u t=C6=B0.</li>
+     <li data-uuid=3D"d87dc74a-eb7c-442c-bfc1-d7ff9a7006d7">Tr=C3=AAn c=C6=
+=A1 s=E1=BB=9F hi=E1=BB=83u r=C3=B5 v=C3=A0 tu=C3=A2n th=E1=BB=A7 =C4=91=E1=
+=BA=A7y =C4=91=E1=BB=A7 quy =C4=91=E1=BB=8Bnh c=E1=BB=A7a ph=C3=A1p lu=E1=
+=BA=ADt v=E1=BB=81 =C4=91=E1=BB=91i t=C6=B0=E1=BB=A3ng nh=C3=A0 =C4=91=E1=
+=BA=A7u t=C6=B0, giao d=E1=BB=8Bch tr=C3=A1i phi=E1=BA=BFu doanh nghi=E1=BB=
+=87p ri=C3=AAng l=E1=BA=BB, tr=C3=AAn c=C6=A1 s=E1=BB=9F t=C3=ACm hi=E1=BB=
+=83u k=E1=BB=B9 th=C3=B4ng tin v=C3=A0 =C4=91=C3=A1nh gi=C3=A1 l=E1=BB=A3i =
+=C3=ADch, r=E1=BB=A7i ro c=E1=BB=A7a vi=E1=BB=87c mua tr=C3=A1i phi=E1=BA=
+=BFu n=C3=AAu tr=C3=AAn, t=C3=B4i quy=E1=BA=BFt =C4=91=E1=BB=8Bnh mua tr=C3=
+=A1i phi=E1=BA=BFu cho ch=C3=ADnh m=C3=ACnh v=C3=A0 s=E1=BB=AD d=E1=BB=A5ng=
+ ngu=E1=BB=93n ti=E1=BB=81n h=E1=BB=A3p ph=C3=A1p =C4=91=E1=BB=83 mua tr=C3=
+=A1i phi=E1=BA=BFu. T=C3=B4i t=E1=BB=B1 ch=E1=BB=8Bu tr=C3=A1ch nhi=E1=BB=
+=87m v=E1=BB=81 quy=E1=BA=BFt =C4=91=E1=BB=8Bnh =C4=91=E1=BA=A7u t=C6=B0 c=
+=E1=BB=A7a m=C3=ACnh v=C3=A0 t=E1=BB=B1 ch=E1=BB=8Bu c=C3=A1c r=E1=BB=A7i r=
+o ph=C3=A1t sinh trong vi=E1=BB=87c =C4=91=E1=BA=A7u t=C6=B0, giao d=E1=BB=
+=8Bch tr=C3=A1i phi=E1=BA=BFu.</li>
+    </ol>
+    <p><em>&nbsp;</em></p>
+    <p><em>H=C3=A0 N=E1=BB=99i, ng=C3=A0y [Ng=C3=A0y c=E1=BB=A7a Ng=C3=A0y =
+=C4=91=E1=BA=A7u t=C6=B0]<span style=3D"color:#f87168;"><sup>55</sup></span=
+> th=C3=A1ng [Th=C3=A1ng c=E1=BB=A7a Ng=C3=A0y =C4=91=E1=BA=A7u t=C6=B0]<su=
+p> <span style=3D"color:#f87168;">55</span></sup> n=C4=83m [N=C4=83m c=E1=
+=BB=A7a Ng=C3=A0y =C4=91=E1=BA=A7u t=C6=B0]<sup> <span style=3D"color:#f871=
+68;">55</span></sup></em></p>
+    <p><strong>Nh=C3=A0 =C4=91=E1=BA=A7u t=C6=B0</strong></p>
+    <p><em>(K=C3=BD, ghi r=C3=B5 h=E1=BB=8D t=C3=AAn)</em></p>
+    <p><em>&nbsp;</em></p>
+    <p><br></p>
+    <p>______________________</p>
+    <p>X=C3=A1c nh=E1=BA=ADn c=E1=BB=A7a t=E1=BB=95 ch=E1=BB=A9c/c=C3=A1 nh=
+=C3=A2n cung c=E1=BA=A5p th=C3=B4ng tin v=E1=BB=81 tr=C3=A1i phi=E1=BA=BFu =
+theo =C4=91i=E1=BB=83m 2 n=C3=AAu tr=C3=AAn v=E1=BB=81 vi=E1=BB=87c =C4=91=
+=C3=A3 cung c=E1=BA=A5p =C4=91=E1=BB=A7 h=E1=BB=93 s=C6=A1, th=C3=B4ng tin =
+cho nh=C3=A0 =C4=91=E1=BA=A7u t=C6=B0</p>
+    <p>C=C3=B4ng ty ch=E1=BB=A9ng kho=C3=A1n n=C6=A1i nh=C3=A0 =C4=91=E1=BA=
+=A7u t=C6=B0 th=E1=BB=B1c hi=E1=BB=87n giao d=E1=BB=8Bch:</p>
+    <p><strong>C=C3=94NG TY C=E1=BB=94 PH=E1=BA=A6N CH=E1=BB=A8NG KHO=C3=81=
+N S=C3=80I G=C3=92N =E2=80=93 H=C3=80 N=E1=BB=98I</strong></p>
+    <p>=C4=90=E1=BB=8Ba ch=E1=BB=89: [=C4=90=E1=BB=8Ba ch=E1=BB=89 li=C3=AA=
+n h=E1=BB=87]<span style=3D"color:#f87168;"><sup>18</sup></span></p>
+    <p>Ng=C6=B0=E1=BB=9Di =C4=91=E1=BA=A1i di=E1=BB=87n<strong>: </strong>[=
+H=E1=BB=8D t=C3=AAn ng=C6=B0=E1=BB=9Di =C4=91=C6=B0=E1=BB=A3c =E1=BB=A7y qu=
+y=E1=BB=81n]<span style=3D"color:#f87168;"><sup>19</sup></span><strong> </s=
+trong></p>
+    <p>=E1=BB=A6y quy=E1=BB=81n: [S=E1=BB=91 v=C4=83n b=E1=BA=A3n =E1=BB=A7=
+y quy=E1=BB=81n]<span style=3D"color:#f87168;"><sup>21</sup></span> ng=C3=
+=A0y [Ng=C3=A0y hi=E1=BB=87u l=E1=BB=B1c]<span style=3D"color:#f87168;"><su=
+p>22</sup></span></p>
+    <p>CCCD: [S=E1=BB=91 gi=E1=BA=A5y t=E1=BB=9D]<span style=3D"color:#f871=
+68;"><sup>56</sup></span> <strong> </strong></p>
+    <p>Ch=E1=BB=A9c v=E1=BB=A5: [Ch=E1=BB=A9c v=E1=BB=A5]<span style=3D"col=
+or:#f87168;"><sup>20</sup></span></p>
+    <p><em>Ng=C3=A0y [Ng=C3=A0y c=E1=BB=A7a Ng=C3=A0y =C4=91=E1=BA=A7u t=C6=
+=B0]<sup> <span style=3D"color:#f87168;">55</span></sup> th=C3=A1ng [Th=C3=
+=A1ng c=E1=BB=A7a Ng=C3=A0y =C4=91=E1=BA=A7u t=C6=B0]<sup> <span style=3D"c=
+olor:#f87168;">55</span></sup> n=C4=83m [N=C4=83m c=E1=BB=A7a Ng=C3=A0y =C4=
+=91=E1=BA=A7u t=C6=B0]<sup> <span style=3D"color:#f87168;">55</span></sup><=
+/em></p>
+    <p>(=C4=90=E1=BA=A1i di=E1=BB=87n k=C3=BD t=C3=AAn, =C4=91=C3=B3ng d=E1=
+=BA=A5u)</p>
+    <p><strong>&nbsp;</strong></p>
+    <p><strong>&nbsp;</strong></p>
+    <p><strong>&nbsp;</strong></p>
+    <p>___________________________</p>
+    <p>X=C3=A1c nh=E1=BA=ADn c=E1=BB=A7a t=E1=BB=95 ch=E1=BB=A9c =C4=91=C3=
+=A3 x=C3=A1c nh=E1=BA=ADn t=C6=B0 c=C3=A1ch nh=C3=A0 =C4=91=E1=BA=A7u t=C6=
+=B0 t=E1=BA=A1i =C4=91i=E1=BB=83m 1 n=C3=AAu tr=C3=AAn:</p>
+    <p>C=C3=B4ng ty ch=E1=BB=A9ng kho=C3=A1n n=C6=A1i nh=C3=A0 =C4=91=E1=BA=
+=A7u t=C6=B0 th=E1=BB=B1c hi=E1=BB=87n giao d=E1=BB=8Bch:</p>
+    <p><strong>C=C3=94NG TY C=E1=BB=94 PH=E1=BA=A6N CH=E1=BB=A8NG KHO=C3=81=
+N S=C3=80I G=C3=92N =E2=80=93 H=C3=80 N=E1=BB=98I</strong></p>
+    <p>=C4=90=E1=BB=8Ba ch=E1=BB=89: [=C4=90=E1=BB=8Ba ch=E1=BB=89 li=C3=AA=
+n h=E1=BB=87]<span style=3D"color:#f87168;"><sup>18</sup></span></p>
+    <p>Ng=C6=B0=E1=BB=9Di =C4=91=E1=BA=A1i di=E1=BB=87n<strong>: </strong>[=
+H=E1=BB=8D t=C3=AAn ng=C6=B0=E1=BB=9Di =C4=91=C6=B0=E1=BB=A3c =E1=BB=A7y qu=
+y=E1=BB=81n]<span style=3D"color:#f87168;"><sup>57</sup></span><strong> </s=
+trong></p>
+    <p>=E1=BB=A6y quy=E1=BB=81n: [S=E1=BB=91 v=C4=83n b=E1=BA=A3n =E1=BB=A7=
+y quy=E1=BB=81n]<span style=3D"color:#f87168;"><sup>58</sup></span> ng=C3=
+=A0y [Ng=C3=A0y hi=E1=BB=87u l=E1=BB=B1c]<span style=3D"color:#f87168;"><su=
+p>59</sup></span></p>
+    <p>CCCD: [S=E1=BB=91 gi=E1=BA=A5y t=E1=BB=9D]<span style=3D"color:#f871=
+68;"><sup>60</sup></span> <strong> </strong></p>
+    <p>Ch=E1=BB=A9c v=E1=BB=A5: [Ch=E1=BB=A9c v=E1=BB=A5]<span style=3D"col=
+or:#f87168;"><sup>61</sup></span></p>
+    <p><em>Ng=C3=A0y [Ng=C3=A0y c=E1=BB=A7a Ng=C3=A0y =C4=91=E1=BA=A7u t=C6=
+=B0]<sup> <span style=3D"color:#f87168;">55</span></sup> th=C3=A1ng [Th=C3=
+=A1ng c=E1=BB=A7a Ng=C3=A0y =C4=91=E1=BA=A7u t=C6=B0]<sup> <span style=3D"c=
+olor:#f87168;">55</span></sup> n=C4=83m [N=C4=83m c=E1=BB=A7a Ng=C3=A0y =C4=
+=91=E1=BA=A7u t=C6=B0]<sup> <span style=3D"color:#f87168;">55</span></sup><=
+/em></p>
+    <p>(=C4=90=E1=BA=A1i di=E1=BB=87n k=C3=BD t=C3=AAn, =C4=91=C3=B3ng d=E1=
+=BA=A5u)</p>
+    <p><br></p>
+    <p><br></p>
+    <p><br></p>
+    <p><br></p>
+    <p><br></p>
+    <p><br></p>
+    <p><br></p>
+   </div>
+  </div>
+  <div class=3D"cell normal" data-type=3D"normal">
+   <div class=3D"innerCell">
+    <h1 id=3D"id-11.Qu=E1=BA=A3nl=C3=BDbi=E1=BB=83um=E1=BA=ABu-1.M=E1=BA=AB=
+uPh=E1=BB=A5l=E1=BB=A5c05mapping"><span style=3D"color:#172b4d;">1. M=E1=BA=
+=ABu Ph=E1=BB=A5 l=E1=BB=A5c 05 mapping</span></h1>
+    <p><span style=3D"color:#172b4d;">Th=E1=BB=9Di =C4=91i=E1=BB=83m gen: S=
+au khi t=E1=BA=A1o y=C3=AAu c=E1=BA=A7u KH =C4=91=E1=BA=B7t mua ch=E1=BB=9D=
+ duy=E1=BB=87t =E2=86=92 Ch=E1=BB=89 =C3=A1p d=E1=BB=A5ng gen v=E1=BB=9Bi C=
+=C3=A1 nh=C3=A2n</span></p>
+    <p><span style=3D"color:#172b4d;">Hi=E1=BB=83n th=E1=BB=8B t=E1=BA=A1i =
+c=C3=A1c m=C3=A0n: </span></p>
+    <ul>
+     <li data-uuid=3D"9b932ea7-8da5-4f7a-9502-e6627e2e974f"><span style=3D"=
+color:#172b4d;">Xem chi ti=E1=BA=BFt y=C3=AAu c=E1=BA=A7u =C4=91=E1=BA=B7t =
+mua</span></li>
+     <li data-uuid=3D"bb47e3b8-96a3-4274-b2b4-320c749a2bbf"><span style=3D"=
+color:#172b4d;">Xem chi ti=E1=BA=BFt h=E1=BB=A3p =C4=91=E1=BB=93ng</span></=
+li>
+    </ul>
+    <div class=3D"table-wrap">
+     <table class=3D"wrapped relative-table confluenceTable" data-snooker-c=
+ol-series=3D"numbers" data-snooker-locked-cols=3D"0" style=3D"width: 105.88=
+4%;">
+      <colgroup>
+       <col style=3D"width: 7.13562%;">
+       <col style=3D"width: 13.1062%;">
+       <col style=3D"width: 24.7562%;">
+       <col style=3D"width: 55.0462%;">
+      </colgroup>
+      <tbody>
+       <tr>
+        <th class=3D"numberingColumn confluenceTh" contenteditable=3D"false=
+" data-mce-resize=3D"false"><br></th>
+        <th class=3D"confluenceTh"><span style=3D"color:#172b4d;">Tr=C6=B0=
+=E1=BB=9Dng th=C3=B4ng tin</span></th>
+        <th class=3D"confluenceTh"><span style=3D"color:#172b4d;">fields ma=
+pping</span></th>
+        <th class=3D"confluenceTh"><span style=3D"color:#172b4d;">DB fields=
+</span></th>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">1</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">T=C3=AAn =
+kh=C3=A1ch h=C3=A0ng</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">customerN=
+ame</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">CUSTOMER.=
+CUSTOMER_NAME</span></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">2</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">Ng=C3=A0y=
+ th=C3=A1ng n=C4=83m sinh</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">birthday<=
+/span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">CUSTOMER.=
+BIRTH_DAY</span></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">3</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">Gi=E1=BB=
+=9Bi t=C3=ADnh</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">gender</s=
+pan></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">CUSTOMER.=
+GENDER</span></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">4</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">S=E1=BB=
+=91 CCCD/H=E1=BB=99 chi=E1=BA=BFu</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">cardId</s=
+pan></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">CUSTOMER.=
+CARD_ID</span></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">5</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">Ng=C3=A0y=
+ c=E1=BA=A5p</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">issueDate=
+</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">CUSTOMER.=
+ISSUE_DATE</span></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">6</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">N=C6=A1i =
+c=E1=BA=A5p</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">issuePlac=
+e</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">CUSTOMER.=
+ISSUE_PLACE</span></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">7</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">N=C6=A1i =
+=E1=BB=9F hi=E1=BB=87n t=E1=BA=A1i</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">residence=
+Address</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">CUSTOMER.=
+CUST_ADDRESS</span></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">8</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">=C4=90i=
+=E1=BB=87n tho=E1=BA=A1i li=C3=AAn h=E1=BB=87</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">custMobil=
+e</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">CUSTOMER.=
+CUST_MOBILE</span></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">9</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">T=E1=BB=
+=95 ch=E1=BB=A9c ph=C3=A1t h=C3=A0nh</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">issuerNam=
+e</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">BOND_ISSU=
+ER.ISSUER_NAME</span></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">10</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">Lo=E1=BA=
+=A1i ch=E1=BB=A9ng ch=E1=BB=89</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">&nbsp;</s=
+pan>certificateType</td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#f87168;">Link th=C3=B4ng tin KH sang b=E1=
+=BA=A3ng th=C3=B4ng tin N=C4=90TCN <span style=3D"color:#5e4db2;">CUSTOMER_=
+PRO_INFO.<span style=3D"color:#164b35;">CERTIFICATE_TYPE</span></span> =C4=
+=91=E1=BB=83 l=E1=BA=A5y n=E1=BA=BFu <span style=3D"color:#164b35;">PRO_TYP=
+E =3D 2, n=E1=BA=BFu kh=C3=B4ng th=C3=AC =C4=91=E1=BB=83 tr=E1=BB=91ng</spa=
+n></span></p></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">11</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">S=E1=BB=
+=91 ch=E1=BB=A9ng ch=E1=BB=89</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">&nbsp;</s=
+pan>certificateNo</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#164b35;"><span sty=
+le=3D"color:#164b35;"><span style=3D"color:#5e4db2;">CUSTOMER_PRO_INFO.</sp=
+an>CERTIFICATE_NO <span style=3D"color:#f87168;">n=E1=BA=BFu <span style=3D=
+"color:#164b35;">PRO_TYPE =3D 2,&nbsp;n=E1=BA=BFu kh=C3=B4ng th=C3=AC =C4=
+=91=E1=BB=83 tr=E1=BB=91ng</span></span></span></span></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">12</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">Ng=C3=A0y=
+ c=E1=BA=A5p</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">&nbsp;</s=
+pan>certificateFrom</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#164b35;"><span sty=
+le=3D"color:#164b35;"><span style=3D"color:#5e4db2;">CUSTOMER_PRO_INFO.</sp=
+an>CERTIFICATE_FROM<span style=3D"color:#f87168;"> <span style=3D"color:#f8=
+7168;">n=E1=BA=BFu <span style=3D"color:#164b35;">PRO_TYPE =3D 2,&nbsp;n=E1=
+=BA=BFu kh=C3=B4ng th=C3=AC =C4=91=E1=BB=83 tr=E1=BB=91ng</span></span></sp=
+an></span></span></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">13</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">Ng=C3=A0y=
+ hi=E1=BB=87u l=E1=BB=B1c</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">&nbsp;</s=
+pan>certificateTo</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#164b35;"><span sty=
+le=3D"color:#164b35;"><span style=3D"color:#5e4db2;">CUSTOMER_PRO_INFO.</sp=
+an>CERTIFICATE_TO<span style=3D"color:#f87168;"> <span style=3D"color:#f871=
+68;">n=E1=BA=BFu <span style=3D"color:#164b35;">PRO_TYPE =3D 2,&nbsp;n=E1=
+=BA=BFu kh=C3=B4ng th=C3=AC =C4=91=E1=BB=83 tr=E1=BB=91ng</span></span></sp=
+an></span></span></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">14</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">Gi=C3=A1 =
+tr=E1=BB=8B danh m=E1=BB=A5c CKNY</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">&nbsp;</s=
+pan>investAmount</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;"><span sty=
+le=3D"color:#f87168;">Link th=C3=B4ng tin KH sang b=E1=BA=A3ng th=C3=B4ng t=
+in N=C4=90TCN <span style=3D"color:#5e4db2;">CUSTOMER_PRO_INFO.<span style=
+=3D"color:#333333;">INVEST_AMOUNT </span></span>=C4=91=E1=BB=83 l=E1=BA=A5y=
+ n=E1=BA=BFu <span style=3D"color:#164b35;">PRO_TYPE =3D 3, n=E1=BA=BFu kh=
+=C3=B4ng th=C3=AC =C4=91=E1=BB=83 tr=E1=BB=91ng</span></span></span></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">15</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">Thu nh=E1=
+=BA=ADp ch=E1=BB=8Bu thu=E1=BA=BF n=C4=83m</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">&nbsp;</s=
+pan>year</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;"><span sty=
+le=3D"color:#f87168;">Link th=C3=B4ng tin KH sang b=E1=BA=A3ng th=C3=B4ng t=
+in N=C4=90TCN <span style=3D"color:#5e4db2;">CUSTOMER_PRO_INFO.<span style=
+=3D"color:#702e00;">YEAR </span></span>=C4=91=E1=BB=83 l=E1=BA=A5y n=E1=BA=
+=BFu <span style=3D"color:#164b35;">PRO_TYPE =3D 4, n=E1=BA=BFu kh=C3=B4ng =
+th=C3=AC =C4=91=E1=BB=83 tr=E1=BB=91ng</span></span></span></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">16</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">Gi=C3=A1 =
+tr=E1=BB=8B thu nh=E1=BA=ADp ch=E1=BB=8Bu thu=E1=BA=BF</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">&nbsp;</s=
+pan>totalInvestAmount</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;"><span sty=
+le=3D"color:#f87168;">Link th=C3=B4ng tin KH sang b=E1=BA=A3ng th=C3=B4ng t=
+in N=C4=90TCN <span style=3D"color:#5e4db2;">CUSTOMER_PRO_INFO.<span style=
+=3D"color:#333333;">INVEST_AMOUNT </span></span>=C4=91=E1=BB=83 l=E1=BA=A5y=
+ n=E1=BA=BFu <span style=3D"color:#164b35;">PRO_TYPE =3D 4, n=E1=BA=BFu kh=
+=C3=B4ng th=C3=AC =C4=91=E1=BB=83 tr=E1=BB=91ng</span></span></span></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">17</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">M=C3=A3 t=
+r=C3=A1i phi=E1=BA=BFu</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">symbol</s=
+pan></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">BOND_INFO=
+.CODE =3D REPO_ORDER.SYMBOL</span></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">18</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">=C4=90=E1=
+=BB=8Ba ch=E1=BB=89 li=C3=AAn h=E1=BB=87 SHS</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">&nbsp;</s=
+pan>shsAddress</td>
+        <td class=3D"confluenceTd">L=E1=BA=A5y t=E1=BB=AB =C4=91=E1=BB=8Ba =
+ch=E1=BB=89 li=C3=AAn h=E1=BB=87 c=E1=BB=A7a b=E1=BA=A3n ghi KH 069P000001 =
+trong <span style=3D"color:#5e4db2;">CUSTOMER.CUST_ADDRESS</span></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">19</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">H=E1=BB=
+=8D t=C3=AAn ng=C6=B0=E1=BB=9Di =E1=BB=A7y quy=E1=BB=81n x=C3=A1c nh=E1=BA=
+=ADn cung c=E1=BA=A5p th=C3=B4ng tin TP</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">authorize=
+rName</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">Link sang=
+ b=E1=BA=A3ng CUSTOMER_AUTHORIZER theo CUSTOMER_CODE =E2=86=92 L=E1=BA=A5y =
+th=C3=B4ng tin AUTHORIZER_NAME v=E1=BB=9Bi IS_DEFAULT =3D1 c=E1=BB=A7a TK 0=
+69P</span></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">20</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">Ch=E1=BB=
+=A9c v=E1=BB=A5 ng=C6=B0=E1=BB=9Di =E1=BB=A7y quy=E1=BB=81n x=C3=A1c nh=E1=
+=BA=ADn cung c=E1=BA=A5p th=C3=B4ng tin TP</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">&nbsp;</s=
+pan>authorizerPosition</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">CUSTOMER_=
+AUTHORIZER.AUTHORIZER_POSITION</span></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">21</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">S=E1=BB=
+=91 v=C4=83n b=E1=BA=A3n =E1=BB=A7y quy=E1=BB=81n</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">&nbsp;</s=
+pan>authorizerContractNo</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">CUSTOMER_=
+AUTHORIZER.AUTHORIZER_CONTRACT_NO</span></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">22</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">Ng=C3=A0y=
+ hi=E1=BB=87u l=E1=BB=B1c</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan>authorizerContractDate</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;"><span sty=
+le=3D"color:#f87168;">CUSTOMER_AUTHORIZER.AUTHORIZER_CONTRACT_DATE</span></=
+span></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">23</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">B=E1=BA=
+=A3n c=C3=B4ng b=E1=BB=91 th=C3=B4ng tin tr=C6=B0=E1=BB=9Bc =C4=91=E1=BB=A3=
+t ch=C3=A0o b=C3=A1n tr=C3=A1i phi=E1=BA=BFu</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">&nbsp;<sp=
+an style=3D"color:#172b4d;">preOfferingDisclosure</span></span></td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#f87168;">L=E1=BA=A5y th=C3=B4ng tin t=E1=
+=BB=AB b=E1=BA=A3ng ph=E1=BB=A5 l=E1=BB=A5c tr=C3=A1i phi=E1=BA=BFu =C4=91=
+=E1=BB=83 mapping l=C3=AAn</span></p></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">24</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">Ph=C6=B0=
+=C6=A1ng =C3=A1n ph=C3=A1t h=C3=A0nh tr=C3=A1i phi=E1=BA=BFu theo quy =C4=
+=91=E1=BB=8Bnh t=E1=BA=A1i</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan>issuancePlan</td>
+        <td class=3D"confluenceTd">
+         <div class=3D"table-wrap">
+          <table class=3D"wrapped confluenceTable" data-mce-resize=3D"false=
+">
+           <colgroup>
+            <col>
+            <col>
+           </colgroup>
+           <tbody>
+            <tr>
+             <th scope=3D"col" class=3D"confluenceTh"><span style=3D"color:=
+#f87168;">=C4=90i=E1=BB=81u ki=E1=BB=87n</span></th>
+             <th scope=3D"col" class=3D"confluenceTh"><span style=3D"color:=
+#f87168;">N=E1=BB=99i dung</span></th>
+            </tr>
+            <tr>
+             <td style=3D"text-align: left;vertical-align: top;" class=3D"c=
+onfluenceTd">
+              <p><span style=3D"color:#f87168;">16/09/2022 &lt;=3D Ng=C3=A0=
+y ph=C3=A1t h=C3=A0nh &lt; 05/06/2026</span></p></td>
+             <td style=3D"text-align: left;vertical-align: top;" class=3D"c=
+onfluenceTd">
+              <p><span style=3D"color:#f87168;">Ngh=E1=BB=8B =C4=91=E1=BB=
+=8Bnh s=E1=BB=91 153/2020/N=C4=90-CP v=C3=A0 Ngh=E1=BB=8B =C4=91=E1=BB=8Bnh=
+ 65/2022/N=C4=90-CP</span></p></td>
+            </tr>
+            <tr>
+             <td style=3D"text-align: left;vertical-align: top;" class=3D"c=
+onfluenceTd"><span style=3D"color:#f87168;">Ng=C3=A0y ph=C3=A1t h=C3=A0nh &=
+lt; 16/09/2022</span></td>
+             <td style=3D"text-align: left;vertical-align: top;" class=3D"c=
+onfluenceTd">
+              <p><span style=3D"color:#f87168;">Ngh=E1=BB=8B =C4=91=E1=BB=
+=8Bnh s=E1=BB=91 153/2020/N=C4=90-CP</span></p></td>
+            </tr>
+            <tr>
+             <td class=3D"confluenceTd"><span style=3D"color:#f87168;">Ng=
+=C3=A0y ph=C3=A1t h=C3=A0nh &gt;=3D 05/06/2026</span></td>
+             <td class=3D"confluenceTd"><span style=3D"color:#f87168;">=C4=
+=90i=E1=BB=81u 10 Ngh=E1=BB=8B =C4=91=E1=BB=8Bnh s=E1=BB=91 200/2026/N=C4=
+=90-CP</span></td>
+            </tr>
+           </tbody>
+          </table>
+         </div></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">25</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">Ph=C6=B0=
+=C6=A1ng =C3=A1n ph=C3=A1t h=C3=A0nh tr=C3=A1i phi=E1=BA=BFu</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">&nbsp;<sp=
+an style=3D"color:#172b4d;">issuancePlan</span></span></td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#f87168;">L=E1=BA=A5y th=C3=B4ng tin t=E1=
+=BB=AB b=E1=BA=A3ng ph=E1=BB=A5 l=E1=BB=A5c tr=C3=A1i phi=E1=BA=BFu =C4=91=
+=E1=BB=83 mapping l=C3=AAn</span></p></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">26</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">C=C3=A1c =
+h=E1=BB=93 s=C6=A1 ch=C3=A0o b=C3=A1n tr=C3=A1i phi=E1=BA=BFu theo quy =C4=
+=91=E1=BB=8Bnh t=E1=BA=A1i</span></td>
+        <td class=3D"confluenceTd">
+         <pre>offeringDossier</pre></td>
+        <td class=3D"confluenceTd">
+         <div class=3D"table-wrap">
+          <table class=3D"wrapped confluenceTable" data-mce-resize=3D"false=
+">
+           <colgroup>
+            <col>
+            <col>
+           </colgroup>
+           <tbody>
+            <tr>
+             <th class=3D"confluenceTh"><span style=3D"color:#f87168;">=C4=
+=90i=E1=BB=81u ki=E1=BB=87n</span></th>
+             <th class=3D"confluenceTh"><span style=3D"color:#f87168;">N=E1=
+=BB=99i dung</span></th>
+            </tr>
+            <tr>
+             <td style=3D"text-align: left;vertical-align: top;" class=3D"c=
+onfluenceTd">
+              <p><span style=3D"color:#f87168;">16/09/2022 &lt;=3D Ng=C3=A0=
+y ph=C3=A1t h=C3=A0nh &lt; 05/06/2026</span></p></td>
+             <td style=3D"text-align: left;vertical-align: top;" class=3D"c=
+onfluenceTd">
+              <p><span style=3D"color:#f87168;">Ngh=E1=BB=8B =C4=91=E1=BB=
+=8Bnh s=E1=BB=91 153/2020/N=C4=90-CP v=C3=A0 Ngh=E1=BB=8B =C4=91=E1=BB=8Bnh=
+ 65/2022/N=C4=90-CP</span></p></td>
+            </tr>
+            <tr>
+             <td style=3D"text-align: left;vertical-align: top;" class=3D"c=
+onfluenceTd"><span style=3D"color:#f87168;">Ng=C3=A0y ph=C3=A1t h=C3=A0nh &=
+lt; 16/09/2022</span></td>
+             <td style=3D"text-align: left;vertical-align: top;" class=3D"c=
+onfluenceTd">
+              <p><span style=3D"color:#f87168;">Ngh=E1=BB=8B =C4=91=E1=BB=
+=8Bnh s=E1=BB=91 153/2020/N=C4=90-CP</span></p></td>
+            </tr>
+            <tr>
+             <td class=3D"confluenceTd"><span style=3D"color:#f87168;">Ng=
+=C3=A0y ph=C3=A1t h=C3=A0nh &gt;=3D 05/06/2026</span></td>
+             <td class=3D"confluenceTd"><span style=3D"color:#f87168;">Ngh=
+=E1=BB=8B =C4=91=E1=BB=8Bnh s=E1=BB=91 200/2026/N=C4=90-CP</span></td>
+            </tr>
+           </tbody>
+          </table>
+         </div>
+         <p><span style=3D"color:#f87168;">&nbsp;</span></p></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">27</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">H=E1=BB=
+=93 s=C6=A1 ch=C3=A0o b=C3=A1n tr=C3=A1i phi=E1=BA=BFu&nbsp;</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;"><span sty=
+le=3D"color:#172b4d;">bondOfferingDossier</span></span></td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#f87168;">L=E1=BA=A5y th=C3=B4ng tin t=E1=
+=BB=AB b=E1=BA=A3ng ph=E1=BB=A5 l=E1=BB=A5c tr=C3=A1i phi=E1=BA=BFu =C4=91=
+=E1=BB=83 mapping l=C3=AAn</span></p></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">28</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">C=C3=A1c =
+n=E1=BB=99i dung c=C3=B4ng b=E1=BB=91 th=C3=B4ng tin =C4=91=E1=BB=8Bnh k=E1=
+=BB=B3 c=E1=BB=A7a doanh nghi=E1=BB=87p ph=C3=A1t h=C3=A0nh theo quy =C4=91=
+=E1=BB=8Bnh t=E1=BA=A1i</span></td>
+        <td class=3D"confluenceTd">
+         <pre><span style=3D"color:#707070;">disclosureContent</span></pre>=
+</td>
+        <td class=3D"confluenceTd">
+         <div class=3D"table-wrap">
+          <table class=3D"wrapped confluenceTable" data-mce-resize=3D"false=
+">
+           <colgroup>
+            <col>
+            <col>
+           </colgroup>
+           <tbody>
+            <tr>
+             <th class=3D"confluenceTh"><span style=3D"color:#f87168;">=C4=
+=90i=E1=BB=81u ki=E1=BB=87n</span></th>
+             <th class=3D"confluenceTh"><span style=3D"color:#f87168;">N=E1=
+=BB=99i dung</span></th>
+            </tr>
+            <tr>
+             <td style=3D"text-align: left;vertical-align: top;" class=3D"c=
+onfluenceTd">
+              <p><span style=3D"color:#f87168;">16/09/2022 &lt;=3D Ng=C3=A0=
+y ph=C3=A1t h=C3=A0nh &lt; 05/06/2026</span></p></td>
+             <td style=3D"text-align: left;vertical-align: top;" class=3D"c=
+onfluenceTd">
+              <p><span style=3D"color:#f87168;">Ngh=E1=BB=8B =C4=91=E1=BB=
+=8Bnh s=E1=BB=91 153/2020/N=C4=90-CP v=C3=A0 Ngh=E1=BB=8B =C4=91=E1=BB=8Bnh=
+ 65/2022/N=C4=90-CP</span></p></td>
+            </tr>
+            <tr>
+             <td style=3D"text-align: left;vertical-align: top;" class=3D"c=
+onfluenceTd"><span style=3D"color:#f87168;">Ng=C3=A0y ph=C3=A1t h=C3=A0nh &=
+lt; 16/09/2022</span></td>
+             <td style=3D"text-align: left;vertical-align: top;" class=3D"c=
+onfluenceTd">
+              <p><span style=3D"color:#f87168;">Ngh=E1=BB=8B =C4=91=E1=BB=
+=8Bnh s=E1=BB=91 153/2020/N=C4=90-CP</span></p></td>
+            </tr>
+            <tr>
+             <td class=3D"confluenceTd"><span style=3D"color:#f87168;">Ng=
+=C3=A0y ph=C3=A1t h=C3=A0nh &gt;=3D 05/06/2026</span></td>
+             <td class=3D"confluenceTd"><span style=3D"color:#f87168;">Ngh=
+=E1=BB=8B =C4=91=E1=BB=8Bnh s=E1=BB=91 200/2026/N=C4=90-CP</span></td>
+            </tr>
+           </tbody>
+          </table>
+         </div>
+         <p><span style=3D"color:#f87168;">&nbsp;</span></p></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">29</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">C=C3=B4ng=
+ b=E1=BB=91 th=C3=B4ng tin =C4=91=E1=BB=8Bnh k=E1=BB=B3&nbsp;</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">&nbsp;<sp=
+an style=3D"color:#172b4d;">periodic</span></span><span style=3D"color:#172=
+b4d;">Disclosure</span></td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#f87168;">L=E1=BA=A5y th=C3=B4ng tin t=E1=
+=BB=AB b=E1=BA=A3ng ph=E1=BB=A5 l=E1=BB=A5c tr=C3=A1i phi=E1=BA=BFu =C4=91=
+=E1=BB=83 mapping l=C3=AAn</span></p></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">30</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">S=E1=BB=
+=91 =C4=91=C4=83ng k=C3=BD s=E1=BB=9F h=E1=BB=AFu</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">issuerTax=
+Code</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">BOND_ISSU=
+ER.REGISTRATION_ID</span></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">31</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">Lo=E1=BA=
+=A1i ng=C3=A0nh ngh=E1=BB=81</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan>businessType</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">BOND_INFO=
+.BUSINESS_TYPE</span></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">32</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">Th=E1=BB=
+=9Di =C4=91i=E1=BB=83m c=E1=BA=ADp nh=E1=BA=ADt 1/2/3</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+        <td rowspan=3D"8" class=3D"confluenceTd">
+         <p><span style=3D"color:#f87168;">L=E1=BA=A5y th=C3=B4ng tin t=C6=
+=B0=C6=A1ng =E1=BB=A9ng t=E1=BB=AB b=E1=BA=A3ng l=C6=B0u h=E1=BB=87 s=E1=BB=
+=91 t=C3=A0i ch=C3=ADnh, t=E1=BB=91i =C4=91a 3 k=E1=BB=B3 g=E1=BA=A7n nh=E1=
+=BA=A5t, s=E1=BA=AFp x=E1=BA=BFp 1/2/3 theo th=E1=BB=A9 t=E1=BB=B1 th=E1=BB=
+=9Di gian t=E1=BB=AB g=E1=BA=A7n =C4=91=E1=BA=BFn xa</span></p>
+         <p><span style=3D"color:#f87168;">C=C3=B3 bao nhi=C3=AAu k=E1=BB=
+=B3 th=C3=AC ph=E1=BA=A7n PL05 hi=E1=BB=83n th=E1=BB=8B b=E1=BA=A5y nhi=C3=
+=AAu c=E1=BB=99t d=E1=BB=AF li=E1=BB=87u</span></p>
+         <p><span style=3D"color:#f87168;">V=C3=AD d=E1=BB=A5: Trong khai b=
+=C3=A1o ch=E1=BB=89 c=C3=B3 1 d=C3=B2ng th=C3=B4ng tin=E2=86=92 B=E1=BA=A3n=
+g ch=E1=BB=89 ch=E1=BB=89 hi=E1=BB=83n th=E1=BB=8B <strong>Ch=E1=BB=89 ti=
+=C3=AAu, =C4=90=C6=A1n v=E1=BB=8B, Th=E1=BB=9Di gian c=E1=BA=ADp nh=E1=BA=
+=ADt 1</strong></span></p></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">33</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">T=E1=BB=
+=95ng t=C3=A0i s=E1=BA=A3n 1/2/3</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">34</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">N=E1=BB=
+=A3 ph=E1=BA=A3i tr=E1=BA=A3 1/2/3</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">35</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">V=E1=BB=
+=91n ch=E1=BB=A7 s=E1=BB=9F h=E1=BB=AFu 1/2/3</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">36</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">V=E1=BB=
+=91n l=C6=B0u =C4=91=E1=BB=99ng th=C6=B0=E1=BB=9Dng xuy=C3=AAn 1/2/3</span>=
+</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">37</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">H=E1=BB=
+=87 s=E1=BB=91 d=C6=B0 n=E1=BB=A3 vay/T=E1=BB=95ng t=C3=A0i s=E1=BA=A3n 1/2=
+/3</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">38</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">H=E1=BB=
+=87 s=E1=BB=91 n=E1=BB=A3 ph=E1=BA=A3i tr=E1=BA=A3/V=E1=BB=91n ch=E1=BB=A7 =
+s=E1=BB=9F h=E1=BB=AFu 1/2/3</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">39</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">Kh=E1=BA=
+=A3 n=C4=83ng thanh to=C3=A1n hi=E1=BB=87n h=C3=A0nh 1/2/3</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">40</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">M=E1=BB=
+=A5c =C4=91=C3=ADch ph=C3=A1t h=C3=A0nh tr=C3=A1i phi=E1=BA=BFu</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">&nbsp;<sp=
+an style=3D"color:#172b4d;">issuancePurpose</span></span></td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#f87168;">L=E1=BA=A5y th=C3=B4ng tin t=E1=
+=BB=AB b=E1=BA=A3ng ph=E1=BB=A5 l=E1=BB=A5c tr=C3=A1i phi=E1=BA=BFu =C4=91=
+=E1=BB=83 mapping l=C3=AAn</span></p></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">41</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">K=E1=BA=
+=BF ho=E1=BA=A1ch s=E1=BB=AD d=E1=BB=A5ng v=E1=BB=91n thu =C4=91=C6=B0=E1=
+=BB=A3c t=E1=BB=AB =C4=91=E1=BB=A3t ch=C3=A0o b=C3=A1n tr=C3=A1i phi=E1=BA=
+=BFu</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">&nbsp;<sp=
+an style=3D"color:#172b4d;">proceedsUsePlan</span></span></td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#f87168;">L=E1=BA=A5y th=C3=B4ng tin t=E1=
+=BB=AB b=E1=BA=A3ng ph=E1=BB=A5 l=E1=BB=A5c tr=C3=A1i phi=E1=BA=BFu =C4=91=
+=E1=BB=83 mapping l=C3=AAn</span></p></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">42</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">K=E1=BA=
+=BF ho=E1=BA=A1ch s=E1=BB=AD d=E1=BB=A5ng ngu=E1=BB=93n v=E1=BB=91n thu =C4=
+=91=C6=B0=E1=BB=A3c t=E1=BB=AB =C4=91=E1=BB=A3t ch=C3=A0o b=C3=A1n tr=C3=A1=
+i phi=E1=BA=BFu t=E1=BA=A1m th=E1=BB=9Di nh=C3=A0n r=E1=BB=97i</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">&nbsp;<sp=
+an style=3D"color:#172b4d;">idleProceedsUsePlan</span></span></td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#f87168;">L=E1=BA=A5y th=C3=B4ng tin t=E1=
+=BB=AB b=E1=BA=A3ng ph=E1=BB=A5 l=E1=BB=A5c tr=C3=A1i phi=E1=BA=BFu =C4=91=
+=E1=BB=83 mapping l=C3=AAn</span></p></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">43</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">Ph=C6=B0=
+=C6=A1ng =C3=A1n b=E1=BB=91 tr=C3=AD ngu=E1=BB=93n v=C3=A0 ph=C6=B0=C6=A1ng=
+ th=E1=BB=A9c thanh to=C3=A1n l=C3=A3i, g=E1=BB=91c</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">&nbsp;<sp=
+an style=3D"color:#172b4d;">debtServicePlan</span></span></td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#f87168;">L=E1=BA=A5y th=C3=B4ng tin t=E1=
+=BB=AB b=E1=BA=A3ng ph=E1=BB=A5 l=E1=BB=A5c tr=C3=A1i phi=E1=BA=BFu =C4=91=
+=E1=BB=83 mapping l=C3=AAn</span></p></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">44</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">T=C3=A0i =
+s=E1=BA=A3n =C4=91=E1=BA=A3m b=E1=BA=A3o (c=C3=B3/ kh=C3=B4ng)</span></td>
+        <td class=3D"confluenceTd">
+         <pre><br>hasCollateral</pre></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">BOND_INFO=
+.HAS_COLLATERAL</span></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">45</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">T=C3=A0i =
+s=E1=BA=A3n =C4=91=E1=BA=A3m b=E1=BA=A3o c=C3=B3 gi=C3=A1 tr=E1=BB=8B</span=
+></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">&nbsp;</s=
+pan></td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#f87168;">L=E1=BA=A5y th=C3=B4ng tin t=E1=
+=BB=AB b=E1=BA=A3ng TS=C4=90B v=C3=A0 c=E1=BB=99ng c=C3=A1c gi=C3=A1 tr=E1=
+=BB=8B v=C3=A0o</span></p></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">46</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">=C4=90=C4=
+=83ng k=C3=BD giao d=E1=BB=8Bch b=E1=BA=A3o =C4=91=E1=BA=A3m t=E1=BA=A1i s=
+=E1=BB=91</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">&nbsp;</s=
+pan></td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#f87168;">L=E1=BA=A5y th=C3=B4ng tin t=E1=
+=BB=AB b=E1=BA=A3ng TS=C4=90B</span></p></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">47</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">B=E1=BA=
+=A3o l=C3=A3nh thanh to=C3=A1n</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">&nbsp;</s=
+pan></td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#f87168;">L=E1=BA=A5y th=C3=B4ng tin B=E1=
+=BA=A3o l=C3=A3nh thanh to=C3=A1n</span></p></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">48</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">T=E1=BB=
+=95 ch=E1=BB=A9c t=C3=ADn d=E1=BB=A5ng b=E1=BA=A3o l=C3=A3nh</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">&nbsp;</s=
+pan></td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#f87168;"><span style=3D"color:#f87168;">L=
+=E1=BA=A5y th=C3=B4ng tin B=E1=BA=A3o l=C3=A3nh thanh to=C3=A1n</span></spa=
+n></p></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">49</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">L=C3=A3i =
+su=E1=BA=A5t tr=C3=A1i phi=E1=BA=BFu</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">&nbsp;</s=
+pan>rateDescription</td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#f87168;"><span style=3D"color:#f87168;">B=
+OND_INFO.RATE_DESCRIPTION</span></span></p></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">50</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">K=E1=BB=
+=B3 h=E1=BA=A1n tr=C3=A1i phi=E1=BA=BFu</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">&nbsp;</s=
+pan>term</td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#f87168;"><span style=3D"color:#f87168;">B=
+OND_INF</span>O.TERM</span></p></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">51</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">Cam k=E1=
+=BA=BFt c=E1=BB=A7a TCPH</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">&nbsp;<sp=
+an style=3D"color:#172b4d;">isusser</span></span><span style=3D"color:#172b=
+4d;">Commitments</span></td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#f87168;">L=E1=BA=A5y th=C3=B4ng tin t=E1=
+=BB=AB b=E1=BA=A3ng ph=E1=BB=A5 l=E1=BB=A5c tr=C3=A1i phi=E1=BA=BFu =C4=91=
+=E1=BB=83 mapping l=C3=AAn</span></p></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">52</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">Ngh=E1=BB=
+=8B =C4=91=E1=BB=8Bnh</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">&nbsp;</s=
+pan>decree</td>
+        <td class=3D"confluenceTd">
+         <div class=3D"table-wrap">
+          <table class=3D"wrapped confluenceTable" data-mce-resize=3D"false=
+">
+           <colgroup>
+            <col>
+            <col>
+           </colgroup>
+           <tbody>
+            <tr>
+             <th class=3D"confluenceTh"><span style=3D"color:#f87168;">=C4=
+=90i=E1=BB=81u ki=E1=BB=87n</span></th>
+             <th class=3D"confluenceTh"><span style=3D"color:#f87168;">N=E1=
+=BB=99i dung</span></th>
+            </tr>
+            <tr>
+             <td style=3D"text-align: left;vertical-align: top;" class=3D"c=
+onfluenceTd">
+              <p><span style=3D"color:#f87168;">16/09/2022 &lt;=3D Ng=C3=A0=
+y ph=C3=A1t h=C3=A0nh &lt; 05/06/2026</span></p></td>
+             <td style=3D"text-align: left;vertical-align: top;" class=3D"c=
+onfluenceTd">
+              <p><span style=3D"color:#f87168;">Ngh=E1=BB=8B =C4=91=E1=BB=
+=8Bnh s=E1=BB=91 153/2020/N=C4=90-CP v=C3=A0 Ngh=E1=BB=8B =C4=91=E1=BB=8Bnh=
+ 65/2022/N=C4=90-CP</span></p></td>
+            </tr>
+            <tr>
+             <td style=3D"text-align: left;vertical-align: top;" class=3D"c=
+onfluenceTd"><span style=3D"color:#f87168;">Ng=C3=A0y ph=C3=A1t h=C3=A0nh &=
+lt; 16/09/2022</span></td>
+             <td style=3D"text-align: left;vertical-align: top;" class=3D"c=
+onfluenceTd">
+              <p><span style=3D"color:#f87168;">Ngh=E1=BB=8B =C4=91=E1=BB=
+=8Bnh s=E1=BB=91 153/2020/N=C4=90-CP</span></p></td>
+            </tr>
+            <tr>
+             <td class=3D"confluenceTd"><span style=3D"color:#f87168;">Ng=
+=C3=A0y ph=C3=A1t h=C3=A0nh &gt;=3D 05/06/2026</span></td>
+             <td class=3D"confluenceTd"><span style=3D"color:#f87168;"><em =
+style=3D"text-align: left;">(=C4=91i=E1=BB=81u kho=E1=BA=A3n)</em> Ngh=E1=
+=BB=8B =C4=91=E1=BB=8Bnh s=E1=BB=91 200/2026/N=C4=90-CP</span></td>
+            </tr>
+           </tbody>
+          </table>
+         </div>
+         <p><span style=3D"color:#f87168;">&nbsp;</span></p></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">53</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">=C4=90=E1=
+=BA=A1i di=E1=BB=87n s=E1=BB=9F h=E1=BB=AFu</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">&nbsp;</s=
+pan>representative</td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#f87168;"><span style=3D"color:#f87168;">B=
+OND_INFO</span>.REPRESENTATIVE</span></p></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">54</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">R=E1=BB=
+=A7i ro</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">&nbsp;</s=
+pan>
+         <pre><span style=3D"color:#707070;">riskFactors</span></pre></td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#f87168;">L=E1=BA=A5y th=C3=B4ng tin t=E1=
+=BB=AB b=E1=BA=A3ng ph=E1=BB=A5 l=E1=BB=A5c tr=C3=A1i phi=E1=BA=BFu =C4=91=
+=E1=BB=83 mapping l=C3=AAn</span></p></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">55</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">Ng=C3=A0y=
+ th=C3=A1ng n=C4=83m</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;"><strong>c=
+reateDate</strong></span></td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#f87168;">REPO_ORDER.CREATED_DATE</span></=
+p></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">56</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">S=E1=BB=
+=91 CCCD ng=C6=B0=E1=BB=9Di =C4=91=C6=B0=E1=BB=A3c =E1=BB=A7y quy=E1=BB=81n=
+&nbsp; (X=C3=A1c nh=E1=BA=ADn cung c=E1=BA=A5p =C4=91=E1=BA=A7y =C4=91=E1=
+=BB=A7 th=C3=B4ng tin)</span></td>
+        <td class=3D"confluenceTd">
+         <pre><span style=3D"color:#172b4d;">authorizerId</span></pre></td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#f87168;">CUSTOMER_AUTHORIZER.AUTHORIZER_I=
+D</span></p></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">57</td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#f87168;">H=E1=BB=8D t=C3=AAn ng=C6=B0=E1=
+=BB=9Di =C4=91=C6=B0=E1=BB=A3c =E1=BB=A7y quy=E1=BB=81n</span></p>
+         <p><span style=3D"color:#f87168;">(X=C3=A1c nh=E1=BA=ADn t=C6=B0 c=
+=C3=A1ch N=C4=90TCN)</span></p></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">&nbsp;<sp=
+an style=3D"color:#172b4d;">authorizerName</span></span></td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#f87168;">Link sang b=E1=BA=A3ng CUSTOMER_=
+AUTHORIZER theo CUSTOMER_CODE =E2=86=92 L=E1=BA=A5y th=C3=B4ng tin AUTHORIZ=
+ER_NAME v=E1=BB=9Bi IS_DEFAULT =3D0 c=E1=BB=A7a TK 069P</span></p></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">58</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">S=E1=BB=
+=91 v=C4=83n b=E1=BA=A3n =E1=BB=A7y quy=E1=BB=81n</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">&nbsp;</s=
+pan>authorizerContractNo</td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#f87168;">CUSTOMER_AUTHORIZER.AUTHORIZER_C=
+ONTRACT_NO</span></p></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">59</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">Ng=C3=A0y=
+ hi=E1=BB=87u l=E1=BB=B1c</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">&nbsp;</s=
+pan>authorizerContractDate</td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#f87168;">CUSTOMER_AUTHORIZER.AUTHORIZER_C=
+ONTRACT_DATE</span></p></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">60</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">S=E1=BB=
+=91 gi=E1=BA=A5y t=E1=BB=9D</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">&nbsp;</s=
+pan>authorizerId</td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#f87168;">CUSTOMER_AUTHORIZER<span style=
+=3D"color:#f87168;">.AUTHORIZER_ID</span></span></p></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">61</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">Ch=E1=BB=
+=A9c v=E1=BB=A5</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">&nbsp;</s=
+pan>authorizerPosition</td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#f87168;">CUSTOMER_AUTHORIZER.AUTHORIZER_P=
+OSITION</span></p></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">62</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">B=E1=BA=
+=A3n c=C3=B4ng b=E1=BB=91 th=C3=B4ng tin tr=C6=B0=E1=BB=9Bc =C4=91=E1=BB=A3=
+t ch=C3=A0o b=C3=A1n tr=C3=A1i phi=E1=BA=BFu theo quy =C4=91=E1=BB=8Bnh t=
+=E1=BA=A1i</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#f87168;">&nbsp;</s=
+pan>infoDisclosure</td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#f87168;">L=E1=BA=A5y th=C3=B4ng tin ng=C3=
+=A0y ph=C3=A1t h=C3=A0nh TP =C4=91=E1=BB=83 th=E1=BB=B1c hi=E1=BB=87n x=E1=
+=BB=AD l=C3=BD:</span></p>
+         <div class=3D"table-wrap">
+          <table class=3D"wrapped confluenceTable" data-mce-resize=3D"false=
+">
+           <colgroup>
+            <col>
+            <col>
+           </colgroup>
+           <tbody>
+            <tr>
+             <th scope=3D"col" class=3D"confluenceTh"><span style=3D"color:=
+#f87168;">=C4=90i=E1=BB=81u ki=E1=BB=87n</span></th>
+             <th scope=3D"col" class=3D"confluenceTh"><span style=3D"color:=
+#f87168;">N=E1=BB=99i dung&nbsp;</span></th>
+            </tr>
+            <tr>
+             <td style=3D"text-align: left;vertical-align: top;" class=3D"c=
+onfluenceTd">
+              <p><span style=3D"color:#f87168;">16/09/2022 &lt;=3D Ng=C3=A0=
+y ph=C3=A1t h=C3=A0nh &lt; 05/06/2026</span></p></td>
+             <td style=3D"text-align: left;vertical-align: top;" class=3D"c=
+onfluenceTd">
+              <p><span style=3D"color:#f87168;">Ngh=E1=BB=8B =C4=91=E1=BB=
+=8Bnh s=E1=BB=91 153/2020/N=C4=90-CP v=C3=A0 Ngh=E1=BB=8B =C4=91=E1=BB=8Bnh=
+ 65/2022/N=C4=90-CP</span></p></td>
+            </tr>
+            <tr>
+             <td style=3D"text-align: left;vertical-align: top;" class=3D"c=
+onfluenceTd"><span style=3D"color:#f87168;">Ng=C3=A0y ph=C3=A1t h=C3=A0nh &=
+lt; 16/09/2022</span></td>
+             <td style=3D"text-align: left;vertical-align: top;" class=3D"c=
+onfluenceTd">
+              <p><span style=3D"color:#f87168;">Ngh=E1=BB=8B =C4=91=E1=BB=
+=8Bnh s=E1=BB=91 153/2020/N=C4=90-CP</span></p></td>
+            </tr>
+            <tr>
+             <td style=3D"text-align: left;vertical-align: top;" class=3D"c=
+onfluenceTd"><span style=3D"color:#f87168;">Ng=C3=A0y ph=C3=A1t h=C3=A0nh &=
+gt;=3D 05/06/2026</span></td>
+             <td style=3D"text-align: left;vertical-align: top;" class=3D"c=
+onfluenceTd">
+              <p><span style=3D"color:#f87168;">kho=E1=BA=A3n 1 =C4=90i=E1=
+=BB=81u 29 Ngh=E1=BB=8B =C4=91=E1=BB=8Bnh s=E1=BB=91 200/2026/N=C4=90-CP</s=
+pan></p></td>
+            </tr>
+           </tbody>
+          </table>
+         </div></td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+   </div>
+  </div>
+ </div>
+ <div class=3D"columnLayout single" data-layout=3D"single">
+  <div class=3D"cell normal" data-type=3D"normal">
+   <div class=3D"innerCell">
+    <p>&nbsp;<span style=3D"font-size: 24.0px;letter-spacing: -0.01em;color=
+:#172b4d;">2. M=E1=BA=ABu H=E1=BB=A3p =C4=91=E1=BB=93ng b=C3=A1n k=E1=BB=B3=
+ h=E1=BA=A1n (Ch=E1=BB=A7 kho b=C3=A1n)</span></p>
+    <p><span style=3D"color:#172b4d;">Th=E1=BB=9Di =C4=91i=E1=BB=83m gen: S=
+au khi t=E1=BA=A1o y=C3=AAu c=E1=BA=A7u KH =C4=91=E1=BA=B7t mua ch=E1=BB=9D=
+ duy=E1=BB=87t</span></p>
+    <p><span style=3D"color:#172b4d;">Hi=E1=BB=83n th=E1=BB=8B t=E1=BA=A1i =
+c=C3=A1c m=C3=A0n: </span></p>
+    <ul>
+     <li style=3D"color:#f87168;" data-uuid=3D"55392224-1f04-4ddd-94a4-2774=
+c3714d40"><span style=3D"color:#172b4d;">Xem chi ti=E1=BA=BFt y=C3=AAu c=E1=
+=BA=A7u =C4=91=E1=BA=B7t mua</span></li>
+     <li style=3D"color:#f87168;" data-uuid=3D"a7b547c8-6b98-47b5-8af4-7cb7=
+e380a56f"><span style=3D"color:#172b4d;">Xem chi ti=E1=BA=BFt h=E1=BB=A3p =
+=C4=91=E1=BB=93ng</span></li>
+    </ul>
+    <div class=3D"table-wrap">
+     <table class=3D"wrapped confluenceTable" data-snooker-col-series=3D"nu=
+mbers" data-snooker-locked-cols=3D"0">
+      <colgroup>
+       <col>
+       <col>
+       <col>
+       <col>
+       <col>
+       <col>
+      </colgroup>
+      <tbody>
+       <tr>
+        <th class=3D"numberingColumn confluenceTh" contenteditable=3D"false=
+" data-mce-resize=3D"false"><br></th>
+        <th colspan=3D"2" class=3D"confluenceTh"><span style=3D"color:#172b=
+4d;">Tr=C6=B0=E1=BB=9Dng th=C3=B4ng tin</span></th>
+        <th class=3D"confluenceTh"><span style=3D"color:#172b4d;">fields ma=
+pping</span></th>
+        <th class=3D"confluenceTh"><span style=3D"color:#172b4d;">DB fields=
+</span></th>
+        <th class=3D"confluenceTh"><span style=3D"color:#172b4d;">Note</spa=
+n></th>
+       </tr>
+       <tr>
+        <th class=3D"numberingColumn confluenceTh" contenteditable=3D"false=
+" data-mce-resize=3D"false"><br></th>
+        <th class=3D"confluenceTh">
+         <p><span style=3D"color:#172b4d;">KH C=C3=A1 nh=C3=A2n&nbsp;</span=
+></p>
+         <p><span style=3D"color:#172b4d;">CUSTOMER.CUSTOMER_TYPE =3D 1</sp=
+an></p></th>
+        <th class=3D"confluenceTh">
+         <p><span style=3D"color:#172b4d;">KH Doanh nghi=E1=BB=87p</span></=
+p>
+         <p><span style=3D"color:#172b4d;">CUSTOMER.CUSTOMER_TYPE =3D 2</sp=
+an></p></th>
+        <th class=3D"confluenceTh"><br></th>
+        <th class=3D"confluenceTh"><br></th>
+        <th class=3D"confluenceTh"><br></th>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">1</td>
+        <td colspan=3D"2" class=3D"confluenceTd"><span style=3D"color:#172b=
+4d;">S=E1=BB=91 h=E1=BB=A3p =C4=91=E1=BB=93ng</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">orderNo</=
+span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">REPO_ORDE=
+R.ORDER_NO</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">2</td>
+        <td colspan=3D"2" class=3D"confluenceTd"><span style=3D"color:#172b=
+4d;">Ng=C3=A0y th=C3=A1ng n=C4=83m</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">createDat=
+e</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">REPO_ORDE=
+R.CREATED_DATE</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">3</td>
+        <td colspan=3D"4" class=3D"confluenceTd"><span style=3D"color:#172b=
+4d;"><em><strong>B=C3=AAn Mua (Kh=C3=A1ch h=C3=A0ng)</strong></em></span></=
+td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;"><em><stro=
+ng>&nbsp;</strong></em></span></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">4</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">H=E1=BB=
+=8D v=C3=A0 t=C3=AAn KH</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">T=C3=AAn =
+t=E1=BB=95 ch=E1=BB=A9c</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">customerN=
+ame</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">REPO_ORDE=
+R.ACCOUNT link sang KH CUSTOMER.CUSTOMER_NAME</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">5</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">S=E1=BB=
+=91 CCCD/CC</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">Gi=E1=BA=
+=A5y =C4=90KDN</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">cardId</s=
+pan></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">CUSTOMER.=
+CARD_ID</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">6</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">Ng=C3=A0y=
+ c=E1=BA=A5p</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">Ng=C3=A0y=
+ c=E1=BA=A5p</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">issueDate=
+</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">CUSTOMER.=
+ISSUE_DATE</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">7</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">N=C6=A1i =
+c=E1=BA=A5p</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">N=C6=A1i =
+c=E1=BA=A5p</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">issuePlac=
+e</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">CUSTOMER.=
+ISSUE_PLACE</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">8</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">=C4=90=E1=
+=BB=8Ba ch=E1=BB=89 li=C3=AAn h=E1=BB=87</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">=C4=90=E1=
+=BB=8Ba ch=E1=BB=89 tr=E1=BB=A5 s=E1=BB=9F ch=C3=ADnh</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">custAddre=
+ss</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">CUSTOMER.=
+CUST_ADDRESS</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">9</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">=C4=90i=
+=E1=BB=87n tho=E1=BA=A1i</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">=C4=90i=
+=E1=BB=87n tho=E1=BA=A1i</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">custMobil=
+e</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">CUSTOMER.=
+CUST_MOBILE</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">10</td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">Fax</span=
+></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">custFax</=
+span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">CUSTOMER.=
+CUST_FAX</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">11</td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">Ng=C6=B0=
+=E1=BB=9Di =C4=91=E1=BA=A1i di=E1=BB=87n/ =E1=BB=A6y quy=E1=BB=81n</span></=
+td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">custAutho=
+rizerName</span></td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#172b4d;">Link sang b=E1=BA=A3ng ng=C6=B0=
+=E1=BB=9Di =E1=BB=A7y quy=E1=BB=81n</span></p>
+         <p><span style=3D"color:#172b4d;">CUSTOMER_AUTHORIZER.AUTHORIZER_N=
+AME</span></p></td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#172b4d;">&nbsp;</span></p></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">12</td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">Ch=E1=BB=
+=A9c v=E1=BB=A5</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">custAutho=
+rizerPosition</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">CUSTOMER_=
+AUTHORIZER.AUTHORIZER_POSITION</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">13</td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">=E1=BB=A6=
+y quy=E1=BB=81n s=E1=BB=91</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">custAutho=
+rizerContractNo</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">CUSTOMER_=
+AUTHORIZER.AUTHORIZER_CONTRACT_NO</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">14</td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">Ng=C3=A0y=
+ =E1=BB=A7y quy=E1=BB=81n</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">custAutho=
+rizerId</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">CUSTOMER_=
+AUTHORIZER.AUTHORIZER_CONTRACT_DATE</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">15</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;"><s>T=C3=
+=A0i kho=E1=BA=A3n ng=C3=A2n h=C3=A0ng</s></span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><br></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">16</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;"><s>T=E1=
+=BA=A1i ng=C3=A2n h=C3=A0ng</s></span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><br></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">17</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">T=C3=A0i =
+kho=E1=BA=A3n ch=E1=BB=A9ng kho=C3=A1n</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">account</=
+span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">REPO_ORDE=
+R.ACCOUNT </span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">18</td>
+        <td colspan=3D"4" class=3D"confluenceTd"><span style=3D"color:#172b=
+4d;"><em><strong>B=C3=AAn b=C3=A1n: ch=E1=BB=A7 kho</strong></em></span></t=
+d>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;"><em><stro=
+ng>&nbsp;</strong></em></span></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">19</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">T=C3=AAn =
+t=E1=BB=95 ch=E1=BB=A9c</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#172b4d;">L=E1=BA=A5y ch=E1=BB=A7 kho REPO=
+_ORDER.INVENTORY_OWNER link sang b=E1=BA=A3ng =E1=BB=A7y quy=E1=BB=81n</spa=
+n></p>
+         <p><span style=3D"color:#172b4d;">CUSTOMER.CUSTOMER_NAME</span></p=
+></td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#172b4d;">&nbsp;</span></p></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">20</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">Gi=E1=BA=
+=A5y ph=C3=A9p</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#172b4d;">CUSTOMER.CARD_ID</span></p></td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#172b4d;">&nbsp;</span></p></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">21</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">Ng=C3=A0y=
+ c=E1=BA=A5p</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#172b4d;">CUSTOMER.ISSUE_DATE</span></p></=
+td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#172b4d;">&nbsp;</span></p></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">22</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">N=C6=A1i =
+c=E1=BA=A5p</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#172b4d;">CUSTOMER.ISSUE_PLACE</span></p><=
+/td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#172b4d;">&nbsp;</span></p></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">23</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">=C4=90=E1=
+=BB=8Ba ch=E1=BB=89</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">CUSTOMER.=
+CUST_ADDRESS</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">24</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">=C4=90i=
+=E1=BB=87n tho=E1=BA=A1i</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">CUSTOMER.=
+CUST_MOBILE</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">25</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">Fax</span=
+></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">CUSTOMER.=
+CUST_FAX</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">26</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">Ng=C6=B0=
+=E1=BB=9Di =C4=91=E1=BA=A1i di=E1=BB=87n</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">custAutho=
+rizerName</span></td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#172b4d;">L=E1=BA=A5y ch=E1=BB=A7 kho REPO=
+_ORDER.INVENTORY_OWNER link sang b=E1=BA=A3ng =E1=BB=A7y quy=E1=BB=81n</spa=
+n></p>
+         <p><span style=3D"color:#172b4d;">CUSTOMER_AUTHORIZER.AUTHORIZER_N=
+AME</span></p></td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#172b4d;">&nbsp;</span></p></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">27</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">Ch=E1=BB=
+=A9c v=E1=BB=A5</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">custAutho=
+rizerPosition</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">CUSTOMER_=
+AUTHORIZER.AUTHORIZER_POSITION</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">28</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">V=C4=83n =
+b=E1=BA=A3n =E1=BB=A7y quy=E1=BB=81n s=E1=BB=91</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">custAutho=
+rizerContractNo</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">CUSTOMER_=
+AUTHORIZER.AUTHORIZER_CONTRACT_NO</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">29</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">Ng=C3=A0y=
+ =E1=BB=A7y quy=E1=BB=81n</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">custAutho=
+rizerContractDate</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">CUSTOMER_=
+AUTHORIZER.AUTHORIZER_CONTRACT_DATE</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">30</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">S=E1=BB=
+=91 TKCK b=C3=AAn b=C3=A1n</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">inventory=
+Owner</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">REPO_ORDE=
+R.INVENTORY_OWNER</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">31</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">M=C3=A3 t=
+r=C3=A1i phi=E1=BA=BFu</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">symbol</s=
+pan></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">REPO_ORDE=
+R.SYMBOL</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">32</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">T=E1=BB=
+=95 ch=E1=BB=A9c ph=C3=A1t h=C3=A0nh</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">issuerNam=
+e</span></td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#172b4d;">L=E1=BA=A5y REPO_ORDER.SYMBOL li=
+nk sang TCPH</span></p>
+         <p><span style=3D"color:#172b4d;">BOND_ISSUER.ISSUER_NAME</span></=
+p></td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#172b4d;">&nbsp;</span></p></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">33</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">M=E1=BB=
+=87nh gi=C3=A1 tr=C3=A1i phi=E1=BA=BFu</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">price</sp=
+an></td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#172b4d;">L=E1=BA=A5y REPO_ORDER.SYMBOL li=
+nk sang Tr=C3=A1i phi=E1=BA=BFu</span></p>
+         <p><span style=3D"color:#172b4d;">BOND_INFO.PRICE</span></p></td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#172b4d;">&nbsp;</span></p></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">34</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">Ng=C3=A0y=
+ ph=C3=A1t h=C3=A0nh</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">releaseDa=
+te</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">BOND_INFO=
+.RELEASE_DATE</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">35</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">Ng=C3=A0y=
+ =C4=91=C3=A1o h=E1=BA=A1n</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">expireDat=
+e</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">BOND_INFO=
+.EXPIRE_DATE</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">36</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">K=E1=BB=
+=B3 thanh to=C3=A1n l=C3=A3i</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">couponTer=
+m</span></td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#172b4d;">BOND_INFO.COUPON_TERM tr=E1=BA=
+=A3 k=E1=BA=BFt qu=E1=BA=A3 text t=C6=B0=C6=A1ng =E1=BB=A9ng</span></p>
+         <p><span style=3D"color:#172b4d;">V=C3=AD d=E1=BB=A5:&nbsp; 3M =3D=
+ 3 th=C3=A1ng</span></p></td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#172b4d;">&nbsp;</span></p></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">37</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">Ng=C3=A0y=
+ c=C3=B4ng b=E1=BB=91 th=C3=B4ng tin</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">oDate</sp=
+an></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">BOND_INFO=
+.ODATE</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">38</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">Ng=C3=A0y=
+ giao d=E1=BB=8Bch (=C4=91=E1=BA=A7u t=C6=B0)</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">orderDate=
+</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">REPO_ORDE=
+R.ORDER_DATE</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">39</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">S=E1=BB=
+=91 l=C6=B0=E1=BB=A3ng tr=C3=A1i phi=E1=BA=BFu</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">quantity<=
+/span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">REPO_ORDE=
+R.QUANTITY</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">40</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">=C4=90=C6=
+=A1n gi=C3=A1 tr=C3=A1i phi=E1=BA=BFu</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">price</sp=
+an></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">REPO_ORDE=
+R.PRICE</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">41</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">T=E1=BB=
+=95ng gi=C3=A1 tr=E1=BB=8B giao d=E1=BB=8Bch</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">amount</s=
+pan></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">REPO_ORDE=
+R.AMOUNT</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+    <h1 id=3D"id-11.Qu=E1=BA=A3nl=C3=BDbi=E1=BB=83um=E1=BA=ABu-3.Phi=E1=BA=
+=BFul=E1=BB=87nhmua:"><span style=3D"color:#172b4d;">3. Phi=E1=BA=BFu l=E1=
+=BB=87nh mua:&nbsp;</span></h1>
+    <p><span style=3D"color:#172b4d;">Th=E1=BB=9Di =C4=91i=E1=BB=83m gen:&n=
+bsp;</span></p>
+    <ul>
+     <li style=3D"color:#f87168;" data-uuid=3D"80d9af3d-153b-4859-b3f8-ac8d=
+559a3e18"><span style=3D"color:#172b4d;">Sau khi t=E1=BA=A1o y=C3=AAu c=E1=
+=BA=A7u KH =C4=91=E1=BA=B7t mua k=E1=BB=B3 h=E1=BA=A1n ch=E1=BB=9D duy=E1=
+=BB=87t, ho=E1=BA=B7c</span></li>
+     <li style=3D"color:#f87168;" data-uuid=3D"19206908-f47a-47e1-99fc-fef2=
+98e63233"><span style=3D"color:#172b4d;">Sau khi KH t=E1=BA=A1o y=C3=AAu c=
+=E1=BA=A7u chuy=E1=BB=83n nh=C6=B0=E1=BB=A3ng</span></li>
+    </ul>
+    <p><span style=3D"color:#172b4d;">Hi=E1=BB=83n th=E1=BB=8B t=E1=BA=A1i =
+c=C3=A1c m=C3=A0n: </span></p>
+    <ul>
+     <li style=3D"color:#f87168;" data-uuid=3D"a2901115-f773-4116-9550-db8a=
+c0e27895"><span style=3D"color:#172b4d;">Xem chi ti=E1=BA=BFt y=C3=AAu c=E1=
+=BA=A7u =C4=91=E1=BA=B7t mua</span></li>
+     <li style=3D"color:#f87168;" data-uuid=3D"a283afb2-cd33-4120-9b41-793b=
+cc29cc0e"><span style=3D"color:#172b4d;">Xem chi ti=E1=BA=BFt h=E1=BB=A3p =
+=C4=91=E1=BB=93ng</span></li>
+     <li style=3D"color:#f87168;" data-uuid=3D"7ccc93e7-1dd7-46b1-bc4f-d3c8=
+e7c43c14"><span style=3D"color:#172b4d;">=C4=90=E1=BA=B7t l=E1=BB=87nh HNX<=
+/span></li>
+    </ul>
+    <div class=3D"table-wrap">
+     <table class=3D"wrapped confluenceTable" data-snooker-col-series=3D"nu=
+mbers" data-snooker-locked-cols=3D"0">
+      <colgroup>
+       <col>
+       <col>
+       <col>
+       <col>
+       <col>
+      </colgroup>
+      <tbody>
+       <tr>
+        <th class=3D"numberingColumn confluenceTh" contenteditable=3D"false=
+" data-mce-resize=3D"false" rowspan=3D"2"><br></th>
+        <th rowspan=3D"2" class=3D"confluenceTh"><span style=3D"color:#172b=
+4d;">Tr=C6=B0=E1=BB=9Dng th=C3=B4ng tin</span></th>
+        <th rowspan=3D"2" class=3D"confluenceTh"><span style=3D"color:#172b=
+4d;">fields mapping</span></th>
+        <th colspan=3D"2" style=3D"text-align: center;" class=3D"confluence=
+Th"><span style=3D"color:#172b4d;">DB fields</span></th>
+       </tr>
+       <tr>
+        <th data-mce-resize=3D"false" class=3D"confluenceTh"><span style=3D=
+"color:#172b4d;">H=E1=BB=A3p =C4=91=E1=BB=93ng k=E1=BB=B3 h=E1=BA=A1n</span=
+></th>
+        <th class=3D"confluenceTh"><span style=3D"color:#172b4d;">Giao d=E1=
+=BB=8Bch chuy=E1=BB=83n nh=C6=B0=E1=BB=A3ng</span></th>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">1</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">Lo=E1=BA=
+=A1i giao d=E1=BB=8Bch</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">orderType=
+</span></td>
+        <td colspan=3D"2" class=3D"confluenceTd"><span style=3D"color:#172b=
+4d;">Default BCGD</span></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">2</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">Ph=C6=B0=
+=C6=A1ng th=E1=BB=A9c thanh to=C3=A1n</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">settleMet=
+hod</span></td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#172b4d;">REPO_ORDER.SETTLE_METHOD</span><=
+/p>
+         <p><span style=3D"color:#172b4d;">1: Giao ngay</span></p>
+         <p><span style=3D"color:#172b4d;">2: Giao sau</span></p></td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#172b4d;">ORDERS.SETTLE_METHOD</span></p>
+         <p><span style=3D"color:#172b4d;">1: Giao ngay</span></p>
+         <p><span style=3D"color:#172b4d;">2: Giao sau</span></p></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">3</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">Ch=E1=BB=
+=A7 t=C3=A0i kho=E1=BA=A3n</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">account</=
+span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">REPO_ORDE=
+R.ACCOUNT link sang KH CUSTOMER.CUSTOMER_NAME</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">ORDERS.BU=
+Y_ACCOUNT link sang KH CUSTOMER.CUSTOMER_NAME</span></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">4</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">S=E1=BB=
+=91 =C4=90KSH</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">cardId</s=
+pan></td>
+        <td colspan=3D"2" class=3D"confluenceTd"><span style=3D"color:#172b=
+4d;">CUSTOMER.CARD_ID</span></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">5</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">H=E1=BB=
+=8D t=C3=AAn ng=C6=B0=E1=BB=9Di =C4=91=E1=BA=A1i di=E1=BB=87n Ph=C3=A1p lu=
+=E1=BA=ADt</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">authorize=
+rName</span></td>
+        <td colspan=3D"2" class=3D"confluenceTd">
+         <p><span style=3D"color:#172b4d;">Link sang b=E1=BA=A3ng ng=C6=B0=
+=E1=BB=9Di =E1=BB=A7y quy=E1=BB=81n CUSTOMER_AUTHORIZER.AUTHORIZER_NAME</sp=
+an></p></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">6</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">S=E1=BB=
+=91 gi=E1=BA=A5y t=E1=BB=9D ng=C6=B0=E1=BB=9Di =C4=91=E1=BA=A1i di=E1=BB=87=
+n</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">authorize=
+rId</span></td>
+        <td colspan=3D"2" class=3D"confluenceTd">
+         <p><span style=3D"color:#172b4d;">Link sang b=E1=BA=A3ng ng=C6=B0=
+=E1=BB=9Di =E1=BB=A7y quy=E1=BB=81n CUSTOMER_AUTHORIZER.AUTHORIZER_ID</span=
+></p></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">7</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">S=E1=BB=
+=91 TKCK</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">account/b=
+uyAccount</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">REPO_ORDE=
+R.ACCOUNT</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">ORDERS.BU=
+Y_ACCOUNT </span></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">8</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">M=C3=A3 t=
+r=C3=A1i phi=E1=BA=BFu</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">symbol</s=
+pan></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">REPO_ORDE=
+R.SYMBOL</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">ORDERS.SY=
+MBOL</span></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">9</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">S=E1=BB=
+=91 l=C6=B0=E1=BB=A3ng</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">quantity<=
+/span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">REPO_ORDE=
+R.QUANTITY</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">ORDERS.QU=
+ANTITY</span></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">10</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">Gi=C3=A1<=
+/span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">price</sp=
+an></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">REPO_ORDE=
+R.PRICE</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">ORDERS.PR=
+ICE</span></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">11</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">Gi=C3=A1 =
+tr=E1=BB=8B =C4=91=E1=BA=A7u t=C6=B0</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">amount</s=
+pan></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">REPO_ORDE=
+R.AMOUNT</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">ORDERS.(Q=
+UANTITY*PRICE)</span></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">12</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">Ng=C3=A0y=
+ mua</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">orderDate=
+/tradingDate</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">REPO_ORDE=
+R.ORDER_DATE</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">ORDERS.TR=
+ADING_DATE</span></td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+    <h1 id=3D"id-11.Qu=E1=BA=A3nl=C3=BDbi=E1=BB=83um=E1=BA=ABu-4.B=E1=BA=A3=
+ngm=C3=B4ph=E1=BB=8Fngd=C3=B2ngti=E1=BB=81n"><span style=3D"color:#172b4d;"=
+>4. B=E1=BA=A3ng m=C3=B4 ph=E1=BB=8Fng d=C3=B2ng ti=E1=BB=81n</span></h1>
+    <p><span style=3D"color:#172b4d;">Th=E1=BB=9Di =C4=91i=E1=BB=83m gen: S=
+au khi t=E1=BA=A1o y=C3=AAu c=E1=BA=A7u KH =C4=91=E1=BA=B7t mua ch=E1=BB=9D=
+ duy=E1=BB=87t =E2=86=92 Call api m=C3=B4 ph=E1=BB=8Fng d=C3=B2ng ti=E1=BB=
+=81n =C4=91=E1=BB=83 fill v=C3=A0o</span></p>
+    <p><span style=3D"color:#172b4d;">Hi=E1=BB=83n th=E1=BB=8B t=E1=BA=A1i =
+c=C3=A1c m=C3=A0n: </span></p>
+    <ul>
+     <li style=3D"color:#f87168;" data-uuid=3D"aac6daa2-bab1-4d10-9ead-defb=
+d56cca9f"><span style=3D"color:#172b4d;">Xem chi ti=E1=BA=BFt y=C3=AAu c=E1=
+=BA=A7u =C4=91=E1=BA=B7t mua</span></li>
+     <li style=3D"color:#f87168;" data-uuid=3D"bc0d90f6-e5ae-427a-8c81-dae2=
+b97df264"><span style=3D"color:#172b4d;">Xem chi ti=E1=BA=BFt h=E1=BB=A3p =
+=C4=91=E1=BB=93ng</span></li>
+    </ul>
+    <div class=3D"table-wrap">
+     <table class=3D"wrapped confluenceTable" data-snooker-col-series=3D"nu=
+mbers" data-snooker-locked-cols=3D"0">
+      <colgroup>
+       <col>
+       <col>
+       <col>
+       <col>
+       <col>
+      </colgroup>
+      <tbody>
+       <tr>
+        <th class=3D"numberingColumn confluenceTh" contenteditable=3D"false=
+" data-mce-resize=3D"false"><br></th>
+        <th class=3D"confluenceTh"><span style=3D"color:#172b4d;">Tr=C6=B0=
+=E1=BB=9Dng th=C3=B4ng tin</span></th>
+        <th class=3D"confluenceTh"><span style=3D"color:#172b4d;">fields ma=
+pping</span></th>
+        <th class=3D"confluenceTh"><span style=3D"color:#172b4d;">DB fields=
+</span></th>
+        <th class=3D"confluenceTh"><span style=3D"color:#172b4d;">Note</spa=
+n></th>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">1</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">S=E1=BB=
+=91 h=E1=BB=A3p =C4=91=E1=BB=93ng</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">orderNo</=
+span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">REPO_ORDE=
+R.ORDER_NO</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">2</td>
+        <td colspan=3D"3" class=3D"confluenceTd"><span style=3D"color:#172b=
+4d;">B=E1=BA=A3ng t=C3=ADnh hi=E1=BB=87u qu=E1=BA=A3 =C4=91=E1=BA=A7u t=C6=
+=B0</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">3</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">S=E1=BB=
+=91 l=C6=B0=E1=BB=A3ng tr=C3=A1i phi=E1=BA=BFu</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">quantity<=
+/span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">REPO_ORDE=
+R.QUANTITY</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">4</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">=C4=90=C6=
+=A1n gi=C3=A1</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">price</sp=
+an></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">REPO_ORDE=
+R.PRICE</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">5</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">T=E1=BB=
+=95ng gi=C3=A1 tr=E1=BB=8B giao d=E1=BB=8Bch (=C4=91=E1=BA=A7u t=C6=B0)</sp=
+an></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">amount</s=
+pan></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">REPO_ORDE=
+R.AMOUNT</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">6</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">L=E1=BB=
+=A3i su=E1=BA=A5t</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">orderRate=
+</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">REPO_ORDE=
+R.ORDER_RATE</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">7</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">Ng=C3=A0y=
+ giao d=E1=BB=8Bch mua</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">orderDate=
+</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">REPO_ORDE=
+R.ORDER_DATE</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">8</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">Ng=C3=A0y=
+ giao d=E1=BB=8Bch b=C3=A1n</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">matureDat=
+e</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">REPO_ORDE=
+R.MATURE_DATE</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">9</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">Th=E1=BB=
+=9Di gian =C4=91=E1=BA=A7u t=C6=B0</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">numDays</=
+span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">=3D REPO_=
+ORDER.MATURE_DATE - REPO_ORDER.ORDER_DATE</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">10</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">L=E1=BB=
+=A3i t=E1=BB=A9c sau thu=E1=BA=BF</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">interest<=
+/span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">=3D REPO_=
+ORDER.INTEREST</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">11</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">T=E1=BB=
+=95ng gi=C3=A1 tr=E1=BB=8B giao d=E1=BB=8Bch v=C3=A0 l=E1=BB=A3i t=E1=BB=A9=
+c sau thu=E1=BA=BF</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">totalRece=
+ive</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">=3D REPO_=
+ORDER.TOTAL_RECEIVE</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">12</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">Ph=C3=AD =
+giao d=E1=BB=8Bch mua</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">buyFee</s=
+pan></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">REPO_ORDE=
+R.BUY_FEE</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">13</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">M=E1=BB=
+=A9c ph=C3=AD mua</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">buyFeeRat=
+e</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">L=E1=BA=
+=A5y th=C3=B4ng tin m=E1=BB=A9c ph=C3=AD mua leg 1 t=C6=B0=C6=A1ng =E1=BB=
+=A9ng v=E1=BB=9Bi KH theo ch=C3=ADnh s=C3=A1ch</span></td>
+        <td class=3D"confluenceTd">
+         <div class=3D"content-wrapper">
+          <p><span style=3D"color:#172b4d;">update <time datetime=3D"2026-1=
+0-21" class=3D"date-past">21 Oct 2026</time>&nbsp;</span></p>
+         </div></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">14</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">Ph=C3=AD =
+giao d=E1=BB=8Bch b=C3=A1n</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">sellFee</=
+span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">REPO_ORDE=
+R.SELL_FEE</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">15</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">M=E1=BB=
+=A9c ph=C3=AD b=C3=A1n</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">sellFeeRa=
+te</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">L=E1=BA=
+=A5y th=C3=B4ng tin m=E1=BB=A9c ph=C3=AD b=C3=A1n leg 2 t=C6=B0=C6=A1ng =E1=
+=BB=A9ng v=E1=BB=9Bi KH theo ch=C3=ADnh s=C3=A1ch</span></td>
+        <td class=3D"confluenceTd">
+         <div class=3D"content-wrapper">
+          <p><span style=3D"color:#172b4d;">Update <time datetime=3D"2026-1=
+0-21" class=3D"date-past">21 Oct 2026</time>&nbsp;</span></p>
+         </div></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">16</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;"><s>Ph=C3=
+=AD l=C6=B0u k=C3=BD d=E1=BB=B1 ki=E1=BA=BFn</s></span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#172b4d;"><s>=3D REPO_ORDER.QUANTITY * M=
+=E1=BB=A9c ph=C3=AD * S=E1=BB=91 ng=C3=A0y n=E1=BA=AFm gi=E1=BB=AF/ 30</s><=
+/span></p>
+         <p><span style=3D"color:#172b4d;"><s>Trong =C4=91=C3=B3: Ph=C3=AD =
+l=C6=B0u k=C3=BD =C4=91=C6=B0=E1=BB=A3c khai b=C3=A1o tham s=E1=BB=91</s></=
+span></p></td>
+        <td class=3D"confluenceTd">
+         <div class=3D"content-wrapper">
+          <p><span style=3D"color:#172b4d;">update <time datetime=3D"2026-1=
+0-21" class=3D"date-past">21 Oct 2026</time>&nbsp;</span></p>
+         </div></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">17</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">T=E1=BB=
+=95ng gi=C3=A1 tr=E1=BB=8B giao d=E1=BB=8Bch v=C3=A0 L=E1=BB=A3i t=E1=BB=A9=
+c sau thu=E1=BA=BF, ph=C3=AD</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">=3D REPO_=
+ORDER.TOTAL_RECEIVE - REPO_ORDER.BUY_FEE - REPO_ORDER.SELL_FEE - Ph=C3=AD l=
+=C6=B0u k=C3=BD d=E1=BB=B1 ki=E1=BA=BFn</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">18</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">L=E1=BB=
+=A3i su=E1=BA=A5t th=E1=BB=B1c nh=E1=BA=ADn sau thu=E1=BA=BF, ph=C3=AD</spa=
+n></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">=3D [(T=
+=E1=BB=95ng gi=C3=A1 tr=E1=BB=8B giao d=E1=BB=8Bch v=C3=A0 L=E1=BB=A3i t=E1=
+=BB=A9c sau thu=E1=BA=BF, ph=C3=AD - T=E1=BB=95ng gi=C3=A1 tr=E1=BB=8B giao=
+ d=E1=BB=8Bch)*365*100]/(T=E1=BB=95ng gi=C3=A1 tr=E1=BB=8B giao d=E1=BB=8Bc=
+h *Th=E1=BB=9Di gian =C4=91=E1=BA=A7u t=C6=B0)</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">19</td>
+        <td colspan=3D"3" class=3D"confluenceTd"><span style=3D"color:#172b=
+4d;">D=C3=B2ng ti=E1=BB=81n d=E1=BB=B1 ki=E1=BA=BFn</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">20</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">Ng=C3=A0y=
+ tr=E1=BA=A3 l=C3=A3i coupon</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#172b4d;">L=E1=BA=A5y ng=C3=A0y thanh to=
+=C3=A1n c=E1=BB=A7a c=C3=A1c k=E1=BB=B3 coupon c=C3=B3 ng=C3=A0y ch=E1=BB=
+=91t quy=E1=BB=81n n=E1=BA=B1m trong kho=E1=BA=A3ng ng=C3=A0y =C4=91=E1=BA=
+=A7u t=C6=B0 =C4=91=E1=BA=BFn ng=C3=A0y b=C3=A1n c=E1=BB=A7a KH</span></p>
+         <p><span style=3D"color:#172b4d;">BOND_COUPON.PAYMENT_DATE: Ng=C3=
+=A0y thanh to=C3=A1n coupon</span></p>
+         <p><span style=3D"color:#172b4d;">BOND_COUPON.CLOSE_DATE: ng=C3=A0=
+y ch=E1=BB=91t quy=E1=BB=81n</span></p>
+         <p><span style=3D"color:#172b4d;">REPO_ORDER.ORDER_DATE: Ng=C3=A0y=
+ =C4=91=E1=BA=A7u t=C6=B0</span></p>
+         <p><span style=3D"color:#172b4d;">REPO_ORDER.MATURE_DATE: Ng=C3=A0=
+y b=C3=A1n (=C4=91=C3=A1o h=E1=BA=A1n)</span></p></td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#172b4d;">&nbsp;</span></p></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">21</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">L=C3=A3i =
+coupon sau thu=E1=BA=BF</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#172b4d;">=3D S=E1=BB=91 l=C6=B0=E1=BB=A3n=
+g tr=C3=A1i phi=E1=BA=BFu mua * coupon k=E1=BB=B3 t=C6=B0=C6=A1ng =E1=BB=A9=
+ng * s=E1=BB=91 ng=C3=A0y c=E1=BB=A7a k=E1=BB=B3 coupon *(1-thu=E1=BA=BF co=
+upon)/365</span></p>
+         <p><span style=3D"color:#172b4d;">trong =C4=91=C3=B3:</span></p>
+         <ul>
+          <li style=3D"color:#172b4d;" data-uuid=3D"febd58b8-f6b1-4bc5-856d=
+-1dd20f032cfb"><span style=3D"color:#172b4d;">S=E1=BB=91 l=C6=B0=E1=BB=A3ng=
+ tr=C3=A1i phi=E1=BA=BFu mua =3D REPO_ORDER.QUANTITY</span></li>
+          <li style=3D"color:#172b4d;" data-uuid=3D"6ebb2d44-6931-4d92-9902=
+-84cb2a06da9f"><span style=3D"color:#172b4d;">Counpon k=E1=BB=B3 t=C6=B0=C6=
+=A1ng =E1=BB=A9ng: BOND_COUPON.RATE (k=E1=BB=B3 map v=E1=BB=9Bi th=C3=B4ng =
+tin ng=C3=A0y tr=E1=BA=A3 l=C3=A3i tr=C6=B0=E1=BB=9Dng 18)</span></li>
+          <li style=3D"color:#172b4d;" data-uuid=3D"fd2dc1d3-60bc-4db2-bf13=
+-0f5425fcbb15"><span style=3D"color:#172b4d;">S=E1=BB=91 ng=C3=A0y c=E1=BB=
+=A7a k=E1=BB=B3 coupon:&nbsp;BOND_COUPON .NUMDAYS</span></li>
+          <li style=3D"color:#172b4d;" data-uuid=3D"379dce4b-ce45-4668-b2d4=
+-bc99f6602203"><span style=3D"color:#172b4d;">Thu=E1=BA=BF =C3=A1p d=E1=BB=
+=A5ng</span>
+           <ul>
+            <li style=3D"color:#172b4d;"><span style=3D"color:#172b4d;">=C4=
+=90=E1=BB=91i v=E1=BB=9Bi KHTC n=C6=B0=E1=BB=9Bc ngo=C3=A0i/ KHCN trong n=
+=C6=B0=E1=BB=9Bc/ KHCN n=C6=B0=E1=BB=9Bc ngo=C3=A0i: 5%</span></li>
+            <li style=3D"color:#172b4d;"><span style=3D"color:#172b4d;">=C4=
+=90=E1=BB=91i v=E1=BB=9Bi KHTC trong n=C6=B0=E1=BB=9Bc: 0%</span></li>
+           </ul></li>
+         </ul></td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#172b4d;">&nbsp;</span></p></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">22</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">Ng=C3=A0y=
+ b=C3=A1n</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">REPO_ORDE=
+R.MATURE_DATE</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">23</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#cd519d;">T=E1=BB=
+=95ng ti=E1=BB=81n b=C3=A1n nh=E1=BA=ADn =C4=91=C6=B0=E1=BB=A3c (sau thu=E1=
+=BA=BF)</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#cd519d;">=3D Gi=C3=A1 tr=E1=BB=8B b=C3=A1=
+n l=E1=BA=A1i tr=C6=B0=E1=BB=9Bc thu=E1=BA=BF - Thu=E1=BA=BF</span></p>
+         <p><span style=3D"color:#cd519d;">Trong =C4=91=C3=B3:</span></p>
+         <ul>
+          <li style=3D"color:#cd519d;"><span style=3D"color:#cd519d;">Gi=C3=
+=A1 tr=E1=BB=8B b=C3=A1n l=E1=BA=A1i tr=C6=B0=E1=BB=9Bc thu=E1=BA=BF =3D =
+=C4=90=C6=A1n gi=C3=A1 * S=E1=BB=91 l=C6=B0=E1=BB=A3ng</span></li>
+          <li style=3D"color:#cd519d;" data-uuid=3D"297eef61-8d8c-49b0-a752=
+-731427205145"><span style=3D"color:#cd519d;">Thu=E1=BA=BF =3D Gi=C3=A1 tr=
+=E1=BB=8B b=C3=A1n l=E1=BA=A1i tr=C6=B0=E1=BB=9Bc thu=E1=BA=BF &nbsp;* Thu=
+=E1=BA=BF su=E1=BA=A5t</span></li>
+         </ul></td>
+        <td class=3D"confluenceTd">
+         <div class=3D"content-wrapper">
+          <p><span style=3D"color:#cd519d;">&nbsp;update <time datetime=3D"=
+2026-11-16" class=3D"date-upcoming">16 Nov 2026</time>&nbsp;</span></p>
+         </div></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">24</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">T=E1=BB=
+=95ng c=E1=BB=99ng</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">total</sp=
+an></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">=3D Sum(L=
+=C3=A3i coupon sau thu=E1=BA=BF) + T=E1=BB=95ng ti=E1=BB=81n b=C3=A1n nh=E1=
+=BA=ADn =C4=91=C6=B0=E1=BB=A3c</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+    <h1 id=3D"id-11.Qu=E1=BA=A3nl=C3=BDbi=E1=BB=83um=E1=BA=ABu-5.H=E1=BB=A3=
+p=C4=91=E1=BB=93ngmua-KHb=C3=A1nl=E1=BA=A1i"><span style=3D"color:#172b4d;"=
+>5. H=E1=BB=A3p =C4=91=E1=BB=93ng mua - KH b=C3=A1n l=E1=BA=A1i</span></h1>
+    <p><span style=3D"color:#172b4d;">Th=E1=BB=9Di =C4=91i=E1=BB=83m gen:&n=
+bsp;</span></p>
+    <ul>
+     <li style=3D"color:#172b4d;" data-uuid=3D"dea6e6ac-4ef8-4161-87d3-2aec=
+c96d5112"><span style=3D"color:#172b4d;">Sau khi t=E1=BA=A1o y=C3=AAu c=E1=
+=BA=A7u KH =C4=91=E1=BA=B7t mua k=E1=BB=B3 h=E1=BA=A1n ch=E1=BB=9D duy=E1=
+=BB=87t</span></li>
+    </ul>
+    <p><span style=3D"color:#172b4d;">Hi=E1=BB=83n th=E1=BB=8B t=E1=BA=A1i =
+c=C3=A1c m=C3=A0n: </span></p>
+    <ul>
+     <li style=3D"color:#172b4d;" data-uuid=3D"9612e02f-e6ce-4ab5-8693-916a=
+ca08281b"><span style=3D"color:#172b4d;">Xem chi ti=E1=BA=BFt y=C3=AAu c=E1=
+=BA=A7u =C4=91=E1=BA=B7t mua</span></li>
+     <li style=3D"color:#172b4d;" data-uuid=3D"582061ad-eda1-4517-9bf6-e723=
+63635796"><span style=3D"color:#172b4d;">Xem chi ti=E1=BA=BFt h=E1=BB=A3p =
+=C4=91=E1=BB=93ng</span></li>
+     <li style=3D"color:#172b4d;" data-uuid=3D"4312e98b-b548-4e64-9de7-aaf6=
+929f7b19"><span style=3D"color:#172b4d;">=C4=90=E1=BA=B7t l=E1=BB=87nh chuy=
+=E1=BB=83n nh=C6=B0=E1=BB=A3ng</span></li>
+    </ul>
+    <div class=3D"table-wrap">
+     <table class=3D"wrapped confluenceTable" data-snooker-col-series=3D"nu=
+mbers" data-snooker-locked-cols=3D"0">
+      <colgroup>
+       <col>
+       <col>
+       <col>
+       <col>
+       <col>
+       <col>
+      </colgroup>
+      <tbody>
+       <tr>
+        <th class=3D"numberingColumn confluenceTh" contenteditable=3D"false=
+" data-mce-resize=3D"false"><br></th>
+        <th colspan=3D"2" class=3D"confluenceTh"><span style=3D"color:#172b=
+4d;">Tr=C6=B0=E1=BB=9Dng th=C3=B4ng tin</span></th>
+        <th rowspan=3D"2" class=3D"confluenceTh"><span style=3D"color:#172b=
+4d;">fields mapping</span></th>
+        <th rowspan=3D"2" class=3D"confluenceTh"><span style=3D"color:#172b=
+4d;">DB fields</span></th>
+        <th rowspan=3D"2" class=3D"confluenceTh"><span style=3D"color:#172b=
+4d;">Note</span></th>
+       </tr>
+       <tr>
+        <th class=3D"numberingColumn confluenceTh" contenteditable=3D"false=
+" data-mce-resize=3D"false"><br></th>
+        <th class=3D"confluenceTh">
+         <p><span style=3D"color:#172b4d;">KH c=C3=A1 nh=C3=A2n</span></p>
+         <p><span style=3D"color:#172b4d;">CUSTOMER.CUSTOMER_TYPE =3D 1</sp=
+an></p></th>
+        <th class=3D"confluenceTh">
+         <p><span style=3D"color:#172b4d;">KH t=E1=BB=95 ch=E1=BB=A9c</span=
+></p>
+         <p><span style=3D"color:#172b4d;">CUSTOMER.CUSTOMER_TYPE =3D 2</sp=
+an></p></th>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">1</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">S=E1=BB=
+=91 h=E1=BB=A3p =C4=91=E1=BB=93ng</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">"TT"&amp;=
+REPO_ORDER</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">2</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">Ng=C3=A0y=
+ th=C3=A1ng n=C4=83m</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">REPO_ORDE=
+R.ORDER_DATE + 3 ng=C3=A0y l=C3=A0m vi=E1=BB=87c</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">3</td>
+        <td colspan=3D"4" class=3D"confluenceTd"><span style=3D"color:#172b=
+4d;"><em><strong>B=C3=AAn B=C3=A1n: Kh=C3=A1ch h=C3=A0ng</strong></em></spa=
+n></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;"><em><stro=
+ng>&nbsp;</strong></em></span></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">4</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">H=E1=BB=
+=8D v=C3=A0 t=C3=AAn KH</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">T=C3=AAn =
+t=E1=BB=95 ch=E1=BB=A9c</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">REPO_ORDE=
+R.ACCOUNT link sang KH CUSTOMER.CUSTOMER_NAME</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">5</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">S=E1=BB=
+=91 CCCD/CC</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">Gi=E1=BA=
+=A5y =C4=90KDN</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">CUSTOMER.=
+CARD_ID</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">6</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">Ng=C3=A0y=
+ c=E1=BA=A5p</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">Ng=C3=A0y=
+ c=E1=BA=A5p</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">CUSTOMER.=
+ISSUE_DATE</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">7</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">N=C6=A1i =
+c=E1=BA=A5p</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">N=C6=A1i =
+c=E1=BA=A5p</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">CUSTOMER.=
+ISSUE_PLACE</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">8</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">=C4=90=E1=
+=BB=8Ba ch=E1=BB=89 li=C3=AAn h=E1=BB=87</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">=C4=90=E1=
+=BB=8Ba ch=E1=BB=89 tr=E1=BB=A5 s=E1=BB=9F ch=C3=ADnh</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">CUSTOMER.=
+CUST_ADDRESS</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">9</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">=C4=90i=
+=E1=BB=87n tho=E1=BA=A1i</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">=C4=90i=
+=E1=BB=87n tho=E1=BA=A1i</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">CUSTOMER.=
+CUST_MOBILE</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">10</td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">Fax</span=
+></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">CUSTOMER.=
+CUST_FAX</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">11</td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">Ng=C6=B0=
+=E1=BB=9Di =C4=91=E1=BA=A1i di=E1=BB=87n/ =E1=BB=A6y quy=E1=BB=81n</span></=
+td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#172b4d;">Link sang b=E1=BA=A3ng ng=C6=B0=
+=E1=BB=9Di =E1=BB=A7y quy=E1=BB=81n</span></p>
+         <p><span style=3D"color:#172b4d;">CUSTOMER_AUTHORIZER.AUTHORIZER_N=
+AME</span></p></td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#172b4d;">&nbsp;</span></p></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">12</td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">Ch=E1=BB=
+=A9c v=E1=BB=A5</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">CUSTOMER_=
+AUTHORIZER.AUTHORIZER_POSITION</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">13</td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">=E1=BB=A6=
+y quy=E1=BB=81n s=E1=BB=91</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">CUSTOMER_=
+AUTHORIZER.AUTHORIZER_CONTRACT_NO</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">14</td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">Ng=C3=A0y=
+ =E1=BB=A7y quy=E1=BB=81n</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">CUSTOMER_=
+AUTHORIZER.AUTHORIZER_CONTRACT_DATE</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">15</td>
+        <td colspan=3D"4" class=3D"confluenceTd"><span style=3D"color:#172b=
+4d;"><em><strong>B=C3=AAn mua: Ch=E1=BB=A7 kho</strong></em></span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;"><em><stro=
+ng>&nbsp;</strong></em></span></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">16</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">T=C3=AAn =
+t=E1=BB=95 ch=E1=BB=A9c</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#172b4d;">L=E1=BA=A5y ch=E1=BB=A7 kho REPO=
+_ORDER.INVENTORY_OWNER link sang b=E1=BA=A3ng =E1=BB=A7y quy=E1=BB=81n</spa=
+n></p>
+         <p><span style=3D"color:#172b4d;">CUSTOMER.CUSTOMER_NAME</span></p=
+></td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#172b4d;">&nbsp;</span></p></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">17</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">Gi=E1=BA=
+=A5y ph=C3=A9p</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#172b4d;">CUSTOMER.CARD_ID</span></p></td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#172b4d;">&nbsp;</span></p></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">18</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">Ng=C3=A0y=
+ c=E1=BA=A5p</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#172b4d;">CUSTOMER.ISSUE_DATE</span></p></=
+td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#172b4d;">&nbsp;</span></p></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">19</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">=C4=90=E1=
+=BB=8Ba ch=E1=BB=89</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">CUSTOMER.=
+CUST_ADDRESS</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">20</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">=C4=90i=
+=E1=BB=87n tho=E1=BA=A1i</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">CUSTOMER.=
+CUST_MOBILE</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">21</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">Fax</span=
+></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">CUSTOMER.=
+CUST_FAX</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">22</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">Ng=C6=B0=
+=E1=BB=9Di =C4=91=E1=BA=A1i di=E1=BB=87n</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#172b4d;">L=E1=BA=A5y ch=E1=BB=A7 kho REPO=
+_ORDER.INVENTORY_OWNER link sang b=E1=BA=A3ng =E1=BB=A7y quy=E1=BB=81n</spa=
+n></p>
+         <p><span style=3D"color:#172b4d;">CUSTOMER_AUTHORIZER.AUTHORIZER_N=
+AME</span></p></td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#172b4d;">&nbsp;</span></p></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">23</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">Ch=E1=BB=
+=A9c v=E1=BB=A5</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">CUSTOMER_=
+AUTHORIZER.AUTHORIZER_POSITION</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">24</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">V=C4=83n =
+b=E1=BA=A3n =E1=BB=A7y quy=E1=BB=81n s=E1=BB=91</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">CUSTOMER_=
+AUTHORIZER.AUTHORIZER_CONTRACT_NO</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">25</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">M=C3=A3 t=
+r=C3=A1i phi=E1=BA=BFu</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">REPO_ORDE=
+R.SYMBOL</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">26</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">T=E1=BB=
+=95 ch=E1=BB=A9c ph=C3=A1t h=C3=A0nh</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#172b4d;">L=E1=BA=A5y REPO_ORDER.SYMBOL li=
+nk sang TCPH</span></p>
+         <p><span style=3D"color:#172b4d;">BOND_ISSUER.ISSUER_NAME</span></=
+p></td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#172b4d;">&nbsp;</span></p></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">27</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">M=E1=BB=
+=87nh gi=C3=A1 tr=C3=A1i phi=E1=BA=BFu</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#172b4d;">L=E1=BA=A5y REPO_ORDER.SYMBOL li=
+nk sang Tr=C3=A1i phi=E1=BA=BFu</span></p>
+         <p><span style=3D"color:#172b4d;">BOND_INFO.PRICE</span></p></td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#172b4d;">&nbsp;</span></p></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">28</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">Ng=C3=A0y=
+ ph=C3=A1t h=C3=A0nh</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">BOND_INFO=
+.RELEASE_DATE</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">29</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">Ng=C3=A0y=
+ =C4=91=C3=A1o h=E1=BA=A1n</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">BOND_INFO=
+.EXPIRE_DATE</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">30</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">K=E1=BB=
+=B3 thanh to=C3=A1n l=C3=A3i</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#172b4d;">BOND_INFO.COUPON_TERM tr=E1=BA=
+=A3 k=E1=BA=BFt qu=E1=BA=A3 text t=C6=B0=C6=A1ng =E1=BB=A9ng</span></p>
+         <p><span style=3D"color:#172b4d;">V=C3=AD d=E1=BB=A5:&nbsp; 3M =3D=
+ 3 th=C3=A1ng</span></p></td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#172b4d;">&nbsp;</span></p></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">31</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">Ng=C3=A0y=
+ c=C3=B4ng b=E1=BB=91 th=C3=B4ng tin</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">BOND_INFO=
+.ODATE</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">32</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">Ng=C3=A0y=
+ giao d=E1=BB=8Bch</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">REPO_ORDE=
+R.MATURE_DATE</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">33</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">S=E1=BB=
+=91 l=C6=B0=E1=BB=A3ng tr=C3=A1i phi=E1=BA=BFu</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">REPO_ORDE=
+R.QUANTITY</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">34</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">=C4=90=C6=
+=A1n gi=C3=A1 tr=C3=A1i phi=E1=BA=BFu</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">BUY_BACK_=
+PRICE =3D note c=C3=B4ng th=E1=BB=A9c t=C3=ADnh</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">35</td>
+        <td class=3D"confluenceTd">T=E1=BB=95ng gi=C3=A1 tr=E1=BB=8B giao d=
+=E1=BB=8Bch tr=C6=B0=E1=BB=9Bc thu=E1=BA=BF</td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">REPO_ORDE=
+R.QUANTITY*BUY_BACK_PRICE</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">&nbsp;</s=
+pan></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">36</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#cd519d;">Thu=E1=BA=
+=BF thu nh=E1=BA=ADp t=E1=BB=AB chuy=E1=BB=83n nh=C6=B0=E1=BB=A3ng</span></=
+td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#cd519d;">&nbsp;=3D=
+ T=E1=BB=95ng gi=C3=A1 tr=E1=BB=8B giao d=E1=BB=8Bch tr=C6=B0=E1=BB=9Bc thu=
+=E1=BA=BF * Thu=E1=BA=BF su=E1=BA=A5t</span></td>
+        <td class=3D"confluenceTd">
+         <div class=3D"content-wrapper">
+          <p><span style=3D"color:#cd519d;">update <time datetime=3D"2026-1=
+1-16" class=3D"date-upcoming">16 Nov 2026</time>&nbsp;</span></p>
+         </div></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">37</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#cd519d;">T=E1=BB=
+=95ng gi=C3=A1 tr=E1=BB=8B giao d=E1=BB=8Bch sau thu=E1=BA=BF</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#cd519d;">&nbsp;=3D=
+ T=E1=BB=95ng gi=C3=A1 tr=E1=BB=8B giao d=E1=BB=8Bch tr=C6=B0=E1=BB=9Bc thu=
+=E1=BA=BF - Thu=E1=BA=BF thu nh=E1=BA=ADp t=E1=BB=AB chuy=E1=BB=83n nh=C6=
+=B0=E1=BB=A3ng</span></td>
+        <td class=3D"confluenceTd">
+         <div class=3D"content-wrapper">
+          <p><span style=3D"color:#cd519d;">update <time datetime=3D"2026-1=
+1-16" class=3D"date-upcoming">16 Nov 2026</time></span></p>
+         </div></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">38</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#cd519d;">T=E1=BB=
+=95ng l=C3=A3i coupon sau thu=E1=BA=BF</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#cd519d;">T=C3=ADnh=
+ theo c=C3=B4ng th=E1=BB=A9c nh=C6=B0 pricing</span></td>
+        <td class=3D"confluenceTd">
+         <div class=3D"content-wrapper">
+          <p><span style=3D"color:#cd519d;">update <time datetime=3D"2026-1=
+1-16" class=3D"date-upcoming">16 Nov 2026</time></span></p>
+         </div></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">39</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#cd519d;">T=E1=BB=
+=95ng ti=E1=BB=81n thu=E1=BA=BF coupon</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#cd519d;">&nbsp;=3D=
+ T=E1=BB=95ng coupon tr=C6=B0=E1=BB=9Bc thu=E1=BA=BF * thu=E1=BA=BF su=E1=
+=BA=A5t coupon, t=C3=ADnh gi=E1=BB=91ng pricing</span></td>
+        <td class=3D"confluenceTd">
+         <div class=3D"content-wrapper">
+          <p><span style=3D"color:#cd519d;">update <time datetime=3D"2026-1=
+1-16" class=3D"date-upcoming">16 Nov 2026</time></span></p>
+         </div></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">40</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#cd519d;">T=E1=BB=
+=95ng l=C3=A3i coupon v=C3=A0 l=E1=BB=A3i =C3=ADch ph=C3=A1t sinh sau thu=
+=E1=BA=BF</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#cd519d;">&nbsp;=3D=
+ T=E1=BB=95ng l=C3=A3i coupon sau thu=E1=BA=BF + 0</span></td>
+        <td class=3D"confluenceTd">
+         <div class=3D"content-wrapper">
+          <p><span style=3D"color:#cd519d;">update <time datetime=3D"2026-1=
+1-16" class=3D"date-upcoming">16 Nov 2026</time></span></p>
+         </div></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">41</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#cd519d;">T=E1=BB=
+=95ng ti=E1=BB=81n KH th=E1=BB=B1c nh=E1=BA=ADn</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#cd519d;">&nbsp;=3D=
+ T=E1=BB=95ng gi=C3=A1 tr=E1=BB=8B giao d=E1=BB=8Bch sau thu=E1=BA=BF&nbsp;=
+ + T=E1=BB=95ng l=C3=A3i coupon sau thu=E1=BA=BF v=C3=A0 l=E1=BB=A3i =C3=AD=
+ch sau thu=E1=BA=BF</span></td>
+        <td class=3D"confluenceTd">
+         <div class=3D"content-wrapper">
+          <p><span style=3D"color:#cd519d;">update <time datetime=3D"2026-1=
+1-16" class=3D"date-upcoming">16 Nov 2026</time></span></p>
+         </div></td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+    <h1 id=3D"id-11.Qu=E1=BA=A3nl=C3=BDbi=E1=BB=83um=E1=BA=ABu-6.Phi=E1=BA=
+=BFul=E1=BB=87nhb=C3=A1n-KHb=C3=A1nl=E1=BA=A1i"><span style=3D"color:#172b4=
+d;">6. Phi=E1=BA=BFu l=E1=BB=87nh b=C3=A1n - KH b=C3=A1n l=E1=BA=A1i</span>=
+</h1>
+    <p><span style=3D"color:#172b4d;">Th=E1=BB=9Di =C4=91i=E1=BB=83m gen:&n=
+bsp;</span></p>
+    <ul>
+     <li style=3D"color:#172b4d;" data-uuid=3D"ec500b92-4548-4c25-9ca8-5493=
+1e81505a"><span style=3D"color:#172b4d;">Sau khi t=E1=BA=A1o y=C3=AAu c=E1=
+=BA=A7u KH =C4=91=E1=BA=B7t mua k=E1=BB=B3 h=E1=BA=A1n ch=E1=BB=9D duy=E1=
+=BB=87t, ho=E1=BA=B7c</span></li>
+     <li style=3D"color:#172b4d;" data-uuid=3D"d8154715-1c37-40db-89df-497e=
+34fa06a2"><span style=3D"color:#172b4d;">=C4=90=E1=BA=BFn ng=C3=A0y =C4=91=
+=C3=A1o h=E1=BA=A1n h=E1=BB=A3p =C4=91=E1=BB=93ng k=E1=BB=B3 h=E1=BA=A1n - =
+5 ng=C3=A0y l=C3=A0m vi=E1=BB=87c, ho=E1=BA=B7c</span></li>
+     <li style=3D"color:#172b4d;" data-uuid=3D"374f9985-4e29-4e9f-a0c8-b042=
+ac6c79db"><span style=3D"color:#172b4d;">KH y=C3=AAu c=E1=BA=A7u t=E1=BA=A5=
+t to=C3=A1n tr=C6=B0=E1=BB=9Bc h=E1=BA=A1n</span></li>
+     <li style=3D"color:#172b4d;" data-uuid=3D"197bb998-f3d6-4f8d-94ff-c36e=
+749b189b"><span style=3D"color:#172b4d;">Sau khi KH t=E1=BA=A1o y=C3=AAu c=
+=E1=BA=A7u chuy=E1=BB=83n nh=C6=B0=E1=BB=A3ng</span></li>
+    </ul>
+    <p><span style=3D"color:#172b4d;">Hi=E1=BB=83n th=E1=BB=8B t=E1=BA=A1i =
+c=C3=A1c m=C3=A0n:</span></p>
+    <ul>
+     <li style=3D"color:#172b4d;" data-uuid=3D"6632626d-957a-4f75-9890-a6bb=
+054856ba"><span style=3D"color:#172b4d;">Xem chi ti=E1=BA=BFt y=C3=AAu c=E1=
+=BA=A7u =C4=91=E1=BA=B7t mua</span></li>
+     <li style=3D"color:#172b4d;" data-uuid=3D"c3783176-2dfb-4ffd-90fe-6198=
+0df94a96"><span style=3D"color:#172b4d;">Xem chi ti=E1=BA=BFt h=E1=BB=A3p =
+=C4=91=E1=BB=93ng</span></li>
+     <li style=3D"color:#172b4d;" data-uuid=3D"9364999d-c1c5-4eb5-af14-79fa=
+bbbaaaab"><span style=3D"color:#172b4d;">=C4=90=E1=BA=B7t l=E1=BB=87nh chuy=
+=E1=BB=83n nh=C6=B0=E1=BB=A3ng</span></li>
+     <li style=3D"color:#172b4d;" data-uuid=3D"1c5e1943-b110-4d8f-aae9-107e=
+de9a3810"><span style=3D"color:#172b4d;">Y=C3=AAu c=E1=BA=A7u thanh l=C3=BD=
+</span></li>
+    </ul>
+    <div class=3D"table-wrap">
+     <table class=3D"wrapped confluenceTable" data-snooker-col-series=3D"nu=
+mbers" data-snooker-locked-cols=3D"0">
+      <colgroup>
+       <col>
+       <col>
+       <col>
+       <col>
+       <col>
+       <col>
+       <col>
+      </colgroup>
+      <tbody>
+       <tr>
+        <th class=3D"numberingColumn confluenceTh" contenteditable=3D"false=
+" data-mce-resize=3D"false" rowspan=3D"2"><br></th>
+        <th rowspan=3D"2" class=3D"confluenceTh"><span style=3D"color:#172b=
+4d;">Tr=C6=B0=E1=BB=9Dng th=C3=B4ng tin</span></th>
+        <th rowspan=3D"2" class=3D"confluenceTh"><span style=3D"color:#172b=
+4d;">fields mapping</span></th>
+        <th colspan=3D"4" class=3D"confluenceTh"><span style=3D"color:#172b=
+4d;">DB fields</span></th>
+       </tr>
+       <tr>
+        <th data-mce-resize=3D"false" class=3D"confluenceTh"><span style=3D=
+"color:#172b4d;">H=E1=BB=A3p =C4=91=E1=BB=93ng k=E1=BB=B3 h=E1=BA=A1n t=E1=
+=BA=A1i ng=C3=A0y mua</span></th>
+        <th class=3D"confluenceTh"><span style=3D"color:#172b4d;">H=E1=BB=
+=A3p =C4=91=E1=BB=93ng k=E1=BB=B3 h=E1=BA=A1n t=E1=BA=A1i e-5</span></th>
+        <th class=3D"confluenceTh"><span style=3D"color:#172b4d;">KH y=C3=
+=AAu c=E1=BA=A7u t=E1=BA=A5t to=C3=A1n tr=C6=B0=E1=BB=9Bc h=E1=BA=A1n</span=
+></th>
+        <th class=3D"confluenceTh"><span style=3D"color:#172b4d;">Giao d=E1=
+=BB=8Bch chuy=E1=BB=83n nh=C6=B0=E1=BB=A3ng</span></th>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">1</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">Lo=E1=BA=
+=A1i giao d=E1=BB=8Bch</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">Default B=
+CGD</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">Default B=
+CGD</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">Default B=
+CGD</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">Default B=
+CGD</span></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">2</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">Ph=C6=B0=
+=C6=A1ng th=E1=BB=A9c thanh to=C3=A1n</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#172b4d;">&nbsp;</span></p></td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#172b4d;">&nbsp;</span></p></td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#172b4d;">REPO_APPENDIX_LIQUID.SETTLE_METH=
+OD</span></p>
+         <p><span style=3D"color:#172b4d;">1: Giao ngay</span></p>
+         <p><span style=3D"color:#172b4d;">2: Giao sau</span></p></td>
+        <td class=3D"confluenceTd">
+         <p><span style=3D"color:#172b4d;">ORDERS.SETTLE_METHOD</span></p>
+         <p><span style=3D"color:#172b4d;">1: Giao ngay</span></p>
+         <p><span style=3D"color:#172b4d;">2: Giao sau</span></p></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">3</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">Ch=E1=BB=
+=A7 t=C3=A0i kho=E1=BA=A3n</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">REPO_ORDE=
+R.ACCOUNT link sang KH CUSTOMER.CUSTOMER_NAME</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">REPO_ORDE=
+R.ACCOUNT link sang KH CUSTOMER.CUSTOMER_NAME</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">REPO_APPE=
+NDIX_LIQUID.ACCOUNT link sang KH CUSTOMER.CUSTOMER_NAME<br></span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">ORDERS.SE=
+LL_ACCOUNT link sang KH CUSTOMER.CUSTOMER_NAME</span></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">4</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">S=E1=BB=
+=91 =C4=90KSH</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td colspan=3D"4" class=3D"confluenceTd"><span style=3D"color:#172b=
+4d;">CUSTOMER.CARD_ID<br></span></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">5</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">H=E1=BB=
+=8D t=C3=AAn ng=C6=B0=E1=BB=9Di =C4=91=E1=BA=A1i di=E1=BB=87n Ph=C3=A1p lu=
+=E1=BA=ADt</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td colspan=3D"4" class=3D"confluenceTd">
+         <p><span style=3D"color:#172b4d;">Link sang b=E1=BA=A3ng ng=C6=B0=
+=E1=BB=9Di =E1=BB=A7y quy=E1=BB=81n&nbsp;CUSTOMER_AUTHORIZER.AUTHORIZER_NAM=
+E</span></p></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">6</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">S=E1=BB=
+=91 gi=E1=BA=A5y t=E1=BB=9D ng=C6=B0=E1=BB=9Di =C4=91=E1=BA=A1i di=E1=BB=87=
+n</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td colspan=3D"4" class=3D"confluenceTd">
+         <p><span style=3D"color:#172b4d;">Link sang b=E1=BA=A3ng ng=C6=B0=
+=E1=BB=9Di =E1=BB=A7y quy=E1=BB=81n&nbsp;CUSTOMER_AUTHORIZER.AUTHORIZER_ID<=
+/span></p></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">7</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">S=E1=BB=
+=91 TKCK</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">REPO_ORDE=
+R.ACCOUNT </span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">REPO_ORDE=
+R.ACCOUNT</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">REPO_APPE=
+NDIX_LIQUID.ACCOUNT<br></span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">ORDERS.SE=
+LL_ACCOUNT</span></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">8</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">M=C3=A3 t=
+r=C3=A1i phi=E1=BA=BFu</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">REPO_ORDE=
+R.SYMBOL</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">REPO_ORDE=
+R.SYMBOL</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">REPO_APPE=
+NDIX_LIQUID.SYMBOL<br></span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">ORDERS.SY=
+MBOL</span></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">9</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">S=E1=BB=
+=91 l=C6=B0=E1=BB=A3ng</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">REPO_ORDE=
+R.QUANTITY</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">REPO_ORDE=
+R.QUANTITY</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">REPO_APPE=
+NDIX_LIQUID.QUANTITY<br></span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">ORDERS.QU=
+ANTITY</span></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">10</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">Gi=C3=A1<=
+/span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">T=C3=ADnh=
+ theo c=C3=B4ng th=E1=BB=A9c Pricing m=C3=B4 t=E1=BA=A3 =E1=BB=9F lu=E1=BB=
+=93ng =C4=91=E1=BA=B7t mua</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">T=C3=ADnh=
+ theo c=C3=B4ng th=E1=BB=A9c Pricing m=C3=B4 t=E1=BA=A3 =E1=BB=9F lu=E1=BB=
+=93ng Gen phi=E1=BA=BFu l=E1=BB=87nh b=C3=A1n t=E1=BA=A1i e-5</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">REPO_APPE=
+NDIX_LIQUID.PRICE</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">ORDERS.PR=
+ICE</span></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">11</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#cd519d;">Gi=C3=A1 =
+tr=E1=BB=8B b=C3=A1n</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#cd519d;">=3D REPO_=
+ORDER.QUANTITY*Gi=C3=A1</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#cd519d;">REPO_ORDE=
+R.QUANTITY*Gi=C3=A1</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#cd519d;">REPO_APPE=
+NDIX_LIQUID.(QUANTITY*PRICE)<br></span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#cd519d;">ORDERS.(Q=
+UANTITY*PRICE)</span></td>
+       </tr>
+       <tr>
+        <td class=3D"numberingColumn confluenceTd" contenteditable=3D"false=
+" data-mce-resize=3D"false">12</td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">Ng=C3=A0y=
+ b=C3=A1n</span></td>
+        <td class=3D"confluenceTd"><br></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">REPO_ORDE=
+R.MATURE_DATE</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">REPO_ORDE=
+R.MATURE_DATE</span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">REPO_APPE=
+NDIX_LIQUID.LIQUID_DATE<br></span></td>
+        <td class=3D"confluenceTd"><span style=3D"color:#172b4d;">ORDERS.TR=
+ADING_DATE</span></td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>
+    </div>
+</body>
+</html>
+------=_Part_6569_763327318.1794820804640--
