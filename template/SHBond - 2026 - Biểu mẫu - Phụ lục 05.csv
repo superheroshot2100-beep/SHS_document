@@ -1,0 +1,147 @@
+Name,Status,Precondition,Priority,Test Script (Step-by-Step) - Step,Test Script (Step-by-Step) - Expected Result,Result,Note,Jira,Evidence
+[Thông tin bổ sung/update] Kiểm tra Loại chứng chỉ,,PRO_TYPE = 2,High,"Mở PL05: Mục 1, dòng 'Loại chứng chỉ'","- Lấy ở đâu: CUSTOMER_PRO_INFO.CERTIFICATE_TYPE
+- Lấy như nào: PRO_TYPE=2; hiện tên, không mã",,,,
+[Thông tin bổ sung/update] Kiểm tra Số chứng chỉ,,PRO_TYPE = 2,High,"Mở PL05: Mục 1, dòng 'Số'","- Lấy ở đâu: CUSTOMER_PRO_INFO.CERTIFICATE_NO
+- Lấy như nào: PRO_TYPE=2; giữ nguyên",,,,
+[Thông tin bổ sung/update] Kiểm tra Ngày cấp chứng chỉ,,PRO_TYPE = 2,High,"Mở PL05: Mục 1, dòng 'Ngày cấp'","- Lấy ở đâu: CUSTOMER_PRO_INFO.CERTIFICATE_FROM
+- Lấy như nào: PRO_TYPE=2; dd/mm/yyyy",,,,
+[Thông tin bổ sung/update] Kiểm tra Ngày hiệu lực chứng chỉ,,PRO_TYPE = 2,High,"Mở PL05: Mục 1, dòng 'Ngày hiệu lực'","- Lấy ở đâu: CUSTOMER_PRO_INFO.CERTIFICATE_TO
+- Lấy như nào: PRO_TYPE=2; dd/mm/yyyy",,,,
+"[Thông tin bổ sung/update] Kiểm tra Loại chứng chỉ, Số chứng chỉ, Ngày cấp, Ngày hiệu lực để trống khi PRO_TYPE ≠ 2",,"PRO_TYPE = 1, 3, 4",High,"Mở PL05: Mục 1, 4 dòng chứng chỉ","- Lấy ở đâu: CUSTOMER_PRO_INFO
+- Lấy như nào: PRO_TYPE≠2 → 4 trường trống",,,,
+[Thông tin bổ sung/update] Kiểm tra Loại chứng chỉ khi chứng chỉ đã hết hiệu lực tại ngày đặt mua,,"PRO_TYPE = 2, chứng chỉ hết hạn",Medium,Mở PL05: Mục 1,"- Lấy ở đâu: CUSTOMER_PRO_INFO.CERTIFICATE_TO
+- Lấy như nào: Hết hạn → chặn/cảnh báo (BA)",,Chờ BA xác nhận,,
+[Thông tin bổ sung/update] Kiểm tra Ô lựa chọn tư cách NĐTCN theo PRO_TYPE,,PRO_TYPE = 1/2/3/4,High,"Mở PL05: Mục 1, 4 ô lựa chọn","- Lấy ở đâu: CUSTOMER_PRO_INFO.PRO_TYPE
+- Lấy như nào: 1/2/3/4 → tick ô 1/2/3/4, chỉ 1 ô",,Chờ BA xác nhận: spec chưa ghi quy tắc tick,,
+[Thông tin bổ sung/update] Kiểm tra Số và ngày Nghị quyết ĐHĐCĐ khi PRO_TYPE = 1,,PRO_TYPE = 1,High,"Mở PL05: Mục 1, dòng NĐT chiến lược","- Lấy ở đâu: CUSTOMER_PRO_INFO (số, ngày NQ)
+- Lấy như nào: PRO_TYPE=1; chưa có mapping",,Chờ BA xác nhận: data_PL05 chưa có mapping số/ngày NQ,,
+[Thông tin bổ sung/update] Kiểm tra Giá trị danh mục CKNY,,PRO_TYPE = 3,High,"Mở PL05: Mục 1, dòng danh mục CKNY","- Lấy ở đâu: CUSTOMER_PRO_INFO.INVEST_AMOUNT
+- Lấy như nào: PRO_TYPE=3",,,,
+[Thông tin bổ sung/update] Kiểm tra Đơn vị và định dạng Giá trị danh mục CKNY,,PRO_TYPE = 3,High,"Mở PL05: Mục 1, câu '...có giá trị là ... đồng'","- Lấy ở đâu: CUSTOMER_PRO_INFO.INVEST_AMOUNT
+- Lấy như nào: 2,5 tỷ → 2.500.000.000 đồng",,"Chờ BA xác nhận: nhập tỷ đồng, câu mẫu ghi 'đồng'",,
+[Thông tin bổ sung/update] Kiểm tra Giá trị danh mục CKNY để trống khi PRO_TYPE ≠ 3,,"PRO_TYPE = 2, 4",High,"Mở PL05: Mục 1, dòng danh mục CKNY","- Lấy ở đâu: CUSTOMER_PRO_INFO
+- Lấy như nào: PRO_TYPE≠3 → trống",,,,
+[Thông tin bổ sung/update] Kiểm tra Năm thu nhập chịu thuế,,PRO_TYPE = 4,High,"Mở PL05: Mục 1, dòng thu nhập chịu thuế","- Lấy ở đâu: CUSTOMER_PRO_INFO.YEAR
+- Lấy như nào: PRO_TYPE=4; yyyy",,,,
+[Thông tin bổ sung/update] Kiểm tra Giá trị thu nhập chịu thuế,,PRO_TYPE = 4,High,"Mở PL05: Mục 1, dòng thu nhập chịu thuế","- Lấy ở đâu: CUSTOMER_PRO_INFO.INVEST_AMOUNT
+- Lấy như nào: PRO_TYPE=4; đơn vị tỷ đồng",,,,
+[Thông tin bổ sung/update] Kiểm tra Năm và Giá trị thu nhập chịu thuế để trống khi PRO_TYPE ≠ 4,,"PRO_TYPE = 2, 3",High,"Mở PL05: Mục 1, dòng thu nhập chịu thuế","- Lấy ở đâu: CUSTOMER_PRO_INFO
+- Lấy như nào: PRO_TYPE≠4 → 2 trường trống",,,,
+[Thông tin bổ sung/update] Kiểm tra Năm thu nhập chịu thuế khi không phải năm liền trước năm mua,,"PRO_TYPE = 4, YEAR ≠ năm mua - 1",Medium,Mở PL05: Mục 1,"- Lấy ở đâu: CUSTOMER_PRO_INFO.YEAR
+- Lấy như nào: ≠ năm mua - 1 → xử lý theo BA",,Chờ BA xác nhận,,
+[Thông tin bổ sung/update] Kiểm tra Thông tin NĐTCN khi KH có nhiều bản ghi NĐTCN,,KH có > 1 bản ghi NĐTCN,Medium,Mở PL05: Mục 1,"- Lấy ở đâu: CUSTOMER_PRO_INFO
+- Lấy như nào: Lấy bản ghi còn hiệu lực",,Chờ BA xác nhận,,
+[Thông tin bổ sung/update] Kiểm tra Mã trái phiếu,,,High,"Mở PL05: Mục 2, đoạn 'Sau khi tiếp cận', 3.1 i) (2 chỗ), 3.2, 3.3 a), 3.3 b)","- Lấy ở đâu: REPO_ORDER.SYMBOL
+- Lấy như nào: Giống nhau 7 vị trí",,,,
+[Thông tin bổ sung/update] Kiểm tra Địa chỉ liên hệ SHS,,,High,Mở PL05: Mục 2 + 2 khối xác nhận SHS,"- Lấy ở đâu: CUSTOMER.CUST_ADDRESS (069P000001)
+- Lấy như nào: Giống nhau 3 vị trí",,,,
+[Thông tin bổ sung/update] Kiểm tra Địa chỉ liên hệ SHS sau khi đổi địa chỉ KH 069P000001,,Đổi địa chỉ 069P000001,Medium,Mở PL05: Mục 2 + 2 khối xác nhận SHS,"- Lấy ở đâu: CUSTOMER.CUST_ADDRESS (069P000001)
+- Lấy như nào: Lấy địa chỉ mới",,,,
+[Thông tin bổ sung/update] Kiểm tra Họ tên người ủy quyền xác nhận cung cấp thông tin TP,,,High,Mở PL05: Mục 2 + khối xác nhận cung cấp thông tin,"- Lấy ở đâu: CUSTOMER_AUTHORIZER (069P, IS_DEFAULT=1).AUTHORIZER_NAME
+- Lấy như nào: Mục 2 + khối ký 1",,,,
+[Thông tin bổ sung/update] Kiểm tra Chức vụ người ủy quyền xác nhận cung cấp thông tin TP,,,High,Mở PL05: Mục 2 + khối xác nhận cung cấp thông tin,"- Lấy ở đâu: CUSTOMER_AUTHORIZER (069P, IS_DEFAULT=1).AUTHORIZER_POSITION
+- Lấy như nào: Cùng người IS_DEFAULT=1",,Chờ BA xác nhận: spec chỉ ghi IS_DEFAULT cho [19]/[57],,
+[Thông tin bổ sung/update] Kiểm tra Số văn bản ủy quyền (xác nhận cung cấp thông tin TP),,,High,Mở PL05: Mục 2 + khối xác nhận cung cấp thông tin,"- Lấy ở đâu: CUSTOMER_AUTHORIZER (069P, IS_DEFAULT=1).AUTHORIZER_CONTRACT_NO
+- Lấy như nào: Cùng người IS_DEFAULT=1",,Chờ BA xác nhận: spec chỉ ghi IS_DEFAULT cho [19]/[57],,
+[Thông tin bổ sung/update] Kiểm tra Ngày hiệu lực ủy quyền (xác nhận cung cấp thông tin TP),,,High,Mở PL05: Mục 2 + khối xác nhận cung cấp thông tin,"- Lấy ở đâu: CUSTOMER_AUTHORIZER (069P, IS_DEFAULT=1).AUTHORIZER_CONTRACT_DATE
+- Lấy như nào: dd/mm/yyyy",,Chờ BA xác nhận: spec chỉ ghi IS_DEFAULT cho [19]/[57],,
+[Thông tin bổ sung/update] Kiểm tra Số CCCD người được ủy quyền (xác nhận cung cấp thông tin TP),,,High,"Mở PL05: Khối xác nhận cung cấp thông tin, dòng CCCD","- Lấy ở đâu: CUSTOMER_AUTHORIZER (069P, IS_DEFAULT=1).AUTHORIZER_ID
+- Lấy như nào: Giữ số 0 đầu",,Chờ BA xác nhận: spec chỉ ghi IS_DEFAULT cho [19]/[57],,
+[Thông tin bổ sung/update] Kiểm tra Họ tên người được ủy quyền (xác nhận tư cách NĐTCN),,,High,Mở PL05: Khối xác nhận tư cách NĐT,"- Lấy ở đâu: CUSTOMER_AUTHORIZER (069P, IS_DEFAULT=0).AUTHORIZER_NAME
+- Lấy như nào: Khối ký 2",,,,
+[Thông tin bổ sung/update] Kiểm tra Số văn bản ủy quyền (xác nhận tư cách NĐTCN),,,High,Mở PL05: Khối xác nhận tư cách NĐT,"- Lấy ở đâu: CUSTOMER_AUTHORIZER (069P, IS_DEFAULT=0).AUTHORIZER_CONTRACT_NO
+- Lấy như nào: Cùng người IS_DEFAULT=0",,Chờ BA xác nhận: spec chỉ ghi IS_DEFAULT cho [19]/[57],,
+[Thông tin bổ sung/update] Kiểm tra Ngày hiệu lực ủy quyền (xác nhận tư cách NĐTCN),,,High,Mở PL05: Khối xác nhận tư cách NĐT,"- Lấy ở đâu: CUSTOMER_AUTHORIZER (069P, IS_DEFAULT=0).AUTHORIZER_CONTRACT_DATE
+- Lấy như nào: dd/mm/yyyy",,Chờ BA xác nhận: spec chỉ ghi IS_DEFAULT cho [19]/[57],,
+[Thông tin bổ sung/update] Kiểm tra Số giấy tờ người được ủy quyền (xác nhận tư cách NĐTCN),,,High,"Mở PL05: Khối xác nhận tư cách NĐT, dòng CCCD","- Lấy ở đâu: CUSTOMER_AUTHORIZER (069P, IS_DEFAULT=0).AUTHORIZER_ID
+- Lấy như nào: Giữ số 0 đầu",,Chờ BA xác nhận: spec chỉ ghi IS_DEFAULT cho [19]/[57],,
+[Thông tin bổ sung/update] Kiểm tra Chức vụ người được ủy quyền (xác nhận tư cách NĐTCN),,,High,Mở PL05: Khối xác nhận tư cách NĐT,"- Lấy ở đâu: CUSTOMER_AUTHORIZER (069P, IS_DEFAULT=0).AUTHORIZER_POSITION
+- Lấy như nào: Cùng người IS_DEFAULT=0",,Chờ BA xác nhận: spec chỉ ghi IS_DEFAULT cho [19]/[57],,
+[Thông tin bổ sung/update] Kiểm tra Thông tin 2 khối chữ ký SHS không lẫn nhau,,,High,Mở PL05: So sánh 2 khối xác nhận SHS,"- Lấy ở đâu: CUSTOMER_AUTHORIZER (069P)
+- Lấy như nào: Khối 1 = IS_DEFAULT 1, khối 2 = IS_DEFAULT 0",,"Rủi ro cao: field API trùng tên (authorizerName, authorizerId...)",,
+[Thông tin bổ sung/update] Kiểm tra Thông tin người ủy quyền khi TK 069P không có người IS_DEFAULT = 0,,069P không có IS_DEFAULT = 0,Medium,Mở PL05: Khối xác nhận tư cách NĐT,"- Lấy ở đâu: CUSTOMER_AUTHORIZER (069P, IS_DEFAULT=0)
+- Lấy như nào: Không có → trống, không lỗi",,Chờ BA xác nhận,,
+[Thông tin bổ sung/update] Kiểm tra Thông tin người ủy quyền khi TK 069P có 2 người IS_DEFAULT = 1,,069P có 2 người IS_DEFAULT = 1,Low,Mở PL05: Mục 2 + khối xác nhận cung cấp thông tin,"- Lấy ở đâu: CUSTOMER_AUTHORIZER (069P, IS_DEFAULT=1)
+- Lấy như nào: Chỉ 1 người, thống nhất (BA)",,Chờ BA xác nhận,,
+[Thông tin bổ sung/update] Kiểm tra Căn cứ Nghị định khi ngày phát hành < 16/09/2022,,Ngày PH = 15/09/2022,High,"Mở PL05: Mục 2 a), b), c), d) + Mục 3.1 i)","- Lấy ở đâu: BOND_INFO.RELEASE_DATE
+- Lấy như nào: 5 trường = NĐ 153/2020/NĐ-CP",,,,
+[Thông tin bổ sung/update] Kiểm tra Căn cứ Nghị định khi ngày phát hành = 16/09/2022,,Ngày PH = 16/09/2022,High,"Mở PL05: Mục 2 a), b), c), d) + Mục 3.1 i)","- Lấy ở đâu: BOND_INFO.RELEASE_DATE
+- Lấy như nào: 5 trường = NĐ 153/2020 và NĐ 65/2022",,,,
+[Thông tin bổ sung/update] Kiểm tra Căn cứ Nghị định khi 16/09/2022 < ngày phát hành < 05/06/2026,,Ngày PH = 01/01/2024,High,"Mở PL05: Mục 2 a), b), c), d) + Mục 3.1 i)","- Lấy ở đâu: BOND_INFO.RELEASE_DATE
+- Lấy như nào: 5 trường = NĐ 153/2020 và NĐ 65/2022",,,,
+[Thông tin bổ sung/update] Kiểm tra Căn cứ Nghị định khi ngày phát hành = 04/06/2026,,Ngày PH = 04/06/2026,High,"Mở PL05: Mục 2 a), b), c), d) + Mục 3.1 i)","- Lấy ở đâu: BOND_INFO.RELEASE_DATE
+- Lấy như nào: 5 trường = NĐ 153/2020 và NĐ 65/2022",,,,
+[Thông tin bổ sung/update] Kiểm tra Căn cứ Nghị định khi ngày phát hành = 05/06/2026,,Ngày PH = 05/06/2026,High,"Mở PL05: Mục 2 a), b), c), d) + Mục 3.1 i)","- Lấy ở đâu: BOND_INFO.RELEASE_DATE
+- Lấy như nào: [62] khoản 1 Điều 29, [24] Điều 10, [26][28] tên NĐ, [52] (điều khoản) – NĐ 200/2026/NĐ-CP",,Chờ BA xác nhận: [52] in nguyên chữ '(điều khoản)'?,,
+[Thông tin bổ sung/update] Kiểm tra Căn cứ Nghị định khi ngày phát hành > 05/06/2026,,Ngày PH = 10/07/2026,High,"Mở PL05: Mục 2 a), b), c), d) + Mục 3.1 i)","- Lấy ở đâu: BOND_INFO.RELEASE_DATE
+- Lấy như nào: [62] khoản 1 Điều 29, [24] Điều 10, [26][28] tên NĐ, [52] (điều khoản) – NĐ 200/2026/NĐ-CP",,Chờ BA xác nhận: [52] in nguyên chữ '(điều khoản)'?,,
+[Thông tin bổ sung/update] Kiểm tra Bản công bố thông tin trước đợt chào bán trái phiếu,,,High,Mở PL05: Mục 2 a),"- Lấy ở đâu: BOND_APPENDIX (loại Công bố thông tin)
+- Lấy như nào: Đủ dòng, theo STT",,,,
+[Thông tin bổ sung/update] Kiểm tra Phương án phát hành trái phiếu,,,High,Mở PL05: Mục 2 b),"- Lấy ở đâu: BOND_APPENDIX (loại Phương án phát hành)
+- Lấy như nào: Đủ dòng, theo STT",,,,
+[Thông tin bổ sung/update] Kiểm tra Hồ sơ chào bán trái phiếu,,,High,Mở PL05: Mục 2 c),"- Lấy ở đâu: BOND_APPENDIX (loại Hồ sơ chào bán)
+- Lấy như nào: Đủ dòng, theo STT",,,,
+[Thông tin bổ sung/update] Kiểm tra Công bố thông tin định kỳ,,,High,Mở PL05: Mục 2 d),"- Lấy ở đâu: BOND_APPENDIX (loại Công bố định kỳ)
+- Lấy như nào: Đủ dòng, theo STT",,,,
+[Thông tin bổ sung/update] Kiểm tra Mục đích phát hành trái phiếu,,,High,Mở PL05: Mục 3.1 c),"- Lấy ở đâu: BOND_APPENDIX (loại Mục đích phát hành)
+- Lấy như nào: Đủ dòng, theo STT",,,,
+[Thông tin bổ sung/update] Kiểm tra Kế hoạch sử dụng vốn thu được từ đợt chào bán trái phiếu,,,High,Mở PL05: Mục 3.1 d) đoạn 1,"- Lấy ở đâu: BOND_APPENDIX (loại Kế hoạch sử dụng vốn)
+- Lấy như nào: Đủ dòng, theo STT",,,,
+[Thông tin bổ sung/update] Kiểm tra Kế hoạch sử dụng nguồn vốn thu được tạm thời nhàn rỗi,,,High,Mở PL05: Mục 3.1 d) đoạn 2,"- Lấy ở đâu: BOND_APPENDIX (loại Kế hoạch vốn nhàn rỗi)
+- Lấy như nào: Đủ dòng, theo STT",,,,
+"[Thông tin bổ sung/update] Kiểm tra Phương án bố trí nguồn và phương thức thanh toán lãi, gốc",,,High,Mở PL05: Mục 3.1 đ),"- Lấy ở đâu: BOND_APPENDIX (loại Phương án trả lãi, gốc)
+- Lấy như nào: Đủ dòng, theo STT",,,,
+[Thông tin bổ sung/update] Kiểm tra Cam kết của TCPH,,,High,Mở PL05: Mục 3.1 h),"- Lấy ở đâu: BOND_APPENDIX (loại Cam kết của TCPH)
+- Lấy như nào: Đủ dòng, theo STT",,,,
+[Thông tin bổ sung/update] Kiểm tra Rủi ro,,,High,Mở PL05: Mục 3.2,"- Lấy ở đâu: BOND_APPENDIX (loại Rủi ro)
+- Lấy như nào: Đủ dòng, theo STT",,,,
+"[Thông tin bổ sung/update] Kiểm tra Thông tin phụ lục TP chỉ lấy dữ liệu đã duyệt, còn hiệu lực",,Có dòng đã xóa / đang chờ duyệt,High,Mở PL05: Mục 3.2,"- Lấy ở đâu: BOND_APPENDIX
+- Lấy như nào: Chỉ bản đã duyệt, chưa xóa",,,,
+[Thông tin bổ sung/update] Kiểm tra Thông tin phụ lục TP khi chưa khai báo,,TP chưa khai báo phụ lục,Medium,Mở PL05: Mục 3.1 d) đoạn 2,"- Lấy ở đâu: BOND_APPENDIX
+- Lấy như nào: Không có → trống, không null",,Chờ BA xác nhận,,
+"[Thông tin bổ sung/update] Kiểm tra Thông tin phụ lục TP có nội dung 500 ký tự, ký tự đặc biệt",,"Nội dung 500 ký tự, ký tự đặc biệt",Medium,Mở PL05: Mục 3.2,"- Lấy ở đâu: BOND_APPENDIX
+- Lấy như nào: Nguyên văn, đủ ký tự",,,,
+[Thông tin bổ sung/update] Kiểm tra Số đăng ký sở hữu (mã số đăng ký doanh nghiệp),,,High,Mở PL05: Mục 3.1 a),"- Lấy ở đâu: BOND_ISSUER.REGISTRATION_ID
+- Lấy như nào: Giữ số 0 đầu",,,,
+[Thông tin bổ sung/update] Kiểm tra Loại ngành nghề,,,High,Mở PL05: Mục 3.1 a),"- Lấy ở đâu: BOND_INFO.BUSINESS_TYPE
+- Lấy như nào: Hiện tên, không mã",,,,
+[Thông tin bổ sung/update] Kiểm tra Thời điểm cập nhật khi khai báo 3 kỳ,,Khai báo 3 kỳ,High,Mở PL05: Bảng Mục 3.1 b),"- Lấy ở đâu: Bảng chỉ số tài chính TP
+- Lấy như nào: 3 kỳ, gần → xa",,,,
+[Thông tin bổ sung/update] Kiểm tra Thời điểm cập nhật khi khai báo 1 kỳ,,Khai báo 1 kỳ,High,Mở PL05: Bảng Mục 3.1 b),"- Lấy ở đâu: Bảng chỉ số tài chính TP
+- Lấy như nào: 1 cột dữ liệu",,,,
+[Thông tin bổ sung/update] Kiểm tra Thời điểm cập nhật khi khai báo 2 kỳ,,Khai báo 2 kỳ,Medium,Mở PL05: Bảng Mục 3.1 b),"- Lấy ở đâu: Bảng chỉ số tài chính TP
+- Lấy như nào: 2 cột, gần → xa",,,,
+[Thông tin bổ sung/update] Kiểm tra Thời điểm cập nhật khi khai báo 5 kỳ,,Khai báo 5 kỳ,High,Mở PL05: Bảng Mục 3.1 b),"- Lấy ở đâu: Bảng chỉ số tài chính TP
+- Lấy như nào: 3 kỳ gần nhất",,,,
+[Thông tin bổ sung/update] Kiểm tra Giá trị 7 chỉ tiêu tài chính theo từng kỳ,,Khai báo 3 kỳ,High,Mở PL05: Bảng Mục 3.1 b),"- Lấy ở đâu: Bảng chỉ số tài chính TP
+- Lấy như nào: Đúng cột kỳ",,data_PL05 chưa có DB field cho [33]-[39],,
+[Thông tin bổ sung/update] Kiểm tra Định dạng số của chỉ tiêu tài chính,,,Medium,Mở PL05: Bảng Mục 3.1 b),"- Lấy ở đâu: Bảng chỉ số tài chính TP
+- Lấy như nào: 1.250.000.000.000; 0,45; dd/mm/yyyy",,Chờ BA xác nhận,,
+[Thông tin bổ sung/update] Kiểm tra Tình hình tài chính khi chưa khai báo,,TP chưa khai báo tài chính,Low,Mở PL05: Bảng Mục 3.1 b),"- Lấy ở đâu: Bảng chỉ số tài chính TP
+- Lấy như nào: Không có → theo BA, không lỗi",,Chờ BA xác nhận,,
+[Thông tin bổ sung/update] Kiểm tra Tài sản đảm bảo khi HAS_COLLATERAL = 0,,TSBĐ = 0,High,Mở PL05: Mục 3.1 e),"- Lấy ở đâu: BOND_INFO.HAS_COLLATERAL
+- Lấy như nào: =0 → không có TSBĐ",,Chờ BA xác nhận: câu chữ từng giá trị,,
+[Thông tin bổ sung/update] Kiểm tra Tài sản đảm bảo khi HAS_COLLATERAL = 1,,TSBĐ = 1,High,Mở PL05: Mục 3.1 e),"- Lấy ở đâu: BOND_INFO.HAS_COLLATERAL
+- Lấy như nào: =1 → có, không đảm bảo toàn bộ gốc",,Chờ BA xác nhận: câu chữ từng giá trị,,
+[Thông tin bổ sung/update] Kiểm tra Tài sản đảm bảo khi HAS_COLLATERAL = 2,,TSBĐ = 2,High,Mở PL05: Mục 3.1 e),"- Lấy ở đâu: BOND_INFO.HAS_COLLATERAL
+- Lấy như nào: =2 → có, đảm bảo toàn bộ gốc",,Chờ BA xác nhận: câu chữ từng giá trị,,
+[Thông tin bổ sung/update] Kiểm tra Giá trị tài sản đảm bảo,,Có ≥ 2 dòng TSBĐ,High,Mở PL05: Mục 3.1 e),"- Lấy ở đâu: Bảng TSBĐ của TP
+- Lấy như nào: Cộng giá trị (BA)",,Chờ BA xác nhận: bảng TSBĐ không có cột giá trị để cộng,,
+[Thông tin bổ sung/update] Kiểm tra Số ký hiệu đăng ký giao dịch bảo đảm,,Có ≥ 2 số hiệu TSBĐ,High,Mở PL05: Mục 3.1 e),"- Lấy ở đâu: Bảng Số hiệu TSBĐ của TP
+- Lấy như nào: Đủ dòng, theo STT",,,,
+[Thông tin bổ sung/update] Kiểm tra Bảo lãnh thanh toán khi PAYMENT_GUARANTEE = 0,,BLTT = 0,High,Mở PL05: Mục 3.1 e),"- Lấy ở đâu: PAYMENT_GUARANTEE
+- Lấy như nào: =0 → không có BLTT; TCTD trống",,Chờ BA xác nhận,,
+[Thông tin bổ sung/update] Kiểm tra Bảo lãnh thanh toán và Tổ chức tín dụng bảo lãnh khi PAYMENT_GUARANTEE = 1/2,,BLTT = 1/2,High,Mở PL05: Mục 3.1 e),"- Lấy ở đâu: PAYMENT_GUARANTEE, GUARANTEE_INSTITUTION
+- Lấy như nào: =1/2 → có BLTT; hiện tên TCTD",,Chờ BA xác nhận,,
+[Thông tin bổ sung/update] Kiểm tra Lãi suất trái phiếu,,,High,Mở PL05: Mục 3.1 g),"- Lấy ở đâu: BOND_INFO.RATE_DESCRIPTION
+- Lấy như nào: Nguyên văn",,,,
+[Thông tin bổ sung/update] Kiểm tra Kỳ hạn trái phiếu,,,High,Mở PL05: Mục 3.1 g),"- Lấy ở đâu: BOND_INFO.TERM
+- Lấy như nào: Dạng chữ, VD 3 năm",,Chờ BA xác nhận,,
+[Thông tin bổ sung/update] Kiểm tra Đại diện người sở hữu trái phiếu,,TP có / không có đại diện,High,Mở PL05: Mục 3.1 k),"- Lấy ở đâu: BOND_INFO.REPRESENTATIVE
+- Lấy như nào: Không có → trống",,,,
+[Thông tin bổ sung/update] Kiểm tra Ngày tháng năm ký,,,High,Mở PL05: Chữ ký NĐT + 2 khối xác nhận SHS,"- Lấy ở đâu: REPO_ORDER.CREATED_DATE
+- Lấy như nào: Giống nhau 3 vị trí ký",,,,
+[Thông tin bổ sung/update] Kiểm tra Ngày tháng năm ký khi ngày/tháng có 1 chữ số,,Tạo yêu cầu ngày 05/01,Low,Mở PL05: Dòng ngày ký,"- Lấy ở đâu: REPO_ORDER.CREATED_DATE
+- Lấy như nào: 2 chữ số: 05, 01 (BA)",,Chờ BA xác nhận,,
+[Thông tin bổ sung/update] Kiểm tra Ngày tháng năm ký khi ngày tạo yêu cầu khác ngày giao dịch,,"Tạo 23:50, ngày GD hôm sau",Medium,Mở PL05: Dòng ngày ký,"- Lấy ở đâu: REPO_ORDER.CREATED_DATE
+- Lấy như nào: Không lấy ORDER_DATE",,Chờ BA xác nhận: mẫu ghi 'Ngày đầu tư',,

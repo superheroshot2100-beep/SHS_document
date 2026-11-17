@@ -1,0 +1,717 @@
+Name,Status,Precondition,Priority,Test Script (Step-by-Step) - Step,Test Script (Step-by-Step) - Expected Result,Result,Note,Jira,Evidence
+[Chung] Kiểm tra gen PL05 khi KH cá nhân tạo yêu cầu đặt mua,,- KH cá nhân 069C123456 (CUSTOMER_TYPE = 1) đã khai báo NĐTCN còn hiệu lực,High,"1. KH cá nhân tạo yêu cầu đặt mua mới
+2. Truy cập hệ thống: https://bonduat.shs.com.vn/
+3. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+4. Click Xem chi tiết yêu cầu vừa tạo > mở biểu mẫu Phụ lục 05
+5. Kiểm tra trạng thái yêu cầu và biểu mẫu","- Yêu cầu ở trạng thái Chờ duyệt
+- PL05 được gen ngay sau khi tạo yêu cầu, mở xem được",,,,
+[Chung] Kiểm tra KHÔNG gen PL05 khi KH tổ chức tạo yêu cầu đặt mua,,- KH tổ chức (CUSTOMER_TYPE = 2) đã khai báo NĐTCN,High,"1. KH tổ chức tạo yêu cầu đặt mua
+2. Truy cập Xem chi tiết yêu cầu đặt mua
+3. Kiểm tra danh sách biểu mẫu","- Không có biểu mẫu Phụ lục 05
+- Các biểu mẫu khác (HĐ bán kỳ hạn, Phiếu lệnh mua, Bảng mô phỏng dòng tiền, HĐ mua - KH bán lại, Phiếu lệnh bán) vẫn được gen",,,,
+[Chung] Kiểm tra hiển thị PL05 tại màn Xem chi tiết yêu cầu đặt mua,,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05","- Hiển thị PL05 đầy đủ nội dung theo mẫu
+- Không lỗi trang, không lỗi font tiếng Việt",,,,
+[Chung] Kiểm tra hiển thị PL05 tại màn Xem chi tiết hợp đồng,,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Click Xem chi tiết hợp đồng tương ứng yêu cầu ở tiền đề
+4. Mở PL05
+5. So sánh với PL05 ở màn Xem chi tiết yêu cầu đặt mua","- Hiển thị PL05
+- Nội dung 2 màn giống nhau 100%",,,,
+[Chung] Kiểm tra không còn placeholder chưa thay thế trên PL05,,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Rà toàn bộ văn bản tìm ký tự [ ], 'null', 'undefined', 'NaN', '(mã trái phiếu)', '(tên doanh nghiệp phát hành)'","- Không còn placeholder dạng [Tên khách hàng], [Mã trái phiếu]...
+- Không hiển thị null/undefined/NaN
+- Trường không có dữ liệu hiển thị trống",,,,
+[Chung] Kiểm tra nội dung cố định của PL05,,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen",Medium,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra các nội dung tĩnh","- Quốc hiệu, tiêu ngữ: CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM / Độc lập - Tự do - Hạnh phúc
+- Kính gửi: Công ty Cổ phần Chứng khoán Sài Gòn – Hà Nội
+- Tên SHS trong 2 khối xác nhận viết hoa: CÔNG TY CỔ PHẦN CHỨNG KHOÁN SÀI GÒN – HÀ NỘI
+- Địa danh ký: Hà Nội
+- Mục 3.3 a), b) và đoạn cam kết cuối đúng văn bản mẫu",,,,
+[Chung] Kiểm tra câu mở đầu 'Trên cơ sở nội dung thỏa thuận về việc mua/bán trái phiếu...',,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra câu: 'Trên cơ sở nội dung thỏa thuận về việc mua/bán trái phiếu (mã trái phiếu) của (tên doanh nghiệp phát hành) phát hành ngày, ...'","- (mã trái phiếu) = Mã TP đặt mua
+- (tên doanh nghiệp phát hành) = Tên TCPH
+- 'phát hành ngày' có ngày phát hành TP dạng dd/mm/yyyy",,Chờ BA xác nhận: câu này chưa có mapping trong data_PL05,,
+[Chung] Kiểm tra PL05 khi thông tin nguồn thay đổi sau khi gen,,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- Ghi lại nội dung PL05 hiện tại",Medium,"1. Sửa SĐT của KH, sửa 1 dòng Rủi ro của TP, sửa chức vụ người ủy quyền 069P
+2. Duyệt các thay đổi
+3. Mở lại PL05 của yêu cầu ở tiền đề",- PL05 giữ nguyên dữ liệu lúc gen HOẶC cập nhật theo dữ liệu mới (theo xác nhận BA; ghi nhận hành vi thực tế),,Chờ BA xác nhận: spec chưa nói PL05 là bản chụp (snapshot) hay render lại,,
+[Thông tin KH][01] Kiểm tra trường Tên khách hàng (customerName),,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- Tên KH: Nguyễn Văn A",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra trường Tên khách hàng
+6. Đối chiếu DB: CUSTOMER.CUSTOMER_NAME của KH đặt mua (REPO_ORDER.ACCOUNT)","- 'Tên tôi là:' = CUSTOMER.CUSTOMER_NAME của TK đặt mua
+- Mục 3.1 i) 'Ông/Bà ...' hiển thị cùng giá trị
+- Đúng tiếng Việt có dấu, giữ nguyên hoa/thường như DB",,,,
+[Thông tin KH][02] Kiểm tra trường Ngày tháng năm sinh (birthday),,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- Ngày sinh: 12/05/1990",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra trường Ngày tháng năm sinh
+6. Đối chiếu DB: CUSTOMER.BIRTH_DAY của KH đặt mua (REPO_ORDER.ACCOUNT)","- Hiển thị = CUSTOMER.BIRTH_DAY
+- Định dạng dd/mm/yyyy (12/05/1990)",,,,
+[Thông tin KH][03] Kiểm tra trường Giới tính (gender),,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- KH 1: Nam
+- KH 2: Nữ",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra trường Giới tính
+6. Đối chiếu DB: CUSTOMER.GENDER của KH đặt mua (REPO_ORDER.ACCOUNT)","- Hiển thị dạng chữ (Nam/Nữ), không hiển thị mã
+- Đúng với CUSTOMER.GENDER của từng KH",,,,
+[Thông tin KH][04] Kiểm tra trường Số CCCD/Hộ chiếu (cardId),,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- KH 1: CCCD 001090012345 (bắt đầu bằng số 0)
+- KH 2: Hộ chiếu C1234567",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra trường Số CCCD/Hộ chiếu
+6. Đối chiếu DB: CUSTOMER.CARD_ID của KH đặt mua (REPO_ORDER.ACCOUNT)","- Hiển thị = CUSTOMER.CARD_ID
+- Giữ đủ số 0 ở đầu
+- Hộ chiếu hiển thị đủ chữ + số",,,,
+[Thông tin KH][05] Kiểm tra trường Ngày cấp (issueDate),,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- Ngày cấp: 10/01/2021",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra trường Ngày cấp
+6. Đối chiếu DB: CUSTOMER.ISSUE_DATE của KH đặt mua (REPO_ORDER.ACCOUNT)","- Hiển thị = CUSTOMER.ISSUE_DATE, định dạng dd/mm/yyyy",,,,
+[Thông tin KH][06] Kiểm tra trường Nơi cấp (issuePlace),,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- Nơi cấp: Cục Cảnh sát quản lý hành chính về trật tự xã hội",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra trường Nơi cấp
+6. Đối chiếu DB: CUSTOMER.ISSUE_PLACE của KH đặt mua (REPO_ORDER.ACCOUNT)","- Hiển thị = CUSTOMER.ISSUE_PLACE, đủ nội dung, không bị cắt",,,,
+[Thông tin KH][07] Kiểm tra trường Nơi ở hiện tại (residenceAddress),,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- Địa chỉ liên hệ: 12 Láng Hạ, Đống Đa, Hà Nội
+- Địa chỉ thường trú khác địa chỉ liên hệ",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra trường Nơi ở hiện tại
+6. Đối chiếu DB: CUSTOMER.CUST_ADDRESS của KH đặt mua (REPO_ORDER.ACCOUNT)","- Hiển thị = CUSTOMER.CUST_ADDRESS (địa chỉ liên hệ)
+- KHÔNG lấy địa chỉ thường trú",,,,
+[Thông tin KH][08] Kiểm tra trường Điện thoại liên hệ (custMobile),,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- SĐT: 0912345678",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra trường Điện thoại liên hệ
+6. Đối chiếu DB: CUSTOMER.CUST_MOBILE của KH đặt mua (REPO_ORDER.ACCOUNT)","- Hiển thị = CUSTOMER.CUST_MOBILE, giữ số 0 đầu",,,,
+"[Thông tin KH][05,06,08] Kiểm tra hiển thị khi KH thiếu thông tin cá nhân",,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- KH không có: ngày cấp, nơi cấp, SĐT (NULL trong DB)",Medium,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra các trường [05], [06], [08]","- Trường tương ứng hiển thị trống
+- Không hiển thị null/undefined, không vỡ bố cục dòng",,,,
+"[Thông tin KH][01,07] Kiểm tra dữ liệu dài và ký tự đặc biệt",,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- Tên KH 50 ký tự có dấu
+- Địa chỉ 200 ký tự có ký tự / , - .",Medium,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra trường [01], [07]","- Hiển thị đủ ký tự, tự xuống dòng, không bị cắt hoặc tràn lề
+- Ký tự đặc biệt hiển thị đúng",,,,
+[NĐTCN][09] Kiểm tra trường Tổ chức phát hành (issuerName),,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- TP ABC12601 thuộc TCPH 'Công ty Cổ phần ABC'",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra tên TCPH tại Mục 1 (dòng NĐT chiến lược) và Mục 3.1 a)
+6. Đối chiếu DB: BOND_ISSUER.ISSUER_NAME của TP đặt mua","- Cả 2 vị trí = BOND_ISSUER.ISSUER_NAME, giống nhau",,,,
+[NĐTCN][10-16] Kiểm tra mapping khi PRO_TYPE = 2 (Cá nhân có chứng chỉ hành nghề CK),,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- CUSTOMER_PRO_INFO của KH có PRO_TYPE = 2, còn hiệu lực
+- Loại chứng chỉ: Môi giới chứng khoán
+- Số: 001234/CCHN
+- Ngày cấp: 01/03/2024
+- Ngày hiệu lực: 01/03/2024",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra Mục 1 của PL05
+6. Đối chiếu DB: CUSTOMER_PRO_INFO của KH","- Tick ô 'Cá nhân có chứng chỉ hành nghề chứng khoán...'
+- [10] Loại chứng chỉ = CUSTOMER_PRO_INFO.CERTIFICATE_TYPE
+- [11] Số chứng chỉ = CERTIFICATE_NO
+- [12] Ngày cấp = CERTIFICATE_FROM (dd/mm/yyyy)
+- [13] Ngày hiệu lực = CERTIFICATE_TO (dd/mm/yyyy)
+- [14], [15], [16] để trống
+- 3 ô còn lại không tick",,Chờ BA xác nhận: quy tắc tick checkbox theo PRO_TYPE chưa ghi trong spec,,
+[NĐTCN][10-16] Kiểm tra mapping khi PRO_TYPE = 3 (Cá nhân nắm giữ danh mục CKNY),,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- CUSTOMER_PRO_INFO của KH có PRO_TYPE = 3, còn hiệu lực
+- Giá trị danh mục CKNY: 2,5 tỷ đồng",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra Mục 1 của PL05
+6. Đối chiếu DB: CUSTOMER_PRO_INFO của KH","- Tick ô 'Cá nhân nắm giữ danh mục chứng khoán niêm yết...'
+- [14] Giá trị danh mục CKNY = CUSTOMER_PRO_INFO.INVEST_AMOUNT
+- [10]-[13], [15], [16] để trống
+- 3 ô còn lại không tick",,Chờ BA xác nhận: quy tắc tick checkbox theo PRO_TYPE chưa ghi trong spec,,
+[NĐTCN][10-16] Kiểm tra mapping khi PRO_TYPE = 4 (Cá nhân có thu nhập chịu thuế),,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- CUSTOMER_PRO_INFO của KH có PRO_TYPE = 4, còn hiệu lực
+- Thu nhập chịu thuế năm: 2025
+- Giá trị: 1,2 tỷ đồng",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra Mục 1 của PL05
+6. Đối chiếu DB: CUSTOMER_PRO_INFO của KH","- Tick ô 'Cá nhân có thu nhập chịu thuế năm...'
+- [15] Năm = CUSTOMER_PRO_INFO.YEAR (2025)
+- [16] Giá trị = CUSTOMER_PRO_INFO.INVEST_AMOUNT
+- [10]-[14] để trống
+- 3 ô còn lại không tick",,Chờ BA xác nhận: quy tắc tick checkbox theo PRO_TYPE chưa ghi trong spec,,
+[NĐTCN][10-16] Kiểm tra mapping khi PRO_TYPE = 1 (Cá nhân là NĐT chiến lược),,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- CUSTOMER_PRO_INFO của KH có PRO_TYPE = 1, còn hiệu lực
+- Nghị quyết ĐHĐCĐ số 01/2026/NQ-ĐHĐCĐ ngày 15/04/2026",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra Mục 1 của PL05
+6. Đối chiếu DB: CUSTOMER_PRO_INFO của KH","- Tick ô 'Cá nhân là nhà đầu tư chiến lược...'
+- [09] Tổ chức phát hành hiển thị đúng
+- [10]-[16] để trống
+- 3 ô còn lại không tick
+- Số/ngày Nghị quyết: theo xác nhận BA",,Chờ BA xác nhận: quy tắc tick checkbox theo PRO_TYPE chưa ghi trong spec; thiếu mapping số/ngày Nghị quyết ĐHĐCĐ,,
+[NĐTCN][14] Kiểm tra định dạng và đơn vị Giá trị danh mục CKNY,,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- PRO_TYPE = 3, giá trị nhập trên màn NĐTCN = 2,5 (đơn vị tỷ đồng)",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra câu '...có giá trị là [Giá trị danh mục CKNY] đồng'","- Giá trị khớp đơn vị 'đồng' của câu mẫu (2.500.000.000 đồng), không hiển thị '2,5 đồng'
+- Có dấu phân cách hàng nghìn",,"Chờ BA xác nhận: màn NĐTCN nhập theo tỷ đồng, câu PL05 ghi 'đồng'",,
+"[NĐTCN][15,16] Kiểm tra định dạng Năm và Giá trị thu nhập chịu thuế",,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- PRO_TYPE = 4, YEAR = 2025, giá trị = 1,2",Medium,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra câu '...thu nhập chịu thuế năm [15] là [16] tỷ đồng'","- [15] hiển thị 2025
+- [16] hiển thị 1,2 (đơn vị tỷ đồng của câu mẫu)
+- [15] là năm liền trước năm mua (mua 2026 → 2025)",,Chờ BA xác nhận: hành vi khi YEAR không phải năm liền trước năm mua,,
+[NĐTCN][10-16] Kiểm tra khi KH có nhiều bản ghi NĐTCN hoặc bản ghi hết hạn,,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- KH có 2 bản ghi CUSTOMER_PRO_INFO: PRO_TYPE = 2 (hết hạn 31/12/2025) và PRO_TYPE = 4 (còn hiệu lực)",Medium,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra Mục 1 của PL05","- Lấy bản ghi còn hiệu lực tại ngày tạo yêu cầu (PRO_TYPE = 4)
+- Không lấy dữ liệu bản ghi hết hạn",,Chờ BA xác nhận: spec chưa nói chọn bản ghi nào,,
+[Trái phiếu][17] Kiểm tra trường Mã trái phiếu (symbol),,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- Mã TP đặt mua: ABC12601",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra Mã TP tại: Mục 2, đoạn 'Sau khi tiếp cận...', Mục 3.1 i) (2 vị trí), 3.2, 3.3 a), 3.3 b)
+6. Đối chiếu DB: REPO_ORDER.SYMBOL = BOND_INFO.CODE","- Cả 7 vị trí = REPO_ORDER.SYMBOL (ABC12601), giống nhau, đúng hoa/thường",,,,
+[SHS][18] Kiểm tra trường Địa chỉ liên hệ SHS (shsAddress),,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra Địa chỉ tại Mục 2 và 2 khối xác nhận của SHS
+6. Đối chiếu DB: CUSTOMER.CUST_ADDRESS của KH 069P000001","- Cả 3 vị trí = CUSTOMER.CUST_ADDRESS của 069P000001, giống nhau",,,,
+[SHS][18] Kiểm tra PL05 cập nhật khi đổi địa chỉ KH 069P000001,,- Sửa và duyệt địa chỉ liên hệ của KH 069P000001 thành địa chỉ mới,Medium,"1. KH cá nhân tạo yêu cầu đặt mua mới
+2. Truy cập hệ thống: https://bonduat.shs.com.vn/
+3. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+4. Click Xem chi tiết yêu cầu vừa tạo > mở biểu mẫu Phụ lục 05",- PL05 mới hiển thị địa chỉ mới tại cả 3 vị trí,,,,
+[Ủy quyền][19] Kiểm tra trường Họ tên người ủy quyền xác nhận cung cấp thông tin TP (authorizerName),,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- TK 069P có 2 người ủy quyền:
+  + IS_DEFAULT = 1: Trần Thị B, Giám đốc Khối, VB 15/2026/UQ-SHS ngày 01/01/2026, CCCD 001085000111
+  + IS_DEFAULT = 0: Lê Văn C, Trưởng phòng, VB 16/2026/UQ-SHS ngày 02/01/2026, CCCD 001088000222",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra Mục 2 'Người đại diện' và khối xác nhận cung cấp thông tin
+6. Đối chiếu DB: CUSTOMER_AUTHORIZER của TK 069P",- Hiển thị = AUTHORIZER_NAME của người IS_DEFAULT = 1 (Trần Thị B) ở cả 2 vị trí,,,,
+[Ủy quyền][20] Kiểm tra trường Chức vụ người ủy quyền xác nhận cung cấp thông tin TP (authorizerPosition),,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- TK 069P có 2 người ủy quyền:
+  + IS_DEFAULT = 1: Trần Thị B, Giám đốc Khối, VB 15/2026/UQ-SHS ngày 01/01/2026, CCCD 001085000111
+  + IS_DEFAULT = 0: Lê Văn C, Trưởng phòng, VB 16/2026/UQ-SHS ngày 02/01/2026, CCCD 001088000222",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra Mục 2 'Chức vụ' và khối xác nhận cung cấp thông tin
+6. Đối chiếu DB: CUSTOMER_AUTHORIZER của TK 069P",- Hiển thị = AUTHORIZER_POSITION của người IS_DEFAULT = 1 (Giám đốc Khối) ở cả 2 vị trí,,Chờ BA xác nhận: spec chỉ ghi IS_DEFAULT cho [19]/[57]; trường này hiểu là theo cùng người,,
+[Ủy quyền][21] Kiểm tra trường Số văn bản ủy quyền (authorizerContractNo),,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- TK 069P có 2 người ủy quyền:
+  + IS_DEFAULT = 1: Trần Thị B, Giám đốc Khối, VB 15/2026/UQ-SHS ngày 01/01/2026, CCCD 001085000111
+  + IS_DEFAULT = 0: Lê Văn C, Trưởng phòng, VB 16/2026/UQ-SHS ngày 02/01/2026, CCCD 001088000222",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra Mục 2 'Ủy quyền' và khối xác nhận cung cấp thông tin
+6. Đối chiếu DB: CUSTOMER_AUTHORIZER của TK 069P",- Hiển thị = AUTHORIZER_CONTRACT_NO của người IS_DEFAULT = 1 (15/2026/UQ-SHS) ở cả 2 vị trí,,Chờ BA xác nhận: spec chỉ ghi IS_DEFAULT cho [19]/[57]; trường này hiểu là theo cùng người,,
+[Ủy quyền][22] Kiểm tra trường Ngày hiệu lực ủy quyền (authorizerContractDate),,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- TK 069P có 2 người ủy quyền:
+  + IS_DEFAULT = 1: Trần Thị B, Giám đốc Khối, VB 15/2026/UQ-SHS ngày 01/01/2026, CCCD 001085000111
+  + IS_DEFAULT = 0: Lê Văn C, Trưởng phòng, VB 16/2026/UQ-SHS ngày 02/01/2026, CCCD 001088000222",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra Mục 2 'Ủy quyền ... ngày' và khối xác nhận cung cấp thông tin
+6. Đối chiếu DB: CUSTOMER_AUTHORIZER của TK 069P","- Hiển thị = AUTHORIZER_CONTRACT_DATE của người IS_DEFAULT = 1, dd/mm/yyyy (01/01/2026)",,Chờ BA xác nhận: spec chỉ ghi IS_DEFAULT cho [19]/[57]; trường này hiểu là theo cùng người,,
+[Ủy quyền][56] Kiểm tra trường Số CCCD người được ủy quyền (xác nhận cung cấp thông tin) (authorizerId),,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- TK 069P có 2 người ủy quyền:
+  + IS_DEFAULT = 1: Trần Thị B, Giám đốc Khối, VB 15/2026/UQ-SHS ngày 01/01/2026, CCCD 001085000111
+  + IS_DEFAULT = 0: Lê Văn C, Trưởng phòng, VB 16/2026/UQ-SHS ngày 02/01/2026, CCCD 001088000222",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra khối xác nhận cung cấp thông tin, dòng 'CCCD'
+6. Đối chiếu DB: CUSTOMER_AUTHORIZER của TK 069P",- Hiển thị = AUTHORIZER_ID của người IS_DEFAULT = 1 (001085000111),,Chờ BA xác nhận: spec chỉ ghi IS_DEFAULT cho [19]/[57]; trường này hiểu là theo cùng người,,
+[Ủy quyền][57] Kiểm tra trường Họ tên người được ủy quyền (xác nhận tư cách NĐTCN) (authorizerName),,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- TK 069P có 2 người ủy quyền:
+  + IS_DEFAULT = 1: Trần Thị B, Giám đốc Khối, VB 15/2026/UQ-SHS ngày 01/01/2026, CCCD 001085000111
+  + IS_DEFAULT = 0: Lê Văn C, Trưởng phòng, VB 16/2026/UQ-SHS ngày 02/01/2026, CCCD 001088000222",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra khối xác nhận tư cách nhà đầu tư, dòng 'Người đại diện'
+6. Đối chiếu DB: CUSTOMER_AUTHORIZER của TK 069P",- Hiển thị = AUTHORIZER_NAME của người IS_DEFAULT = 0 (Lê Văn C),,,,
+[Ủy quyền][58] Kiểm tra trường Số văn bản ủy quyền (xác nhận tư cách NĐTCN) (authorizerContractNo),,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- TK 069P có 2 người ủy quyền:
+  + IS_DEFAULT = 1: Trần Thị B, Giám đốc Khối, VB 15/2026/UQ-SHS ngày 01/01/2026, CCCD 001085000111
+  + IS_DEFAULT = 0: Lê Văn C, Trưởng phòng, VB 16/2026/UQ-SHS ngày 02/01/2026, CCCD 001088000222",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra khối xác nhận tư cách nhà đầu tư, dòng 'Ủy quyền'
+6. Đối chiếu DB: CUSTOMER_AUTHORIZER của TK 069P",- Hiển thị = AUTHORIZER_CONTRACT_NO của người IS_DEFAULT = 0 (16/2026/UQ-SHS),,Chờ BA xác nhận: spec chỉ ghi IS_DEFAULT cho [19]/[57]; trường này hiểu là theo cùng người,,
+[Ủy quyền][59] Kiểm tra trường Ngày hiệu lực (xác nhận tư cách NĐTCN) (authorizerContractDate),,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- TK 069P có 2 người ủy quyền:
+  + IS_DEFAULT = 1: Trần Thị B, Giám đốc Khối, VB 15/2026/UQ-SHS ngày 01/01/2026, CCCD 001085000111
+  + IS_DEFAULT = 0: Lê Văn C, Trưởng phòng, VB 16/2026/UQ-SHS ngày 02/01/2026, CCCD 001088000222",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra khối xác nhận tư cách nhà đầu tư, dòng 'Ủy quyền ... ngày'
+6. Đối chiếu DB: CUSTOMER_AUTHORIZER của TK 069P","- Hiển thị = AUTHORIZER_CONTRACT_DATE của người IS_DEFAULT = 0, dd/mm/yyyy (02/01/2026)",,Chờ BA xác nhận: spec chỉ ghi IS_DEFAULT cho [19]/[57]; trường này hiểu là theo cùng người,,
+[Ủy quyền][60] Kiểm tra trường Số giấy tờ (xác nhận tư cách NĐTCN) (authorizerId),,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- TK 069P có 2 người ủy quyền:
+  + IS_DEFAULT = 1: Trần Thị B, Giám đốc Khối, VB 15/2026/UQ-SHS ngày 01/01/2026, CCCD 001085000111
+  + IS_DEFAULT = 0: Lê Văn C, Trưởng phòng, VB 16/2026/UQ-SHS ngày 02/01/2026, CCCD 001088000222",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra khối xác nhận tư cách nhà đầu tư, dòng 'CCCD'
+6. Đối chiếu DB: CUSTOMER_AUTHORIZER của TK 069P",- Hiển thị = AUTHORIZER_ID của người IS_DEFAULT = 0 (001088000222),,Chờ BA xác nhận: spec chỉ ghi IS_DEFAULT cho [19]/[57]; trường này hiểu là theo cùng người,,
+[Ủy quyền][61] Kiểm tra trường Chức vụ (xác nhận tư cách NĐTCN) (authorizerPosition),,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- TK 069P có 2 người ủy quyền:
+  + IS_DEFAULT = 1: Trần Thị B, Giám đốc Khối, VB 15/2026/UQ-SHS ngày 01/01/2026, CCCD 001085000111
+  + IS_DEFAULT = 0: Lê Văn C, Trưởng phòng, VB 16/2026/UQ-SHS ngày 02/01/2026, CCCD 001088000222",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra khối xác nhận tư cách nhà đầu tư, dòng 'Chức vụ'
+6. Đối chiếu DB: CUSTOMER_AUTHORIZER của TK 069P",- Hiển thị = AUTHORIZER_POSITION của người IS_DEFAULT = 0 (Trưởng phòng),,Chờ BA xác nhận: spec chỉ ghi IS_DEFAULT cho [19]/[57]; trường này hiểu là theo cùng người,,
+"[Ủy quyền][19-22,56-61] Kiểm tra 2 khối chữ ký SHS không lẫn thông tin",,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- TK 069P có 2 người ủy quyền:
+  + IS_DEFAULT = 1: Trần Thị B, Giám đốc Khối, VB 15/2026/UQ-SHS ngày 01/01/2026, CCCD 001085000111
+  + IS_DEFAULT = 0: Lê Văn C, Trưởng phòng, VB 16/2026/UQ-SHS ngày 02/01/2026, CCCD 001088000222",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. So sánh khối 'Xác nhận ... đã cung cấp đủ hồ sơ' với khối 'Xác nhận ... tư cách nhà đầu tư'","- Khối 1 chỉ chứa thông tin Trần Thị B, khối 2 chỉ chứa thông tin Lê Văn C
+- Không có trường hợp tên người này đi với CCCD/chức vụ/VB của người kia",,"Rủi ro: [19]/[57], [56]/[60], [20]/[61], [21]/[58], [22]/[59] trùng tên field API",,
+[Ủy quyền] Kiểm tra khi TK 069P thiếu người ủy quyền IS_DEFAULT = 0,,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- TK 069P chỉ có 1 người ủy quyền IS_DEFAULT = 1",Medium,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra khối xác nhận tư cách nhà đầu tư","- Không lỗi hệ thống, PL05 vẫn hiển thị
+- [57]-[61] để trống (hoặc theo xác nhận BA)",,Chờ BA xác nhận,,
+[Ủy quyền] Kiểm tra khi TK 069P có nhiều người IS_DEFAULT = 1,,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- TK 069P có 2 người cùng IS_DEFAULT = 1",Low,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra Mục 2 và khối xác nhận cung cấp thông tin","- Chỉ hiển thị 1 người, nhất quán ở mọi vị trí (quy tắc chọn theo BA)",,Chờ BA xác nhận,,
+[TCPH][30] Kiểm tra trường Mã số đăng ký doanh nghiệp (issuerTaxCode),,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- TCPH ABC có mã số ĐKDN 0101234567",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra Mục 3.1 a) '(mã số đăng ký doanh nghiệp: ...)'
+6. Đối chiếu DB: BOND_ISSUER.REGISTRATION_ID","- Hiển thị = BOND_ISSUER.REGISTRATION_ID (0101234567), giữ số 0 đầu",,,,
+[TCPH][31] Kiểm tra trường Loại ngành nghề (businessType),,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- TP khai báo ngành nghề: Bất động sản",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra Mục 3.1 a) 'đang hoạt động trong lĩnh vực ...'
+6. Đối chiếu DB: BOND_INFO.BUSINESS_TYPE","- Hiển thị = BOND_INFO.BUSINESS_TYPE (Bất động sản), dạng chữ, không hiển thị mã",,,,
+"[Căn cứ pháp lý][24,26,28,52,62] Kiểm tra hiển thị Nghị định khi Ngày PH < 16/09/2022 (biên dưới)",,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- TP đặt mua có Ngày phát hành (BOND_INFO.RELEASE_DATE) = 15/09/2022",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra Mục 2 a), b), c), d) và Mục 3.1 i)","- Cả 5 trường [62], [24], [26], [28], [52] hiển thị: Nghị định số 153/2020/NĐ-CP",,,,
+"[Căn cứ pháp lý][24,26,28,52,62] Kiểm tra hiển thị Nghị định khi Ngày PH = 16/09/2022 (biên)",,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- TP đặt mua có Ngày phát hành (BOND_INFO.RELEASE_DATE) = 16/09/2022",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra Mục 2 a), b), c), d) và Mục 3.1 i)","- Cả 5 trường [62], [24], [26], [28], [52] hiển thị: Nghị định số 153/2020/NĐ-CP và Nghị định 65/2022/NĐ-CP",,,,
+"[Căn cứ pháp lý][24,26,28,52,62] Kiểm tra hiển thị Nghị định khi 16/09/2022 < Ngày PH < 05/06/2026",,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- TP đặt mua có Ngày phát hành (BOND_INFO.RELEASE_DATE) = 01/01/2024",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra Mục 2 a), b), c), d) và Mục 3.1 i)","- Cả 5 trường [62], [24], [26], [28], [52] hiển thị: Nghị định số 153/2020/NĐ-CP và Nghị định 65/2022/NĐ-CP",,,,
+"[Căn cứ pháp lý][24,26,28,52,62] Kiểm tra hiển thị Nghị định khi Ngày PH = 04/06/2026 (biên)",,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- TP đặt mua có Ngày phát hành (BOND_INFO.RELEASE_DATE) = 04/06/2026",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra Mục 2 a), b), c), d) và Mục 3.1 i)","- Cả 5 trường [62], [24], [26], [28], [52] hiển thị: Nghị định số 153/2020/NĐ-CP và Nghị định 65/2022/NĐ-CP",,,,
+"[Căn cứ pháp lý][24,26,28,52,62] Kiểm tra hiển thị Nghị định khi Ngày PH = 05/06/2026 (biên)",,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- TP đặt mua có Ngày phát hành (BOND_INFO.RELEASE_DATE) = 05/06/2026",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra Mục 2 a), b), c), d) và Mục 3.1 i)","- [62] Mục 2 a): khoản 1 Điều 29 Nghị định số 200/2026/NĐ-CP
+- [24] Mục 2 b): Điều 10 Nghị định số 200/2026/NĐ-CP
+- [26] Mục 2 c): Nghị định số 200/2026/NĐ-CP
+- [28] Mục 2 d): Nghị định số 200/2026/NĐ-CP
+- [52] Mục 3.1 i): (điều khoản) Nghị định số 200/2026/NĐ-CP",,Chờ BA xác nhận: [52] có in nguyên chữ '(điều khoản)' không,,
+"[Căn cứ pháp lý][24,26,28,52,62] Kiểm tra hiển thị Nghị định khi Ngày PH > 05/06/2026",,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- TP đặt mua có Ngày phát hành (BOND_INFO.RELEASE_DATE) = 10/07/2026",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra Mục 2 a), b), c), d) và Mục 3.1 i)","- [62] Mục 2 a): khoản 1 Điều 29 Nghị định số 200/2026/NĐ-CP
+- [24] Mục 2 b): Điều 10 Nghị định số 200/2026/NĐ-CP
+- [26] Mục 2 c): Nghị định số 200/2026/NĐ-CP
+- [28] Mục 2 d): Nghị định số 200/2026/NĐ-CP
+- [52] Mục 3.1 i): (điều khoản) Nghị định số 200/2026/NĐ-CP",,Chờ BA xác nhận: [52] có in nguyên chữ '(điều khoản)' không,,
+[Phụ lục TP][23] Kiểm tra trường Bản công bố thông tin trước đợt chào bán,,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- TP đặt mua đã khai báo danh mục 'Công bố thông tin' 3 dòng: STT 1, 2, 3 (nhập theo thứ tự 2, 3, 1)",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra nội dung tại Mục 2 a)
+6. Đối chiếu DB: BOND_APPENDIX của TP với TYPE = 'Công bố thông tin'","- Hiển thị đủ 3 dòng, đúng nội dung từng dòng
+- Sắp xếp theo STT (ORDER) 1 → 2 → 3, không theo thứ tự nhập",,data_PL05 trống cột fields mapping (Confluence: preOfferingDisclosure),,
+[Phụ lục TP][25] Kiểm tra trường Phương án phát hành trái phiếu,,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- TP đặt mua đã khai báo danh mục 'Phương án phát hành' 3 dòng: STT 1, 2, 3 (nhập theo thứ tự 2, 3, 1)",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra nội dung tại Mục 2 b)
+6. Đối chiếu DB: BOND_APPENDIX của TP với TYPE = 'Phương án phát hành'","- Hiển thị đủ 3 dòng, đúng nội dung từng dòng
+- Sắp xếp theo STT (ORDER) 1 → 2 → 3, không theo thứ tự nhập",,data_PL05 trống cột fields mapping (Confluence: issuancePlan),,
+[Phụ lục TP][27] Kiểm tra trường Hồ sơ chào bán trái phiếu,,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- TP đặt mua đã khai báo danh mục 'Hồ sơ chào bán' 3 dòng: STT 1, 2, 3 (nhập theo thứ tự 2, 3, 1)",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra nội dung tại Mục 2 c)
+6. Đối chiếu DB: BOND_APPENDIX của TP với TYPE = 'Hồ sơ chào bán'","- Hiển thị đủ 3 dòng, đúng nội dung từng dòng
+- Sắp xếp theo STT (ORDER) 1 → 2 → 3, không theo thứ tự nhập",,data_PL05 trống cột fields mapping (Confluence: bondOfferingDossier),,
+[Phụ lục TP][29] Kiểm tra trường Công bố thông tin định kỳ,,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- TP đặt mua đã khai báo danh mục 'Công bố định kỳ' 3 dòng: STT 1, 2, 3 (nhập theo thứ tự 2, 3, 1)",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra nội dung tại Mục 2 d)
+6. Đối chiếu DB: BOND_APPENDIX của TP với TYPE = 'Công bố định kỳ'","- Hiển thị đủ 3 dòng, đúng nội dung từng dòng
+- Sắp xếp theo STT (ORDER) 1 → 2 → 3, không theo thứ tự nhập",,data_PL05 trống cột fields mapping (Confluence: periodicDisclosure),,
+[Phụ lục TP][40] Kiểm tra trường Mục đích phát hành trái phiếu,,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- TP đặt mua đã khai báo danh mục 'Mục đích phát hành' 3 dòng: STT 1, 2, 3 (nhập theo thứ tự 2, 3, 1)",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra nội dung tại Mục 3.1 c)
+6. Đối chiếu DB: BOND_APPENDIX của TP với TYPE = 'Mục đích phát hành'","- Hiển thị đủ 3 dòng, đúng nội dung từng dòng
+- Sắp xếp theo STT (ORDER) 1 → 2 → 3, không theo thứ tự nhập",,data_PL05 trống cột fields mapping (Confluence: issuancePurpose),,
+[Phụ lục TP][41] Kiểm tra trường Kế hoạch sử dụng vốn thu từ chào bán,,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- TP đặt mua đã khai báo danh mục 'Kế hoạch sử dụng vốn thu từ chào bán trái phiếu' 3 dòng: STT 1, 2, 3 (nhập theo thứ tự 2, 3, 1)",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra nội dung tại Mục 3.1 d) đoạn 1
+6. Đối chiếu DB: BOND_APPENDIX của TP với TYPE = 'Kế hoạch sử dụng vốn thu từ chào bán trái phiếu'","- Hiển thị đủ 3 dòng, đúng nội dung từng dòng
+- Sắp xếp theo STT (ORDER) 1 → 2 → 3, không theo thứ tự nhập",,data_PL05 trống cột fields mapping (Confluence: proceedsUsePlan),,
+[Phụ lục TP][42] Kiểm tra trường Kế hoạch sử dụng vốn tạm thời nhàn rỗi,,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- TP đặt mua đã khai báo danh mục 'Kế hoạch sử dụng nguồn vốn thu từ chào bán trái phiếu tạm thời nhàn rỗi' 3 dòng: STT 1, 2, 3 (nhập theo thứ tự 2, 3, 1)",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra nội dung tại Mục 3.1 d) đoạn 2
+6. Đối chiếu DB: BOND_APPENDIX của TP với TYPE = 'Kế hoạch sử dụng nguồn vốn thu từ chào bán trái phiếu tạm thời nhàn rỗi'","- Hiển thị đủ 3 dòng, đúng nội dung từng dòng
+- Sắp xếp theo STT (ORDER) 1 → 2 → 3, không theo thứ tự nhập",,data_PL05 trống cột fields mapping (Confluence: idleProceedsUsePlan),,
+"[Phụ lục TP][43] Kiểm tra trường Phương án bố trí nguồn và thanh toán lãi, gốc",,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- TP đặt mua đã khai báo danh mục 'Phương án bố trí nguồn và phương thức thanh toán lãi, gốc trái phiếu' 3 dòng: STT 1, 2, 3 (nhập theo thứ tự 2, 3, 1)",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra nội dung tại Mục 3.1 đ)
+6. Đối chiếu DB: BOND_APPENDIX của TP với TYPE = 'Phương án bố trí nguồn và phương thức thanh toán lãi, gốc trái phiếu'","- Hiển thị đủ 3 dòng, đúng nội dung từng dòng
+- Sắp xếp theo STT (ORDER) 1 → 2 → 3, không theo thứ tự nhập",,data_PL05 trống cột fields mapping (Confluence: debtServicePlan),,
+[Phụ lục TP][51] Kiểm tra trường Cam kết của TCPH,,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- TP đặt mua đã khai báo danh mục 'Cam kết của TCPH' 3 dòng: STT 1, 2, 3 (nhập theo thứ tự 2, 3, 1)",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra nội dung tại Mục 3.1 h)
+6. Đối chiếu DB: BOND_APPENDIX của TP với TYPE = 'Cam kết của TCPH'","- Hiển thị đủ 3 dòng, đúng nội dung từng dòng
+- Sắp xếp theo STT (ORDER) 1 → 2 → 3, không theo thứ tự nhập",,data_PL05 trống cột fields mapping (Confluence: isusserCommitments),,
+[Phụ lục TP][54] Kiểm tra trường Rủi ro,,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- TP đặt mua đã khai báo danh mục 'Rủi ro' 3 dòng: STT 1, 2, 3 (nhập theo thứ tự 2, 3, 1)",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra nội dung tại Mục 3.2
+6. Đối chiếu DB: BOND_APPENDIX của TP với TYPE = 'Rủi ro'","- Hiển thị đủ 3 dòng, đúng nội dung từng dòng
+- Sắp xếp theo STT (ORDER) 1 → 2 → 3, không theo thứ tự nhập",,data_PL05 trống cột fields mapping (Confluence: riskFactors),,
+"[Phụ lục TP] Kiểm tra chỉ lấy dữ liệu phụ lục đã duyệt, còn hiệu lực",,"- Rủi ro STT 3 của TP đã bị xóa (IS_DELETED = 1)
+- Có bản sửa Rủi ro STT 1 đang chờ duyệt (BOND_APPENDIX_TEMP)",High,"1. KH cá nhân tạo yêu cầu đặt mua mới
+2. Truy cập hệ thống: https://bonduat.shs.com.vn/
+3. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+4. Click Xem chi tiết yêu cầu vừa tạo > mở biểu mẫu Phụ lục 05
+5. Kiểm tra Mục 3.2","- Không hiển thị dòng đã xóa
+- STT 1 hiển thị nội dung đang hiệu lực, không lấy bản chờ duyệt",,,,
+[Phụ lục TP][42] Kiểm tra khi TP chưa khai báo danh mục phụ lục,,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- TP không khai báo 'Kế hoạch sử dụng nguồn vốn ... tạm thời nhàn rỗi'",Medium,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra Mục 3.1 d) đoạn 2","- Nội dung để trống, không hiển thị null, không lỗi bố cục",,Chờ BA xác nhận: ẩn cả đoạn hay để trống,,
+[Phụ lục TP] Kiểm tra nội dung dài và ký tự đặc biệt,,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- 1 dòng Rủi ro dài 500 ký tự, tiếng Việt có dấu, ký tự & < > "" % /",Medium,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra Mục 3.2","- Hiển thị đủ 500 ký tự, đúng ký tự đặc biệt (không bị mã hóa thành &amp;...)
+- Không tràn lề, không lỗi font",,,,
+[Tài chính][32-39] Kiểm tra bảng tài chính khi khai báo 3 kỳ,,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- TP khai báo 3 kỳ: 31/12/2025, 30/06/2026, 30/09/2026 (cột 1 trên Portal = 31/12/2025)",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra bảng Mục 3.1 b)","- Cột: Chỉ tiêu, Đơn vị tính, 30/09/2026, 30/06/2026, 31/12/2025 (gần → xa)
+- 7 dòng chỉ tiêu đúng thứ tự: Tổng tài sản, Nợ phải trả, Vốn chủ sở hữu, Vốn lưu động thường xuyên, Hệ số dư nợ vay/Tổng tài sản, Hệ số nợ phải trả/Vốn chủ sở hữu, Khả năng thanh toán hiện hành",,,,
+[Tài chính][32-39] Kiểm tra bảng tài chính khi khai báo 1 kỳ,,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- TP khai báo 1 kỳ: 30/09/2026",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra bảng Mục 3.1 b)","- Bảng chỉ có 3 cột: Chỉ tiêu, Đơn vị tính, Thời điểm cập nhật 1 (30/09/2026)
+- Không có cột trống thừa",,,,
+[Tài chính][32-39] Kiểm tra bảng tài chính khi khai báo 2 kỳ,,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- TP khai báo 2 kỳ: 31/12/2025, 30/06/2026",Medium,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra bảng Mục 3.1 b)","- Bảng có 4 cột: Chỉ tiêu, Đơn vị tính, 30/06/2026, 31/12/2025",,,,
+[Tài chính][32-39] Kiểm tra bảng tài chính khi khai báo 5 kỳ,,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- TP khai báo 5 kỳ: 31/12/2024, 30/06/2025, 31/12/2025, 30/06/2026, 30/09/2026",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra bảng Mục 3.1 b)","- Chỉ hiển thị 3 kỳ gần nhất: 30/09/2026, 30/06/2026, 31/12/2025
+- Không hiển thị 30/06/2025, 31/12/2024",,,,
+[Tài chính][33-39] Kiểm tra giá trị từng chỉ tiêu khớp đúng kỳ,,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- 3 kỳ có giá trị khác nhau, VD Tổng tài sản: 31/12/2025 = 1.000.000.000.000; 30/06/2026 = 1.100.000.000.000; 30/09/2026 = 1.250.000.000.000",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Đối chiếu từng ô của 7 chỉ tiêu với bảng chỉ số tài chính của TP","- Mỗi giá trị nằm đúng cột kỳ của nó (30/09/2026 → 1.250.000.000.000)
+- Không lệch cột khi đảo thứ tự kỳ",,data_PL05 chưa có DB field cho [33]-[39],,
+[Tài chính][32-39] Kiểm tra định dạng dữ liệu bảng tài chính,,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- Tổng tài sản = 1250000000000; Hệ số dư nợ vay/Tổng tài sản = 0,45; Khả năng thanh toán hiện hành = 2",Medium,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra định dạng trong bảng Mục 3.1 b)","- Thời điểm cập nhật: dd/mm/yyyy
+- Số tiền: phân cách hàng nghìn (1.250.000.000.000), đơn vị VND
+- Hệ số: tối đa 2 số thập phân (0,45), đơn vị Lần",,Chờ BA xác nhận: quy định định dạng số,,
+[Tài chính][32-39] Kiểm tra khi TP chưa khai báo tình hình tài chính,,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- TP chưa khai báo kỳ tài chính nào",Low,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra Mục 3.1 b)",- Không lỗi hệ thống; bảng hiển thị theo quy tắc BA,,Chờ BA xác nhận,,
+[TSĐB][44-46] Kiểm tra khi TP không có TSBĐ (HAS_COLLATERAL = 0),,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- TP: Tài sản bảo đảm = 0 (Không có TSBĐ)",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra Mục 3.1 e) phần tài sản đảm bảo","- Câu thể hiện TP KHÔNG có tài sản đảm bảo
+- [45], [46] không hiển thị dữ liệu rác",,Chờ BA xác nhận: câu chữ khi = 0,,
+"[TSĐB][44] Kiểm tra khi HAS_COLLATERAL = 1 (Có TSBĐ, không bảo đảm toàn bộ gốc)",,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- TP: Tài sản bảo đảm = 1",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra Mục 3.1 e)
+6. Đối chiếu DB: BOND_INFO.HAS_COLLATERAL","- Câu thể hiện TP có tài sản đảm bảo, đúng mức độ 'Có TSBĐ, không bảo đảm toàn bộ gốc'",,Chờ BA xác nhận: câu chữ cho từng giá trị,,
+"[TSĐB][44] Kiểm tra khi HAS_COLLATERAL = 2 (Có TSBĐ, bảo đảm toàn bộ gốc)",,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- TP: Tài sản bảo đảm = 2",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra Mục 3.1 e)
+6. Đối chiếu DB: BOND_INFO.HAS_COLLATERAL","- Câu thể hiện TP có tài sản đảm bảo, đúng mức độ 'Có TSBĐ, bảo đảm toàn bộ gốc'",,Chờ BA xác nhận: câu chữ cho từng giá trị,,
+[TSĐB][45] Kiểm tra trường Giá trị tài sản đảm bảo,,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- TP có 3 dòng TSBĐ",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra 'Tài sản đảm bảo có giá trị: ...'",- Hiển thị tổng giá trị các TSBĐ theo quy tắc BA,,"Chờ BA xác nhận: spec ghi 'cộng các giá trị' nhưng bảng TSBĐ chỉ có Thứ tự + Nội dung (text), không có cột giá trị",,
+[TSĐB][46] Kiểm tra trường Số ký hiệu đăng ký giao dịch bảo đảm,,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- TP có 2 dòng Số hiệu TSBĐ: STT 1 'GDBĐ-001/2026', STT 2 'GDBĐ-002/2026'",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra 'Tài sản bảo đảm đã được đăng ký giao dịch bảo đảm tại số ký hiệu: ...'",- Hiển thị đủ 2 số ký hiệu theo thứ tự STT,,,,
+"[BLTT][47,48] Kiểm tra khi TP không có BLTT (PAYMENT_GUARANTEE = 0)",,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- TP: Bảo lãnh thanh toán = 0",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra Mục 3.1 e) phần bảo lãnh thanh toán","- Câu thể hiện TP KHÔNG có BLTT của TCTD
+- [48] trống",,Chờ BA xác nhận: câu chữ khi = 0,,
+"[BLTT][47,48] Kiểm tra khi TP có BLTT (PAYMENT_GUARANTEE = 1 hoặc 2)",,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- TP: Bảo lãnh thanh toán = 2, Tổ chức tín dụng bảo lãnh = Ngân hàng TMCP XYZ",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra Mục 3.1 e) phần bảo lãnh thanh toán
+6. Lặp lại với Bảo lãnh thanh toán = 1","- Câu thể hiện TP có BLTT của TCTD đúng mức độ
+- [48] = Ngân hàng TMCP XYZ",,Chờ BA xác nhận: câu chữ cho từng giá trị,,
+[Điều khoản TP][49] Kiểm tra trường Lãi suất trái phiếu (rateDescription),,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- RATE_DESCRIPTION: 'Cố định 9%/năm cho 4 kỳ đầu, các kỳ sau = LS tham chiếu + 3,5%/năm'",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra Mục 3.1 g) 'Lãi suất trái phiếu: ...'
+6. Đối chiếu DB: BOND_INFO.RATE_DESCRIPTION",- Hiển thị đúng và đủ nội dung mô tả lãi suất,,,,
+[Điều khoản TP][50] Kiểm tra trường Kỳ hạn trái phiếu (term),,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- BOND_INFO.TERM của TP = 3 năm",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra Mục 3.1 g) 'Kỳ hạn trái phiếu: ...'
+6. Đối chiếu DB: BOND_INFO.TERM",- Hiển thị dạng đọc được: 3 năm (không hiển thị mã như 36M/3Y),,Chờ BA xác nhận: định dạng hiển thị kỳ hạn,,
+[Điều khoản TP][53] Kiểm tra trường Đại diện người sở hữu trái phiếu (representative),,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- TP 1: REPRESENTATIVE = Công ty CP Chứng khoán XYZ
+- TP 2: REPRESENTATIVE trống",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra Mục 3.1 k)
+6. Đối chiếu DB: BOND_INFO.REPRESENTATIVE","- TP 1: hiển thị Công ty CP Chứng khoán XYZ
+- TP 2: để trống, giữ chữ '(nếu có)', không hiển thị null",,,,
+[Ngày ký][55] Kiểm tra trường Ngày tháng năm (createDate),,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- Yêu cầu đặt mua tạo ngày 16/11/2026",High,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra dòng ngày ở chữ ký Nhà đầu tư và 2 khối xác nhận của SHS
+6. Đối chiếu DB: REPO_ORDER.CREATED_DATE","- Cả 3 vị trí: ngày 16 tháng 11 năm 2026
+- Ngày/tháng/năm tách đúng từ REPO_ORDER.CREATED_DATE",,,,
+"[Ngày ký][55] Kiểm tra định dạng ngày, tháng 1 chữ số",,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- Yêu cầu đặt mua tạo ngày 05/01/2027",Low,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra dòng ngày ký",- Hiển thị thống nhất: ngày 05 tháng 01 năm 2027 (hoặc theo quy định BA),,Chờ BA xác nhận,,
+[Ngày ký][55] Kiểm tra khi ngày tạo yêu cầu khác ngày đầu tư,,"- Yêu cầu đặt mua của KH cá nhân (CUSTOMER_TYPE = 1) ở trạng thái Chờ duyệt
+- PL05 đã được gen
+- Yêu cầu tạo lúc 23:50 ngày 16/11/2026, ngày giao dịch (ORDER_DATE) = 17/11/2026",Medium,"1. Truy cập hệ thống: https://bonduat.shs.com.vn/
+2. Truy cập Quản lý hợp đồng > Hợp đồng đặt mua
+3. Chọn yêu cầu đặt mua theo điều kiện tiền đề > click Xem chi tiết
+4. Mở biểu mẫu Phụ lục 05
+5. Kiểm tra dòng ngày ký",- Hiển thị 16/11/2026 theo CREATED_DATE (đúng mapping hiện tại),,Chờ BA xác nhận: mẫu ghi 'Ngày đầu tư' nhưng mapping lấy CREATED_DATE,,
