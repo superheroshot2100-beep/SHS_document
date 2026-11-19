@@ -1,0 +1,70 @@
+Name,Status,Priority,Test Script (Step-by-Step) - Step,Test Script (Step-by-Step) - Expected Result,,Test Script (Step-by-Step) - Actual Result
+[UI] Kiểm tra giao diện Danh mục hợp đồng,,,,"* Hiển thị đầy đủ trường thông tin:
+Danh sách Hợp đồng sắp xếp theo mới nhất đến cũ nhất.
+- Text Mã TP.
+- Chip Thời gian đầu tư.
+- Chip Trạng thái hợp đồng.
+- Text Tổ chức phát hành.
+- Text Số HĐ.
+- Date Ngày đáo hạn.
+- Number Tổng tiền đầu tư.
+- Number Lợi suất.
+- Number Lợi tức dự kiến.",,
+[UI] Kiểm tra giao diện bộ lọc Danh mục hợp đồng,,,,"* Hiển thị đầy đủ trường lọc:
+- Mã trái phiếu: searchbox ""Tìm mã trái phiếu""
+- TCPH: dropdown ""Tất cả tổ chức"" (chọn nhiều)
+- Loại trái phiếu: chip chọn nhiều ""Tất cả"" active 
+- Kỳ hạn: dropdown ""Tất cả kỳ hạn"" (chọn nhiều)
+- Lợi suất (%): thanh trượt đầu ở min và max
+- Trạng thái HĐ: chip chọn nhiều, ""Tất cả"" mặc định
+- Nút ""Đặt lại"" (viền), ""Lưu"" (cam)",,
+[Truy cập] Kiểm tra mở tab Danh mục Hợp đồng.,,,,"* Hiển thị: 
++ Màn hình Danh mục Hợp đồng.
++ Đầy đủ danh sách Hợp đồng.",,
+[Truy cập] Kiểm tra xem Danh mục hợp đồng từ chi tiết TP,,,,"* Hiển thị: 
++ Màn hình Danh mục Hợp đồng.
++ Danh sách Hợp đồng được lọc theo thông tin TP xem chi tiết.",,
+[Chức năng] Kiểm tra xem Chi tiết HĐ,,,,* Hiển thị màn xem chi tiết hợp đồng và đúng các thông tin của Hợp đồng.,,
+[Chức năng] Kiểm tra danh sách HĐ khi áp dụng bộ lọc,,,,"- Quay về Danh mục hợp đồng.
+- Lọc vẫn hiệu lực.
+- Icon Lọc fill màu cam.",,
+[Trạng thái] Kiểm tra hợp đồng sau khi đặt mua,,,,"- Hiển thị Hợp đồng trạng thái ""Chờ xử lý"".",,
+[Trạng thái] Kiểm tra hợp đồng sau khi hoàn tất đặt mua,,,,"- Hiển thị Hợp đồng trạng thái ""Hiệu lực""",,
+[Trạng thái] Kiểm tra hợp đồng sau khi giải tỏa lệnh,,,,"- Hiển thị Hợp đồng trạng thái ""Hủy"".",,
+[Trạng thái] Kiểm tra hợp đồng sau khi chạy job hủy,,,,,,
+[Trạng thái] Kiểm tra hợp đồng sau khi tạo lệnh chuyển nhượng,,,,,,
+[Trạng thái] Kiểm tra hợp đồng sau khi hoàn tất chuyển nhượng,,,,,,
+[Trạng thái] Kiểm tra hợp đồng sau khi tạo lệnh thanh lý,,,,,,
+[Trạng thái] Kiểm tra hợp đồng sau khi hoàn tất thanh lý,,,,,,
+[Bộ lọc] Kiểm tra lọc theo mã TP,,,,"- Nhập text tự do.
+- Không phân biệt hoa/thường.
+- Tìm kiếm gần đúng.
+- Để trống => Không lọc.",,
+[Bộ lọc] Kiểm tra lọc theo TCPH,,,,"- Chọn một hoặc nhiều.
+- Tìm kiếm gần đúng trên bộ lọc.
+- Chọn tất cả, không chọn => Hiển thị tất cả",,
+[Bộ lọc] Kiểm tra lọc theo kỳ hạn,,,,"- Chọn một hoặc nhiều.
+- Chọn tất cả, không chọn => Hiển thị tất cả",,
+[Bộ lọc] Kiểm tra lọc theo lợi suất.,,,,- Hiển thị các HĐ có lợi suất trong khoảng đã chọn,,
+[Bộ lọc] Kiểm tra lọc loại trái phiếu,,,,"- Chọn một hoặc nhiều. 
+- Chọn tất cả => Hiển thị tất cả
+- HĐ có lợi suất trong khoảng đã chọn",,
+[Bộ lọc] Kiểm tra lọc Trạng thái,,,,"- Lấy theo trạng thái HĐ khai báo trên Portal.
+- Chọn một hoặc nhiều.
+- Chọn tất cả, không chọn => Hiển thị tất cả
+- HĐ có lợi suất trong khoảng đã chọn",,
+[Bộ lọc] Kiểm tra Đặt lại,,,,"- Bộ lọc, danh sách trở về mặc định.",,
+[Thông tin cơ bản] Kiểm tra mã trái phiếu,,,,- Hiển thị đúng mã TP,,
+[Thông tin cơ bản] Kiểm tra Thời gian đầu tư,,,,- Hiển thị Số tháng ký hạn HĐ KH chọn sau khi đặt mua.,,
+[Thông tin cơ bản] Kiểm tra nhãn trạng thái HĐ,,,,"- Hiển thị tương ứng với các trạng thái trong SHBond/Quản lý hợp đồng/Hợp đồng đặt mua.
+- Hiển thị màu như trên figma.",,
+[Thông tin cơ bản] Kiểm tra Tổ chức phát hành,,,,- Hiển thị đúng TCPH của mã TP trong SHBond/Trái phiếu/Tổ chức phát hành,,
+[Thông tin cơ bản] Kiểm tra mã hợp đồng,,,,- Hiển thị tương ứng với số HĐ trong SHBond/Quản lý hợp đồng/Hợp đồng đặt mua.,,
+[Thông tin cơ bản] Kiểm tra ngày đáo hạn,,,,"- Hiển thị dd/MM/yyyy.
+- Hiển thị tương ứng với ngày đáo hạn trong SHBond/Trái phiếu/Ngày đáo hạn.",,
+[Thông tin cơ bản] Kiểm tra Tổng tiền đầu tư,,,,"- Hiển thị số, có dấu chấm phân cách ""Hàng nghìn"".
+- Hiển thị tương ứng với Giá trị đầu tư thực tế trong SHBond/Quản lý hợp đồng/Yêu cầu đặt mua.",,
+[Thông tin cơ bản] Kiểm tra Lợi suất,,,,"- Theo dạng x,xx %/năm.
+- Hiển thị tương ứng với Tổng mức sinh lời trong SHBond/Quản lý hợp đồng/Hợp đồng đặt mua.",,
+[Thông tin cơ bản] Kiểm tra Lợi tức dự kiến,,,,- Hiển thị tương ứng với Lợi nhuận kỳ đầu tư trong SHBond/Quản lý hợp đồng/Hợp đồng đặt mua.,,
+"[Thông tin cơ bản] Kiểm tra cảnh báo ""Hợp đồng có hồ sơ cần xác nhận""",,,,,,
