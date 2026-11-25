@@ -2,7 +2,7 @@
 
 > Nguồn duy nhất: SRS **11. Quản lý biểu mẫu** (BON-1836, v1.1 – 11/11/2026), mục **1. Mẫu Phụ lục 05** và **1. Mẫu Phụ lục 05 mapping**. Mục 2–6 (HĐ bán kỳ hạn, phiếu lệnh, dòng tiền…) ngoài phạm vi.
 > Người viết: Nguyễn Sỹ Hà · Ngày: 19/11/2026 · Chạy /FULL (không dừng xác nhận giữa các bước).
-> Ký hiệu: [GĐ] = [GIẢ ĐỊNH] · Q-xx = câu hỏi mở. Test case của cùng một trường xếp liền nhau. Expected ghi theo quy tắc (lấy từ đâu, hiển thị thế nào), giá trị cụ thể đối chiếu sheet/bảng Test Data.
+> Ký hiệu: [GĐ] = [GIẢ ĐỊNH] · Q-xx = câu hỏi mở. Test case: nhóm Chung, sau đó trường 01 → 62; mỗi trường 1 TC, điều kiện đặc biệt ghi “Khi …: …” trong Kết quả mong đợi. Viết tiếng Việt, không ghi tên cột dữ liệu.
 
 ---
 ## B1 – PHÂN TÍCH YÊU CẦU
@@ -76,6 +76,8 @@
 | 16/09/2022 ≤ … < 05/06/2026 | NĐ 153/2020 và NĐ 65/2022 | NĐ 153/2020 và NĐ 65/2022 | NĐ 153/2020 và NĐ 65/2022 | NĐ 153/2020 và NĐ 65/2022 |
 | ≥ 05/06/2026 | Điều 10 NĐ 200/2026/NĐ-CP | NĐ số 200/2026/NĐ-CP | (điều khoản) NĐ số 200/2026/NĐ-CP | khoản 1 Điều 29 NĐ số 200/2026/NĐ-CP |
 
+**Vì sao test căn cứ pháp lý theo ngày:** SRS quy định nội dung căn cứ đổi theo ngày phát hành, có 2 mốc 16/09/2022 và 05/06/2026. Mỗi trường 24, 26, 28, 52, 62 test 4 ngày sát 2 phía của mỗi mốc (15/09/2022 – 16/09/2022, 04/06/2026 – 05/06/2026) để bắt lỗi so sánh sai đúng tại mốc (vd: viết “lớn hơn” thay vì “lớn hơn hoặc bằng”). Test ngày giữa khoảng không bắt được lỗi này.
+
 ### 5. Q&A
 | Q ID | Câu hỏi | Lý do hỏi | Mức | Giả định đề xuất |
 |---|---|---|---|---|
@@ -118,57 +120,57 @@
 ### 3. Kỹ thuật theo BR
 | BR ID | Kỹ thuật chính | Kỹ thuật phụ | Priority | Số TC |
 |---|---|---|---|---|
-| BR-01 | UC | EG | High | 5 |
-| BR-02 | EP | EG | High | 3 |
-| BR-03 | UC | EG | High | 2 |
-| BR-04 | UC | EP | High | 2 |
-| BR-05 | EG (đối chiếu mẫu) | DT | Low | 6 |
-| BR-06 | EP | BVA, EG | Medium | 11 |
+| BR-01 | UC | EG | High | 1 |
+| BR-02 | EP | EG | High | 1 |
+| BR-03 | UC | EG | High | 1 |
+| BR-04 | UC | EP | High | 1 |
+| BR-05 | EG (đối chiếu mẫu) | DT | Low | 2 |
+| BR-06 | EP | BVA, EG | Medium | 8 |
 | BR-07 | EP | — | Medium | 1 |
-| BR-08 | DT | BVA, EG | High | 7 |
-| BR-09 | DT | BVA | High | 6 |
-| BR-10 | DT | BVA | High | 7 |
-| BR-11 | EP | EG | High | 2 |
-| BR-12 | EP | EG | High | 2 |
+| BR-08 | DT | BVA, EG | High | 4 |
+| BR-09 | DT | BVA | High | 1 |
+| BR-10 | DT | BVA | High | 2 |
+| BR-11 | EP | EG | High | 1 |
+| BR-12 | EP | EG | High | 1 |
 | BR-13 | DT | EG | High | 5 |
 | BR-14 | DT | EG | High | 5 |
-| BR-15 | EP | EG | Medium | 5 |
+| BR-15 | EP | EG | Medium | 10 |
 | BR-16 | BVA + EP | EG | High | 5 |
-| BR-17 | EP | EG | Medium | 6 |
-| BR-18 | BVA | EG | High | 7 |
-| BR-19 | DT | BVA, EG | High | 4 |
+| BR-17 | EP | EG | Medium | 5 |
+| BR-18 | BVA | EG | High | 8 |
+| BR-19 | DT | BVA, EG | High | 3 |
 | BR-20 | DT | — | Medium | 2 |
-| BR-21 | EP | BVA, EG | Medium | 3 |
+| BR-21 | EP | BVA, EG | Medium | 1 |
 
 > Một TC có thể gắn nhiều BR → tổng cột “Số TC” > tổng TC thực tế.
 ### 4. Môi trường & dữ liệu test
 - Môi trường: UAT Portal SHBond, Chrome bản mới nhất; có quyền query DB (read) để đối chiếu.
-- **PC-01 (Precondition chung):** Đăng nhập Portal bằng ACC_MK; dữ liệu master theo bảng dưới đã khai báo; TK 069P000001 có AU1, AU0.
+- **PC-01 (Precondition chung):** Đăng nhập Portal bằng ACC_MK; dữ liệu theo bảng dưới đã khai báo; tài khoản SHS có AU1 (mặc định) và AU0 (không mặc định).
 - **SOP-01 – Mở PL05 từ yêu cầu:** 1. Vào [GĐ] Giao dịch > Yêu cầu đặt mua 2. Lọc theo Số TKCK 3. Click “Xem chi tiết” yêu cầu 4. Click mở “Phụ lục 05”.
 - **SOP-02 – Tạo yêu cầu đặt mua:** 1. Vào [GĐ] Giao dịch > Đặt mua 2. Nhập Số TKCK, Mã TP, Khối lượng 100 3. Click gửi/xác nhận → yêu cầu “Chờ duyệt”.
 - **SOP-03 – Mở PL05 từ hợp đồng:** 1. Vào [GĐ] Hợp đồng 2. Lọc theo Số TKCK 3. Click “Xem chi tiết” 4. Mở “Phụ lục 05”.
 
 | Mã | Mô tả | Thuộc tính đặc thù |
 |---|---|---|
-| ACC_MK | User Portal có quyền tạo yêu cầu đặt mua [GĐ Q-16] | qa_maker_gd |
-| ACC_VW | User Portal chỉ có quyền xem [GĐ Q-16] | qa_viewall |
-| ACC_NO | User Portal không có quyền màn Yêu cầu đặt mua | qa_noaccess |
-| KH_01 | 069C000101 · CN · Nguyễn Văn Hùng · 15/03/1985 · Nam · CCCD 001085012345 · cấp 10/05/2021 · “Cục Cảnh sát QLHC về TTXH” · “Số 12 ngõ 34 Láng Hạ, Đống Đa, Hà Nội” · 0912345678 | PRO_TYPE = 2: “Chứng chỉ hành nghề môi giới chứng khoán”, số 001234/MGCK, cấp 01/07/2020, hiệu lực 01/07/2030 |
-| KH_02 | 069C000102 · CN · Lê Thị Mai · Nữ | PRO_TYPE = 3: INVEST_AMOUNT = 2500000000 |
-| KH_03 | 069C000103 · CN · Phạm Quốc Bảo | PRO_TYPE = 4: YEAR = 2025, INVEST_AMOUNT = 1200000000 |
-| KH_04 | 069C000104 · CN · Hoàng Minh Tuấn | PRO_TYPE = 1 |
-| KH_05 | 069C000105 · CN · Đỗ Thị Hạnh · CUST_MOBILE = NULL | Không có bản ghi CUSTOMER_PRO_INFO |
-| KH_06 | 069C000201 · Tổ chức (CUSTOMER_TYPE = 2) · Công ty CP Đầu tư XYZ | — |
-| KH_07 | 069C000107 · CN nước ngoài · John Smith · Hộ chiếu C1234567 | PRO_TYPE = 2 |
-| SHS | 069P000001 · CUST_ADDRESS = “Số 41 Ngô Quyền, Hoàn Kiếm, Hà Nội” | AU1 (IS_DEFAULT = 1): Nguyễn Văn An · Giám đốc Khối Đầu tư · UQ 01/2026/UQ-SHS · 02/01/2026 · CCCD 001080000001<br>AU0 (IS_DEFAULT = 0): Trần Thị Bình · Trưởng phòng DVKH · UQ 02/2026/UQ-SHS · 05/01/2026 · CCCD 001085000002 |
-| TCPH_A | Công ty Cổ phần Tập đoàn ABC · REGISTRATION_ID 0101234567 | — |
-| TP_01 | ABC12601 · TCPH_A · Ngày PH 05/06/2026 · BUSINESS_TYPE “Bất động sản” · TERM 36 tháng · RATE_DESCRIPTION “Cố định 10%/năm 4 kỳ đầu; sau đó LS tham chiếu + 3,5%/năm” · REPRESENTATIVE “Công ty CP Chứng khoán DEF” | HAS_COLLATERAL = 1; TSĐB: 5.000.000.000 (GDBĐ-001/2026), 3.000.000.000 (GDBĐ-002/2026); Bảo lãnh: “Ngân hàng TMCP Kiểm Thử”; 3 kỳ TC: 30/09/2026, 30/06/2026, 31/12/2025; phụ lục TP đủ 10 mục, mục Rủi ro 3 dòng |
-| TP_02 | ABC12202 · Ngày PH 15/09/2022 | Dữ liệu khác như TP_01 |
-| TP_03 | ABC12203 · Ngày PH 16/09/2022 | Dữ liệu khác như TP_01 |
-| TP_04 | ABC12604 · Ngày PH 04/06/2026 | Dữ liệu khác như TP_01 |
-| TP_06 | ABC12606 · HAS_COLLATERAL = 0 · không có bảo lãnh · 1 kỳ TC (30/09/2026) · REPRESENTATIVE = NULL | — |
-| TP_07 | ABC12607 · 4 kỳ TC nhập theo thứ tự 30/06/2026, 31/12/2024, 30/09/2026, 31/12/2025 · HAS_COLLATERAL = 1, 1 TSĐB 7.000.000.000 (GDBĐ-010/2026) | Cùng TCPH_A với TP_01 |
-| TP_08 | ABC12608 · 0 kỳ TC · chưa khai báo phụ lục TP · RELEASE_DATE = NULL [nếu DB cho phép] · HAS_COLLATERAL = 1 nhưng bảng TSĐB rỗng | — |
+| ACC_MK | Người dùng Portal có quyền tạo yêu cầu đặt mua [GĐ Q-16] | qa_maker_gd |
+| ACC_VW | Người dùng Portal chỉ có quyền xem [GĐ Q-16] | qa_viewall |
+| ACC_NO | Người dùng Portal không có quyền màn Yêu cầu đặt mua | qa_noaccess |
+| KH_01 | 069C000101 · Cá nhân · Nguyễn Văn Hùng · sinh 15/03/1985 · Nam · CCCD 001085012345 · cấp 10/05/2021 tại Cục Cảnh sát QLHC về TTXH · địa chỉ Số 12 ngõ 34 Láng Hạ, Đống Đa, Hà Nội · ĐT 0912345678 | Có chứng chỉ hành nghề: Chứng chỉ hành nghề môi giới chứng khoán, số 001234/MGCK, cấp 01/07/2020, hiệu lực đến 01/07/2030 |
+| KH_02 | 069C000102 · Cá nhân · Lê Thị Mai · Nữ | Nắm giữ danh mục chứng khoán niêm yết 2.500.000.000 đồng |
+| KH_03 | 069C000103 · Cá nhân · Phạm Quốc Bảo | Có thu nhập chịu thuế năm 2025: 1,2 tỷ đồng |
+| KH_04 | 069C000104 · Cá nhân · Hoàng Minh Tuấn | Nhà đầu tư chiến lược |
+| KH_05 | 069C000105 · Cá nhân · Đỗ Thị Hạnh · chưa có số điện thoại | Chưa có hồ sơ nhà đầu tư chuyên nghiệp |
+| KH_06 | 069C000201 · Tổ chức · Công ty CP Đầu tư XYZ | — |
+| KH_07 | 069C000107 · Cá nhân nước ngoài · John Smith · Hộ chiếu C1234567 | Có chứng chỉ hành nghề |
+| SHS | Tài khoản SHS 069P000001 · địa chỉ Số 41 Ngô Quyền, Hoàn Kiếm, Hà Nội | AU1 (người ủy quyền mặc định): Nguyễn Văn An · Giám đốc Khối Đầu tư · ủy quyền số 01/2026/UQ-SHS ngày 02/01/2026 · CCCD 001080000001<br>AU0 (người ủy quyền không mặc định): Trần Thị Bình · Trưởng phòng DVKH · ủy quyền số 02/2026/UQ-SHS ngày 05/01/2026 · CCCD 001085000002 |
+| TCPH_A | Công ty Cổ phần Tập đoàn ABC · mã số doanh nghiệp 0101234567 | — |
+| TP_01 | ABC12601 · tổ chức phát hành TCPH_A · phát hành 05/06/2026 · ngành Bất động sản · kỳ hạn 36 tháng · lãi suất “Cố định 10%/năm 4 kỳ đầu; sau đó lãi suất tham chiếu + 3,5%/năm” · đại diện người sở hữu: Công ty CP Chứng khoán DEF | Có tài sản bảo đảm: 5.000.000.000 (GDBĐ-001/2026) và 3.000.000.000 (GDBĐ-002/2026) · có bảo lãnh của Ngân hàng TMCP Kiểm Thử · số liệu tài chính 3 kỳ: 30/09/2026, 30/06/2026, 31/12/2025 · phụ lục trái phiếu đủ 10 mục, mục Rủi ro có 3 dòng |
+| TP_02 | ABC12202 · phát hành 15/09/2022 | Thông tin khác như TP_01 |
+| TP_03 | ABC12203 · phát hành 16/09/2022 | Thông tin khác như TP_01 |
+| TP_04 | ABC12604 · phát hành 04/06/2026 | Thông tin khác như TP_01 |
+| TP_06 | ABC12606 · không có tài sản bảo đảm · không có bảo lãnh · số liệu tài chính 1 kỳ (30/09/2026) · chưa khai báo đại diện người sở hữu | — |
+| TP_07 | ABC12607 · cùng TCPH_A với TP_01 · số liệu tài chính 4 kỳ, nhập theo thứ tự 30/06/2026, 31/12/2024, 30/09/2026, 31/12/2025 | Có 1 tài sản bảo đảm 7.000.000.000 (GDBĐ-010/2026); mục đích phát hành khác TP_01 |
+| TP_08 | ABC12608 · chưa có số liệu tài chính · chưa khai báo phụ lục · chưa có ngày phát hành (nếu hệ thống cho phép) | Đánh dấu có tài sản bảo đảm nhưng chưa khai báo chi tiết tài sản |
 
 ### 5. Exit criteria
 - 100% TC High chạy; 0 bug Critical/Major mở; Q&A Blocker (Q-01) đã chốt; ≥ 95% TC Pass; TC phụ thuộc [GĐ] được cập nhật theo câu trả lời BA trước khi chốt kết quả.
@@ -194,7 +196,7 @@
 | thông tin chứng chỉ (Loại, Số, Ngày cấp, Ngày hiệu lực) | Trống | Có | Trống | Trống | Trống |
 | Giá trị danh mục CKNY | Trống | Trống | Có | Trống | Trống |
 | Năm và Giá trị thu nhập chịu thuế | Trống | Trống | Trống | Có | Trống |
-| TC | NDT_001, NDT_010 | NDT_002, NDT_005, NDT_011 | NDT_003, NDT_007, NDT_012 | NDT_004, NDT_008, NDT_009, NDT_013 | NDT_014 |
+| TC | CHUNG_004, F10_001, F11_001, F12_001, F13_001, F14_001, F15_001, F16_001 | CHUNG_004, F10_001, F11_001, F12_001, F13_001, F14_001, F15_001, F16_001 | CHUNG_004, F10_001, F11_001, F12_001, F13_001, F14_001, F15_001, F16_001 | CHUNG_004, F10_001, F11_001, F12_001, F13_001, F14_001, F15_001, F16_001 | CHUNG_004, F10_001, F11_001, F12_001, F13_001, F14_001, F15_001, F16_001 |
 
 ### Decision table – Người đại diện SHS (BR-13, BR-14)
 | Điều kiện | R1 | R2 | R3 | R4 | R5 |
@@ -203,7 +205,7 @@
 | Bản ghi IS_DEFAULT = 0 của 069P | 1 | 1 (đã hoán đổi) | 1 | 0 | 1 |
 | KH đặt mua có người UQ riêng | N | N | N | N | Y |
 | Kết quả | Mục 2/khối 1 = AU1; khối 2 = AU0 | Đổi vị trí tương ứng | 1 người [GĐ Q-06] | Khối 2 trống | Không dùng người UQ của KH |
-| TC | DD_003, DD_004, DD_006, DD_007 | DD_009 | DD_005 | DD_008 | DD_010 |
+| TC | F19_001, F20_001, F21_001, F22_001, F56_001, F57_001, F58_001, F59_001, F60_001, F61_001 | F19_001, F57_001 | F19_001 | F57_001 | F19_001, F57_001 |
 
 ### Decision table – TSBĐ & Bảo lãnh (BR-19, BR-20)
 | Điều kiện | R1 | R2 | R3 | R4 |
@@ -212,12 +214,12 @@
 | Số TSĐB | ≥ 1 | 0 | — | — |
 | Có bảo lãnh | — | — | — | Y / N |
 | Kết quả | Câu “có”, Giá trị = tổng, đủ Số ký hiệu | Giá trị, Số ký hiệu trống [GĐ] | Câu “không có” [GĐ] | Bảo lãnh theo có/không |
-| TC | TS_001, TS_004 | TS_003 | TS_002 | BL_001, BL_002 |
+| TC | F44_001, F45_001, F46_001 | F45_001 | F44_001, F45_001, F46_001 | F47_001, F48_001 |
 
 ### Use case
-- **Luồng chính:** tạo yêu cầu (CN) → Chờ duyệt → gen PL05 → xem tại chi tiết yêu cầu → duyệt → xem tại chi tiết hợp đồng (GEN_001, GEN_002, VIEW_001, VIEW_002).
-- **Luồng phụ:** KH tổ chức → không gen (GEN_003, VIEW_003).
-- **Ngoại lệ:** hủy trước khi gửi, double-click, dữ liệu thay đổi sau gen, user không có quyền (GEN_004, GEN_005, GEN_007, VIEW_004).
+- **Luồng chính:** tạo yêu cầu (CN) → Chờ duyệt → sinh PL05 → xem tại chi tiết yêu cầu → duyệt → xem tại chi tiết hợp đồng (CHUNG_002, CHUNG_003).
+- **Luồng phụ:** KH tổ chức → không sinh PL05 (CHUNG_002, CHUNG_003).
+- **Ngoại lệ:** hủy trước khi gửi, bấm gửi 2 lần, lẫn dữ liệu, sửa dữ liệu sau khi sinh, không có quyền (CHUNG_002, CHUNG_003).
 
 ### Error guessing áp dụng (file 03)
 - Text: Unicode, dài, NULL, ký tự HTML · Số: định dạng nghìn, âm, đơn vị · Ngày: biên ngày, múi giờ, 1 chữ số · Nút: double-click · Phân quyền: truy cập URL trực tiếp · Dữ liệu: lẫn giữa các lệnh/TP/KH, nhiều bản ghi mặc định.
@@ -225,150 +227,389 @@
 ---
 ## B4 – TEST CASE
 
-Tổng **82 TC**, viết rút gọn: Precondition chung PC-01, thao tác SOP-01/02/03 xem B2 mục 4. Các trường cùng một khối/câu được gộp vào 1 TC.
+Tổng **66 TC** (nhóm Chung 4 TC + 62 trường, mỗi trường 1 TC), viết rút gọn: Precondition chung PC-01, thao tác SOP-01/02/03 xem B2 mục 4. Các trường cùng một khối/câu được gộp vào 1 TC.
 
 
-### Bố cục PL05
-
-| TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| TC_PL05_UI_001 | BR-05 | Bố cục PL05 | Kiểm tra nội dung tĩnh của PL05 so với mẫu | Yêu cầu Chờ duyệt: KH_01 × TP_01 | 1. Mở PL05 (SOP-01)<br>2. Xem toàn văn bản | KH_01 × TP_01 | - Có quốc hiệu, tiêu ngữ, dòng “Kính gửi” SHS<br>- Đủ 4 phương án tư cách NĐT, mỗi phương án có 1 ô chọn<br>- Mục 2, 3.1, 3.2, 3.3 và đoạn cam kết đúng nguyên văn mẫu<br>- Đủ 3 khối ký: Nhà đầu tư, Xác nhận cung cấp thông tin, Xác nhận tư cách NĐT | Low | UI | EG | Q-20 |
-| TC_PL05_UI_002 | BR-05 | Bố cục PL05 | Kiểm tra PL05 không còn placeholder khi đã gen | Yêu cầu Chờ duyệt: KH_01 × TP_01 | 1. Mở PL05 (SOP-01)<br>2. Xem toàn văn bản | KH_01 × TP_01 | - Không còn placeholder dạng “[…]”<br>- Không còn số thứ tự mapping dính sau giá trị<br>- Không hiển thị “null”, “undefined” | Medium | Negative | EG |  |
-
-### Gen PL05
+### Chung
 
 | TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| TC_PL05_GEN_001 | BR-01 | Gen PL05 | Kiểm tra sinh PL05 khi KH cá nhân tạo yêu cầu đặt mua | PC-01 | 1. Tạo yêu cầu KH_01 × TP_01 (SOP-02)<br>2. Mở chi tiết yêu cầu (SOP-01) | 069C000101 · ABC12601 · KL 100 | - Yêu cầu ở trạng thái Chờ duyệt<br>- Màn chi tiết yêu cầu có PL05<br>- PL05 mở được, đúng KH và mã TP của yêu cầu | High | Positive | UC | Q-17 |
-| TC_PL05_GEN_002 | BR-02 | Gen PL05 | Kiểm tra sinh PL05 khi KH cá nhân có PRO_TYPE khác nhau | PC-01 | 1. Tạo yêu cầu KH_02, KH_03, KH_04 × TP_01<br>2. Mở chi tiết từng yêu cầu | PRO_TYPE 3, 4, 1 | - Mỗi yêu cầu đều có PL05<br>- Việc sinh PL05 không phụ thuộc PRO_TYPE | Medium | Positive | EP |  |
-| TC_PL05_GEN_003 | BR-02 | Gen PL05 | Kiểm tra không sinh PL05 khi KH tổ chức tạo yêu cầu | PC-01 | 1. Tạo yêu cầu KH_06 × TP_01 (SOP-02)<br>2. Mở chi tiết yêu cầu | 069C000201 (tổ chức) | - Yêu cầu vẫn tạo được, trạng thái Chờ duyệt<br>- Không sinh PL05 cho yêu cầu này | High | Negative | EP | Q-15 |
-| TC_PL05_GEN_004 | BR-01 | Gen PL05 | Kiểm tra không sinh PL05 khi hủy trước khi gửi yêu cầu | PC-01 | 1. Nhập yêu cầu KH_01 × TP_01<br>2. Click Hủy trước khi gửi | KH_01 × TP_01 | - Không tạo yêu cầu mới<br>- Không sinh PL05 | Medium | Negative | EG |  |
-| TC_PL05_GEN_005 | BR-01 | Gen PL05 | Kiểm tra chỉ sinh 1 PL05 khi double-click nút gửi | PC-01 | 1. Nhập yêu cầu KH_01 × TP_01<br>2. Double-click nút gửi | KH_01 × TP_01 | - Chỉ tạo 1 yêu cầu<br>- Chỉ sinh 1 PL05 | Medium | Negative | EG |  |
-| TC_PL05_GEN_006 | BR-01, BR-11 | Gen PL05 | Kiểm tra PL05 không lẫn dữ liệu khi KH có 2 yêu cầu | PC-01 | 1. Tạo yêu cầu KH_01 × TP_01 và KH_01 × TP_06<br>2. Mở 2 PL05 | ABC12601, ABC12606 | - Mỗi yêu cầu có PL05 riêng<br>- Mỗi PL05 đúng mã TP, TSBĐ của yêu cầu đó<br>- Không lẫn dữ liệu giữa 2 PL05 | High | Negative | EG |  |
-| TC_PL05_GEN_007 | BR-01 | Gen PL05 | Kiểm tra PL05 không đổi khi sửa dữ liệu KH sau khi gen | Yêu cầu Chờ duyệt: KH_01 × TP_01 | 1. Mở PL05 (SOP-01)<br>2. Sửa địa chỉ 069C000101<br>3. Mở lại PL05 | Địa chỉ mới: “Số 99 Trần Duy Hưng, Hà Nội” | - [GĐ Q-07] PL05 đã sinh giữ nguyên địa chỉ cũ<br>- Không tự cập nhật theo dữ liệu KH mới | Medium | Negative | EG | Q-07 |
+| TC_PL05_CHUNG_001 | BR-05 | Chung | Kiểm tra bố cục PL05 | Yêu cầu KH_01 × TP_01 Chờ duyệt | 1. Thực hiện từng tình huống trong Kết quả mong đợi theo dữ liệu ở cột Dữ liệu test<br>2. Kiểm tra kết quả từng tình huống | KH_01 × TP_01 | - Đúng nguyên văn mẫu SRS 11 (quốc hiệu, kính gửi, mục 2–3, cam kết, 3 khối ký)<br>- Không còn ngoặc vuông chờ điền, số thứ tự trường, “null” | Medium | Functional | EG | Q-20 |
+| TC_PL05_CHUNG_002 | BR-02, BR-01 | Chung | Kiểm tra sinh PL05 | PC-01; chuẩn bị dữ liệu theo cột Dữ liệu test | 1. Thực hiện từng tình huống trong Kết quả mong đợi theo dữ liệu ở cột Dữ liệu test<br>2. Kiểm tra kết quả từng tình huống | KH_01 × TP_01 · KH_02, KH_03, KH_04 · KH_06 · TP_01, TP_06 · Địa chỉ mới | - Khi KH cá nhân tạo yêu cầu: yêu cầu Chờ duyệt; có PL05, mở được<br>- Khi KH cá nhân thuộc các diện NĐT khác nhau: cả 3 yêu cầu đều có PL05<br>- Khi KH tổ chức: yêu cầu Chờ duyệt; không có PL05<br>- Khi hủy trước khi gửi: không có yêu cầu và PL05 mới<br>- Khi bấm gửi 2 lần: chỉ 1 yêu cầu, 1 PL05<br>- Khi KH có 2 yêu cầu: mỗi PL05 đúng dữ liệu của yêu cầu đó<br>- Khi sửa dữ liệu sau khi sinh: [GĐ Q-07] Giữ nội dung lúc sinh | High | Functional | EP, EG, UC | Q-15 · Q-07 · Q-17 |
+| TC_PL05_CHUNG_003 | BR-04, BR-03 | Chung | Kiểm tra hiển thị PL05 | PC-01; chuẩn bị dữ liệu theo cột Dữ liệu test | 1. Thực hiện từng tình huống trong Kết quả mong đợi theo dữ liệu ở cột Dữ liệu test<br>2. Kiểm tra kết quả từng tình huống | KH_01 × TP_01 · KH_06 · ACC_NO | - Có mục “Phụ lục 05”, mở được<br>- có mục “Phụ lục 05”, nội dung giống màn chi tiết yêu cầu<br>- Khi KH tổ chức: [GĐ Q-15] Không có mục PL05<br>- Khi không có quyền: bị chặn, không mở được PL05 | High | Functional | EP, EG, UC | Q-15 · Q-16 |
+| TC_PL05_CHUNG_004 | BR-05 | Chung | Kiểm tra ô chọn tư cách nhà đầu tư | PC-01; chuẩn bị dữ liệu theo cột Dữ liệu test | 1. Thực hiện từng tình huống trong Kết quả mong đợi theo dữ liệu ở cột Dữ liệu test<br>2. Kiểm tra kết quả từng tình huống | KH_04 · KH_01 · KH_02 · KH_03 · KH_05 | - Khi KH là NĐT chiến lược: [GĐ Q-01] Chỉ tick ô “NĐT chiến lược”; [GĐ Q-02] Số, ngày Nghị quyết giữ “…”<br>- Khi KH có chứng chỉ hành nghề: [GĐ Q-01] Chỉ tick ô “chứng chỉ hành nghề”<br>- Khi KH có danh mục chứng khoán niêm yết: [GĐ Q-01] Chỉ tick ô “danh mục chứng khoán niêm yết”, không tick sẵn ô chứng chỉ<br>- Khi KH có thu nhập chịu thuế: [GĐ Q-01] Chỉ tick ô “thu nhập chịu thuế”<br>- Khi KH chưa có hồ sơ NĐT chuyên nghiệp: [GĐ Q-19] Không ô nào được tick | High | Functional | DT, EG | Q-01 · Q-19 · Q-02 |
 
-### Hiển thị PL05
+### Trường 01 – Tên khách hàng
 
 | TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| TC_PL05_VIEW_001 | BR-03 | Hiển thị PL05 | Kiểm tra hiển thị PL05 tại màn chi tiết yêu cầu đặt mua | Yêu cầu Chờ duyệt: KH_01 × TP_01 | 1. Đăng nhập ACC_VW<br>2. Mở chi tiết yêu cầu (SOP-01) | KH_01 × TP_01 | - Màn chi tiết yêu cầu có mục “Phụ lục 05”<br>- Mở được PL05<br>- Đúng KH và mã TP của yêu cầu | High | Positive | UC | Q-16 |
-| TC_PL05_VIEW_002 | BR-04 | Hiển thị PL05 | Kiểm tra hiển thị PL05 tại màn chi tiết hợp đồng | Yêu cầu KH_01 × TP_01 đã duyệt thành hợp đồng | 1. Đăng nhập ACC_VW<br>2. Mở chi tiết hợp đồng (SOP-03) | KH_01 × TP_01 | - Màn chi tiết hợp đồng có mục “Phụ lục 05”<br>- Mở được PL05<br>- Nội dung giống PL05 tại màn chi tiết yêu cầu | High | Positive | UC | Q-16 |
-| TC_PL05_VIEW_003 | BR-02, BR-04 | Hiển thị PL05 | Kiểm tra màn chi tiết hợp đồng không có PL05 khi KH tổ chức | Hợp đồng KH_06 × TP_01 đã hình thành | 1. Mở chi tiết hợp đồng (SOP-03) | KH_06 | - [GĐ Q-15] Không có mục PL05 tại màn chi tiết hợp đồng | Medium | Negative | EP | Q-15 |
-| TC_PL05_VIEW_004 | BR-03 | Hiển thị PL05 | Kiểm tra chặn xem PL05 khi user không có quyền | Yêu cầu Chờ duyệt: KH_01 × TP_01 | 1. Đăng nhập ACC_NO<br>2. Dán URL chi tiết yêu cầu / PL05 | ACC_NO | - Không thấy menu Yêu cầu đặt mua<br>- Truy cập URL trực tiếp bị chặn<br>- Không tải được PL05 | Medium | Permission | EG | Q-16 |
+| TC_PL05_F01_001 | BR-06 | Trường 01 – Tên khách hàng | Kiểm tra Tên khách hàng | Yêu cầu KH_01 × TP_01 Chờ duyệt | 1. Mở PL05 (SOP-01)<br>2. Xem dòng “Tên tôi là”, mục 3.1 i) | KH_01 | - Đúng họ tên KH đặt mua<br>- Giống nhau ở 2 vị trí | High | Positive | EP |  |
 
-### PL05 – Thông tin KH
+### Trường 02 – Ngày sinh
 
 | TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| TC_PL05_KH_001 | BR-06 | PL05 – Thông tin KH | Kiểm tra Tên khách hàng | Yêu cầu Chờ duyệt: KH_01 × TP_01 | 1. Mở PL05 (SOP-01)<br>2. Xem dòng “Tên tôi là” và mục 3.1 i) | KH_01 | - Tên KH tại dòng “Tên tôi là” lấy từ CUSTOMER_NAME<br>- Tên KH tại mục 3.1 i) giống dòng “Tên tôi là” | High | Positive | EP |  |
-| TC_PL05_KH_002 | BR-06 | PL05 – Thông tin KH | Kiểm tra Ngày sinh | Yêu cầu Chờ duyệt: KH_01 × TP_01 | 1. Mở PL05 (SOP-01)<br>2. Xem Ngày tháng năm sinh | KH_01 | - Ngày sinh lấy từ BIRTH_DAY<br>- Định dạng dd/mm/yyyy [GĐ Q-13] | Medium | Positive | EP | Q-13 |
-| TC_PL05_KH_003 | BR-06 | PL05 – Thông tin KH | Kiểm tra Giới tính khi KH Nam và Nữ | Yêu cầu Chờ duyệt: KH_01, KH_02 | 1. Mở PL05 của KH_01 và KH_02<br>2. Xem Giới tính | KH_01 Nam · KH_02 Nữ | - Giới tính lấy từ GENDER<br>- Hiển thị dạng chữ (Nam/Nữ), không hiển thị mã [GĐ Q-12] | Medium | Positive | EP | Q-12 |
-| TC_PL05_KH_004 | BR-06 | PL05 – Thông tin KH | Kiểm tra Số CCCD khi có số 0 đầu | Yêu cầu Chờ duyệt: KH_01 × TP_01 | 1. Mở PL05 (SOP-01)<br>2. Xem Số CCCD/Hộ chiếu | CARD_ID = 001085012345 | - Số CCCD lấy từ CARD_ID<br>- Giữ số 0 đầu, đủ 12 số | High | Boundary | EG |  |
-| TC_PL05_KH_005 | BR-06 | PL05 – Thông tin KH | Kiểm tra Số hộ chiếu khi KH nước ngoài | Yêu cầu Chờ duyệt: KH_07 × TP_01 | 1. Mở PL05 (SOP-01)<br>2. Xem Số CCCD/Hộ chiếu | CARD_ID = C1234567 | - Số hộ chiếu lấy từ CARD_ID<br>- Giữ nguyên chữ và số | Medium | Positive | EP |  |
-| TC_PL05_KH_006 | BR-06 | PL05 – Thông tin KH | Kiểm tra Ngày cấp giấy tờ | Yêu cầu Chờ duyệt: KH_01 × TP_01 | 1. Mở PL05 (SOP-01)<br>2. Xem Ngày cấp | KH_01 | - Ngày cấp lấy từ ISSUE_DATE<br>- Định dạng dd/mm/yyyy [GĐ Q-13] | Medium | Positive | EP |  |
-| TC_PL05_KH_007 | BR-06 | PL05 – Thông tin KH | Kiểm tra Nơi cấp giấy tờ | Yêu cầu Chờ duyệt: KH_01 × TP_01 | 1. Mở PL05 (SOP-01)<br>2. Xem Nơi cấp | KH_01 | - Nơi cấp lấy từ ISSUE_PLACE<br>- Hiển thị đủ, đúng chính tả | Medium | Positive | EP |  |
-| TC_PL05_KH_008 | BR-06 | PL05 – Thông tin KH | Kiểm tra Nơi ở hiện tại | Yêu cầu Chờ duyệt: KH_01 × TP_01 | 1. Mở PL05 (SOP-01)<br>2. Xem Nơi ở hiện tại | KH_01 | - Nơi ở hiện tại lấy từ CUST_ADDRESS | Medium | Positive | EP |  |
-| TC_PL05_KH_009 | BR-06 | PL05 – Thông tin KH | Kiểm tra Nơi ở hiện tại khi dài 200 ký tự | PC-01; CUST_ADDRESS của 069C000101 dài 200 ký tự | 1. Tạo yêu cầu KH_01 × TP_01 (SOP-02)<br>2. Mở PL05 (SOP-01)<br>3. Xem Nơi ở hiện tại | Chuỗi 200 ký tự có dấu | - Hiển thị đủ địa chỉ, không bị cắt<br>- Tự xuống dòng, không tràn lề | Low | Boundary | BVA |  |
-| TC_PL05_KH_010 | BR-06 | PL05 – Thông tin KH | Kiểm tra Điện thoại liên hệ | Yêu cầu Chờ duyệt: KH_01 × TP_01 | 1. Mở PL05 (SOP-01)<br>2. Xem Điện thoại liên hệ | KH_01 | - Điện thoại lấy từ CUST_MOBILE<br>- Giữ số 0 đầu | Medium | Positive | EP |  |
-| TC_PL05_KH_011 | BR-06 | PL05 – Thông tin KH | Kiểm tra Điện thoại liên hệ khi để trống | Yêu cầu Chờ duyệt: KH_05 × TP_01 | 1. Mở PL05 (SOP-01)<br>2. Xem Điện thoại liên hệ | CUST_MOBILE = NULL | - Điện thoại để trống, không hiển thị “null”<br>- PL05 vẫn sinh, các trường khác hiển thị đủ | Medium | Negative | EG |  |
+| TC_PL05_F02_001 | BR-06 | Trường 02 – Ngày sinh | Kiểm tra Ngày sinh | Yêu cầu KH_01 × TP_01 Chờ duyệt | 1. Mở PL05 (SOP-01)<br>2. Xem dòng Ngày tháng năm sinh | KH_01 | - Đúng ngày sinh của KH, dạng ngày/tháng/năm [GĐ Q-13] | Medium | Positive | EP | Q-13 |
 
-### PL05 – Tư cách NĐTCN
+### Trường 03 – Giới tính
 
 | TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| TC_PL05_NDT_001 | BR-05 | PL05 – Tư cách NĐTCN | Kiểm tra ô tick khi PRO_TYPE = 1 | Yêu cầu Chờ duyệt: KH_04 × TP_01 | 1. Mở PL05 (SOP-01)<br>2. Xem 4 ô tư cách NĐT | KH_04 | - [GĐ Q-01] Chỉ tick ô “NĐT chiến lược”<br>- 3 ô còn lại không tick<br>- [GĐ Q-02] Số và ngày Nghị quyết giữ “…” | High | Negative | DT | Q-01, Q-02 |
-| TC_PL05_NDT_002 | BR-05, BR-08 | PL05 – Tư cách NĐTCN | Kiểm tra ô tick khi PRO_TYPE = 2 | Yêu cầu Chờ duyệt: KH_01 × TP_01 | 1. Mở PL05 (SOP-01)<br>2. Xem 4 ô tư cách NĐT | KH_01 | - [GĐ Q-01] Chỉ tick ô “chứng chỉ hành nghề”<br>- 3 ô còn lại không tick | High | Positive | DT | Q-01 |
-| TC_PL05_NDT_003 | BR-05, BR-09 | PL05 – Tư cách NĐTCN | Kiểm tra ô tick khi PRO_TYPE = 3 | Yêu cầu Chờ duyệt: KH_02 × TP_01 | 1. Mở PL05 (SOP-01)<br>2. Xem 4 ô tư cách NĐT | KH_02 | - [GĐ Q-01] Chỉ tick ô “danh mục CKNY”<br>- Ô “chứng chỉ hành nghề” không bị tick cứng | High | Negative | DT | Q-01 |
-| TC_PL05_NDT_004 | BR-05, BR-10 | PL05 – Tư cách NĐTCN | Kiểm tra ô tick khi PRO_TYPE = 4 | Yêu cầu Chờ duyệt: KH_03 × TP_01 | 1. Mở PL05 (SOP-01)<br>2. Xem 4 ô tư cách NĐT | KH_03 | - [GĐ Q-01] Chỉ tick ô “thu nhập chịu thuế”<br>- 3 ô còn lại không tick | High | Negative | DT | Q-01 |
-| TC_PL05_NDT_005 | BR-08 | PL05 – Tư cách NĐTCN | Kiểm tra thông tin chứng chỉ khi PRO_TYPE = 2 | Yêu cầu Chờ duyệt: KH_01 × TP_01 | 1. Mở PL05 (SOP-01)<br>2. Xem Loại, Số, Ngày cấp, Ngày hiệu lực chứng chỉ | KH_01 | - Loại chứng chỉ lấy từ CERTIFICATE_TYPE<br>- Số chứng chỉ lấy từ CERTIFICATE_NO<br>- Ngày cấp lấy từ CERTIFICATE_FROM<br>- Ngày hiệu lực lấy từ CERTIFICATE_TO<br>- Ngày định dạng dd/mm/yyyy | High | Positive | DT |  |
-| TC_PL05_NDT_006 | BR-08 | PL05 – Tư cách NĐTCN | Kiểm tra Ngày hiệu lực chứng chỉ khi đã hết hạn | PC-01; CERTIFICATE_TO của 069C000101 = 18/11/2026; tạo yêu cầu ngày 19/11/2026 | 1. Tạo yêu cầu KH_01 × TP_01 (SOP-02)<br>2. Mở PL05 (SOP-01)<br>3. Xem Ngày hiệu lực chứng chỉ | CERTIFICATE_TO = 18/11/2026 | - [GĐ Q-19] Ngày hiệu lực hiển thị đúng giá trị đã hết hạn<br>- PL05 vẫn sinh, không tự sửa dữ liệu | Medium | Boundary | BVA | Q-19 |
-| TC_PL05_NDT_007 | BR-09 | PL05 – Tư cách NĐTCN | Kiểm tra Giá trị danh mục CKNY khi PRO_TYPE = 3 | Yêu cầu Chờ duyệt: KH_02 × TP_01 | 1. Mở PL05 (SOP-01)<br>2. Xem dòng danh mục CKNY | INVEST_AMOUNT = 2500000000 | - Giá trị danh mục CKNY lấy từ INVEST_AMOUNT<br>- [GĐ Q-03] Hiển thị đơn vị đồng, có phân cách hàng nghìn | High | Positive | DT | Q-03 |
-| TC_PL05_NDT_008 | BR-10 | PL05 – Tư cách NĐTCN | Kiểm tra Năm và Giá trị thu nhập chịu thuế khi PRO_TYPE = 4 | Yêu cầu Chờ duyệt: KH_03 × TP_01 | 1. Mở PL05 (SOP-01)<br>2. Xem dòng thu nhập chịu thuế | YEAR = 2025 · INVEST_AMOUNT = 1200000000 | - Năm lấy từ YEAR<br>- Giá trị thu nhập chịu thuế lấy từ INVEST_AMOUNT<br>- [GĐ Q-03] Giá trị hiển thị đơn vị tỷ đồng | High | Positive | DT | Q-03 |
-| TC_PL05_NDT_009 | BR-10 | PL05 – Tư cách NĐTCN | Kiểm tra Năm thu nhập chịu thuế khi không phải năm liền trước | PC-01; YEAR của 069C000103 = 2023; tạo yêu cầu năm 2026 | 1. Tạo yêu cầu KH_03 × TP_01 (SOP-02)<br>2. Mở PL05 (SOP-01)<br>3. Xem dòng thu nhập chịu thuế | YEAR = 2023 | - [GĐ Q-04] Hiển thị đúng năm đã khai báo<br>- Không tự đổi thành năm liền trước | Medium | Boundary | BVA | Q-04 |
-| TC_PL05_NDT_010 | BR-08, BR-09, BR-10 | PL05 – Tư cách NĐTCN | Kiểm tra thông tin NĐT để trống khi PRO_TYPE = 1 | Yêu cầu Chờ duyệt: KH_04 × TP_01 | 1. Mở PL05 (SOP-01)<br>2. Xem mục 1 | KH_04 | - Thông tin chứng chỉ trống<br>- Giá trị danh mục CKNY trống<br>- Thông tin thu nhập chịu thuế trống | High | Negative | DT |  |
-| TC_PL05_NDT_011 | BR-09, BR-10 | PL05 – Tư cách NĐTCN | Kiểm tra CKNY và thu nhập chịu thuế để trống khi PRO_TYPE = 2 | Yêu cầu Chờ duyệt: KH_01 × TP_01 | 1. Mở PL05 (SOP-01)<br>2. Xem mục 1 | KH_01 | - Giá trị danh mục CKNY trống<br>- Năm, Giá trị thu nhập chịu thuế trống<br>- Không hiển thị 0 hoặc “null” | High | Negative | DT |  |
-| TC_PL05_NDT_012 | BR-08, BR-10 | PL05 – Tư cách NĐTCN | Kiểm tra chứng chỉ và thu nhập chịu thuế để trống khi PRO_TYPE = 3 | Yêu cầu Chờ duyệt: KH_02 × TP_01 | 1. Mở PL05 (SOP-01)<br>2. Xem mục 1 | KH_02 | - Thông tin chứng chỉ trống<br>- Năm, Giá trị thu nhập chịu thuế trống | High | Negative | DT |  |
-| TC_PL05_NDT_013 | BR-08, BR-09 | PL05 – Tư cách NĐTCN | Kiểm tra chứng chỉ và CKNY để trống khi PRO_TYPE = 4 | Yêu cầu Chờ duyệt: KH_03 × TP_01 | 1. Mở PL05 (SOP-01)<br>2. Xem mục 1 | KH_03 | - Thông tin chứng chỉ trống<br>- Giá trị danh mục CKNY trống | High | Negative | DT |  |
-| TC_PL05_NDT_014 | BR-08, BR-09, BR-10 | PL05 – Tư cách NĐTCN | Kiểm tra thông tin NĐT khi KH không có bản ghi NĐTCN | Yêu cầu Chờ duyệt: KH_05 × TP_01 | 1. Mở PL05 (SOP-01)<br>2. Xem mục 1 | KH_05 | - [GĐ Q-19] PL05 vẫn sinh<br>- Toàn bộ thông tin tư cách NĐT trống<br>- Không ô nào được tick | Medium | Negative | EG | Q-19 |
+| TC_PL05_F03_001 | BR-06 | Trường 03 – Giới tính | Kiểm tra Giới tính | Yêu cầu KH_01, KH_02 Chờ duyệt | 1. Mở PL05 (SOP-01)<br>2. Xem dòng Giới tính | KH_01 nam, KH_02 nữ | - Hiện chữ “Nam”/“Nữ”, không hiện mã [GĐ Q-12] | Medium | Positive | EP | Q-12 |
 
-### PL05 – TCPH & Trái phiếu
+### Trường 04 – Số CCCD/Hộ chiếu
 
 | TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| TC_PL05_TP_001 | BR-07 | PL05 – TCPH & Trái phiếu | Kiểm tra Tổ chức phát hành | Yêu cầu Chờ duyệt: KH_01 × TP_01 | 1. Mở PL05 (SOP-01)<br>2. Xem dòng NĐT chiến lược và mục 3.1 a) | TP_01 | - Tổ chức phát hành lấy từ ISSUER_NAME của mã TP<br>- Giống nhau ở dòng NĐT chiến lược và mục 3.1 a) | High | Positive | EP |  |
-| TC_PL05_TP_002 | BR-11 | PL05 – TCPH & Trái phiếu | Kiểm tra Mã trái phiếu | Yêu cầu Chờ duyệt: KH_01 × TP_01 | 1. Mở PL05 (SOP-01)<br>2. Xem mục 2, 3.1 i), 3.2, 3.3 | TP_01 | - Mã TP lấy từ REPO_ORDER.SYMBOL<br>- Giống nhau ở mọi vị trí | High | Positive | EP |  |
-| TC_PL05_TP_003 | BR-17 | PL05 – TCPH & Trái phiếu | Kiểm tra Mã số đăng ký doanh nghiệp | Yêu cầu Chờ duyệt: KH_01 × TP_01 | 1. Mở PL05 (SOP-01)<br>2. Xem mục 3.1 a) | TCPH_A | - Mã số đăng ký doanh nghiệp lấy từ REGISTRATION_ID | Medium | Positive | EP | Q-20 |
-| TC_PL05_TP_004 | BR-17 | PL05 – TCPH & Trái phiếu | Kiểm tra Loại ngành nghề | Yêu cầu Chờ duyệt: KH_01 × TP_01 | 1. Mở PL05 (SOP-01)<br>2. Xem mục 3.1 a) | TP_01 | - Loại ngành nghề lấy từ BUSINESS_TYPE | Medium | Positive | EP |  |
-| TC_PL05_TP_005 | BR-17 | PL05 – TCPH & Trái phiếu | Kiểm tra Lãi suất trái phiếu | Yêu cầu Chờ duyệt: KH_01 × TP_01 | 1. Mở PL05 (SOP-01)<br>2. Xem mục 3.1 g) | TP_01 | - Lãi suất lấy từ RATE_DESCRIPTION<br>- Hiển thị đủ nội dung, không bị cắt | Medium | Positive | EP |  |
-| TC_PL05_TP_006 | BR-17 | PL05 – TCPH & Trái phiếu | Kiểm tra Kỳ hạn trái phiếu | Yêu cầu Chờ duyệt: KH_01 × TP_01 | 1. Mở PL05 (SOP-01)<br>2. Xem mục 3.1 g) | TP_01 | - Kỳ hạn lấy từ BOND_INFO.TERM | Medium | Positive | EP | Q-20 |
-| TC_PL05_TP_007 | BR-17 | PL05 – TCPH & Trái phiếu | Kiểm tra Đại diện người sở hữu trái phiếu | Yêu cầu Chờ duyệt: KH_01 × TP_01 | 1. Mở PL05 (SOP-01)<br>2. Xem mục 3.1 k) | TP_01 | - Đại diện người sở hữu TP lấy từ REPRESENTATIVE<br>- Giữ chữ “(nếu có)” | Medium | Positive | EP |  |
-| TC_PL05_TP_008 | BR-17 | PL05 – TCPH & Trái phiếu | Kiểm tra Đại diện người sở hữu trái phiếu khi để trống | Yêu cầu Chờ duyệt: KH_01 × TP_06 | 1. Mở PL05 (SOP-01)<br>2. Xem mục 3.1 k) | REPRESENTATIVE = NULL | - Đại diện người sở hữu TP để trống, không “null”<br>- Giữ chữ “(nếu có)” | Low | Negative | EG |  |
+| TC_PL05_F04_001 | BR-06 | Trường 04 – Số CCCD/Hộ chiếu | Kiểm tra Số CCCD/Hộ chiếu | PC-01; chuẩn bị dữ liệu theo cột Dữ liệu test | 1. Mở PL05 (SOP-01)<br>2. Xem dòng Số CCCD/Hộ chiếu | KH_07 · KH_01 | - Khi KH dùng hộ chiếu: đúng số hộ chiếu, giữ nguyên chữ và số<br>- Khi số CCCD bắt đầu bằng 0: đủ 12 số, giữ số 0 đầu | High | Functional | EG, EP |  |
 
-### PL05 – Đại diện SHS
+### Trường 05 – Ngày cấp giấy tờ
 
 | TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| TC_PL05_DD_001 | BR-12 | PL05 – Đại diện SHS | Kiểm tra Địa chỉ SHS | Yêu cầu Chờ duyệt: KH_01 × TP_01 | 1. Mở PL05 (SOP-01)<br>2. Xem mục 2 và 2 khối xác nhận | SHS | - Địa chỉ SHS lấy từ CUST_ADDRESS của KH 069P000001<br>- Giống nhau ở mục 2 và 2 khối xác nhận | High | Positive | EP |  |
-| TC_PL05_DD_002 | BR-12 | PL05 – Đại diện SHS | Kiểm tra Địa chỉ SHS khi 069P000001 đổi địa chỉ | PC-01; CUST_ADDRESS của 069P000001 = “Số 1 Kiểm Thử, Hà Nội” | 1. Tạo yêu cầu KH_01 × TP_01 (SOP-02)<br>2. Mở PL05 (SOP-01)<br>3. Xem Địa chỉ SHS | Địa chỉ mới | - PL05 mới hiển thị địa chỉ mới của 069P000001<br>- Không dùng địa chỉ cố định | Medium | Positive | EG | Khôi phục dữ liệu sau test |
-| TC_PL05_DD_003 | BR-13 | PL05 – Đại diện SHS | Kiểm tra Người đại diện khối cung cấp thông tin | Yêu cầu Chờ duyệt: KH_01 × TP_01 | 1. Mở PL05 (SOP-01)<br>2. Xem mục 2 và khối xác nhận cung cấp thông tin | AU1 | - Người đại diện lấy từ CUSTOMER_AUTHORIZER của TK 069P, IS_DEFAULT = 1<br>- Giống nhau ở mục 2 và khối xác nhận cung cấp thông tin | High | Positive | DT |  |
-| TC_PL05_DD_004 | BR-13 | PL05 – Đại diện SHS | Kiểm tra Chức vụ, Ủy quyền, CCCD khối cung cấp thông tin | Yêu cầu Chờ duyệt: KH_01 × TP_01 | 1. Mở PL05 (SOP-01)<br>2. Xem mục 2 và khối xác nhận cung cấp thông tin | AU1 | - Chức vụ, Số/Ngày ủy quyền, CCCD lấy cùng bản ghi IS_DEFAULT = 1 [GĐ Q-05]<br>- Ngày ủy quyền định dạng dd/mm/yyyy | Medium | Positive | DT | Q-05 |
-| TC_PL05_DD_005 | BR-13 | PL05 – Đại diện SHS | Kiểm tra khối cung cấp thông tin khi có 2 bản ghi IS_DEFAULT = 1 | PC-01; thêm AU2 Lê Văn Cường, IS_DEFAULT = 1 | 1. Tạo yêu cầu KH_01 × TP_01 (SOP-02)<br>2. Mở PL05 (SOP-01)<br>3. Xem khối xác nhận cung cấp thông tin | AU1, AU2 | - [GĐ Q-06] PL05 vẫn sinh<br>- Chỉ hiển thị 1 người đại diện, không ghép tên<br>- Chức vụ, ủy quyền, CCCD cùng 1 bản ghi | Medium | Negative | EG | Q-06 |
-| TC_PL05_DD_006 | BR-14 | PL05 – Đại diện SHS | Kiểm tra Người đại diện khối xác nhận tư cách NĐT | Yêu cầu Chờ duyệt: KH_01 × TP_01 | 1. Mở PL05 (SOP-01)<br>2. Xem khối xác nhận tư cách NĐT | AU0 | - Người đại diện lấy từ CUSTOMER_AUTHORIZER của TK 069P, IS_DEFAULT = 0 | High | Positive | DT |  |
-| TC_PL05_DD_007 | BR-14 | PL05 – Đại diện SHS | Kiểm tra Chức vụ, Ủy quyền, CCCD khối xác nhận tư cách NĐT | Yêu cầu Chờ duyệt: KH_01 × TP_01 | 1. Mở PL05 (SOP-01)<br>2. Xem khối xác nhận tư cách NĐT | AU0 | - Chức vụ, Số/Ngày ủy quyền, CCCD lấy cùng bản ghi IS_DEFAULT = 0 [GĐ Q-05]<br>- Ngày ủy quyền định dạng dd/mm/yyyy | Medium | Positive | DT | Q-05 |
-| TC_PL05_DD_008 | BR-14 | PL05 – Đại diện SHS | Kiểm tra khối xác nhận tư cách NĐT khi không có IS_DEFAULT = 0 | PC-01; tạm vô hiệu AU0 | 1. Tạo yêu cầu KH_01 × TP_01 (SOP-02)<br>2. Mở PL05 (SOP-01)<br>3. Xem khối xác nhận tư cách NĐT | Không có IS_DEFAULT = 0 | - [GĐ Q-06] PL05 vẫn sinh<br>- Khối xác nhận tư cách NĐT để trống<br>- Không lấy người có IS_DEFAULT = 1 | Medium | Negative | EG | Q-06 |
-| TC_PL05_DD_009 | BR-13, BR-14 | PL05 – Đại diện SHS | Kiểm tra 2 khối xác nhận khi hoán đổi IS_DEFAULT | PC-01; AU1 → IS_DEFAULT = 0, AU0 → IS_DEFAULT = 1 | 1. Tạo yêu cầu KH_01 × TP_01 (SOP-02)<br>2. Mở PL05 (SOP-01)<br>3. Xem 2 khối xác nhận | IS_DEFAULT hoán đổi | - Khối cung cấp thông tin hiển thị người có IS_DEFAULT = 1 mới<br>- Khối tư cách NĐT hiển thị người có IS_DEFAULT = 0 mới | Medium | Negative | DT | Khôi phục dữ liệu sau test |
-| TC_PL05_DD_010 | BR-13, BR-14 | PL05 – Đại diện SHS | Kiểm tra không lấy người ủy quyền của KH đặt mua | PC-01; 069C000101 có người ủy quyền Phạm Văn Dũng | 1. Tạo yêu cầu KH_01 × TP_01 (SOP-02)<br>2. Mở PL05 (SOP-01)<br>3. Xem 2 khối xác nhận | Phạm Văn Dũng | - Không hiển thị người ủy quyền của KH đặt mua<br>- 2 khối xác nhận vẫn lấy người ủy quyền của TK 069P | High | Negative | EG |  |
+| TC_PL05_F05_001 | BR-06 | Trường 05 – Ngày cấp giấy tờ | Kiểm tra Ngày cấp giấy tờ | Yêu cầu KH_01 × TP_01 Chờ duyệt | 1. Mở PL05 (SOP-01)<br>2. Xem dòng Ngày cấp | KH_01 | - Đúng ngày cấp giấy tờ, dạng ngày/tháng/năm [GĐ Q-13] | Medium | Positive | EP | Q-13 |
 
-### PL05 – Phụ lục TP
+### Trường 06 – Nơi cấp giấy tờ
 
 | TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| TC_PL05_PL_001 | BR-15 | PL05 – Phụ lục TP | Kiểm tra 10 nội dung phụ lục trái phiếu | Yêu cầu Chờ duyệt: KH_01 × TP_01 | 1. Mở PL05 (SOP-01)<br>2. Xem mục 2 a)–d), 3.1 c), d), đ), h), 3.2 | Phụ lục ABC12601: mỗi mục khai báo “PLTP-<tên mục>” | - Mỗi mục hiển thị đúng nội dung khai báo trong phụ lục của mã TP:<br>  2 a) Bản CBTT trước chào bán · 2 b) Phương án phát hành · 2 c) Hồ sơ chào bán · 2 d) CBTT định kỳ<br>  3.1 c) Mục đích phát hành · 3.1 d) Kế hoạch sử dụng vốn và vốn tạm thời nhàn rỗi<br>  3.1 đ) Phương án bố trí nguồn · 3.1 h) Cam kết của TCPH · 3.2 Rủi ro | High | Positive | EP | Q-18 |
-| TC_PL05_PL_002 | BR-15 | PL05 – Phụ lục TP | Kiểm tra nội dung phụ lục có nhiều dòng | Yêu cầu Chờ duyệt: KH_01 × TP_01 | 1. Mở PL05 (SOP-01)<br>2. Xem mục 3.2 Rủi ro | Rủi ro: 3 dòng STT 1–3 | - Hiển thị đủ các dòng<br>- [GĐ Q-18] Đúng thứ tự STT khai báo | Medium | Positive | EP | Q-18 |
-| TC_PL05_PL_003 | BR-15 | PL05 – Phụ lục TP | Kiểm tra không lấy phụ lục của trái phiếu khác | Yêu cầu Chờ duyệt: KH_01 × TP_07 | 1. Mở PL05 (SOP-01)<br>2. Xem mục 3.1 c) | Mục đích ABC12607 = “Mục đích TP07” | - Hiển thị nội dung phụ lục của đúng mã TP trong yêu cầu<br>- Không lấy phụ lục của TP khác cùng TCPH | Medium | Negative | EG |  |
-| TC_PL05_PL_004 | BR-15 | PL05 – Phụ lục TP | Kiểm tra phụ lục khi trái phiếu chưa khai báo | Yêu cầu Chờ duyệt: KH_01 × TP_08 | 1. Mở PL05 (SOP-01)<br>2. Xem 10 nội dung phụ lục | TP_08 | - [GĐ Q-18] PL05 vẫn sinh<br>- 10 mục phụ lục để trống, không “null” | Medium | Negative | EG | Q-18 |
-| TC_PL05_PL_005 | BR-15 | PL05 – Phụ lục TP | Kiểm tra nội dung phụ lục chứa thẻ HTML | PC-01; Mục đích ABC12601 = “<b>Đầu tư</b><script>alert(1)</script>” | 1. Tạo yêu cầu KH_01 × TP_01 (SOP-02)<br>2. Mở PL05 (SOP-01)<br>3. Xem mục 3.1 c) | Chuỗi có HTML | - Hiển thị nguyên chuỗi dạng text<br>- Không chạy script, không in đậm<br>- Không vỡ bố cục PL05 | Low | Security | EG |  |
+| TC_PL05_F06_001 | BR-06 | Trường 06 – Nơi cấp giấy tờ | Kiểm tra Nơi cấp giấy tờ | Yêu cầu KH_01 × TP_01 Chờ duyệt | 1. Mở PL05 (SOP-01)<br>2. Xem dòng Nơi cấp | KH_01 | - Đúng nơi cấp giấy tờ | Medium | Positive | EP |  |
 
-### PL05 – Căn cứ Nghị định
+### Trường 07 – Nơi ở hiện tại
 
 | TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| TC_PL05_ND_001 | BR-16 | PL05 – Căn cứ Nghị định | Kiểm tra căn cứ Nghị định khi ngày phát hành 15/09/2022 | Yêu cầu Chờ duyệt: KH_01 × TP_02 | 1. Mở PL05 (SOP-01)<br>2. Xem 5 vị trí căn cứ (mục 2 a)–d), 3.1 i)) | PH 15/09/2022 · tạo yêu cầu 2026 | - 5 vị trí căn cứ hiển thị “Nghị định số 153/2020/NĐ-CP”<br>- Căn cứ theo ngày phát hành, không theo ngày tạo yêu cầu | High | Boundary | BVA |  |
-| TC_PL05_ND_002 | BR-16 | PL05 – Căn cứ Nghị định | Kiểm tra căn cứ Nghị định khi ngày phát hành 16/09/2022 | Yêu cầu Chờ duyệt: KH_01 × TP_03 | 1. Mở PL05 (SOP-01)<br>2. Xem 5 vị trí căn cứ (mục 2 a)–d), 3.1 i)) | PH 16/09/2022 | - 5 vị trí căn cứ hiển thị “Nghị định số 153/2020/NĐ-CP và Nghị định 65/2022/NĐ-CP” | High | Boundary | BVA |  |
-| TC_PL05_ND_003 | BR-16 | PL05 – Căn cứ Nghị định | Kiểm tra căn cứ Nghị định khi ngày phát hành 04/06/2026 | Yêu cầu Chờ duyệt: KH_01 × TP_04 | 1. Mở PL05 (SOP-01)<br>2. Xem 5 vị trí căn cứ (mục 2 a)–d), 3.1 i)) | PH 04/06/2026 | - 5 vị trí căn cứ hiển thị “Nghị định số 153/2020/NĐ-CP và Nghị định 65/2022/NĐ-CP” | High | Boundary | BVA |  |
-| TC_PL05_ND_004 | BR-16 | PL05 – Căn cứ Nghị định | Kiểm tra căn cứ Nghị định khi ngày phát hành 05/06/2026 | Yêu cầu Chờ duyệt: KH_01 × TP_01 | 1. Mở PL05 (SOP-01)<br>2. Xem 5 vị trí căn cứ (mục 2 a)–d), 3.1 i)) | PH 05/06/2026 | - Mục 2 a): “khoản 1 Điều 29 Nghị định số 200/2026/NĐ-CP”<br>- Mục 2 b): “Điều 10 Nghị định số 200/2026/NĐ-CP”<br>- Mục 2 c), 2 d): “Nghị định số 200/2026/NĐ-CP”<br>- Mục 3.1 i): “(điều khoản) Nghị định số 200/2026/NĐ-CP” [GĐ Q-14] | High | Boundary | BVA | Q-14 |
-| TC_PL05_ND_005 | BR-16 | PL05 – Căn cứ Nghị định | Kiểm tra căn cứ Nghị định khi chưa có ngày phát hành | Yêu cầu Chờ duyệt: KH_01 × TP_08 | 1. Mở PL05 (SOP-01)<br>2. Xem 5 vị trí căn cứ (mục 2 a)–d), 3.1 i)) | RELEASE_DATE = NULL | - [GĐ Q-14] PL05 vẫn sinh<br>- 5 vị trí căn cứ để trống, không mặc định theo khoảng nào | Medium | Negative | EG | Q-14 |
+| TC_PL05_F07_001 | BR-06 | Trường 07 – Nơi ở hiện tại | Kiểm tra Nơi ở hiện tại | PC-01; chuẩn bị dữ liệu theo cột Dữ liệu test | 1. Chuẩn bị dữ liệu, tạo yêu cầu (SOP-02)<br>2. Mở PL05 (SOP-01)<br>3. Xem dòng Nơi ở hiện tại | KH_01 · Địa chỉ 200 ký tự | - Đúng địa chỉ liên hệ của KH<br>- Khi địa chỉ dài 200 ký tự: hiện đủ, tự xuống dòng, không tràn lề | Medium | Functional | BVA, EP |  |
 
-### PL05 – Bảng tài chính
+### Trường 08 – Điện thoại liên hệ
 
 | TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| TC_PL05_FN_001 | BR-18 | PL05 – Bảng tài chính | Kiểm tra bảng tài chính khi có 1 kỳ | Yêu cầu Chờ duyệt: KH_01 × TP_06 | 1. Mở PL05 (SOP-01)<br>2. Xem bảng tài chính mục 3.1 b) | TP_06: 30/09/2026 | - Bảng chỉ có 1 cột thời điểm<br>- Không có cột trống cho kỳ 2, 3 | High | Boundary | BVA |  |
-| TC_PL05_FN_002 | BR-18 | PL05 – Bảng tài chính | Kiểm tra bảng tài chính khi có 3 kỳ | Yêu cầu Chờ duyệt: KH_01 × TP_01 | 1. Mở PL05 (SOP-01)<br>2. Xem bảng tài chính mục 3.1 b) | TP_01: 3 kỳ | - Bảng có 3 cột thời điểm<br>- Sắp xếp từ gần đến xa | High | Boundary | BVA |  |
-| TC_PL05_FN_003 | BR-18 | PL05 – Bảng tài chính | Kiểm tra bảng tài chính khi có 4 kỳ | Yêu cầu Chờ duyệt: KH_01 × TP_07 | 1. Mở PL05 (SOP-01)<br>2. Xem bảng tài chính mục 3.1 b) | TP_07: 4 kỳ | - Chỉ hiển thị 3 kỳ gần nhất<br>- Không hiển thị kỳ cũ nhất | High | Boundary | BVA |  |
-| TC_PL05_FN_004 | BR-18 | PL05 – Bảng tài chính | Kiểm tra bảng tài chính khi chưa có kỳ nào | Yêu cầu Chờ duyệt: KH_01 × TP_08 | 1. Mở PL05 (SOP-01)<br>2. Xem bảng tài chính mục 3.1 b) | TP_08: 0 kỳ | - [GĐ Q-11] PL05 vẫn sinh<br>- Bảng chỉ còn cột Chỉ tiêu, Đơn vị tính | Medium | Negative | BVA | Q-11 |
-| TC_PL05_FN_005 | BR-18 | PL05 – Bảng tài chính | Kiểm tra thứ tự kỳ khi nhập không theo thời gian | Yêu cầu Chờ duyệt: KH_01 × TP_07 | 1. Mở PL05 (SOP-01)<br>2. Xem bảng tài chính mục 3.1 b) | Thứ tự nhập lộn xộn | - Các kỳ sắp xếp theo thời gian từ gần đến xa<br>- Không theo thứ tự nhập | Medium | Negative | EG |  |
-| TC_PL05_FN_006 | BR-18 | PL05 – Bảng tài chính | Kiểm tra giá trị 7 chỉ tiêu theo từng kỳ | Yêu cầu Chờ duyệt: KH_01 × TP_01 | 1. Mở PL05 (SOP-01)<br>2. Xem bảng tài chính mục 3.1 b) | Kỳ 30/09/2026: Tổng TS 1.000.000.000.000; Nợ 600.000.000.000; VCSH 400.000.000.000… | - Đủ 7 chỉ tiêu<br>- Mỗi ô đúng chỉ tiêu, đúng kỳ, không lệch cột<br>- Đơn vị: VND cho 4 chỉ tiêu đầu, Lần cho 3 hệ số | High | Positive | EP |  |
-| TC_PL05_FN_007 | BR-18 | PL05 – Bảng tài chính | Kiểm tra định dạng số trong bảng tài chính | Yêu cầu Chờ duyệt: KH_01 × TP_01 | 1. Mở PL05 (SOP-01)<br>2. Xem bảng tài chính mục 3.1 b) | 1000000000000; 0.45 | - [GĐ Q-11] Số tiền có phân cách hàng nghìn<br>- Hệ số giữ phần thập phân, dấu phẩy thập phân | Medium | Positive | EP | Q-11 |
+| TC_PL05_F08_001 | BR-06 | Trường 08 – Điện thoại liên hệ | Kiểm tra Điện thoại liên hệ | PC-01; chuẩn bị dữ liệu theo cột Dữ liệu test | 1. Mở PL05 (SOP-01)<br>2. Xem dòng Điện thoại liên hệ | KH_01 · KH_05 | - Đúng số điện thoại, giữ số 0 đầu<br>- Khi KH chưa có số điện thoại: để trống, không hiện “null” | Medium | Functional | EG, EP |  |
 
-### PL05 – TSBĐ & Bảo lãnh
+### Trường 09 – Tổ chức phát hành
 
 | TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| TC_PL05_TS_001 | BR-19 | PL05 – TSBĐ & Bảo lãnh | Kiểm tra TSBĐ khi trái phiếu có 2 TSĐB | Yêu cầu Chờ duyệt: KH_01 × TP_01 | 1. Mở PL05 (SOP-01)<br>2. Xem mục 3.1 e) | 5.000.000.000 (GDBĐ-001/2026) + 3.000.000.000 (GDBĐ-002/2026) | - Hiển thị câu “có tài sản đảm bảo”<br>- Giá trị TSBĐ = tổng giá trị các TSĐB của mã TP [GĐ Q-09]<br>- Số ký hiệu hiển thị đủ các TSĐB [GĐ Q-09] | High | Positive | DT | Q-09 |
-| TC_PL05_TS_002 | BR-19 | PL05 – TSBĐ & Bảo lãnh | Kiểm tra TSBĐ khi trái phiếu không có TSBĐ | Yêu cầu Chờ duyệt: KH_01 × TP_06 | 1. Mở PL05 (SOP-01)<br>2. Xem mục 3.1 e) | HAS_COLLATERAL = 0 | - [GĐ Q-08] Hiển thị câu “không có tài sản đảm bảo”<br>- Giá trị và Số ký hiệu TSBĐ để trống | High | Negative | DT | Q-08 |
-| TC_PL05_TS_003 | BR-19 | PL05 – TSBĐ & Bảo lãnh | Kiểm tra TSBĐ khi có cờ TSBĐ nhưng chưa khai báo TSĐB | Yêu cầu Chờ duyệt: KH_01 × TP_08 | 1. Mở PL05 (SOP-01)<br>2. Xem mục 3.1 e) | HAS_COLLATERAL = 1, bảng TSĐB rỗng | - [GĐ Q-08] PL05 vẫn sinh<br>- Giá trị và Số ký hiệu TSBĐ để trống, không hiển thị “0” | Medium | Negative | EG | Q-08 |
-| TC_PL05_TS_004 | BR-19 | PL05 – TSBĐ & Bảo lãnh | Kiểm tra Giá trị TSBĐ không cộng TSĐB của trái phiếu khác | Yêu cầu Chờ duyệt: KH_01 × TP_01 | 1. Mở PL05 (SOP-01)<br>2. Xem mục 3.1 e) | TP_01 (8 tỷ), TP_07 (7 tỷ) cùng TCPH | - Giá trị TSBĐ chỉ cộng TSĐB của mã TP trong yêu cầu<br>- Không cộng TSĐB của TP khác cùng TCPH | Medium | Negative | EG |  |
-| TC_PL05_BL_001 | BR-20 | PL05 – TSBĐ & Bảo lãnh | Kiểm tra Bảo lãnh thanh toán khi trái phiếu có bảo lãnh | Yêu cầu Chờ duyệt: KH_01 × TP_01 | 1. Mở PL05 (SOP-01)<br>2. Xem mục 3.1 e) đoạn bảo lãnh | TP_01 | - Hiển thị câu “có bảo lãnh thanh toán của Tổ chức tín dụng”<br>- Tên tổ chức tín dụng lấy từ thông tin bảo lãnh của mã TP [Q-10] | High | Positive | DT | Q-10 |
-| TC_PL05_BL_002 | BR-20 | PL05 – TSBĐ & Bảo lãnh | Kiểm tra Bảo lãnh thanh toán khi trái phiếu không có bảo lãnh | Yêu cầu Chờ duyệt: KH_01 × TP_06 | 1. Mở PL05 (SOP-01)<br>2. Xem mục 3.1 e) đoạn bảo lãnh | TP_06 | - [GĐ Q-10] Hiển thị câu “không có bảo lãnh thanh toán”<br>- Tên tổ chức tín dụng để trống | Medium | Negative | DT | Q-10 |
+| TC_PL05_F09_001 | BR-07 | Trường 09 – Tổ chức phát hành | Kiểm tra Tổ chức phát hành | Yêu cầu KH_01 × TP_01 Chờ duyệt | 1. Mở PL05 (SOP-01)<br>2. Xem dòng NĐT chiến lược, mục 3.1 a) | TP_01 | - Đúng tên tổ chức phát hành của mã TP<br>- Giống nhau ở 2 vị trí | High | Positive | EP |  |
 
-### PL05 – Ngày ký
+### Trường 10 – Loại chứng chỉ
 
 | TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| TC_PL05_DT_001 | BR-21 | PL05 – Ngày ký | Kiểm tra Ngày ký | Yêu cầu Chờ duyệt: KH_01 × TP_01 | 1. Mở PL05 (SOP-01)<br>2. Xem dòng “Hà Nội, ngày…” và 2 khối xác nhận | CREATED_DATE = 19/11/2026 10:15 | - Ngày ký lấy từ REPO_ORDER.CREATED_DATE<br>- Hiển thị dạng “ngày … tháng … năm …”<br>- Giống nhau ở 3 vị trí ký | High | Positive | EP | Q-13 |
-| TC_PL05_DT_002 | BR-21 | PL05 – Ngày ký | Kiểm tra Ngày ký khi tạo yêu cầu lúc 23:59 | PC-01; giờ UAT = 19/11/2026 23:59:30 (GMT+7) | 1. Tạo yêu cầu KH_01 × TP_01 (SOP-02)<br>2. Mở PL05 (SOP-01)<br>3. Xem dòng “Hà Nội, ngày…” | 19/11/2026 23:59:30 | - Ngày ký đúng ngày theo giờ Việt Nam<br>- Không lệch sang ngày hôm sau | Medium | Boundary | EG |  |
-| TC_PL05_DT_003 | BR-21 | PL05 – Ngày ký | Kiểm tra Ngày ký khi ngày giao dịch khác ngày tạo yêu cầu | PC-01; tạo yêu cầu ngày 19/11/2026, ngày giao dịch 20/11/2026 | 1. Tạo yêu cầu KH_01 × TP_01 (SOP-02)<br>2. Mở PL05 (SOP-01)<br>3. Xem 3 vị trí ngày ký | CREATED_DATE 19/11 · ORDER_DATE 20/11 | - Ngày ký lấy theo ngày tạo yêu cầu<br>- Không lấy ngày giao dịch | Medium | Negative | EG | Áp dụng nếu màn đặt mua cho chọn ngày GD |
+| TC_PL05_F10_001 | BR-08 | Trường 10 – Loại chứng chỉ | Kiểm tra Loại chứng chỉ | PC-01; chuẩn bị dữ liệu theo cột Dữ liệu test | 1. Mở PL05 (SOP-01)<br>2. Xem dòng Loại chứng chỉ | KH_01 · KH_02, KH_03, KH_04, KH_05 | - Khi KH có chứng chỉ hành nghề: đúng loại chứng chỉ đã khai báo<br>- Khi KH không thuộc diện chứng chỉ hành nghề: để trống, không hiện “null” | High | Functional | DT |  |
+
+### Trường 11 – Số chứng chỉ
+
+| TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| TC_PL05_F11_001 | BR-08 | Trường 11 – Số chứng chỉ | Kiểm tra Số chứng chỉ | PC-01; chuẩn bị dữ liệu theo cột Dữ liệu test | 1. Mở PL05 (SOP-01)<br>2. Xem dòng Số (chứng chỉ) | KH_01 · KH_02, KH_03, KH_04, KH_05 | - Khi KH có chứng chỉ hành nghề: đúng số chứng chỉ đã khai báo<br>- Khi KH không thuộc diện chứng chỉ hành nghề: để trống, không hiện “null” | High | Functional | DT |  |
+
+### Trường 12 – Ngày cấp chứng chỉ
+
+| TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| TC_PL05_F12_001 | BR-08 | Trường 12 – Ngày cấp chứng chỉ | Kiểm tra Ngày cấp chứng chỉ | PC-01; chuẩn bị dữ liệu theo cột Dữ liệu test | 1. Mở PL05 (SOP-01)<br>2. Xem dòng Ngày cấp (chứng chỉ) | KH_01 · KH_02, KH_03, KH_04, KH_05 | - Khi KH có chứng chỉ hành nghề: đúng ngày cấp chứng chỉ đã khai báo, dạng ngày/tháng/năm<br>- Khi KH không thuộc diện chứng chỉ hành nghề: để trống, không hiện “null” | High | Functional | DT |  |
+
+### Trường 13 – Ngày hiệu lực chứng chỉ
+
+| TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| TC_PL05_F13_001 | BR-08 | Trường 13 – Ngày hiệu lực chứng chỉ | Kiểm tra Ngày hiệu lực chứng chỉ | PC-01; chuẩn bị dữ liệu theo cột Dữ liệu test | 1. Chuẩn bị dữ liệu, tạo yêu cầu (SOP-02)<br>2. Mở PL05 (SOP-01)<br>3. Xem dòng Ngày hiệu lực | KH_01 · Hết hạn 18/11/2026 · KH_02, KH_03, KH_04, KH_05 | - Khi KH có chứng chỉ hành nghề: đúng ngày hiệu lực chứng chỉ đã khai báo, dạng ngày/tháng/năm<br>- Khi chứng chỉ đã hết hạn: [GĐ Q-19] Hiện đúng ngày đã hết hạn, PL05 vẫn sinh<br>- Khi KH không thuộc diện chứng chỉ hành nghề: để trống, không hiện “null” | High | Functional | BVA, DT | Q-19 |
+
+### Trường 14 – Giá trị danh mục chứng khoán niêm yết
+
+| TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| TC_PL05_F14_001 | BR-09 | Trường 14 – Giá trị danh mục chứng khoán niêm yết | Kiểm tra Giá trị danh mục chứng khoán niêm yết | PC-01; chuẩn bị dữ liệu theo cột Dữ liệu test | 1. Mở PL05 (SOP-01)<br>2. Xem dòng danh mục chứng khoán niêm yết | KH_02 · KH_01, KH_03, KH_04, KH_05 | - Khi KH có danh mục chứng khoán niêm yết: đúng giá trị đã khai báo; [GĐ Q-03] Đơn vị đồng, phân cách hàng nghìn<br>- Khi KH không thuộc diện danh mục chứng khoán niêm yết: để trống, không hiện “null” | High | Functional | DT | Q-03 |
+
+### Trường 15 – Năm thu nhập chịu thuế
+
+| TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| TC_PL05_F15_001 | BR-10 | Trường 15 – Năm thu nhập chịu thuế | Kiểm tra Năm thu nhập chịu thuế | PC-01; chuẩn bị dữ liệu theo cột Dữ liệu test | 1. Chuẩn bị dữ liệu, tạo yêu cầu (SOP-02)<br>2. Mở PL05 (SOP-01)<br>3. Xem dòng thu nhập chịu thuế | KH_03 · Năm 2023, tạo yêu cầu 2026 · KH_01, KH_02, KH_04, KH_05 | - Khi KH có thu nhập chịu thuế: đúng năm đã khai báo, 4 chữ số<br>- Khi năm không phải năm liền trước: [GĐ Q-04] Hiện đúng năm đã khai báo, không tự đổi<br>- Khi KH không thuộc diện thu nhập chịu thuế: để trống, không hiện “null” | High | Functional | BVA, DT | Q-04 |
+
+### Trường 16 – Giá trị thu nhập chịu thuế
+
+| TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| TC_PL05_F16_001 | BR-10 | Trường 16 – Giá trị thu nhập chịu thuế | Kiểm tra Giá trị thu nhập chịu thuế | PC-01; chuẩn bị dữ liệu theo cột Dữ liệu test | 1. Mở PL05 (SOP-01)<br>2. Xem dòng thu nhập chịu thuế | KH_03 · KH_01, KH_02, KH_04, KH_05 | - Khi KH có thu nhập chịu thuế: đúng giá trị đã khai báo; [GĐ Q-03] Đơn vị tỷ đồng<br>- Khi KH không thuộc diện thu nhập chịu thuế: để trống, không hiện “null” | High | Functional | DT | Q-03 |
+
+### Trường 17 – Mã trái phiếu
+
+| TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| TC_PL05_F17_001 | BR-11 | Trường 17 – Mã trái phiếu | Kiểm tra Mã trái phiếu | Yêu cầu KH_01 × TP_01 Chờ duyệt | 1. Mở PL05 (SOP-01)<br>2. Xem mục 2, 3.1 i), 3.2, 3.3 | TP_01 | - Đúng mã TP của yêu cầu<br>- Giống nhau ở mọi vị trí | High | Positive | EP |  |
+
+### Trường 18 – Địa chỉ SHS
+
+| TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| TC_PL05_F18_001 | BR-12 | Trường 18 – Địa chỉ SHS | Kiểm tra Địa chỉ SHS | PC-01; chuẩn bị dữ liệu theo cột Dữ liệu test | 1. Chuẩn bị dữ liệu, tạo yêu cầu (SOP-02)<br>2. Mở PL05 (SOP-01)<br>3. Xem mục 2 và 2 khối xác nhận | Tài khoản SHS · Địa chỉ SHS mới | - Đúng địa chỉ liên hệ của SHS<br>- Giống nhau ở 3 vị trí<br>- Khi SHS đổi địa chỉ: pL05 mới hiện địa chỉ mới | High | Functional | EP, EG | Khôi phục dữ liệu sau test |
+
+### Trường 19 – Họ tên người đại diện cung cấp thông tin
+
+| TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| TC_PL05_F19_001 | BR-13 | Trường 19 – Họ tên người đại diện cung cấp thông tin | Kiểm tra Họ tên người đại diện cung cấp thông tin | PC-01; chuẩn bị dữ liệu theo cột Dữ liệu test | 1. Chuẩn bị dữ liệu, tạo yêu cầu (SOP-02)<br>2. Mở PL05 (SOP-01)<br>3. Xem mục 2 và khối xác nhận cung cấp thông tin | AU1 · AU1, AU2 · AU0 mặc định · Người ủy quyền của KH_01 | - Đúng họ tên người ủy quyền mặc định của SHS<br>- Giống nhau ở 2 vị trí<br>- Khi SHS có 2 người ủy quyền mặc định: [GĐ Q-06] Chỉ hiện 1 người, không ghép tên<br>- Khi đổi người ủy quyền mặc định: hiện họ tên người mặc định mới<br>- Khi KH đặt mua có người ủy quyền riêng: không hiện người ủy quyền của KH, vẫn là người của SHS | High | Functional | EG, DT | Q-06 · Khôi phục dữ liệu sau test |
+
+### Trường 20 – Chức vụ người đại diện cung cấp thông tin
+
+| TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| TC_PL05_F20_001 | BR-13 | Trường 20 – Chức vụ người đại diện cung cấp thông tin | Kiểm tra Chức vụ người đại diện cung cấp thông tin | Yêu cầu KH_01 × TP_01 Chờ duyệt | 1. Mở PL05 (SOP-01)<br>2. Xem mục 2 và khối xác nhận cung cấp thông tin | AU1 | - Đúng chức vụ của người ủy quyền mặc định của SHS [GĐ Q-05]<br>- Giống nhau ở 2 vị trí | Medium | Positive | DT | Q-05 |
+
+### Trường 21 – Số văn bản ủy quyền cung cấp thông tin
+
+| TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| TC_PL05_F21_001 | BR-13 | Trường 21 – Số văn bản ủy quyền cung cấp thông tin | Kiểm tra Số văn bản ủy quyền cung cấp thông tin | Yêu cầu KH_01 × TP_01 Chờ duyệt | 1. Mở PL05 (SOP-01)<br>2. Xem mục 2 và khối xác nhận cung cấp thông tin | AU1 | - Đúng số văn bản ủy quyền của người ủy quyền mặc định của SHS [GĐ Q-05]<br>- Giống nhau ở 2 vị trí | Medium | Positive | DT | Q-05 |
+
+### Trường 22 – Ngày hiệu lực ủy quyền cung cấp thông tin
+
+| TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| TC_PL05_F22_001 | BR-13 | Trường 22 – Ngày hiệu lực ủy quyền cung cấp thông tin | Kiểm tra Ngày hiệu lực ủy quyền cung cấp thông tin | Yêu cầu KH_01 × TP_01 Chờ duyệt | 1. Mở PL05 (SOP-01)<br>2. Xem mục 2 và khối xác nhận cung cấp thông tin | AU1 | - Đúng ngày hiệu lực ủy quyền của người ủy quyền mặc định của SHS [GĐ Q-05], dạng ngày/tháng/năm<br>- Giống nhau ở 2 vị trí | Medium | Positive | DT | Q-05 |
+
+### Trường 23 – Bản công bố thông tin trước đợt chào bán
+
+| TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| TC_PL05_F23_001 | BR-15 | Trường 23 – Bản công bố thông tin trước đợt chào bán | Kiểm tra Bản công bố thông tin trước đợt chào bán | PC-01; chuẩn bị dữ liệu theo cột Dữ liệu test | 1. Mở PL05 (SOP-01)<br>2. Xem mục 2 a) | Phụ lục TP_01 · TP_08 | - Đúng nội dung đã khai báo trong phụ lục TP<br>- Đủ nội dung, không bị cắt<br>- Khi TP chưa khai báo phụ lục: [GĐ Q-18] Để trống, không hiện “null” | High | Functional | EG, EP | Q-18 |
+
+### Trường 24 – Căn cứ pháp lý của phương án phát hành
+
+| TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| TC_PL05_F24_001 | BR-16 | Trường 24 – Căn cứ pháp lý của phương án phát hành | Kiểm tra Căn cứ pháp lý của phương án phát hành | PC-01; chuẩn bị dữ liệu theo cột Dữ liệu test | 1. Mở PL05 (SOP-01)<br>2. Xem mục 2 b) | TP_02 · TP_03 · TP_04 · TP_01 | - Khi ngày phát hành 15/09/2022: ghi “Nghị định số 153/2020/NĐ-CP”<br>- Khi ngày phát hành 16/09/2022: ghi “Nghị định số 153/2020/NĐ-CP và Nghị định 65/2022/NĐ-CP”<br>- Khi ngày phát hành 04/06/2026: ghi “Nghị định số 153/2020/NĐ-CP và Nghị định 65/2022/NĐ-CP”<br>- Khi ngày phát hành 05/06/2026: ghi “Điều 10 Nghị định số 200/2026/NĐ-CP” | High | Functional | BVA | Test sát 2 phía mốc 16/09/2022 và 05/06/2026 để bắt lỗi so sánh sai tại mốc |
+
+### Trường 25 – Phương án phát hành
+
+| TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| TC_PL05_F25_001 | BR-15 | Trường 25 – Phương án phát hành | Kiểm tra Phương án phát hành | PC-01; chuẩn bị dữ liệu theo cột Dữ liệu test | 1. Mở PL05 (SOP-01)<br>2. Xem mục 2 b) | Phụ lục TP_01 · TP_08 | - Đúng nội dung đã khai báo trong phụ lục TP<br>- Đủ nội dung, không bị cắt<br>- Khi TP chưa khai báo phụ lục: [GĐ Q-18] Để trống, không hiện “null” | Medium | Functional | EG, EP | Q-18 |
+
+### Trường 26 – Căn cứ pháp lý của hồ sơ chào bán
+
+| TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| TC_PL05_F26_001 | BR-16 | Trường 26 – Căn cứ pháp lý của hồ sơ chào bán | Kiểm tra Căn cứ pháp lý của hồ sơ chào bán | PC-01; chuẩn bị dữ liệu theo cột Dữ liệu test | 1. Mở PL05 (SOP-01)<br>2. Xem mục 2 c) | TP_02 · TP_03 · TP_04 · TP_01 | - Khi ngày phát hành 15/09/2022: ghi “Nghị định số 153/2020/NĐ-CP”<br>- Khi ngày phát hành 16/09/2022: ghi “Nghị định số 153/2020/NĐ-CP và Nghị định 65/2022/NĐ-CP”<br>- Khi ngày phát hành 04/06/2026: ghi “Nghị định số 153/2020/NĐ-CP và Nghị định 65/2022/NĐ-CP”<br>- Khi ngày phát hành 05/06/2026: ghi “Nghị định số 200/2026/NĐ-CP” | High | Functional | BVA | Test sát 2 phía mốc 16/09/2022 và 05/06/2026 để bắt lỗi so sánh sai tại mốc |
+
+### Trường 27 – Hồ sơ chào bán
+
+| TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| TC_PL05_F27_001 | BR-15 | Trường 27 – Hồ sơ chào bán | Kiểm tra Hồ sơ chào bán | PC-01; chuẩn bị dữ liệu theo cột Dữ liệu test | 1. Mở PL05 (SOP-01)<br>2. Xem mục 2 c) | Phụ lục TP_01 · TP_08 | - Đúng nội dung đã khai báo trong phụ lục TP<br>- Đủ nội dung, không bị cắt<br>- Khi TP chưa khai báo phụ lục: [GĐ Q-18] Để trống, không hiện “null” | Medium | Functional | EG, EP | Q-18 |
+
+### Trường 28 – Căn cứ pháp lý của công bố thông tin định kỳ
+
+| TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| TC_PL05_F28_001 | BR-16 | Trường 28 – Căn cứ pháp lý của công bố thông tin định kỳ | Kiểm tra Căn cứ pháp lý của công bố thông tin định kỳ | PC-01; chuẩn bị dữ liệu theo cột Dữ liệu test | 1. Mở PL05 (SOP-01)<br>2. Xem mục 2 d) | TP_02 · TP_03 · TP_04 · TP_01 | - Khi ngày phát hành 15/09/2022: ghi “Nghị định số 153/2020/NĐ-CP”<br>- Khi ngày phát hành 16/09/2022: ghi “Nghị định số 153/2020/NĐ-CP và Nghị định 65/2022/NĐ-CP”<br>- Khi ngày phát hành 04/06/2026: ghi “Nghị định số 153/2020/NĐ-CP và Nghị định 65/2022/NĐ-CP”<br>- Khi ngày phát hành 05/06/2026: ghi “Nghị định số 200/2026/NĐ-CP” | High | Functional | BVA | Test sát 2 phía mốc 16/09/2022 và 05/06/2026 để bắt lỗi so sánh sai tại mốc |
+
+### Trường 29 – Công bố thông tin định kỳ
+
+| TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| TC_PL05_F29_001 | BR-15 | Trường 29 – Công bố thông tin định kỳ | Kiểm tra Công bố thông tin định kỳ | PC-01; chuẩn bị dữ liệu theo cột Dữ liệu test | 1. Mở PL05 (SOP-01)<br>2. Xem mục 2 d) | Phụ lục TP_01 · TP_08 | - Đúng nội dung đã khai báo trong phụ lục TP<br>- Đủ nội dung, không bị cắt<br>- Khi TP chưa khai báo phụ lục: [GĐ Q-18] Để trống, không hiện “null” | Medium | Functional | EG, EP | Q-18 |
+
+### Trường 30 – Mã số đăng ký doanh nghiệp
+
+| TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| TC_PL05_F30_001 | BR-17 | Trường 30 – Mã số đăng ký doanh nghiệp | Kiểm tra Mã số đăng ký doanh nghiệp | Yêu cầu KH_01 × TP_01 Chờ duyệt | 1. Mở PL05 (SOP-01)<br>2. Xem mục 3.1 a) | TCPH_A | - Đúng mã số đăng ký doanh nghiệp của tổ chức phát hành | Medium | Positive | EP | Q-20 |
+
+### Trường 31 – Ngành nghề
+
+| TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| TC_PL05_F31_001 | BR-17 | Trường 31 – Ngành nghề | Kiểm tra Ngành nghề | Yêu cầu KH_01 × TP_01 Chờ duyệt | 1. Mở PL05 (SOP-01)<br>2. Xem mục 3.1 a) | TP_01 | - Đúng ngành nghề đã khai báo | Medium | Positive | EP |  |
+
+### Trường 32 – Thời điểm cập nhật số liệu tài chính
+
+| TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| TC_PL05_F32_001 | BR-18 | Trường 32 – Thời điểm cập nhật số liệu tài chính | Kiểm tra Thời điểm cập nhật số liệu tài chính | PC-01; chuẩn bị dữ liệu theo cột Dữ liệu test | 1. Mở PL05 (SOP-01)<br>2. Xem bảng tài chính mục 3.1 b) | TP_06 · TP_01 · TP_07 · TP_08 | - Khi có 1 kỳ: chỉ 1 cột thời điểm, không có cột trống<br>- Khi có 3 kỳ: 3 cột, xếp từ gần đến xa, dạng ngày/tháng/năm<br>- Khi có 4 kỳ: chỉ 3 kỳ gần nhất<br>- Khi nhập kỳ không theo thời gian: xếp theo thời gian, không theo thứ tự nhập<br>- Khi chưa có kỳ nào: [GĐ Q-11] Bảng chỉ còn cột Chỉ tiêu, Đơn vị | High | Functional | BVA, EG | Q-11 |
+
+### Trường 33 – Tổng tài sản
+
+| TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| TC_PL05_F33_001 | BR-18 | Trường 33 – Tổng tài sản | Kiểm tra Tổng tài sản | Yêu cầu KH_01 × TP_01 Chờ duyệt | 1. Mở PL05 (SOP-01)<br>2. Xem bảng tài chính mục 3.1 b) | TP_01 có 3 kỳ | - Đúng giá trị từng kỳ, đúng cột<br>- [GĐ Q-11] Đơn vị VND, phân cách hàng nghìn | Medium | Positive | EP | Q-11 |
+
+### Trường 34 – Nợ phải trả
+
+| TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| TC_PL05_F34_001 | BR-18 | Trường 34 – Nợ phải trả | Kiểm tra Nợ phải trả | Yêu cầu KH_01 × TP_01 Chờ duyệt | 1. Mở PL05 (SOP-01)<br>2. Xem bảng tài chính mục 3.1 b) | TP_01 có 3 kỳ | - Đúng giá trị từng kỳ, đúng cột<br>- [GĐ Q-11] Đơn vị VND, phân cách hàng nghìn | Medium | Positive | EP | Q-11 |
+
+### Trường 35 – Vốn chủ sở hữu
+
+| TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| TC_PL05_F35_001 | BR-18 | Trường 35 – Vốn chủ sở hữu | Kiểm tra Vốn chủ sở hữu | Yêu cầu KH_01 × TP_01 Chờ duyệt | 1. Mở PL05 (SOP-01)<br>2. Xem bảng tài chính mục 3.1 b) | TP_01 có 3 kỳ | - Đúng giá trị từng kỳ, đúng cột<br>- [GĐ Q-11] Đơn vị VND, phân cách hàng nghìn | Medium | Positive | EP | Q-11 |
+
+### Trường 36 – Vốn lưu động thường xuyên
+
+| TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| TC_PL05_F36_001 | BR-18 | Trường 36 – Vốn lưu động thường xuyên | Kiểm tra Vốn lưu động thường xuyên | Yêu cầu KH_01 × TP_01 Chờ duyệt | 1. Mở PL05 (SOP-01)<br>2. Xem bảng tài chính mục 3.1 b) | TP_01 có 3 kỳ | - Đúng giá trị từng kỳ, đúng cột<br>- [GĐ Q-11] Đơn vị VND, phân cách hàng nghìn | Medium | Positive | EP | Q-11 |
+
+### Trường 37 – Hệ số dư nợ vay/Tổng tài sản
+
+| TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| TC_PL05_F37_001 | BR-18 | Trường 37 – Hệ số dư nợ vay/Tổng tài sản | Kiểm tra Hệ số dư nợ vay/Tổng tài sản | Yêu cầu KH_01 × TP_01 Chờ duyệt | 1. Mở PL05 (SOP-01)<br>2. Xem bảng tài chính mục 3.1 b) | TP_01 có 3 kỳ | - Đúng giá trị từng kỳ, đúng cột<br>- [GĐ Q-11] Đơn vị Lần, giữ phần thập phân | Medium | Positive | EP | Q-11 |
+
+### Trường 38 – Hệ số nợ phải trả/Vốn chủ sở hữu
+
+| TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| TC_PL05_F38_001 | BR-18 | Trường 38 – Hệ số nợ phải trả/Vốn chủ sở hữu | Kiểm tra Hệ số nợ phải trả/Vốn chủ sở hữu | Yêu cầu KH_01 × TP_01 Chờ duyệt | 1. Mở PL05 (SOP-01)<br>2. Xem bảng tài chính mục 3.1 b) | TP_01 có 3 kỳ | - Đúng giá trị từng kỳ, đúng cột<br>- [GĐ Q-11] Đơn vị Lần, giữ phần thập phân | Medium | Positive | EP | Q-11 |
+
+### Trường 39 – Khả năng thanh toán hiện hành
+
+| TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| TC_PL05_F39_001 | BR-18 | Trường 39 – Khả năng thanh toán hiện hành | Kiểm tra Khả năng thanh toán hiện hành | Yêu cầu KH_01 × TP_01 Chờ duyệt | 1. Mở PL05 (SOP-01)<br>2. Xem bảng tài chính mục 3.1 b) | TP_01 có 3 kỳ | - Đúng giá trị từng kỳ, đúng cột<br>- [GĐ Q-11] Đơn vị Lần, giữ phần thập phân | Medium | Positive | EP | Q-11 |
+
+### Trường 40 – Mục đích phát hành
+
+| TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| TC_PL05_F40_001 | BR-15 | Trường 40 – Mục đích phát hành | Kiểm tra Mục đích phát hành | PC-01; chuẩn bị dữ liệu theo cột Dữ liệu test | 1. Chuẩn bị dữ liệu, tạo yêu cầu (SOP-02)<br>2. Mở PL05 (SOP-01)<br>3. Xem mục 3.1 c) | Phụ lục TP_01 · TP_07 · <b>, <script> · TP_08 | - Đúng nội dung đã khai báo trong phụ lục TP<br>- Đủ nội dung, không bị cắt<br>- Khi TP khác cùng tổ chức phát hành có mục đích khác: hiện mục đích của đúng mã TP trong yêu cầu<br>- Khi nội dung có thẻ HTML: hiện dạng chữ, không chạy script, không vỡ bố cục<br>- Khi TP chưa khai báo phụ lục: [GĐ Q-18] Để trống, không hiện “null” | Medium | Functional | EG, EP | Q-18 |
+
+### Trường 41 – Kế hoạch sử dụng vốn
+
+| TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| TC_PL05_F41_001 | BR-15 | Trường 41 – Kế hoạch sử dụng vốn | Kiểm tra Kế hoạch sử dụng vốn | PC-01; chuẩn bị dữ liệu theo cột Dữ liệu test | 1. Mở PL05 (SOP-01)<br>2. Xem mục 3.1 d) | Phụ lục TP_01 · TP_08 | - Đúng nội dung đã khai báo trong phụ lục TP<br>- Đủ nội dung, không bị cắt<br>- Khi TP chưa khai báo phụ lục: [GĐ Q-18] Để trống, không hiện “null” | Medium | Functional | EG, EP | Q-18 |
+
+### Trường 42 – Kế hoạch sử dụng vốn tạm thời nhàn rỗi
+
+| TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| TC_PL05_F42_001 | BR-15 | Trường 42 – Kế hoạch sử dụng vốn tạm thời nhàn rỗi | Kiểm tra Kế hoạch sử dụng vốn tạm thời nhàn rỗi | PC-01; chuẩn bị dữ liệu theo cột Dữ liệu test | 1. Mở PL05 (SOP-01)<br>2. Xem mục 3.1 d) | Phụ lục TP_01 · TP_08 | - Đúng nội dung đã khai báo trong phụ lục TP<br>- Đủ nội dung, không bị cắt<br>- Khi TP chưa khai báo phụ lục: [GĐ Q-18] Để trống, không hiện “null” | Medium | Functional | EG, EP | Q-18 |
+
+### Trường 43 – Phương án bố trí nguồn trả lãi, gốc
+
+| TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| TC_PL05_F43_001 | BR-15 | Trường 43 – Phương án bố trí nguồn trả lãi, gốc | Kiểm tra Phương án bố trí nguồn trả lãi, gốc | PC-01; chuẩn bị dữ liệu theo cột Dữ liệu test | 1. Mở PL05 (SOP-01)<br>2. Xem mục 3.1 đ) | Phụ lục TP_01 · TP_08 | - Đúng nội dung đã khai báo trong phụ lục TP<br>- Đủ nội dung, không bị cắt<br>- Khi TP chưa khai báo phụ lục: [GĐ Q-18] Để trống, không hiện “null” | Medium | Functional | EG, EP | Q-18 |
+
+### Trường 44 – Có/không tài sản bảo đảm
+
+| TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| TC_PL05_F44_001 | BR-19 | Trường 44 – Có/không tài sản bảo đảm | Kiểm tra Có/không tài sản bảo đảm | PC-01; chuẩn bị dữ liệu theo cột Dữ liệu test | 1. Mở PL05 (SOP-01)<br>2. Xem mục 3.1 e) | TP_01 · TP_06 | - Khi TP có tài sản bảo đảm: hiện câu “có tài sản đảm bảo”<br>- Khi TP không có tài sản bảo đảm: [GĐ Q-08] Hiện câu “không có tài sản đảm bảo” | High | Functional | DT | Q-08 |
+
+### Trường 45 – Giá trị tài sản bảo đảm
+
+| TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| TC_PL05_F45_001 | BR-19 | Trường 45 – Giá trị tài sản bảo đảm | Kiểm tra Giá trị tài sản bảo đảm | PC-01; chuẩn bị dữ liệu theo cột Dữ liệu test | 1. Mở PL05 (SOP-01)<br>2. Xem mục 3.1 e) | TP_01 · TP_01, TP_07 · TP_06 · TP_08 | - Khi TP có 2 tài sản bảo đảm: bằng tổng giá trị các tài sản bảo đảm; [GĐ Q-09] Phân cách hàng nghìn<br>- Khi TP khác cùng tổ chức phát hành có tài sản bảo đảm: không cộng tài sản của TP khác<br>- Khi TP không có tài sản bảo đảm: [GĐ Q-08] Để trống, không hiện “null”<br>- Khi chưa khai báo chi tiết tài sản: [GĐ Q-08] Để trống, không hiện số 0 | High | Functional | EG, DT | Q-08 · Q-09 |
+
+### Trường 46 – Số đăng ký giao dịch bảo đảm
+
+| TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| TC_PL05_F46_001 | BR-19 | Trường 46 – Số đăng ký giao dịch bảo đảm | Kiểm tra Số đăng ký giao dịch bảo đảm | PC-01; chuẩn bị dữ liệu theo cột Dữ liệu test | 1. Mở PL05 (SOP-01)<br>2. Xem mục 3.1 e) | TP_01 · TP_06 | - Khi TP có 2 tài sản bảo đảm: hiện đủ 2 số đăng ký [GĐ Q-09]<br>- Khi TP không có tài sản bảo đảm: [GĐ Q-08] Để trống, không hiện “null” | Medium | Functional | DT | Q-08 · Q-09 |
+
+### Trường 47 – Có/không bảo lãnh thanh toán
+
+| TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| TC_PL05_F47_001 | BR-20 | Trường 47 – Có/không bảo lãnh thanh toán | Kiểm tra Có/không bảo lãnh thanh toán | PC-01; chuẩn bị dữ liệu theo cột Dữ liệu test | 1. Mở PL05 (SOP-01)<br>2. Xem mục 3.1 e) | TP_01 · TP_06 | - Khi TP có bảo lãnh: hiện câu “có bảo lãnh thanh toán của Tổ chức tín dụng”<br>- Khi TP không có bảo lãnh: [GĐ Q-10] Hiện câu “không có bảo lãnh thanh toán” | High | Functional | DT | Q-10 |
+
+### Trường 48 – Tổ chức tín dụng bảo lãnh
+
+| TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| TC_PL05_F48_001 | BR-20 | Trường 48 – Tổ chức tín dụng bảo lãnh | Kiểm tra Tổ chức tín dụng bảo lãnh | PC-01; chuẩn bị dữ liệu theo cột Dữ liệu test | 1. Mở PL05 (SOP-01)<br>2. Xem mục 3.1 e) | TP_01 · TP_06 | - Khi TP có bảo lãnh: đúng tên tổ chức tín dụng bảo lãnh<br>- Khi TP không có bảo lãnh: [GĐ Q-10] Để trống, không hiện “null” | High | Functional | DT | Q-10 |
+
+### Trường 49 – Lãi suất trái phiếu
+
+| TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| TC_PL05_F49_001 | BR-17 | Trường 49 – Lãi suất trái phiếu | Kiểm tra Lãi suất trái phiếu | Yêu cầu KH_01 × TP_01 Chờ duyệt | 1. Mở PL05 (SOP-01)<br>2. Xem mục 3.1 g) | TP_01 | - Đúng mô tả lãi suất, đủ nội dung | Medium | Positive | EP |  |
+
+### Trường 50 – Kỳ hạn trái phiếu
+
+| TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| TC_PL05_F50_001 | BR-17 | Trường 50 – Kỳ hạn trái phiếu | Kiểm tra Kỳ hạn trái phiếu | Yêu cầu KH_01 × TP_01 Chờ duyệt | 1. Mở PL05 (SOP-01)<br>2. Xem mục 3.1 g) | TP_01 | - Đúng kỳ hạn trái phiếu | Medium | Positive | EP | Q-20 |
+
+### Trường 51 – Cam kết của tổ chức phát hành
+
+| TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| TC_PL05_F51_001 | BR-15 | Trường 51 – Cam kết của tổ chức phát hành | Kiểm tra Cam kết của tổ chức phát hành | PC-01; chuẩn bị dữ liệu theo cột Dữ liệu test | 1. Mở PL05 (SOP-01)<br>2. Xem mục 3.1 h) | Phụ lục TP_01 · TP_08 | - Đúng nội dung đã khai báo trong phụ lục TP<br>- Đủ nội dung, không bị cắt<br>- Khi TP chưa khai báo phụ lục: [GĐ Q-18] Để trống, không hiện “null” | Medium | Functional | EG, EP | Q-18 |
+
+### Trường 52 – Căn cứ pháp lý của đối tượng chào bán
+
+| TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| TC_PL05_F52_001 | BR-16 | Trường 52 – Căn cứ pháp lý của đối tượng chào bán | Kiểm tra Căn cứ pháp lý của đối tượng chào bán | PC-01; chuẩn bị dữ liệu theo cột Dữ liệu test | 1. Mở PL05 (SOP-01)<br>2. Xem mục 3.1 i) | TP_02 · TP_03 · TP_04 · TP_01 | - Khi ngày phát hành 15/09/2022: ghi “Nghị định số 153/2020/NĐ-CP”<br>- Khi ngày phát hành 16/09/2022: ghi “Nghị định số 153/2020/NĐ-CP và Nghị định 65/2022/NĐ-CP”<br>- Khi ngày phát hành 04/06/2026: ghi “Nghị định số 153/2020/NĐ-CP và Nghị định 65/2022/NĐ-CP”<br>- Khi ngày phát hành 05/06/2026: ghi “(điều khoản) Nghị định số 200/2026/NĐ-CP” [GĐ Q-14] | High | Functional | BVA | Test sát 2 phía mốc 16/09/2022 và 05/06/2026 để bắt lỗi so sánh sai tại mốc · Q-14 |
+
+### Trường 53 – Đại diện người sở hữu trái phiếu
+
+| TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| TC_PL05_F53_001 | BR-17 | Trường 53 – Đại diện người sở hữu trái phiếu | Kiểm tra Đại diện người sở hữu trái phiếu | PC-01; chuẩn bị dữ liệu theo cột Dữ liệu test | 1. Mở PL05 (SOP-01)<br>2. Xem mục 3.1 k) | TP_01 · TP_06 | - Đúng đại diện đã khai báo, giữ chữ “(nếu có)”<br>- Khi TP chưa khai báo đại diện: để trống, không hiện “null”, giữ chữ “(nếu có)” | Medium | Functional | EG, EP |  |
+
+### Trường 54 – Rủi ro
+
+| TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| TC_PL05_F54_001 | BR-15 | Trường 54 – Rủi ro | Kiểm tra Rủi ro | PC-01; chuẩn bị dữ liệu theo cột Dữ liệu test | 1. Mở PL05 (SOP-01)<br>2. Xem mục 3.2 | Phụ lục TP_01 · Rủi ro TP_01 có 3 dòng · TP_08 | - Đúng nội dung đã khai báo trong phụ lục TP<br>- Đủ nội dung, không bị cắt<br>- Khi có nhiều dòng: hiện đủ các dòng, đúng thứ tự [GĐ Q-18]<br>- Khi TP chưa khai báo phụ lục: [GĐ Q-18] Để trống, không hiện “null” | High | Functional | EG, EP | Q-18 |
+
+### Trường 55 – Ngày ký
+
+| TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| TC_PL05_F55_001 | BR-21 | Trường 55 – Ngày ký | Kiểm tra Ngày ký | PC-01; chuẩn bị dữ liệu theo cột Dữ liệu test | 1. Chuẩn bị dữ liệu, tạo yêu cầu (SOP-02)<br>2. Mở PL05 (SOP-01)<br>3. Xem dòng “Hà Nội, ngày…” và 2 khối xác nhận | Tạo ngày 19/11/2026 · 23:59:30 · Ngày GD 20/11/2026 | - Là ngày tạo yêu cầu, dạng “ngày … tháng … năm …”<br>- Giống nhau ở 3 vị trí<br>- Khi tạo yêu cầu lúc 23:59: đúng ngày theo giờ Việt Nam, không lệch sang hôm sau<br>- Khi ngày giao dịch khác ngày tạo yêu cầu: lấy ngày tạo yêu cầu, không lấy ngày giao dịch | High | Functional | EG, EP | Q-13 |
+
+### Trường 56 – Số CCCD người đại diện cung cấp thông tin
+
+| TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| TC_PL05_F56_001 | BR-13 | Trường 56 – Số CCCD người đại diện cung cấp thông tin | Kiểm tra Số CCCD người đại diện cung cấp thông tin | Yêu cầu KH_01 × TP_01 Chờ duyệt | 1. Mở PL05 (SOP-01)<br>2. Xem khối xác nhận cung cấp thông tin | AU1 | - Đúng số CCCD của người ủy quyền mặc định của SHS [GĐ Q-05], giữ số 0 đầu | Medium | Positive | DT | Q-05 |
+
+### Trường 57 – Họ tên người đại diện xác nhận tư cách NĐT
+
+| TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| TC_PL05_F57_001 | BR-14 | Trường 57 – Họ tên người đại diện xác nhận tư cách NĐT | Kiểm tra Họ tên người đại diện xác nhận tư cách NĐT | PC-01; chuẩn bị dữ liệu theo cột Dữ liệu test | 1. Chuẩn bị dữ liệu, tạo yêu cầu (SOP-02)<br>2. Mở PL05 (SOP-01)<br>3. Xem khối xác nhận tư cách NĐT | AU0 · Chỉ còn AU1 · AU1 không mặc định · Người ủy quyền của KH_01 | - Đúng họ tên người ủy quyền không mặc định của SHS<br>- Khi SHS không có người ủy quyền không mặc định: [GĐ Q-06] Để trống, không lấy người mặc định<br>- Khi đổi người ủy quyền mặc định: hiện họ tên người không mặc định mới<br>- Khi KH đặt mua có người ủy quyền riêng: không hiện người ủy quyền của KH, vẫn là người của SHS | High | Functional | EG, DT | Q-06 · Khôi phục dữ liệu sau test |
+
+### Trường 58 – Số văn bản ủy quyền xác nhận tư cách NĐT
+
+| TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| TC_PL05_F58_001 | BR-14 | Trường 58 – Số văn bản ủy quyền xác nhận tư cách NĐT | Kiểm tra Số văn bản ủy quyền xác nhận tư cách NĐT | Yêu cầu KH_01 × TP_01 Chờ duyệt | 1. Mở PL05 (SOP-01)<br>2. Xem khối xác nhận tư cách NĐT | AU0 | - Đúng số văn bản ủy quyền của người ủy quyền không mặc định của SHS [GĐ Q-05] | Medium | Positive | DT | Q-05 |
+
+### Trường 59 – Ngày hiệu lực ủy quyền xác nhận tư cách NĐT
+
+| TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| TC_PL05_F59_001 | BR-14 | Trường 59 – Ngày hiệu lực ủy quyền xác nhận tư cách NĐT | Kiểm tra Ngày hiệu lực ủy quyền xác nhận tư cách NĐT | Yêu cầu KH_01 × TP_01 Chờ duyệt | 1. Mở PL05 (SOP-01)<br>2. Xem khối xác nhận tư cách NĐT | AU0 | - Đúng ngày hiệu lực ủy quyền của người ủy quyền không mặc định của SHS [GĐ Q-05], dạng ngày/tháng/năm | Medium | Positive | DT | Q-05 |
+
+### Trường 60 – Số CCCD người đại diện xác nhận tư cách NĐT
+
+| TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| TC_PL05_F60_001 | BR-14 | Trường 60 – Số CCCD người đại diện xác nhận tư cách NĐT | Kiểm tra Số CCCD người đại diện xác nhận tư cách NĐT | Yêu cầu KH_01 × TP_01 Chờ duyệt | 1. Mở PL05 (SOP-01)<br>2. Xem khối xác nhận tư cách NĐT | AU0 | - Đúng số CCCD của người ủy quyền không mặc định của SHS [GĐ Q-05], giữ số 0 đầu | Medium | Positive | DT | Q-05 |
+
+### Trường 61 – Chức vụ người đại diện xác nhận tư cách NĐT
+
+| TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| TC_PL05_F61_001 | BR-14 | Trường 61 – Chức vụ người đại diện xác nhận tư cách NĐT | Kiểm tra Chức vụ người đại diện xác nhận tư cách NĐT | Yêu cầu KH_01 × TP_01 Chờ duyệt | 1. Mở PL05 (SOP-01)<br>2. Xem khối xác nhận tư cách NĐT | AU0 | - Đúng chức vụ của người ủy quyền không mặc định của SHS [GĐ Q-05] | Medium | Positive | DT | Q-05 |
+
+### Trường 62 – Căn cứ pháp lý của bản công bố thông tin
+
+| TC ID | Req ID | Module | Title | Precondition | Steps | Test Data | Expected Result | Priority | Type | Technique | Note |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| TC_PL05_F62_001 | BR-16 | Trường 62 – Căn cứ pháp lý của bản công bố thông tin | Kiểm tra Căn cứ pháp lý của bản công bố thông tin | PC-01; chuẩn bị dữ liệu theo cột Dữ liệu test | 1. Mở PL05 (SOP-01)<br>2. Xem mục 2 a) | TP_02 · TP_03 · TP_04 · TP_01 | - Khi ngày phát hành 15/09/2022: ghi “Nghị định số 153/2020/NĐ-CP”<br>- Khi ngày phát hành 16/09/2022: ghi “Nghị định số 153/2020/NĐ-CP và Nghị định 65/2022/NĐ-CP”<br>- Khi ngày phát hành 04/06/2026: ghi “Nghị định số 153/2020/NĐ-CP và Nghị định 65/2022/NĐ-CP”<br>- Khi ngày phát hành 05/06/2026: ghi “khoản 1 Điều 29 Nghị định số 200/2026/NĐ-CP” | High | Functional | BVA | Test sát 2 phía mốc 16/09/2022 và 05/06/2026 để bắt lỗi so sánh sai tại mốc |
 
 ---
 ## B5 – TỰ REVIEW & HOÀN THIỆN
@@ -376,68 +617,135 @@ Tổng **82 TC**, viết rút gọn: Precondition chung PC-01, thao tác SOP-01/
 ### 1. RTM
 | BR ID | Mô tả ngắn | Số TC | TC IDs (bỏ tiền tố TC_PL05_) | Phủ | Ghi chú |
 |---|---|---|---|---|---|
-| BR-01 | Sinh PL05 sau khi tạo yêu cầu KH đặt mua → trạng thái Chờ duyệt | 5 | GEN_001, GEN_004, GEN_005, GEN_006, GEN_007 | Đủ |  |
-| BR-02 | Chỉ sinh PL05 cho KH Cá nhân; KH Tổ chức không sinh | 3 | GEN_002, GEN_003, VIEW_003 | Đủ |  |
-| BR-03 | PL05 hiển thị tại màn Xem chi tiết yêu cầu đặt mua | 2 | VIEW_001, VIEW_004 | Đủ |  |
-| BR-04 | PL05 hiển thị tại màn Xem chi tiết hợp đồng | 2 | VIEW_002, VIEW_003 | Đủ |  |
-| BR-05 | Nội dung tĩnh, bố cục mẫu PL05 (quốc hiệu, kính gửi, 4 phương án tư cá… | 6 | UI_001, UI_002, NDT_001, NDT_002, NDT_003, NDT_004 | Đủ |  |
-| BR-06 | Thông tin KH (Tên, Ngày sinh, Giới tính, Số CCCD/Hộ chiếu, Ngày cấp, N… | 11 | KH_001, KH_002, KH_003, KH_004, KH_005, KH_006, KH_007, KH_008, KH_009, KH_010, KH_011 | Đủ |  |
-| BR-07 | Tổ chức phát hành = BOND_ISSUER.ISSUER_NAME (2 vị trí) | 1 | TP_001 | Đủ |  |
-| BR-08 | Thông tin chứng chỉ (Loại, Số, Ngày cấp, Ngày hiệu lực) lấy CUSTOMER_P… | 7 | NDT_002, NDT_005, NDT_006, NDT_010, NDT_012, NDT_013, NDT_014 | Đủ |  |
-| BR-09 | Giá trị danh mục CKNY = CUSTOMER_PRO_INFO.INVEST_AMOUNT khi PRO_TYPE =… | 6 | NDT_003, NDT_007, NDT_010, NDT_011, NDT_013, NDT_014 | Đủ |  |
-| BR-10 | Năm thu nhập chịu thuế = CUSTOMER_PRO_INFO.YEAR, Giá trị thu nhập chịu… | 7 | NDT_004, NDT_008, NDT_009, NDT_010, NDT_011, NDT_012, NDT_014 | Đủ |  |
-| BR-11 | Mã trái phiếu = REPO_ORDER.SYMBOL (= BOND_INFO.CODE), đồng nhất mọi vị… | 2 | GEN_006, TP_002 | Đủ |  |
-| BR-12 | Địa chỉ SHS = CUSTOMER.CUST_ADDRESS của KH 069P000001 (3 vị trí) | 2 | DD_001, DD_002 | Đủ |  |
-| BR-13 | Khối xác nhận cung cấp thông tin (Người đại diện, Chức vụ, Số/Ngày ủy … | 5 | DD_003, DD_004, DD_005, DD_009, DD_010 | Đủ |  |
-| BR-14 | Khối xác nhận tư cách NĐT (Người đại diện, Số/Ngày ủy quyền, CCCD, Chứ… | 5 | DD_006, DD_007, DD_008, DD_009, DD_010 | Đủ |  |
-| BR-15 | 10 nội dung lấy từ bảng phụ lục trái phiếu: Bản CBTT trước đợt chào bá… | 5 | PL_001, PL_002, PL_003, PL_004, PL_005 | Đủ |  |
-| BR-16 | Căn cứ Nghị định (5 vị trí: mục 2 a, 2 b, 2 c, 2 d, 3.1 i) theo Ngày p… | 5 | ND_001, ND_002, ND_003, ND_004, ND_005 | Đủ |  |
-| BR-17 | Mã số ĐKDN = REGISTRATION_ID, Loại ngành nghề = BUSINESS_TYPE, Lãi suấ… | 6 | TP_003, TP_004, TP_005, TP_006, TP_007, TP_008 | Đủ |  |
-| BR-18 | Bảng tình hình tài chính: tối đa 3 kỳ gần nhất, sắp xếp gần → xa; có b… | 7 | FN_001, FN_002, FN_003, FN_004, FN_005, FN_006, FN_007 | Đủ |  |
-| BR-19 | TSBĐ: Có/không = BOND_INFO.HAS_COLLATERAL; Giá trị TSBĐ = tổng giá trị… | 4 | TS_001, TS_002, TS_003, TS_004 | Đủ |  |
-| BR-20 | Bảo lãnh thanh toán (Có/không, Tổ chức tín dụng bảo lãnh) lấy từ thông… | 2 | BL_001, BL_002 | Đủ |  |
-| BR-21 | Ngày ký (ngày/tháng/năm) = REPO_ORDER.CREATED_DATE (3 vị trí ký) | 3 | DT_001, DT_002, DT_003 | Đủ |  |
+| BR-01 | Sinh PL05 sau khi tạo yêu cầu KH đặt mua → trạng thái Chờ duyệt | 1 | CHUNG_002 | Đủ |  |
+| BR-02 | Chỉ sinh PL05 cho KH Cá nhân; KH Tổ chức không sinh | 1 | CHUNG_002 | Đủ |  |
+| BR-03 | PL05 hiển thị tại màn Xem chi tiết yêu cầu đặt mua | 1 | CHUNG_003 | Đủ |  |
+| BR-04 | PL05 hiển thị tại màn Xem chi tiết hợp đồng | 1 | CHUNG_003 | Đủ |  |
+| BR-05 | Nội dung tĩnh, bố cục mẫu PL05 (quốc hiệu, kính gửi, 4 phương án tư cá… | 2 | CHUNG_001, CHUNG_004 | Đủ |  |
+| BR-06 | Thông tin KH (Tên, Ngày sinh, Giới tính, Số CCCD/Hộ chiếu, Ngày cấp, N… | 8 | F01_001, F02_001, F03_001, F04_001, F05_001, F06_001, F07_001, F08_001 | Đủ |  |
+| BR-07 | Tổ chức phát hành = BOND_ISSUER.ISSUER_NAME (2 vị trí) | 1 | F09_001 | Đủ |  |
+| BR-08 | Thông tin chứng chỉ (Loại, Số, Ngày cấp, Ngày hiệu lực) lấy CUSTOMER_P… | 4 | F10_001, F11_001, F12_001, F13_001 | Đủ |  |
+| BR-09 | Giá trị danh mục CKNY = CUSTOMER_PRO_INFO.INVEST_AMOUNT khi PRO_TYPE =… | 1 | F14_001 | Đủ |  |
+| BR-10 | Năm thu nhập chịu thuế = CUSTOMER_PRO_INFO.YEAR, Giá trị thu nhập chịu… | 2 | F15_001, F16_001 | Đủ |  |
+| BR-11 | Mã trái phiếu = REPO_ORDER.SYMBOL (= BOND_INFO.CODE), đồng nhất mọi vị… | 1 | F17_001 | Đủ |  |
+| BR-12 | Địa chỉ SHS = CUSTOMER.CUST_ADDRESS của KH 069P000001 (3 vị trí) | 1 | F18_001 | Đủ |  |
+| BR-13 | Khối xác nhận cung cấp thông tin (Người đại diện, Chức vụ, Số/Ngày ủy … | 5 | F19_001, F20_001, F21_001, F22_001, F56_001 | Đủ |  |
+| BR-14 | Khối xác nhận tư cách NĐT (Người đại diện, Số/Ngày ủy quyền, CCCD, Chứ… | 5 | F57_001, F58_001, F59_001, F60_001, F61_001 | Đủ |  |
+| BR-15 | 10 nội dung lấy từ bảng phụ lục trái phiếu: Bản CBTT trước đợt chào bá… | 10 | F23_001, F25_001, F27_001, F29_001, F40_001, F41_001, F42_001, F43_001, F51_001, F54_001 | Đủ |  |
+| BR-16 | Căn cứ Nghị định (5 vị trí: mục 2 a, 2 b, 2 c, 2 d, 3.1 i) theo Ngày p… | 5 | F24_001, F26_001, F28_001, F52_001, F62_001 | Đủ |  |
+| BR-17 | Mã số ĐKDN = REGISTRATION_ID, Loại ngành nghề = BUSINESS_TYPE, Lãi suấ… | 5 | F30_001, F31_001, F49_001, F50_001, F53_001 | Đủ |  |
+| BR-18 | Bảng tình hình tài chính: tối đa 3 kỳ gần nhất, sắp xếp gần → xa; có b… | 8 | F32_001, F33_001, F34_001, F35_001, F36_001, F37_001, F38_001, F39_001 | Đủ |  |
+| BR-19 | TSBĐ: Có/không = BOND_INFO.HAS_COLLATERAL; Giá trị TSBĐ = tổng giá trị… | 3 | F44_001, F45_001, F46_001 | Đủ |  |
+| BR-20 | Bảo lãnh thanh toán (Có/không, Tổ chức tín dụng bảo lãnh) lấy từ thông… | 2 | F47_001, F48_001 | Đủ |  |
+| BR-21 | Ngày ký (ngày/tháng/năm) = REPO_ORDER.CREATED_DATE (3 vị trí ký) | 1 | F55_001 | Đủ |  |
 
 ### 2. Checklist (file 05)
 | Nhóm | Tiêu chí | Kết quả | Ghi chú |
 |---|---|---|---|
 | A | 100% BR có ≥ 1 TC | Đạt | 21/21 BR |
+| A | 100% trường mapping có ≥ 1 TC | Đạt | 62/62 trường – xem mục 5 |
 | A | Mỗi trường có hợp lệ / trống / biên | Đạt | Trường text ngắn (Nơi cấp, Loại ngành nghề) chỉ có case hợp lệ – rủi ro thấp, chấp nhận |
 | A | Luồng chính + phụ + ngoại lệ | Đạt | GEN, VIEW |
 | A | Phân quyền từng role | Một phần | SRS 11 không định nghĩa role → 1 TC theo [GĐ Q-16] |
 | A | DT: mỗi rule có TC | Đạt | 3 bảng DT phủ đủ cột |
 | A | Error guessing | Đạt | Unicode, NULL, double-click, múi giờ, XSS, lẫn dữ liệu |
 | B | Đủ 12 cột, ID đúng format, không trùng | Đạt | Kiểm tra tự động khi sinh file |
-| B | 1 TC = 1 mục tiêu | Đạt* | Mục tiêu tính theo khối/câu: chứng chỉ, thông tin ủy quyền, TSBĐ, 10 nội dung phụ lục, căn cứ Nghị định theo 1 ngày |
+| B | 1 TC = 1 mục tiêu | Đạt | Mỗi trường đúng 1 TC; các điều kiện đặc biệt của trường liệt kê từng dòng trong Kết quả mong đợi |
 | B | Title “Kiểm tra … khi …” | Đạt* | Vài TC dạng “Kiểm tra <tên trường> …” không có “khi” vì không có điều kiện riêng ngoài PC-01 |
 | B | Test data cụ thể | Đạt | Bộ dữ liệu B2 mục 4 |
-| B | Expected đo được | Đạt | Mỗi ý 1 dòng: nguồn DB, vị trí, định dạng; giá trị cụ thể ở Test Data |
+| B | Expected đo được | Đạt | Mỗi ý 1 dòng, viết tiếng Việt: hiển thị gì, ở đâu, dạng nào; giá trị cụ thể đối chiếu Test Data |
 | B | Negative: báo lỗi + không thực hiện | Đạt | Biểu mẫu không có message lỗi → kiểm “không gen / để trống / không lấy nhầm” |
 | B | Message nguyên văn hoặc [GĐ] | Đạt | Mọi giá trị chưa rõ gắn [GĐ] + Q-xx |
-| C | Không TC trùng | Đạt | GEN_003 (gen) và VIEW_003 (màn HĐ) khác mục tiêu |
+| C | Không TC trùng | Đạt | Mỗi trường 1 TC; nhóm Chung 4 TC theo chủ đề |
 | C | Priority hợp lý | Đạt | Căn cứ pháp lý, tư cách NĐT, người ký = High |
-| C | Thứ tự sắp xếp | Đạt | UI → luồng chính → field → biên → negative → permission theo từng nhóm |
+| C | Thứ tự sắp xếp | Đạt | Nhóm Chung trước, sau đó trường 01 → 62; trong Kết quả mong đợi: trường hợp thường trước, các dòng “Khi …” sau |
 
-### 3. Rút gọn so với bản trước (117 → 82 TC), độ phủ giữ nguyên
-| # | Thay đổi | Lý do vẫn đủ phủ |
-|---|---|---|
-| 1 | Gộp các trường cùng khối: chứng chỉ (4 → 1), Năm + Giá trị thu nhập chịu thuế (2 → 1), Chức vụ/Ủy quyền/CCCD mỗi khối xác nhận (3 → 1), TSBĐ có/giá trị/số ký hiệu (3 → 1), 10 nội dung phụ lục (10 → 1), Tổ chức phát hành 2 vị trí (2 → 1), Tên KH 2 vị trí (2 → 1), 4 TC nội dung tĩnh (4 → 1) | Cùng nguồn, cùng điều kiện, kiểm trong 1 lần mở PL05 |
-| 2 | Bỏ 3 TC EP giữa khoảng ngày phát hành và TC “ngày tạo ≠ ngày phát hành” | 4 giá trị biên đã đại diện đủ 3 lớp; TC biên 15/09/2022 có ngày tạo 2026 |
-| 3 | Bỏ TC so sánh PL05 ở 2 màn | Gộp vào TC hiển thị tại màn hợp đồng |
-| 4 | Bỏ TC Low ít giá trị: tên Unicode, ngưỡng CKNY 2 tỷ, bảng 2 kỳ, giá trị âm, ô chỉ tiêu trống, 1 TSĐB, ngày/tháng 1 chữ số | Đã có TC biên min/max và TC định dạng cùng trường |
+### 3. Thay đổi so với bản trước
+| # | Thay đổi |
+|---|---|
+| 1 | Mỗi TC chỉ kiểm 1 trường; bỏ các TC kiểm nhiều trường cùng lúc (để trống theo diện, 5 vị trí căn cứ, khối xác nhận đổi người…) và tách thành TC riêng cho từng trường |
+| 2 | Sắp theo trường 01 → 62; mã TC dạng TC_PL05_F<số trường>_<STT>, cột Module ghi “Trường nn – tên trường” |
+| 3 | Viết ngắn: Precondition, Steps 1–2 dòng; Expected 1–2 ý |
+| 4 | Gộp theo trường: mỗi trường 1 TC, điều kiện đặc biệt ghi “Khi …: …” trong Kết quả mong đợi |
 
 ### 4. Thống kê
 | Chỉ số | Giá trị | Mục tiêu | Nhận xét |
 |---|---|---|---|
-| Tổng TC | 82 | — | Bản rút gọn |
+| Tổng TC | 66 | — | Bản rút gọn |
 | Requirement coverage | 100% (21/21) | 100% | Đạt |
-| High / Medium / Low | 37 (45%) / 41 (50%) / 4 (4%) | ≈ 25/50/25 | High cao hơn chuẩn do biểu mẫu pháp lý, mapping sai = sai văn bản ký |
-| Positive : Non-positive | 36 : 46 (43% : 57%) | ≈ 30 : 70 | Non-positive gồm Negative, Boundary, Permission, Security, UI. Chức năng sinh văn bản thiên về xác minh mapping nên Positive cao hơn chuẩn |
-| Theo Type | Positive 36, Negative 31, Boundary 12, UI 1, Permission 1, Security 1 | — |  |
-| Q&A mở | 20 (Blocker 1 · Major 12 · Minor 7) | Blocker = 0 trước khi test | Q-01 phải chốt trước khi chạy NDT_001–004, NDT_014 |
-| TC phụ thuộc [GIẢ ĐỊNH] | 28 | — | Cập nhật expected khi BA trả lời |
+| High / Medium / Low | 30 (45%) / 36 (54%) / 0 (0%) | ≈ 25/50/25 | High cao hơn chuẩn do biểu mẫu pháp lý, mapping sai = sai văn bản ký |
+| Positive : Non-positive | 26 : 40 (39% : 61%) | ≈ 30 : 70 | Non-positive gồm Negative, Boundary, Permission, Security, UI. Chức năng sinh văn bản thiên về xác minh mapping nên Positive cao hơn chuẩn |
+| Theo Type | Functional 40, Positive 26 | — |  |
+| Q&A mở | 20 (Blocker 1 · Major 12 · Minor 7) | Blocker = 0 trước khi test | Q-01 phải chốt trước khi chạy CHUNG_004 |
+| TC phụ thuộc [GIẢ ĐỊNH] | 44 | — | Cập nhật expected khi BA trả lời |
 
-### 5. Việc cần làm tiếp
+### 5. Đối chiếu 62 trường mapping
+| STT | Trường thông tin (SRS 11) | Số TC | TC IDs (bỏ tiền tố TC_PL05_) |
+|---|---|---|---|
+| 1 | Tên khách hàng | 1 | F01_001 |
+| 2 | Ngày sinh | 1 | F02_001 |
+| 3 | Giới tính | 1 | F03_001 |
+| 4 | Số CCCD/Hộ chiếu | 1 | F04_001 |
+| 5 | Ngày cấp giấy tờ | 1 | F05_001 |
+| 6 | Nơi cấp giấy tờ | 1 | F06_001 |
+| 7 | Nơi ở hiện tại | 1 | F07_001 |
+| 8 | Điện thoại liên hệ | 1 | F08_001 |
+| 9 | Tổ chức phát hành | 1 | F09_001 |
+| 10 | Loại chứng chỉ | 1 | F10_001 |
+| 11 | Số chứng chỉ | 1 | F11_001 |
+| 12 | Ngày cấp chứng chỉ | 1 | F12_001 |
+| 13 | Ngày hiệu lực chứng chỉ | 1 | F13_001 |
+| 14 | Giá trị danh mục chứng khoán niêm yết | 1 | F14_001 |
+| 15 | Năm thu nhập chịu thuế | 1 | F15_001 |
+| 16 | Giá trị thu nhập chịu thuế | 1 | F16_001 |
+| 17 | Mã trái phiếu | 1 | F17_001 |
+| 18 | Địa chỉ SHS | 1 | F18_001 |
+| 19 | Họ tên người đại diện cung cấp thông tin | 1 | F19_001 |
+| 20 | Chức vụ người đại diện cung cấp thông tin | 1 | F20_001 |
+| 21 | Số văn bản ủy quyền cung cấp thông tin | 1 | F21_001 |
+| 22 | Ngày hiệu lực ủy quyền cung cấp thông tin | 1 | F22_001 |
+| 23 | Bản công bố thông tin trước đợt chào bán | 1 | F23_001 |
+| 24 | Căn cứ pháp lý của phương án phát hành | 1 | F24_001 |
+| 25 | Phương án phát hành | 1 | F25_001 |
+| 26 | Căn cứ pháp lý của hồ sơ chào bán | 1 | F26_001 |
+| 27 | Hồ sơ chào bán | 1 | F27_001 |
+| 28 | Căn cứ pháp lý của công bố thông tin định kỳ | 1 | F28_001 |
+| 29 | Công bố thông tin định kỳ | 1 | F29_001 |
+| 30 | Mã số đăng ký doanh nghiệp | 1 | F30_001 |
+| 31 | Ngành nghề | 1 | F31_001 |
+| 32 | Thời điểm cập nhật số liệu tài chính | 1 | F32_001 |
+| 33 | Tổng tài sản | 1 | F33_001 |
+| 34 | Nợ phải trả | 1 | F34_001 |
+| 35 | Vốn chủ sở hữu | 1 | F35_001 |
+| 36 | Vốn lưu động thường xuyên | 1 | F36_001 |
+| 37 | Hệ số dư nợ vay/Tổng tài sản | 1 | F37_001 |
+| 38 | Hệ số nợ phải trả/Vốn chủ sở hữu | 1 | F38_001 |
+| 39 | Khả năng thanh toán hiện hành | 1 | F39_001 |
+| 40 | Mục đích phát hành | 1 | F40_001 |
+| 41 | Kế hoạch sử dụng vốn | 1 | F41_001 |
+| 42 | Kế hoạch sử dụng vốn tạm thời nhàn rỗi | 1 | F42_001 |
+| 43 | Phương án bố trí nguồn trả lãi, gốc | 1 | F43_001 |
+| 44 | Có/không tài sản bảo đảm | 1 | F44_001 |
+| 45 | Giá trị tài sản bảo đảm | 1 | F45_001 |
+| 46 | Số đăng ký giao dịch bảo đảm | 1 | F46_001 |
+| 47 | Có/không bảo lãnh thanh toán | 1 | F47_001 |
+| 48 | Tổ chức tín dụng bảo lãnh | 1 | F48_001 |
+| 49 | Lãi suất trái phiếu | 1 | F49_001 |
+| 50 | Kỳ hạn trái phiếu | 1 | F50_001 |
+| 51 | Cam kết của tổ chức phát hành | 1 | F51_001 |
+| 52 | Căn cứ pháp lý của đối tượng chào bán | 1 | F52_001 |
+| 53 | Đại diện người sở hữu trái phiếu | 1 | F53_001 |
+| 54 | Rủi ro | 1 | F54_001 |
+| 55 | Ngày ký | 1 | F55_001 |
+| 56 | Số CCCD người đại diện cung cấp thông tin | 1 | F56_001 |
+| 57 | Họ tên người đại diện xác nhận tư cách NĐT | 1 | F57_001 |
+| 58 | Số văn bản ủy quyền xác nhận tư cách NĐT | 1 | F58_001 |
+| 59 | Ngày hiệu lực ủy quyền xác nhận tư cách NĐT | 1 | F59_001 |
+| 60 | Số CCCD người đại diện xác nhận tư cách NĐT | 1 | F60_001 |
+| 61 | Chức vụ người đại diện xác nhận tư cách NĐT | 1 | F61_001 |
+| 62 | Căn cứ pháp lý của bản công bố thông tin | 1 | F62_001 |
+
+### 6. Việc cần làm tiếp
 - Gửi BA 20 câu Q&A, ưu tiên Q-01 (Blocker), Q-03, Q-05, Q-08, Q-10, Q-14, Q-16.
 - Chuẩn bị dữ liệu B2 mục 4 trên UAT (7 mã TP, 7 KH, 2 người UQ của 069P).
 - Gõ `/EXPORT` để xuất Excel theo template.
