@@ -1,0 +1,14 @@
+﻿Name,Status,Priority,Test Script (Step-by-Step) - Step,Test Script (Step-by-Step) - Expected Result,Test Result,Note,Bug ID
+[API] Kiểm tra request khi mở tab Trái phiếu linh hoạt,,High,"1. Mở DevTools > Network
+2. Mở tab ""Danh mục trái phiếu"" > ""Trái phiếu linh hoạt""","- Gọi S7 và C2, trả HTTP 200",Not Run,"BR-01, BR-18",
+[API] Kiểm tra response S7 với bộ lọc mặc định,,Medium,1. Gọi GET /api/v1/bond/app/flex-bond-holding,"- HTTP 200, đủ các field hiển thị trên bảng
+- Không có mã chỉ nằm ở sub88
+- Số liệu khớp với Web",Not Run,"BR-18, BR-04, BR-05, BR-06; [GĐ] field Loại TP – Q-01",
+[API] Kiểm tra tham số S7 khi lọc trên giao diện,,Medium,"1. Mở DevTools > Network
+2. Lọc theo Mã TP, Loại TP, TCPH","- S7 gửi đúng symbol, bondType, issuerCode đã chọn",Not Run,"BR-07, BR-08, BR-09, BR-10",
+"[API] Kiểm tra S7 khi lọc theo symbol, bondType và issuerCode",,Medium,"1. Gọi S7 lần lượt với symbol, bondType, issuerCode",- Chỉ trả mã thỏa điều kiện,Not Run,"BR-18, BR-07, BR-08, BR-09",
+[API] Kiểm tra tham số S7 khi đổi trang,,Medium,"1. Mở DevTools > Network
+2. Bấm trang 2","- S7 gửi đúng page, size",Not Run,BR-11; [GĐ] – Q-08,
+[API] Kiểm tra C2 trả danh sách TCPH,,Low,1. Gọi GET /api/v1/bond/common/issuer/list,"- HTTP 200, có mã và tên TCPH",Not Run,"BR-18, BR-08; Q-06",
+[API] Kiểm tra S7 khi page và size sai,,Medium,1. Gọi S7 với page âm hoặc size = 0,"- Báo lỗi tham số, không HTTP 500",Not Run,"BR-18, BR-11; error code tham số chưa có trong SRS",
+[API] Kiểm tra S7 khi từ khóa dài hơn 50 ký tự,,Medium,1. Gọi S7 với từ khóa 51 ký tự,- Báo lỗi BND-100,Not Run,"BR-18, BR-07; [GĐ] max 50 – Q-04",

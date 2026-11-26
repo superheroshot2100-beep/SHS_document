@@ -1,0 +1,42 @@
+﻿Name,Status,Priority,Test Script (Step-by-Step) - Step,Test Script (Step-by-Step) - Expected Result,Test Result,Note,Bug ID
+[UI] Kiểm tra màn Lịch sử giao dịch,,Low,"1. Mở sub tab ""Lịch sử""","- Sub tab ""Lịch sử"" tô cam
+- Có bộ lọc ""Loại giao dịch"" và ""Thời gian giao dịch"" (mặc định 1 tháng gần nhất)
+- Bảng 3 cột: Thời gian, Nội dung, Biến động",Not Run,"BR-01, BR-02, BR-10; đối chiếu Figma Web; [GĐ] cách tính 1 tháng – Q-04",
+[UI] Kiểm tra màn Lịch sử giao dịch khi KH không có giao dịch,,Medium,"1. Đăng nhập KH chưa có giao dịch
+2. Mở sub tab ""Lịch sử""","- Hiện ""Không có giao dịch""
+- Không hiện phân trang",Not Run,BR-16; Figma Web chưa có màn trống – Q-16,
+[UI] Kiểm tra bộ lọc màn Lịch sử giao dịch,,Low,"1. Mở sub tab ""Lịch sử""
+2. Mở dropdown ""Loại giao dịch""
+3. Bấm ô ""Thời gian giao dịch""","- Dropdown có: Tất cả, Nhận trái tức, Mua trái phiếu, Bán trái phiếu, Nộp tiền, Rút tiền
+- Lịch hiện 2 tháng liền kề, tuần bắt đầu T2, có nút ""Đóng"" và ""Chọn""",Not Run,"BR-08, BR-10; [GĐ] mặc định không tick ô nào – Q-02",
+[Chức năng],,,,,,,
+[Chức năng] Kiểm tra danh sách giao dịch,,High,"1. Mở sub tab ""Lịch sử""
+2. Xem các dòng giao dịch","- Chỉ có giao dịch tiểu khoản sub88: Mua TP, Bán TP, Nhận trái tức, Nộp tiền, Rút tiền
+- Lệnh hủy sau khi đã thanh toán: có thêm dòng hoàn tiền
+- Lệnh không khớp (Rejected): không có dòng mua",Not Run,"BR-03, BR-21; [GĐ] giao dịch khác 5 loại – Q-15; dòng hoàn tiền – Q-12; Rejected – Q-13",
+[Chức năng] Kiểm tra phân trang,,Medium,"1. Đăng nhập KH có trên 10 giao dịch
+2. Bấm ""Sau"", ""Trước""
+3. Ở trang 2, đổi 1 bộ lọc","- Tối đa 10 dòng/trang, không trùng dòng giữa các trang
+- Đổi bộ lọc thì về trang 1",Not Run,"BR-15, BR-11; [GĐ] 10 dòng/trang – Q-11; về trang 1 – Q-18",
+[Chức năng] Kiểm tra xem chi tiết giao dịch,,Low,1. Bấm vào 1 dòng giao dịch,"- Không mở chi tiết, không chuyển màn (dòng chỉ để xem)",Not Run,BR-07,
+[Thông tin cơ bản],,,,,,,
+[Thông tin cơ bản] Kiểm tra trường Thời gian,,Medium,"1. Xem cột ""Thời gian""","- Định dạng HH:mm dd/MM/yyyy, theo giờ ghi nhận giao dịch trên hệ thống
+- Mới nhất ở trên cùng",Not Run,"BR-02, BR-04, BR-19; [GĐ] lấy giờ check lệnh trên Portal – Q-08; cùng phút – Q-14",
+[Thông tin cơ bản] Kiểm tra trường Nội dung,,Medium,"1. Xem cột ""Nội dung"" của từng loại giao dịch","- Nhận trái tức: ""Lãi trái phiếu {Mã TP} chốt ngày dd/MM/yyyy""
+- Mua TP: ""Trả tiền mua mã {Mã TP} ngày dd/MM/yyyy""
+- Rút tiền: ""Chuyển tiền tới {Số TK} (Online)""
+- Bán TP, Nộp tiền: đúng nội dung hệ thống trả về",Not Run,BR-06; [GĐ] mẫu Bán TP / Nộp tiền – Q-10,
+[Thông tin cơ bản] Kiểm tra trường Biến động,,High,"1. Xem cột ""Biến động""","- Tiền vào: ""+#.###"" màu xanh; tiền ra: ""-#.###"" màu đỏ
+- Số tiền khớp Portal / Flex",Not Run,"BR-05; [GĐ] Rút tiền là số âm, đỏ – Q-09",
+[Bộ lọc],,,,,,,
+[Bộ lọc] Kiểm tra lọc theo Loại giao dịch,,Medium,"1. Tick 1 hoặc nhiều loại
+2. Tick ""Tất cả""","- Chỉ còn giao dịch thuộc loại đã chọn
+- Nhãn: 1 loại hiện tên loại; nhiều loại hiện ""Đã chọn n loại giao dịch""
+- ""Tất cả"": chọn hết các loại",Not Run,"BR-08, BR-09; [GĐ] lọc ngay khi tick – Q-01; nhãn khi chọn ""Tất cả"" – Q-03",
+[Bộ lọc] Kiểm tra lọc theo Thời gian giao dịch,,Medium,"1. Bấm ô ""Thời gian giao dịch""
+2. Chọn Từ ngày, Đến ngày
+3. Bấm ""Chọn"" (hoặc ""Đóng"")","- ""Chọn"": chỉ còn giao dịch trong khoảng đã chọn; ""Đóng"": giữ khoảng cũ
+- Không chọn được ngày sau hôm nay; Đến ngày không được trước Từ ngày
+- Quá 6 tháng: hiện ""Khoảng thời gian tra cứu tối đa 6 tháng (tạm thời)""",Not Run,"BR-10, BR-11, BR-12, BR-13; [GĐ] cách tính 6 tháng – Q-05; chọn ngày – Q-06",
+[Bộ lọc] Kiểm tra kết hợp bộ lọc,,Medium,1. Chọn cả Loại giao dịch và Thời gian giao dịch,"- Chỉ hiện giao dịch thỏa cả 2 điều kiện
+- Không có thì hiện ""Không có giao dịch""",Not Run,"BR-14, BR-16",

@@ -1,0 +1,105 @@
+﻿Name,Status,Priority,Test Script (Step-by-Step) - Step,Test Script (Step-by-Step) - Expected Result,Test Result,Note,Bug ID
+[UI] Kiểm tra tab Xác nhận trong Chi tiết HĐ,,Low,"1. Mở HĐ cần xác nhận > chọn tab ""Xác nhận""","- Có tiêu đề ""Chi tiết hợp đồng"", nút ""<""; 3 tab: Tổng quan, Dòng tiền dự kiến, Xác nhận (màu cam)
+- Hiện Mã TP, Số HĐ
+- Hiện hồ sơ cần xác nhận kèm chữ ""Cần xác nhận"" (HĐ đặt bán và/hoặc Phiếu lệnh)
+- Có nút ""Xem hợp đồng"" màu cam",Not Run,"BR-01, BR-02; đối chiếu Figma",
+[UI] Kiểm tra màn xem hồ sơ,,Low,"1. Mở HĐ cần xác nhận > bấm ""Xem hợp đồng""","- Có tiêu đề ""Mẫu biểu liên quan"", nút ""<""
+- Ô tick và nút ""Xác nhận"" màu xám",Not Run,"BR-01, BR-04; đối chiếu Figma",
+[UI] Kiểm tra màn xem hồ sơ khi HĐ có 2 hồ sơ,,Medium,"1. Mở HĐ có 2 hồ sơ > bấm ""Xem hợp đồng""","- Có 2 tab ""Hợp đồng đặt bán TP"", ""Phiếu lệnh đặt bán TP""
+- 1 ô tick, 1 nút ""Xác nhận"" chung",Not Run,BR-02,
+[UI] Kiểm tra màn nhập OTP,,Low,"1. Đọc hết hồ sơ, tick > bấm ""Xác nhận""","- Có tiêu đề ""Mã xác thực OTP"", ô nhập OTP, đồng hồ, icon gửi lại
+- Nút ""Xác nhận"" màu xám",Not Run,BR-05; đối chiếu Figma,
+[UI] Kiểm tra màn xác nhận thành công,,Low,"1. Nhập OTP đúng > bấm ""Xác nhận""","- Có ""Xác nhận thành công"", Số HĐ, Mã TP
+- Có nút ""Về Danh mục nắm giữ"", ""Về Danh sách chào bán""",Not Run,BR-08; [GĐ] theo Figma – Q-01,
+[Chức năng],,,,,,,
+[Chức năng] Kiểm tra các cách mở màn xem hồ sơ,,Medium,"1. Từ tab ""Xác nhận"" > bấm HĐ > ""Xem hợp đồng""
+2. Từ Danh mục HĐ > bấm HĐ > tab ""Xác nhận"" > ""Xem hợp đồng""",- Cả 2 cách mở đúng hồ sơ của HĐ đã chọn,Not Run,BR-01,
+[Chức năng] Kiểm tra hồ sơ hiển thị theo từng HĐ,,High,"1. Mở HĐ chỉ có HĐ đặt bán cần xác nhận
+2. Mở HĐ có 2 hồ sơ
+3. Mở HĐ chỉ có Phiếu lệnh
+4. Mở HĐ đã xác nhận hết","- B1: chỉ hiện HĐ đặt bán
+- B2: hiện cả 2
+- B3: chỉ hiện Phiếu lệnh
+- B4: không có tab ""Xác nhận""",Not Run,BR-02; bảng 4.1 SRS,
+[Chức năng] Kiểm tra xác nhận thành công,,High,"1. Đọc hết, tick > ""Xác nhận""
+2. Nhập OTP đúng > ""Xác nhận""","- Báo ""Xác nhận thành công""
+- Portal: hồ sơ ""Đủ hồ sơ"", HĐ vẫn ""Hiệu lực""",Not Run,BR-08; [GĐ] – Q-01,
+[Chức năng] Kiểm tra xác nhận HĐ có 2 hồ sơ,,High,"1. Đọc hết cả 2 hồ sơ, tick > ""Xác nhận""
+2. Nhập OTP đúng > ""Xác nhận""","- Chỉ nhập OTP 1 lần
+- Portal: cả 2 hồ sơ ""Đủ hồ sơ""",Not Run,"BR-02, BR-08; [GĐ] – Q-02",
+[Chức năng] Kiểm tra HĐ sau khi xác nhận xong,,High,"1. Xác nhận xong HĐ
+2. Xem tab ""Xác nhận"", Danh mục HĐ, Chi tiết HĐ","- HĐ rời tab ""Xác nhận"", số đỏ giảm 1
+- Hết dòng cảnh báo ở Danh mục HĐ
+- Chi tiết HĐ: hết tab ""Xác nhận"", mẫu biểu tăng 1",Not Run,BR-09,
+[Chức năng] Kiểm tra thông báo và email,,Medium,"1. Xác nhận xong HĐ
+2. Xem thông báo app và email","- Nhận 1 thông báo và 1 email ""[SH-Bond] Xác nhận thành công"" đúng Mã TP, Số HĐ",Not Run,BR-10; nội dung nguyên văn: SRS mục 6.1,
+[Chức năng] Kiểm tra lịch sử xác nhận,,High,"1. Xác nhận xong HĐ
+2. Xem lịch sử trên Portal, thử xóa/sửa","- Có 1 dòng: thời gian, App, số TKCK, họ tên, loại hồ sơ, bản hồ sơ
+- Không xóa/sửa được",Not Run,BR-11; Q-13,
+[Chức năng] Kiểm tra thời hạn xác nhận,,High,"1. Mở HĐ ngày T+3
+2. Mở HĐ ngày E-5 (chưa xác nhận)
+3. Xác nhận lúc 10h59 ngày E
+4. Bấm ""Xem hợp đồng"" lúc 11h00 ngày E","- B1: xác nhận được
+- B2: hiện cả 2 hồ sơ
+- B3: thành công
+- B4: popup ""Quá hạn xác nhận""",Not Run,"BR-12; [GĐ] – Q-06, Q-07",
+[Chức năng] Kiểm tra hết hạn khi đang nhập OTP,,High,"1. Vào màn OTP lúc 10h58 ngày E
+2. Qua 11h00, nhập OTP đúng > ""Xác nhận""","- Popup ""Quá hạn xác nhận""
+- Hồ sơ không đổi, HĐ ""Hết hiệu lực""",Not Run,BR-12; Q-06,
+"[Chức năng] Kiểm tra giờ theo hệ thống, không theo điện thoại",,Medium,"1. Chỉnh giờ điện thoại 10h00 (hệ thống đã 11h05 ngày E)
+2. Bấm ""Xem hợp đồng""","- Vẫn báo ""Quá hạn xác nhận""",Not Run,BR-12,
+[Chức năng] Kiểm tra khi hồ sơ có bản mới,,High,"1. Đang ở màn OTP thì BO tạo bản mới
+2. Nhập OTP đúng > ""Xác nhận""
+3. Bấm ""Xem lại"" > xác nhận lại","- B2: popup ""Hồ sơ đã được cập nhật"", chưa ghi nhận
+- B3: hiện bản mới, xác nhận được",Not Run,BR-13,
+[Chức năng] Kiểm tra không bị ghi nhận 2 lần,,High,"1. Bấm nhanh nhiều lần các nút
+2. Bấm ""Xác nhận"" OTP rồi mất mạng, bấm lại
+3. Xác nhận cùng HĐ trên 2 điện thoại","- Chỉ ghi nhận 1 lần: 1 OTP, 1 dòng lịch sử, 1 thông báo",Not Run,"BR-14; [GĐ] – Q-08, Q-15",
+[Chức năng] Kiểm tra nút quay lại,,Medium,"1. Tick xong > bấm ""<"" > mở lại hồ sơ
+2. Ở màn OTP > bấm quay lại","- B1: về Chi tiết HĐ; mở lại phải đọc, tick lại
+- B2: về Chi tiết HĐ
+- Hồ sơ không đổi",Not Run,BR-15,
+[Chức năng] Kiểm tra khi giao dịch bị hủy hoặc Portal đã xác nhận thay,,Medium,"1. Đang ở màn OTP thì BO hủy giao dịch > nhập OTP
+2. Đang ở màn OTP thì BO chuyển ""Đủ hồ sơ"" > nhập OTP","- B1: popup ""Quá hạn xác nhận""
+- B2: báo theo hệ thống, không báo thành công",Not Run,BR-17; [GĐ] – Q-12,
+[Chức năng] Kiểm tra khi mất mạng hoặc hệ thống lỗi,,Medium,"1. Tắt mạng > bấm ""Xem hợp đồng""
+2. Hệ thống lỗi khi gửi OTP / khi xác nhận","- Hiện popup lỗi, không sang bước tiếp
+- Hồ sơ không đổi",Not Run,"BR-16; Q-11, Q-14",
+[Chức năng] Kiểm tra khi hết phiên đăng nhập,,High,"1. Ở màn OTP, đăng nhập tài khoản này trên máy khác
+2. Nhập OTP > ""Xác nhận""","- Popup ""Phiên đăng nhập không hợp lệ hoặc đã hết hạn""
+- Hồ sơ không đổi",Not Run,BR-16,
+[Chức năng] Kiểm tra không xem được HĐ của khách hàng khác,,High,"1. Đổi sang tài khoản khác trên cùng máy
+2. Mở hồ sơ HĐ",- Chỉ thấy dữ liệu của tài khoản đang đăng nhập,Not Run,"BR-18, BR-20; tester kỹ thuật kiểm thêm: đổi mã HĐ/appendixId sang HĐ người khác, gọi A3 không qua OTP → phải bị chặn – Q-03",
+[Chức năng] Kiểm tra ghi nhận sự kiện (tracking),,Low,1. Xác nhận 1 HĐ từ đầu đến cuối,"- Có đủ 4 sự kiện: DOC.VIEW, DOC.READ, OTP.REQUEST, OTP.SUBMIT",Not Run,BR-19,
+[Thông tin cơ bản],,,,,,,
+[Thông tin cơ bản] Kiểm tra trường Mã TP,,Medium,"1. Mở tab ""Xác nhận"" của HĐ",- Đúng Mã TP của HĐ,Not Run,BR-01,
+[Thông tin cơ bản] Kiểm tra trường Số HĐ,,High,"1. Mở tab ""Xác nhận"" của HĐ","- Đúng Số HĐ, hiện đủ không bị cắt",Not Run,BR-01,
+[Thông tin cơ bản] Kiểm tra trường Tên hồ sơ,,Low,1. Mở màn xem hồ sơ,"- Đúng tên: ""Hợp đồng đặt bán TP"" hoặc ""Phiếu lệnh đặt bán TP""",Not Run,BR-02,
+[Thông tin cơ bản] Kiểm tra trường Nội dung hồ sơ,,High,"1. Mở màn xem hồ sơ
+2. Đọc thông tin KH và HĐ","- Đúng họ tên, CCCD, TKCK của KH
+- Đúng Số HĐ, Mã TP; là bản mới nhất",Not Run,BR-03,
+[Thông tin cơ bản] Kiểm tra trường Ô tick đã đọc,,High,"1. Chạm ô tick khi chưa cuộn
+2. Cuộn đến cuối (2 hồ sơ thì cuộn hết cả 2), chạm ô tick","- B1: không tick được
+- B2: tick được",Not Run,"BR-04; chữ cạnh ô tick – Q-09; Q-05, Q-10",
+[Thông tin cơ bản] Kiểm tra nút Xác nhận,,High,"1. Tick
+2. Bỏ tick
+3. Tick lại > bấm ""Xác nhận""","- B1: nút sáng
+- B2: nút xám
+- B3: sang màn OTP, nhận OTP",Not Run,"BR-04, BR-05",
+[Màn OTP],,,,,,,
+[Màn OTP] Kiểm tra trường Ô nhập OTP,,Medium,"1. Nhập chữ
+2. Nhập thiếu 1 số
+3. Nhập đủ số","- B1: không nhập được
+- B2: nút ""Xác nhận"" xám
+- B3: nút sáng",Not Run,BR-05; Q-04,
+"[Màn OTP] Kiểm tra nhập OTP sai, hết hạn",,High,"1. Nhập OTP sai
+2. Nhập OTP đã hết hạn
+3. Nhập sai đến hết số lần","- Mỗi bước báo lỗi tương ứng
+- Hồ sơ không đổi",Not Run,BR-06; Q-04,
+[Màn OTP] Kiểm tra Đồng hồ và Gửi lại OTP,,Medium,"1. Bấm gửi lại khi đồng hồ chưa hết
+2. Chờ 00:00 > bấm gửi lại
+3. Gửi lại đến quá số lần","- B1: không gửi
+- B2: nhận OTP mới, đồng hồ chạy lại
+- B3: báo lỗi quá số lần",Not Run,BR-07; Q-04,
+[Màn OTP] Kiểm tra nút Xác nhận,,Medium,"1. Nhập OTP đúng > bấm ""Xác nhận""","- Nút khóa, hiện đang xử lý
+- Xong sang màn thành công",Not Run,BR-14,

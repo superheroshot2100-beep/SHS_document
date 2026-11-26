@@ -1,0 +1,11 @@
+﻿Name,Status,Priority,Test Script (Step-by-Step) - Step,Test Script (Step-by-Step) - Expected Result,Test Result,Note,Bug ID
+[API] Kiểm tra request khi mở sub tab Lịch sử,,High,"1. Mở DevTools > Network
+2. Mở sub tab ""Lịch sử""","- Gọi O5 với bộ lọc mặc định (1 tháng gần nhất, trang 1), trả HTTP 200",Not Run,"BR-01, BR-22",
+[API] Kiểm tra response O5 với bộ lọc mặc định,,Medium,1. Gọi GET /api/v1/bond/app/transactions,"- HTTP 200, có transTime, message, amount, totalCount, totalPage
+- Số liệu khớp với Web",Not Run,"BR-22, BR-02; [GĐ] endpoint dùng chung App – Q-11",
+[API] Kiểm tra tham số O5 khi lọc trên giao diện,,Medium,"1. Mở DevTools > Network
+2. Lọc theo Loại giao dịch, Thời gian giao dịch","- O5 gửi đúng transType, fromDate, toDate; page = 1",Not Run,"BR-08, BR-11, BR-14; [GĐ] cách gửi nhiều loại – Q-11",
+[API] Kiểm tra tham số O5 khi đổi trang,,Medium,"1. Mở DevTools > Network
+2. Bấm trang 2","- O5 gửi đúng page, size",Not Run,"BR-15; [GĐ] page bắt đầu 1, size 10 – Q-11",
+[API] Kiểm tra O5 khi khoảng ngày không hợp lệ,,Medium,"1. Gọi O5 với fromDate > toDate, toDate sau hôm nay, khoảng quá 6 tháng","- Báo lỗi BND-1xx, không HTTP 500, không trả dữ liệu",Not Run,"BR-12, BR-13, BR-22; [GĐ] – Q-05",
+[API] Kiểm tra O5 khi tham số sai định dạng,,Low,1. Gọi O5 với ngày sai định dạng hoặc transType không hợp lệ,"- Báo lỗi tham số, không HTTP 500",Not Run,BR-22; error code tham số chưa có trong SRS,

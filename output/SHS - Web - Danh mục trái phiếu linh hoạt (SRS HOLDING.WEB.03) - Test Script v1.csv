@@ -1,0 +1,37 @@
+﻿Name,Status,Priority,Test Script (Step-by-Step) - Step,Test Script (Step-by-Step) - Expected Result,Test Result,Note,Bug ID
+[UI] Kiểm tra màn Danh mục trái phiếu linh hoạt,,Low,"1. Mở tab ""Danh mục trái phiếu"" > ""Trái phiếu linh hoạt""","- Chip ""Trái phiếu linh hoạt"" được chọn
+- Bảng đủ 6 cột: Mã TP, Loại TP, TCPH, SL TP, Tổng mệnh giá, Thao tác (nút ""Chi tiết"")",Not Run,"BR-01, BR-03; [GĐ] cột Loại TP – Q-01; đối chiếu Figma Web",
+[UI] Kiểm tra màn Danh mục trái phiếu linh hoạt khi KH không có TP linh hoạt,,Medium,"1. Đăng nhập KH không có TP linh hoạt
+2. Mở tab ""Danh mục trái phiếu"" > ""Trái phiếu linh hoạt""","- Hiện ""Quý khách chưa có trái phiếu linh hoạt""",Not Run,BR-13; [GĐ] hình / CTA – Q-10,
+[UI] Kiểm tra bộ lọc màn Danh mục trái phiếu linh hoạt,,Low,"1. Mở tab ""Danh mục trái phiếu"" > ""Trái phiếu linh hoạt""
+2. Mở lần lượt 2 dropdown","- Ô tìm kiếm ""Mã trái phiếu""
+- Loại TP mặc định ""Tất cả"" (Niêm yết / Riêng lẻ)
+- TCPH mặc định ""Tất cả tổ chức""",Not Run,"BR-08, BR-09; [GĐ] thứ tự bộ lọc theo Figma – Q-11; danh sách TCPH – Q-06",
+[Chức năng],,,,,,,
+[Chức năng] Kiểm tra mở màn từ noti Bond_05,,High,1. Bấm noti Bond_05,"- Mở tab ""Trái phiếu linh hoạt"", bộ lọc mặc định",Not Run,BR-02; [GĐ] đích điều hướng – Q-07,
+[Chức năng] Kiểm tra mã TP khi HĐ kỳ hạn chuyển Outright,,High,"1. Mở tab ""Trái phiếu linh hoạt"" sau COT ngày E của HĐ kỳ hạn bị off","- Mã TP của HĐ hiện trong danh sách với số TP còn lại
+- Mã đã có sẵn thì cộng dồn, vẫn 1 dòng",Not Run,"BR-17, BR-05; [GĐ] sub nhận, thời điểm – Q-07",
+[Chức năng] Kiểm tra phân trang,,Medium,"1. Đăng nhập KH có trên 10 mã
+2. Bấm ""Sau"", ""Trước""
+3. Ở trang 2, chọn 1 bộ lọc","- Tối đa 10 dòng/trang, không trùng mã
+- Đổi bộ lọc thì về trang 1",Not Run,"BR-11, BR-10; [GĐ] 10 dòng/trang – Q-08",
+[Chức năng] Kiểm tra xem chi tiết trái phiếu linh hoạt,,High,"1. Bấm ""Chi tiết"" 1 dòng",- Mở Chi tiết TP linh hoạt đúng mã,Not Run,BR-12; nội dung kiểm ở HOLDING.WEB.04,
+[Thông tin cơ bản],,,,,,,
+[Thông tin cơ bản] Kiểm tra trường Mã trái phiếu,,High,"1. Xem cột ""Mã trái phiếu""","- Hiện mọi mã TP lưu ký ở các tiểu khoản, trừ sub88
+- Mỗi mã 1 dòng",Not Run,"BR-04, BR-05",
+[Thông tin cơ bản] Kiểm tra trường Loại trái phiếu,,Medium,"1. Xem cột ""Loại trái phiếu""","- Hiện ""Niêm yết"" hoặc ""Riêng lẻ"" đúng loại của mã",Not Run,BR-03; [GĐ] – Q-01,
+[Thông tin cơ bản] Kiểm tra trường Tổ chức phát hành,,Medium,"1. Xem cột ""Tổ chức phát hành""",- Đúng tên đầy đủ TCPH; tên dài không đè cột khác,Not Run,BR-03,
+[Thông tin cơ bản] Kiểm tra trường SL Trái phiếu,,High,"1. Xem cột ""SL Trái phiếu""","- = tổng số TP của mã ở các tiểu khoản, không tính sub88",Not Run,"BR-05, BR-04; [GĐ] loại số dư – Q-05",
+[Thông tin cơ bản] Kiểm tra trường Tổng mệnh giá,,High,"1. Xem cột ""Tổng mệnh giá""","- = SL TP × mệnh giá, không đổi theo giá giao dịch",Not Run,"BR-06; [GĐ] không chữ ""VND"" – Q-11",
+[Bộ lọc],,,,,,,
+[Bộ lọc] Kiểm tra lọc theo Mã trái phiếu,,Medium,"1. Gõ một phần mã
+2. Chọn 1 mã trong gợi ý","- Gợi ý mã chứa cụm từ, không phân biệt hoa thường
+- Bảng chỉ còn mã đã chọn",Not Run,BR-07; [GĐ] gợi ý – Q-03; max 50 ký tự – Q-04,
+[Bộ lọc] Kiểm tra lọc theo Loại trái phiếu,,Medium,"1. Chọn ""Niêm yết"" hoặc ""Riêng lẻ""
+2. Chọn ""Tất cả""","- Chỉ còn mã đúng loại; ""Tất cả"" tự bỏ chọn
+- Chọn ""Tất cả"" thì hiện lại toàn bộ",Not Run,"BR-09, BR-10; [GĐ] lọc ngay khi chọn – Q-02",
+[Bộ lọc] Kiểm tra lọc theo Tổ chức phát hành,,Medium,1. Tick 1 hoặc nhiều TCPH,"- Hiện ""Đã chọn n tổ chức""
+- Chỉ còn mã của TCPH đã chọn",Not Run,"BR-08, BR-10; [GĐ] – Q-02, Q-06",
+[Bộ lọc] Kiểm tra kết hợp bộ lọc và Đặt lại,,Medium,"1. Chọn cả Loại TP và TCPH
+2. Bấm ""Đặt lại""","- Chỉ hiện mã thỏa mọi điều kiện; không có thì hiện ""Không tìm thấy kết quả phù hợp""
+- Đặt lại: về mặc định",Not Run,"BR-10, BR-13; [GĐ] Đặt lại – Q-02; câu chữ – Q-10",

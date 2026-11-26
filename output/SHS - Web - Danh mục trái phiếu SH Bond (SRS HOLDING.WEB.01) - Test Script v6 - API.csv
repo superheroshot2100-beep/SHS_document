@@ -1,0 +1,13 @@
+﻿Name,Status,Priority,Test Script (Step-by-Step) - Step,Test Script (Step-by-Step) - Expected Result,Test Result,Note,Bug ID
+[API] Kiểm tra request khi mở tab SH Bond,,High,"1. Mở DevTools > Network
+2. Mở tab ""Danh mục trái phiếu"" > ""SH Bond""","- Gọi S6 và C2, trả HTTP 200",Not Run,"BR-01, BR-18",
+[API] Kiểm tra response S6 với bộ lọc mặc định,,Medium,1. Gọi GET /api/v1/bond/app/bond-holdings,"- HTTP 200, đủ các field hiển thị trên bảng
+- Số liệu khớp với Web",Not Run,"BR-18, BR-02",
+[API] Kiểm tra tham số S6 khi lọc trên giao diện,,Medium,"1. Mở DevTools > Network
+2. Lọc theo Mã TP, TCPH, Loại TP",- S6 gửi đúng tham số lọc đã chọn,Not Run,"BR-07, BR-08, BR-09, BR-10; [GĐ] tham số loại TP – Q-03",
+[API] Kiểm tra S6 khi lọc theo symbol và issuerCode,,Medium,"1. Gọi S6 với symbol, rồi với issuerCode",- Chỉ trả mã thỏa điều kiện,Not Run,"BR-18, BR-07, BR-08",
+[API] Kiểm tra tham số S6 khi đổi trang và sắp xếp,,Medium,"1. Mở DevTools > Network
+2. Bấm trang 2, bấm sắp xếp","- S6 gửi đúng page, size, sort",Not Run,"BR-11, BR-12; [GĐ] – Q-07, Q-08",
+[API] Kiểm tra C2 trả danh sách TCPH,,Low,1. Gọi GET /api/v1/bond/common/issuer/list,"- HTTP 200, có mã và tên TCPH",Not Run,"BR-18, BR-08; Q-12",
+[API] Kiểm tra S6 khi page và size sai,,Medium,1. Gọi S6 với page âm hoặc size = 0,"- Báo lỗi tham số, không HTTP 500",Not Run,"BR-18, BR-11; error code tham số chưa có trong SRS",
+[API] Kiểm tra S6 khi từ khóa dài hơn 50 ký tự,,Medium,1. Gọi S6 với từ khóa 51 ký tự,- Báo lỗi BND-100,Not Run,"BR-18, BR-07; [GĐ] max 50 – Q-05",
